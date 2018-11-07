@@ -5,6 +5,6 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 <p align="center"><img src="images/devops.png"></p>
 
-# Topics
+# :satellite: Topics
 
-## 1. Code Version Control
+## :computer: Code Version Control
