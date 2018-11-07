@@ -2,7 +2,7 @@
 
 ### GIT Basic Workflow
 
-<p align="center"><img src="images/basic-remote-workflow.png"></p>
+<p align="center"><img src="images/basic-remote-workflow.png" width="800px" ></p>
 
 ### GIT Basic Operations
 
