@@ -63,3 +63,33 @@
 ```$ git checkout -b <branch_name>``` *(Create a branch and change the current work branch)*
 
 ```$ git checkout <branch_name>``` *(Change the current work branch)*
+
+#
+
+### GIT Tags
+
+<p align="center"><img src="images/gittag.png" width="400px" ></p>
+
+#
+
+```$ git tag <tag_name>``` *(Create a tag)*
+
+```$ git tag``` *(Show all the project tags)*
+
+```$ git show-ref --tag``` *(List which commits belong to what tags)*
+
+```$ git checkout <tag_name>``` *(Checkout to a tag)*
+
+#
+
+### Some other features
+
+~/.gitconfig (Git user configuration file)
+
+```$ git log --pretty = *(Customize the git log)*
+
+```$ git log --graph *(Show the logs in graphics)*
+
+```$ git cherry-pick <commit> *(Make the merge with a specific commit)*
+
+#
