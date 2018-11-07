@@ -14,7 +14,7 @@
 
 ```$ git status``` *(Show the local repository status)*
 
-```$ git commit -m "comment"``` *(Make a commit and add a commentß)*
+```$ git commit -m "comment"``` *(Make a commit and add a comment)*
 
 ```$ git push origin master``` *(Update the branch master of remote repository)*
 
@@ -49,3 +49,5 @@
 #
 
 ### GIT Branches
+
+<p align="center"><img src="images/gitflow.png" width="400px" ></p>
