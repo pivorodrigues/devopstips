@@ -3,7 +3,7 @@ A Repository to concentrate all my DevOps *Tips*, *Readings* and *Notes*.
 
 This repository is based in this [Kamranahmedse](https://github.com/kamranahmedse) DevOps Roadmap:
 
-<p align="center"><img src="images/devops.png" width="600px"></p>
+<p align="center"><img src="images/devops.png" width="700px"></p>
 
 # Code Version Control
 
