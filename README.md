@@ -5,7 +5,7 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 <p align="center"><img src="images/devops.png" width="700px"></p>
 
-# Code Version Control
+# 0. Code Version Control
 
 - **GIT**
   - [Tips](git.md)
