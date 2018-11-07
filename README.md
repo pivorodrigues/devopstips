@@ -7,7 +7,7 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 # Code Version Control
 
-- GIT
+- **GIT**
   - [Tips](git.md)
   - Readings
   - Notes

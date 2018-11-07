@@ -1,4 +1,4 @@
-# **GIT**
+# GIT
 
 ### GIT Basic Workflow
 
