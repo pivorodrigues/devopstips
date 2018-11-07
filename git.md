@@ -51,3 +51,15 @@
 ### GIT Branches
 
 <p align="center"><img src="images/gitflow.png" width="400px" ></p>
+
+#
+
+```$ git branch``` *(Show the current work branch)*
+
+```$ git branch <branch_name>``` *(Create a new branch)*
+
+```$ git branch -d <branch_name>``` *(Delete a branch)*
+
+```$ git checkout -b <branch_name>``` *(Create a branch and change the current work branch)*
+
+```$ git checkout <branch_name>``` *(Change the current work branch)*
