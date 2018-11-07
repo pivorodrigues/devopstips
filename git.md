@@ -86,10 +86,8 @@
 
 ~/.gitconfig (Git user configuration file)
 
-```$ git log --pretty = *(Customize the git log)*
+```$ git log --pretty``` = *(Customize the git log)*
 
-```$ git log --graph *(Show the logs in graphics)*
+```$ git log --graph``` *(Show the logs in graphics)*
 
-```$ git cherry-pick <commit> *(Make the merge with a specific commit)*
-
-#
+```$ git cherry-pick <commit>``` *(Make the merge with a specific commit)*
