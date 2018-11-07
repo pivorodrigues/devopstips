@@ -1,5 +1,5 @@
 # DevOps Tips!
-A Repository to concentrate all my DevOps *Tips*, *Readings* and *Notes*.
+A Repository to concentrate all my DevOps *Tips* and *Readings* about DevOps and SRE concepts.
 
 This repository is based in this [Kamranahmedse](https://github.com/kamranahmedse) DevOps Roadmap:
 
@@ -10,4 +10,3 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 - **GIT**
   - [Tips](git.md)
   - Readings
-  - Notes
