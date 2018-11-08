@@ -10,12 +10,12 @@
 
 ```$ nc -l 3456``` *Talk to 3456 port using netcat command*
 
-[Ping Command Reference](http://man7.org/linux/man-pages/man8/ping.8.html)
+[*Ping Command Reference*](http://man7.org/linux/man-pages/man8/ping.8.html)
 
-[Netcat Command Reference](http://man7.org/linux/man-pages/man1/ncat.1.html)
+[*Netcat Command Reference*](http://man7.org/linux/man-pages/man1/ncat.1.html)
 
 #
 
 ## IETF Model
 
-<p align="center"><img src="images/ietfmodel.png" width="700px"></p> 
+<p align="center"><img src="images/ietfmodel.png" width="500px"></p>
