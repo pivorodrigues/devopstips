@@ -28,7 +28,9 @@
 
 # DNS (Domain Name Server)
 
-```$ host -t a google.com *(Looks for the Google's DNS - IPV4)*```
+```$ host -t a google.com *(Looks for the Google's DNS - IPv4)*```
+
+```$ host -t aaaa google.com *(Looks for the Google's DNS - IPv6)*```
 
 ```$ dig www.google.com *(Like host command, but with more details)*```
 
