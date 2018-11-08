@@ -28,9 +28,9 @@
 
 # DNS (Domain Name Server)
 
-```$ host -t a google.com *(Looks for the Google's DNS - IPV4)*
+```$ host -t a google.com *(Looks for the Google's DNS - IPV4)*```
 
-```$ dig www.google.com *(Like host command, but with more details)*
+```$ dig www.google.com *(Like host command, but with more details)*```
 
 [*Host Command Reference*](https://www.computerhope.com/unix/host.htm)
 
