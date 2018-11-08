@@ -19,3 +19,19 @@
 ## IETF Model
 
 <p align="center"><img src="images/ietfmodel.png" width="500px"></p>
+
+#
+
+*Ports: 0 to 1023 - Ports reserved to root applications*
+
+#
+
+# DNS (Domain Name Server)
+
+```$ host -t a google.com *(Looks for the Google's DNS - IPV4)*
+
+```$ dig www.google.com *(Like host command, but with more details)*
+
+[*Host Command Reference*](https://www.computerhope.com/unix/host.htm)
+
+[*Dig Command Reference*](http://www.tutorialspoint.com/unix_commands/dig.htm)
