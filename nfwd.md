@@ -37,3 +37,12 @@
 [*Host Command Reference*](https://www.computerhope.com/unix/host.htm)
 
 [*Dig Command Reference*](http://www.tutorialspoint.com/unix_commands/dig.htm)
+
+#
+
+## DNS Record Types
+
+Cname :arrow_right: Canonical Name
+aaaa :arrow_right: IPv6
+a :arrow_right: IPv4
+NS :arrow_right: Name Server
