@@ -58,6 +58,12 @@
 
 <p align="center"><img src="images/dnsandhttp.png" width="500px"></p>
 
-`Obs: One single webserver can control requests from many sites. It splits the requests by their domain names`
+`Obs1: One single webserver can control requests from many sites. It splits the requests by their domain names`
+
+`Obs2: SSL encryption certificates are issued for particular domains`
 
 #
+
+# Subdomains and FQDN´s
+
+<p align="center"><img src="images/subdomains.png" width="500px"></p>
