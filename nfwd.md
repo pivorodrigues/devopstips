@@ -86,6 +86,6 @@ _**Search Domain**: A setting in resolver that makes the resolver search names i
 
 `$ sudo tcpdump -n host 8.8.8.8`
 
-:arrow_up_down::arrow_up_down::arrow_up_down::arrow_up_down::arrow_up_down::arrow_up_down::arrow_up_down::arrow_up_down:
+:arrow_up_down:
 
 `$ ping 8.8.8.8`
