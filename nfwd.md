@@ -42,10 +42,10 @@
 
 ## DNS Record Types
 
-*Cname* :arrow_right: Canonical Name
+**Cname** :arrow_right: Canonical Name
 
-*aaaa* :arrow_right: IPv6
+**aaaa** :arrow_right: IPv6
 
-*a* :arrow_right: IPv4
+**a** :arrow_right: IPv4
 
-*NS* :arrow_right: Name Server
+**NS** :arrow_right: Name Server
