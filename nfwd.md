@@ -40,7 +40,7 @@
 
 #
 
-## DNS Record Types
+# DNS Record Types
 
 **Cname** :arrow_right: Canonical Name
 
@@ -49,3 +49,15 @@
 **a** :arrow_right: IPv4
 
 **NS** :arrow_right: Name Server
+
+**TTL** :arrow_right: Time to Live
+
+#
+
+# DNS and HTTP
+
+<p align="center"><img src="images/dnsandhttp.png" width="500px"></p>
+
+`Obs: One single webserver can control requests from many sites. It splits the requests by their domain names`
+
+#
