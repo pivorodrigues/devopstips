@@ -66,4 +66,4 @@
 
 # Subdomains and FQDN´s
 
-<p align="center"><img src="images/subdomains.png" width="500px"></p>
+<p align="center"><img src="images/subdomains.png" width="300px"></p>
