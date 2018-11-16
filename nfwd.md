@@ -67,3 +67,5 @@
 # Subdomains and FQDN´s
 
 <p align="center"><img src="images/subdomains.png" width="200px"></p>
+
+- example.com (_**domain**_) --> www.example.com (_**subdomain**_)
