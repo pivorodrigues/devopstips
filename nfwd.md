@@ -70,6 +70,12 @@ _Obs2: SSL encryption certificates are issued for particular domains_
 
 example.com (_**domain**_) --> www.example.com (_**subdomain**_)
 
-_C-Name: Used to specify that a domain name is an alias to other domain._
+_**C-Name**: Used to specify that a domain name is an alias to other domain._
 
-_Search Domain: A setting in resolver that makes the resolver search names inside a domain first._
+_**Search Domain**: A setting in resolver that makes the resolver search names inside a domain first._
+
+#
+
+# The Protocol Stack
+
+<p align="center"><img src="images/protocolstack.png" width="500px"></p>
