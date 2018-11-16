@@ -9,7 +9,7 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 - **GIT**
   - [Tips](git.md)
-  - Readings
+  #- Readings
 
 #
 
@@ -17,4 +17,4 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 - **Networking for Web Developers**
   - [Tips](nfwd.md)
-  - Readings
+  #- Readings
