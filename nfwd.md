@@ -58,9 +58,9 @@
 
 <p align="center"><img src="images/dnsandhttp.png" width="500px"></p>
 
-`Obs1: One single webserver can control requests from many sites. It splits the requests by their domain names`
+_Obs1: One single webserver can control requests from many sites. It splits the requests by their domain names_
 
-`Obs2: SSL encryption certificates are issued for particular domains`
+_Obs2: SSL encryption certificates are issued for particular domains_
 
 #
 
@@ -68,4 +68,8 @@
 
 <p align="center"><img src="images/subdomains.png" width="200px"></p>
 
-`example.com (_**domain**_) --> www.example.com (_**subdomain**_)`
+example.com (_**domain**_) --> www.example.com (_**subdomain**_)
+
+_C-Name: Used to specify that a domain name is an alias to other domain._
+
+_Search Domain: A setting in resolver that makes the resolver search names inside a domain first._
