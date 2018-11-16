@@ -99,3 +99,11 @@ _**Search Domain**: A setting in resolver that makes the resolver search names i
 <p align="center"><img src="images/sequence2.png" width="500px"></p>
 
 <p align="center"><img src="images/sequence3.png" width="500px"></p>
+
+#
+
+# Big Networks
+
+`$ traceroute google.com`
+
+`$ mtr google.com`
