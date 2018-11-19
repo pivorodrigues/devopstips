@@ -84,7 +84,7 @@
 
 ### Some other features
 
-~/.gitconfig *(Git user configuration file)*
+~/.gitconfig *(Git User configuration file)*
 
 ```$ git log --pretty =``` *(Customize the git log)*
 
