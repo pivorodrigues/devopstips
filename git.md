@@ -22,7 +22,7 @@
 
 ```$ git pull``` *(Update the local repository)*
 
-```$ git checkout master && git pull origin master && git submodule update --init``` (git pull with esteroids :smile:)
+```$ git checkout master && git pull origin master && git submodule update --init``` (git pull with   steroids :smile:)
 
 #
 
