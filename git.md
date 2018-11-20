@@ -42,7 +42,7 @@
 
 ```$ git checkout master``` *(Back to the current master commit)*
 
-```$ git checkout --<file>``` *(Undo changes in a file off the Staging Area)*
+```$ git checkout --<file>``` *(Undo changes in a file off the staging area)*
 
 ```$ git checkout HEAD --<file>``` *(Back a local file to the current master commit)*
 
