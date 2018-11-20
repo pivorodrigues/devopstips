@@ -1,4 +1,4 @@
-# AWS Certified Solutions Architecht - My Notes
+# :cloud: AWS Certified Solutions Architecht - My Notes :cloud:
 
 ## Exam Blue Print
 
@@ -24,4 +24,4 @@
 
 - **Availability Zone** - Discrete data centers with redundant power, networking and connectivity in separate facilities.
 
-- **Edge Location** - Endpoints for AWS for caching content. Consists in CloudFront, Amazon's Content Delivery Network (CDN). *PS: There are many more edge locations than regions* 
+- **Edge Location** - Endpoints for AWS for caching content. Consists in CloudFront, Amazon's Content Delivery Network (CDN). *PS: There are many more edge locations than regions*
