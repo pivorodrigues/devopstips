@@ -64,6 +64,8 @@
 
 ```$ git checkout <branch_name>``` *(Change the current work branch)*
 
+```$ git merge <branch_name>``` *(Merge content from other branch)*
+
 #
 
 ### GIT Tags
