@@ -26,3 +26,10 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 - **AWS Certified Solutions Architecht**
   - [My Notes](acsa.md)
   - [Amazon Web Services - A practical guide](https://github.com/open-guides/og-aws)
+
+# 10. Big Data Tools
+
+## Hadoop
+
+- **[Coursera] Hadoop Platform and Application Framework**
+  - [My Notes](hpaf.md)
