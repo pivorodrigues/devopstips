@@ -1,6 +1,6 @@
-# :elephant: Hadoop Platform and Application Framework :elephant:
+## :elephant: Hadoop Platform and Application Framework :elephant:
 
-## Big Data Hadoop Stack
+### Big Data Hadoop Stack
 
 - **Hadoop Stack Basics**
   - Hadoop moves computation to data
