@@ -1,4 +1,4 @@
-# :elephant: Hadoop Platform and Application Framework - My Notes :elephant:
+# :elephant: Hadoop Platform and Application Framework :elephant:
 
 ## Big Data Hadoop Stack
 
