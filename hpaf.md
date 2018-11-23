@@ -18,8 +18,8 @@
 
   - HDFS - Hadoop Distributed File System is a distributed file system that stores data on a commodity machine. Providing very high aggregate bandwidth across the entire cluster.
 
-  - Hadoop Yarn - is a resource management platform responsible for managing compute resources in the cluster and using them in order to schedule users and applications.
-
   - Hadoop MapReduce - is a programming model that scales data across a lot of different processes.
+
+  - Hadoop Yarn - is a resource management platform responsible for managing compute resources in the cluster and using them in order to schedule users and applications.
 
   <p align="center"><img src="images/HadoopEcoSystem.png" width="500px"></p>
