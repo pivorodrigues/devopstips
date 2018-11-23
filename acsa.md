@@ -106,3 +106,35 @@
 - **API Gateway** - A tool to creating personal API's
 
 - **Direct Connect** - A tool to stablish a dedicated connection between on-premises network and Amazon's VPC
+
+#
+
+### Management Tools
+
+- **Cloudwatch** - Monitoring Service _(Very important to the exam)_
+
+-  **CloudFormation** - Infrastructure as Code tool _(Very important to the exam)_
+
+- **CloudTrail** - A log tool for all AWS changes and operations _(Very important to the exam)_
+
+- **Config** - Monitors the configuration of your entire AWS Environment with snapshots
+
+- **OpsWorks** -  A tool to automate your environment, like ansible, puppet or chef
+
+- **Service Catalog** - Manage catalogs of IT Services _(Very important to the exam)_
+
+- **Systems Manager** - An interface to manage your AWS resources _(It's not important for the exam)_
+
+- **Trusted Advisor** - An advisor to the possibly fails or problems in your AWS environment
+
+- **Managed Services**
+
+#
+
+### Analytics
+
+- **EMR** - Elastic MapReduce - A tool for process great amounts of data
+
+- **Kinesis** - A tool for look and analyze real-time streaming data on AWS
+
+- **Data Pipeline** - A tool to share data between your AWS applications
