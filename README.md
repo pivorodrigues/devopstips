@@ -5,23 +5,23 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 <p align="center"><img src="images/devops.png" width="700px"></p>
 
-# 0. Code Version Control
+## 0. Code Version Control
 
 - **GIT**
   - [Tips](git.md)
 
 #
 
-# 4. Networking and Security
+## 4. Networking and Security
 
 - **Networking for Web Developers**
   - [Tips](nfwd.md)
 
 #
 
-# 9. Cloud Providers
+## 9. Cloud Providers
 
-## **AWS**
+### **AWS**
 
 - **AWS Certified Solutions Architecht**
   - [My Notes](acsa.md)
@@ -29,9 +29,9 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 #
 
-# 10. Big Data Tools
+## 10. Big Data Tools
 
-## Hadoop
+### Hadoop
 
 - **[Coursera] Hadoop Platform and Application Framework**
   - [My Notes](hpaf.md)
