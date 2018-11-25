@@ -45,3 +45,5 @@
   - Yarn enhances the power of the Hadoop compute cluster, without being limited by the map produce kind of framework.
 
   - The processing power and data centers continue to grow quickly, because the YARN research manager focuses exclusively on scheduling. He can manage those very large clusters quite quickly and easily.
+
+  <p align="center"><img src="images/hds-Architecture.jpg" width="500px"></p>
