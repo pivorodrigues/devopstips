@@ -46,7 +46,7 @@
 
   - The processing power and data centers continue to grow quickly, because the YARN research manager focuses exclusively on scheduling. He can manage those very large clusters quite quickly and easily.
 
-  *YARN == MapReduce 2.0*
+  - *YARN == MapReduce 2.0*
 
   <p align="center"><img src="images/hds-Architecture.jpg" width="500px"></p>
 
