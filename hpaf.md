@@ -30,9 +30,9 @@
 
   - Each node in Hadoop instance typically has a single name node, and a cluster of data nodes that formed this HDFS cluster.
 
-  - Hadoopn can achieve reliability by replicating the cross multiple hosts, and therefore does not require any range storage on hosts.
+  - Hadoop can achieve reliability by replicating the cross multiple hosts, and therefore does not require any range storage on hosts.
 
-  - The HTFS file system encodes the so-called secondary NameNode.
+  - The HDFS file system encodes the so-called secondary NameNode.
 
   - The secondary NameNode regularly connects to the primary NameNode and builds snapshots of the primary's NameNodes, the rapture information, and remembers which system saves to the local and the remote directories.
 
@@ -61,3 +61,21 @@
   - Cloudera's Hadoop Stack Diagram
 
   <p align="center"><img src="images/hadoop41.jpg" width="500px"></p>
+
+- **Hadoop Ecosystem Major Components**
+
+  - **Apache Sqoop** - A tool for tranforming "SQL to Hadoop". Tool designed for efficiently transferring bulk data between Apache Hadoop and structured datastores such as relational databases.
+
+  - **HBase** - It's a key component of the Hadoop Stack. It's a tool to provide really fast random access to significant data set. It can handle massive data tables combining billions and billions of rows and columns.
+
+  - **Pig** - It's a scripting language, it's really a high level platform for creating MapReduce programs using Hadoop. The language is called Pig Latin. You can execute pig scripts in other languages.
+
+  - **Apache Hive** - Data Warehouse software facilitates querying and managing large datasets residing in distributed file storage. It actually provides a mechanism to project structure on top of all of this data and allow us to use SQL like queries to access the data that we have stored in this data warehouse. This query language is called HiveQL.
+
+  - **Oozie** - Workflow schedule system to manage Apache Hadoop Jobs.
+
+  - **Zookeper** - A patch Zookeper provides operational services for the Hadoop Cluster.
+
+  - **Flume** - Distributed, reliable and available service for efficiently collecting, aggregating and moving large amounts of log data.
+
+  - *Bonus* - **Spark** - Apache Spark is a fast and general engine for large-scale data processing.
