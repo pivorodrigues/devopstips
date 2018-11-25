@@ -50,4 +50,14 @@
 
   <p align="center"><img src="images/hds-Architecture.jpg" width="500px"></p>
 
-  - **The Hadoop Zoo**
+- **The Hadoop Zoo**
+
+  - *How do we scale and distribute and process very large amounts of data?*
+
+  - Linkedin's Hadoop Stack Diagram
+
+  <p align="center"><img src="images/Linkedin.png" width="500px"></p>
+
+  - Cloudera's Hadoop Stack Diagram
+
+  <p align="center"><img src="images/hadoop41.jpg" width="500px"></p>
