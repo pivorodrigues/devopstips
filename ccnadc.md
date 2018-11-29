@@ -57,4 +57,10 @@
 
 ## TCP/IP Model (DOD 4)
 
--
+**4** - Application/Process (Session, Presentation and Application)
+
+**3** - Host (Transport, Port Communication)
+
+**2** - Internet (Network)
+
+**1** - Network (Physical,Data Link)
