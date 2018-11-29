@@ -18,3 +18,21 @@
 ## Classic Ethernet Network x Fabric Ethernet Network (Datacenters)
 
 <p align="center"><img src="images/ethernet-fabric-architecture.jpg" width="500px"></p>
+
+#
+
+## History of the Ethernet Networks
+
+- Born in Xerox, in 1972;
+
+- Coaxial Cables;
+
+- 2,94 Mbps of transfer rate (by serial connections);
+
+- Ethernet -> Network Alto Aloha;
+
+- In 1980, IEEE (Institute of Electrical and Electronic Engineers) assumed and standardized the Ethernet;
+
+#
+
+## OSI Reference Model
