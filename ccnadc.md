@@ -64,3 +64,5 @@
 **2** - Internet (Network)
 
 **1** - Network (Physical,Data Link)
+
+<p align="center"><img src="images/tcp-dod.jpg" width="500px"></p>
