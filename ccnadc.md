@@ -12,3 +12,9 @@
   - Core (Fast forward) `Routers`
   - Distribution (Filters, VLans, Services and QOS) `Switches`
   - Access (Provides port density and performance) `Switches`
+
+#
+
+## Classic Ethernet Network x Fabric Ethernet Network (Datacenters)
+
+<p align="center"><img src="images/ethernet-fabric-architecture.jpg" width="500px"></p>
