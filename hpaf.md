@@ -86,7 +86,7 @@
 
 - **[Tutorial] Running Hadoop Jobs**
 
-  - Using Sqoop to transfer data from relational databases to Hadoop. Launching the scoop job:
+  - Using Sqoop to export data from relational databases (in SQL format) into the HDFS (in Avro format). Launching the scoop job:
 
   `$ sqoop import-all-tables \ -m 1 \`
 
