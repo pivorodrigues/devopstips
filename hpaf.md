@@ -30,6 +30,8 @@
 
   - Each node in Hadoop instance typically has a single name node, and a cluster of data nodes that formed this HDFS cluster.
 
+<p align="center"><img src="images/datanodes-overview.png" width="500px"></p>
+
   - Hadoop can achieve reliability by replicating the cross multiple hosts, and therefore does not require any range storage on hosts.
 
   - The HDFS file system encodes the so-called secondary NameNode.
