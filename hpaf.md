@@ -86,6 +86,8 @@
 
   - **[Tutorial] Running Hadoop Jobs**
 
-    - Using Sqoop to transfer data from relational databases to Hadoop.
+    - Using Sqoop to transfer data from relational databases to Hadoop. Launching the scoop job:
 
-    `$ sqoop import-all-tables \`
+    `$ sqoop import-all-tables \ -m 1 \`
+
+    -
