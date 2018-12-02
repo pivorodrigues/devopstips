@@ -90,4 +90,21 @@
 
   `$ sqoop import-all-tables \ -m 1 \`
 
-  -
+  - Command to confirm that your Avro data files exist in HDFS:
+
+  `$ hadoop fs -ls /user/hive/warehouse`
+
+  - Command to show a folder for each of the tables:
+
+  `$ hadoop fs -ls /user/hive/warehouse/categories/`
+
+  - Command to show the schema files created by Sqoop in your home directory:
+
+  `$ ls -l *.avsc`
+
+  - Apache Hive will need the schema files too, these are the commands to copy them into HDFS, where Hive can easily access them:
+
+  ```$ sudo -u hdfs hadoop fs -mkdir /user/examples
+     $ sudo -u hdfs hadoop fs -chmod +rw /user/examples
+     $ hadoop fs -copyFromLocal ~/*.avsc /user/examples
+  ```     
