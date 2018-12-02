@@ -108,4 +108,14 @@
      $ sudo -u hdfs hadoop fs -mkdir /user/examples
      $ sudo -u hdfs hadoop fs -chmod +rw /user/examples
      $ hadoop fs -copyFromLocal ~/*.avsc /user/examples
-  ```       
+  ```
+
+  - The next step is query structured data. We need to use Hue's Impala app to create the metadata for our tables in Hue, and then query then. We can access Hue in port 8888 of your Master Node (Ex: 10.2.5.15:8888).
+
+  - Once we are inside Hue, we must click on Query Editors, and open the Impala Query Editor.
+
+  - After we create and execute our queries, we can see all the tables created executing this query: `show tables;`.
+
+  - The next step is create and execute structured queries in Impala.
+
+  <p align="center"><img src="images/impalastructured.png" width="500px"></p>
