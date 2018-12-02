@@ -81,3 +81,11 @@
   - **Flume** - Distributed, reliable and available service for efficiently collecting, aggregating and moving large amounts of log data.
 
   - *Bonus* - **Spark** - Apache Spark is a fast and general engine for large-scale data processing.
+
+  #
+
+  - **[Tutorial] Running Hadoop Jobs**
+
+    - Using Sqoop to transfer data from relational databases to Hadoop.
+
+    `$ sqoop import-all-tables \`
