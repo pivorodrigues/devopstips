@@ -82,12 +82,12 @@
 
   - *Bonus* - **Spark** - Apache Spark is a fast and general engine for large-scale data processing.
 
-  #
+#
 
-  - **[Tutorial] Running Hadoop Jobs**
+- **[Tutorial] Running Hadoop Jobs**
 
-    - Using Sqoop to transfer data from relational databases to Hadoop. Launching the scoop job:
+  - Using Sqoop to transfer data from relational databases to Hadoop. Launching the scoop job:
 
-    `$ sqoop import-all-tables \ -m 1 \`
+  `$ sqoop import-all-tables \ -m 1 \`
 
-    -
+  -
