@@ -104,7 +104,8 @@
 
   - Apache Hive will need the schema files too, these are the commands to copy them into HDFS, where Hive can easily access them:
 
-  ```$ sudo -u hdfs hadoop fs -mkdir /user/examples
+  ```     
+     $ sudo -u hdfs hadoop fs -mkdir /user/examples
      $ sudo -u hdfs hadoop fs -chmod +rw /user/examples
      $ hadoop fs -copyFromLocal ~/*.avsc /user/examples
-  ```     
+  ```       
