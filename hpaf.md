@@ -78,7 +78,7 @@
 
   - **Zookeper** - A patch Zookeper provides operational services for the Hadoop Cluster.
 
-  - **Flume** - Distributed, reliable and available service for efficiently collecting, aggregating and moving large amounts of log data.
+  - **Flume** - Distributed, reliable and available service for efficiently collecting, aggregating and moving large amounts of log data. Flume is a scalable real-time ingest framework tha allows you to route, filter, aggregate, and do "mini-operations" on data on its way in to the scalable processing platform. Flume is the most common way to ingest web clickstream.
 
   - *Bonus* - **Spark** - Apache Spark is a fast and general engine for large-scale data processing.
 
@@ -119,3 +119,26 @@
   - The next step is create and execute structured queries in Impala.
 
   <p align="center"><img src="images/impalastructured.png" width="500px"></p>
+
+  - Now we're gonna correlate structured data with instructured data.
+
+  - Let's move this data from the localsystem, into HDFS, executing the following commands from your Master Node:
+
+  ```
+     $ sudo -u hdfs hadoop fs -mkdir /user/hive/warehouse/original_access_logs`
+     $ sudo -u hdfs hadoop fs -copyFromLocal /opt/examples/log_files/access.log.2 /user/hive/warehouse/original_access_logs
+  ```
+
+  - Verify that your data is in HDFS with the following command:
+
+  `$ hadoop fs -ls /user/hive/warehouse/original_access_logs`
+
+  - Now we can build a table in Hive and query data via Impala and Hue. We'll build this table in 2 steps.
+
+    - 1. We'll query Hive using a command-line JDBC client for Hive called Beeline. We can invoke ir from the terminal with the following command:
+
+    `$ beeline -u jdbc:hive2://quickstart:10000/default -n admin -d org.apache.hive.jdbc.HiveDriver`
+
+    - 2. Once the Beeline shell is connected, run the queries.
+
+    - 3. You can see the newly created tables in Hue/Impala
