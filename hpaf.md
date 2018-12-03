@@ -152,3 +152,45 @@
 - Hadoop Stack
 
 <p align="center"><img src="images/stack.png" width="500px"></p>
+
+- **HDFS and HDFS2**
+
+  - **Original HDFS Design Goals**
+
+    - Resilience to hardware failure
+
+    - Streaming data access
+
+    - Support for large dataset, scalability to hundreds/thousands of nodes with high aggragate bandwidht
+
+    - Application locality to data
+
+    - Portability across heterogeneous hardware anda software platforms
+
+  - **Original HDFS Design**
+
+    - _Single Namenode:_ a master server that manages the file system namespace and regulates access to files by clients.
+
+    - _Multiple Datanodes:_ tipically one per node in the cluster. Functions:
+
+      - Manage storage
+
+      - Serving read/write requests from client
+
+      - Block creation, deletion, replication based on instructions from NameNode.
+
+  <p align="center"><img src="images/hdfsdesign.png" width="500px"></p>
+
+  - **HDFS in Hadoop 2**
+
+    - HDFS Federation
+
+    - Multiple Namenode Servers
+
+    - Multiple Namespaces
+
+    - High Availability - redundant NameNodes
+
+    - heterogeneous Storage and Archival Storage
+
+      - ARCHIVE, DISK, SSD, RAM_DISK
