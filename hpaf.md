@@ -181,6 +181,8 @@
 
   <p align="center"><img src="images/hdfsdesign.png" width="500px"></p>
 
+#
+
   - **HDFS in Hadoop 2**
 
     - HDFS Federation
@@ -214,4 +216,3 @@
   <p align="center"><img src="images/federationblockpools.png" width="500px"></p>
 
 #
-  
