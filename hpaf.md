@@ -203,10 +203,15 @@
 
     - Isolation
 
+#
+
 - Federation
 
   <p align="center"><img src="images/federation.png" width="500px"></p>
 
 - Federation Block Pools
 
-  <p align="center"><img src="images/federationblockpools.png" width="500px"></p>    
+  <p align="center"><img src="images/federationblockpools.png" width="500px"></p>
+
+#
+  
