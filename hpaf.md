@@ -143,6 +143,8 @@
 
     - 3. You can see the newly created tables in Hue/Impala
 
+#
+
 ### Overview of the Hadoop Stack
 
 - Hadoop Stack Transition
