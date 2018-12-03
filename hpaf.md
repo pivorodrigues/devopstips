@@ -153,6 +153,8 @@
 
 <p align="center"><img src="images/stack.png" width="500px"></p>
 
+#
+
 - **HDFS and HDFS2**
 
   - **Original HDFS Design Goals**
