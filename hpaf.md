@@ -219,4 +219,8 @@
 
   <p align="center"><img src="images/federationblockpools.png" width="500px"></p>
 
+- Federation brings performance improvements. Since you have multiple namespaces and namenodes, you can isolate essentially particular applications. If something is very intensive in metadata operations, it´s not going to impact everything else on the system.
+
+- In Federation we have multiple namenode servers. We also have multiple namespaces, and the data is stored in block pools. So there is a pool associated with each namenode or namespace. And these pools are essentially spread out over all the data nodes.  
+
 #
