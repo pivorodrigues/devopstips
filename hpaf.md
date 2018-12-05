@@ -289,3 +289,13 @@
 #
 
 ### The Hadoop Execution Environment
+
+- **The Hadoop Execution Environment**
+
+  - Recall Hadoop Architecture
+
+    - Data distributed across nodes
+
+    - Keep compute task on the node with data
+
+<p align="center"><img src="images/recallhadoop.png" width="500px"></p>     
