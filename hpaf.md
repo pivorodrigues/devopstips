@@ -276,4 +276,12 @@
 
 - **Additional Yarn Features**
 
-  -
+  - High Availability ResourceManager.
+
+  - Timeline Server.
+
+  - Use of [Cgroups](http://man7.org/linux/man-pages/man7/cgroups.7.html).
+
+  - Secure Containers.
+
+  - YARN - Web Services / REST APIs
