@@ -224,3 +224,39 @@
 - In Federation we have multiple namenode servers. We also have multiple namespaces, and the data is stored in block pools. So there is a pool associated with each namenode or namespace. And these pools are essentially spread out over all the data nodes.  
 
 #
+
+- **MapReduce Framework and Yarn**
+
+  - Software Framework - *for writing parallel data processing applications*
+
+  - MapReduce job split data into chunks.
+
+  - Map tasks process data chunks.
+
+  - Framework sorts map output.
+
+  - Reduce tasks use sorted map data as input.
+
+  - Typically compute and storage nodes are the same.
+
+  - MapReduce tasks and HDFS running on the same nodes.
+
+  - Map tasks and HDFS daemons are part of the data nodes.
+
+  - Can schedule tasks on nodes with data already present.
+
+- **Original MapReduce Framework**
+
+  - Single master JobTracker.
+
+  - JobTracker schedules, monitors, and re-executes failed tasks.
+
+  - One slave TaskTracker per cluster node.
+
+  - TaskTracker executes tasks per JobTracker requests.
+
+#
+
+- **Original Hadoop Architecture**
+
+<p align="center"><img src="images/originalhadooparch.png" width="500px"></p>  
