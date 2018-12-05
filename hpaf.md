@@ -259,4 +259,21 @@
 
 - **Original Hadoop Architecture**
 
-<p align="center"><img src="images/originalhadooparch.png" width="500px"></p>  
+<p align="center"><img src="images/originalhadooparch.png" width="500px"></p>
+
+#
+
+- **Yarn: NextGen MapReduce**
+
+<p align="center"><img src="images/yarn_architecture.gif" width="500px"></p>
+
+  - The Resource Manager basically gets job requests from the clients node status from the Node Manager.
+
+  - They're two components in the Resource Manager. There's a **scheduler** which is essentially responsible for allocating resources to the various applications that are running. So these are essentially with the constraints of capacities and
+  the queues and things like that. And there are **policy plugins** that are available for the scheduling aspect effect, so you could have a capacity scheduler or you could have a fair share scheduler, things like that.
+
+#
+
+- **Additional Yarn Features**
+
+  -
