@@ -298,4 +298,14 @@
 
     - Keep compute task on the node with data
 
-<p align="center"><img src="images/recallhadoop.png" width="500px"></p>     
+<p align="center"><img src="images/recallhadoop.png" width="500px"></p>
+
+  - MapReduce Execution Framework
+
+    - Software Framework
+
+    - Schedules, monitors and manages tasks
+
+    - Works with applications that fit MapReduce paradigm
+
+<p align="center"><img src="images/mapreduceexecution.png" width="500px"></p>
