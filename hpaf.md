@@ -276,15 +276,15 @@
 
 - **Additional Yarn Features**
 
-  - High Availability ResourceManager.
+  - High Availability ResourceManager;
 
-  - Timeline Server.
+  - Timeline Server;
 
-  - Use of [Cgroups](http://man7.org/linux/man-pages/man7/cgroups.7.html).
+  - Use of [Cgroups](http://man7.org/linux/man-pages/man7/cgroups.7.html);
 
-  - Secure Containers.
+  - Secure Containers;
 
-  - YARN - Web Services / REST APIs
+  - YARN - Web Services / REST APIs.
 
 #
 
@@ -292,20 +292,57 @@
 
 - **The Hadoop Execution Environment**
 
-  - Recall Hadoop Architecture
+  - **Recall Hadoop Architecture**
 
-    - Data distributed across nodes
+    - Data distributed across nodes;
 
-    - Keep compute task on the node with data
+    - Keep compute task on the node with data.
 
 <p align="center"><img src="images/recallhadoop.png" width="500px"></p>
 
-  - MapReduce Execution Framework
+  - **MapReduce Execution Framework**
 
-    - Software Framework
+    - Software Framework;
 
-    - Schedules, monitors and manages tasks
+    - Schedules, monitors and manages tasks;
 
-    - Works with applications that fit MapReduce paradigm
+    - Works with applications that fit MapReduce paradigm.
 
 <p align="center"><img src="images/mapreduceexecution.png" width="500px"></p>
+
+#
+
+- **Yarn, Tez and Spark**
+
+  - **Yarn**
+
+<p align="center"><img src="images/yarn-tez-spark.png" width="500px"></p>
+
+    - Supports the classic MapReduce framework;
+
+    - Supports Open Source/Commercial Applications;
+
+    - Supports user development applications;
+
+    - Works with frameworks like Tez, Spark, Impala, etc.
+
+  - **Tez**
+
+    - It can handle data flow graphs (Is the main component);
+
+    - It lets you customize data formats;
+
+    - Can run complex DAG (Directed Acyclic Graph) of tasks;
+
+    - Dynamic DAG Changes;
+
+    - Resource usage efficiency.
+
+  _HIVE on Tez Example_
+
+  ```
+  SELECT a.vendor, COUNT(*), AVG(c.cost) FROM a
+  JOIN b ON (a.id = b.id)
+  JOIN c ON (a.itemid = c.itemid)
+  GROUP BY a.vendor        
+  ```
