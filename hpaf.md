@@ -336,7 +336,7 @@
 
     - Dynamic DAG Changes;
 
-    - Resource usage efficiency.
+    - Resource usage efficiency. With Tez, you could have essentially one container, and reuse it. This improves efficiency and makes things things much faster.
 
 #    
 
@@ -350,11 +350,11 @@
   ```
 #
 
-_HIVE Example - Mapreduce_
+_HIVE Example - Mapreduce **(Not so efficient)**_
 
 <p align="center"><img src="images/hive-mapreduce.png" width="500px"></p>
 
-_HIVE Example - Tez_
+_HIVE Example - Tez **(Efficiency improved)**_
 
 <p align="center"><img src="images/hive-tez.png" width="500px"></p>
 
