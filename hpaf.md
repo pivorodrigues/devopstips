@@ -316,8 +316,6 @@
 
   - **Yarn**
 
-<p align="center"><img src="images/yarn-tez-spark.png" width="500px"></p>
-
     - Supports the classic MapReduce framework;
 
     - Supports Open Source/Commercial Applications;
@@ -325,6 +323,8 @@
     - Supports user development applications;
 
     - Works with frameworks like Tez, Spark, Impala, etc.
+
+<p align="center"><img src="images/yarn-tez-spark.png" width="500px"></p>    
 
   - **Tez**
 
