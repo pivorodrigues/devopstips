@@ -338,6 +338,8 @@
 
     - Resource usage efficiency.
 
+#    
+
   _HIVE on Tez Example_
 
   ```
@@ -346,3 +348,4 @@
   JOIN c ON (a.itemid = c.itemid)
   GROUP BY a.vendor        
   ```
+#
