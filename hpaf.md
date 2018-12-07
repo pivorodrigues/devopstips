@@ -388,3 +388,53 @@ _Spark Example **(Logistic Regression Example - Using Python)**_
   ```
 
 #  
+
+- **Hadoop Resource Scheduling**
+
+  - What is the motivation for schedulers?
+
+    - Various execution engines/options;
+
+    - Scheduling, Performance;
+
+    - Control of resources between components.
+
+  - Schedulers:
+
+    - Default - First In, First Out (FIFO);
+
+    - Fairshare - In Fairshare, what you do is try to balance out the resource allocation accross applications over time;
+
+    - Capacity - In capacity schedulers, you can have a guaranteed capacity for each application or group, and are safeguards to prevent a user or an application from taking down the whole cluster by running it out the resources.
+
+#
+
+- **Capacity Scheduler**
+
+  - Queues and sub-queues;
+
+  - Capacity guarantee with elasticity;
+
+  - ACLs for security;
+
+  - Runtime changes/draining apps;
+
+  - Resource based scheduling.
+
+<p align="center"><img src="images/capacity-scheduler.png" width="500px"></p>
+
+#
+
+- **Fairshare Scheduler**
+
+  - Balances out resource allocation among apps over time;
+
+  - Can organize into queues/sub-queues;
+
+  - Guarantee minimum shares;
+
+  - Limits per use/app;
+
+  - Weighted app priorities;
+
+<p align="center"><img src="images/fairshare-scheduler.png" width="500px"></p>
