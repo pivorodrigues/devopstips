@@ -349,3 +349,13 @@
   GROUP BY a.vendor        
   ```
 #
+
+_HIVE Example - Mapreduce_
+
+<p align="center"><img src="images/hive-mapreduce.png" width="500px"></p>
+
+_HIVE Example - Tez_
+
+<p align="center"><img src="images/hive-tez.png" width="500px"></p>
+
+#
