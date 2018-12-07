@@ -372,6 +372,8 @@ _HIVE Example - Tez **(Efficiency improved)**_
 
     - Existing optimized libraries.
 
+  [_Spark DAG Explanation_](https://www.quora.com/What-are-the-Apache-Spark-concepts-around-its-DAG-Directed-Acyclic-Graph-execution-engine-and-its-overall-architecture)
+
 #
 
 _Spark Example **(Logistic Regression Example - Using Python)**_
@@ -384,5 +386,5 @@ _Spark Example **(Logistic Regression Example - Using Python)**_
     w -= gradient
   print("Final separating plane: %s" %w)
   ```
-
+  
 #  
