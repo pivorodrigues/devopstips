@@ -438,3 +438,35 @@ _Spark Example **(Logistic Regression Example - Using Python)**_
   - Weighted app priorities;
 
 <p align="center"><img src="images/fairshare-scheduler.png" width="500px"></p>
+
+#
+
+### Overview of the Hadoop based Applications and Services
+
+- **Hadoop-Based Applications**
+
+  - **Databases/Stores**:
+
+    - **Avro:** Data structures within context of Hadoop MapReduce jobs;
+
+    - **HBase:** Distributed non-relational database;
+
+    - **Cassandra:** distributed data management system.
+
+  - **Querying**
+
+    - **Pig:** Platform for analyzing large data sets in HDFS;
+
+    - **Hive:** Query and manage large data sets;
+
+    - **Impala:** High-performance, low-latency SQL querying of data in Hadoop file formats;
+
+    - **Spark:** General processing engine for streaming, SQL, machine learning and graph processing.
+
+  - **Machine Learning, Graph Processing**
+
+    - **Giraph:** Iterative graph processing using Hadoop framework;
+
+    - **Mahout:** Framework for machine learning applications using Hadoop and Spark;
+
+    - **Spark:** General processing engine for streaming, SQL, machine learning and graph processing.
