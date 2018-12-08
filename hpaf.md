@@ -451,7 +451,7 @@ _Spark Example **(Logistic Regression Example - Using Python)**_
 
     - **HBase:** Distributed non-relational database;
 
-    - **Cassandra:** distributed data management system.
+    - **Cassandra:** Distributed data management system.
 
   - **Querying**
 
@@ -470,3 +470,59 @@ _Spark Example **(Logistic Regression Example - Using Python)**_
     - **Mahout:** Framework for machine learning applications using Hadoop and Spark;
 
     - **Spark:** General processing engine for streaming, SQL, machine learning and graph processing.
+
+#
+
+- **Introduction to Apache Pig**
+
+  - Two components: **Pig Latin** and **Infrastructure Layer**:
+
+    - **Pig Latin:** Pig's high level scripting language;
+
+    - **Infrastructure Layer:** Takes what was written in Pig Latin and transforms it into the backend MapReduce jobs or Tez jobs or other applications that are backend in Pig.
+
+  - It's essentially a platform for data processing;
+
+  - Pig execution environment: Local, MapReduce, Tez, Yarn, etc;
+
+  - Pig has a lot of operators and functions;
+
+  - It is extensible, you can write constant functions if you have complex processing to do;
+
+  - It's a great tool to do _Extract, Transform and Load (ETL)_ operations;
+
+  - It's a good tool to manipulating and analyzing "raw" data;
+
+#
+
+_Pig Example (In Cloudera VM)_
+
+**Step 1:** Load passwd file and work with data
+
+`**$** hdfs dfs -put /etc/passwd /user/cloudera`
+
+**Step 2:**
+
+`**$** pig -x mapreduce` _(This command puts you in "grunt" shell)_
+
+**Step 3:** Inside the "grunt" shell, load the file:
+
+`**grunt>** A = load '/user/cloudera/passwd' using PigStorage(':');`
+
+**Step 4:** Still inside the "grunt" shell, pick subset os values:
+
+`**grunt>** B = foreach A generate $0, $4, $5 ;`
+
+`**grunt>** dump B; `
+
+_OBS: These commands outputs username, full name and home directory path_
+
+**Step 5:** Still inside the "grunt" shell, store this process data in HDFS:
+
+`**grunt>** store B in 'userinfo.out';`
+
+**Step 6:** Outside the grunt shell, verify the new data is in HDFS:
+
+`**$** hdfs dfs -ls /user/cloudera`
+
+`**$** hdfs dfs -ls /user/cloudera/userinfo.out`
