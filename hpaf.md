@@ -501,16 +501,13 @@ _Pig Example (In Cloudera VM)_
 
 `$ hdfs dfs -put /etc/passwd /user/cloudera`
 
-
 - **Step 2:**
 
 `$ pig -x mapreduce` _(This command puts you in "grunt" shell)_
 
-
 - **Step 3:** Inside the "grunt" shell, load the file:
 
 `grunt> A = load '/user/cloudera/passwd' using PigStorage(':');`
-
 
 - **Step 4:** Still inside the "grunt" shell, pick subset os values:
 
@@ -522,11 +519,9 @@ grunt> dump B;
 
 _OBS: These commands outputs username, full name and home directory path_
 
-
 - **Step 5:** Still inside the "grunt" shell, store this process data in HDFS:
 
 `grunt> store B in 'userinfo.out';`
-
 
 - **Step 6:** Outside the grunt shell, verify the new data is in HDFS:
 
