@@ -528,3 +528,49 @@ _OBS: These commands outputs username, full name and home directory path_
 `$ hdfs dfs -ls /user/cloudera`
 
 `$ hdfs dfs -ls /user/cloudera/userinfo.out`
+
+#
+
+- **Introduction to Apache HIVE**
+
+  - Data Warehouse software;
+
+  - HiveQL - SQL like language to structure and query data;
+
+  - Execution Environment: MapReduce, Tez, Yarn, Spark, etc;
+
+  - Works with data in HDFS and HBase;
+
+  - Works with custom mappers/reducers;
+
+  - Hive usage areas: Data mining, machine learning, Ad Hoc analysis and others.
+
+#
+
+_HIVE Example (In Cloudera VM)_
+
+- **Step 1:** Copy passwd file to HDFS:
+
+`$ hdfs dfs -put /etc/passwd /tmp/`
+
+`$ hdfs dfs -ls /tmp`
+
+- **Step 2:** Running interactively using beeline:
+
+`$ beeline -u jdbc:hive2://`
+
+- **Step 3:** Run the Create table command:
+
+```
+0: jdbc:hive2://> CREATE TABLE userinfo ( uname STRING, pswd STRING, uid INT, gid INT, fullname STRING, hdir STRING, shell STRING ) ROW FORMAT DELIMITED FIELDS TERMINATED BY ':' STORED AS TEXTFILE;
+```
+
+- **Step 4:** Load passwd file from HDFS:
+
+`0: jdbc:hive2://> LOAD DATA INPATH '/tmp/passwd' OVERWRITE INTO TABLE userinfo;`
+
+- **Step 5:** Select info - This launches the Hadoop job and outputs once its complete:
+
+`SELECT uname, fullname, hdir FROM userinfo ORDER BY uname ;`
+
+- **OBS:** Completed MapReduce jobs; output shows username, fullname and home directory.
