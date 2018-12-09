@@ -571,6 +571,68 @@ _HIVE Example (In Cloudera VM)_
 
 - **Step 5:** Select info - This launches the Hadoop job and outputs once its complete:
 
-`SELECT uname, fullname, hdir FROM userinfo ORDER BY uname ;`
+`0: jdbc:hive2://> SELECT uname, fullname, hdir FROM userinfo ORDER BY uname ;`
 
 - **OBS:** Completed MapReduce jobs; output shows username, fullname and home directory.
+
+#
+
+- **Introduction to Apache HBase**
+
+  - Scalable data store;
+
+  - It works with non-relational distributed database;
+
+  - It runs on top of HDFS;
+
+  - It supports compression, which basically lets you lower the network traffic and also the size of the disk;
+
+  - In-memory operations: MemStore and BlockCache.
+
+- **Features of the Apache HBase**
+
+  - Consistency (The transition of a table from one valid state to another happens directly without intermediate changes. So, the data won't disappear if you are doing an upgrade. This is important if you are looking at the consistency of what we are reading and what we are processing);
+
+  - High Availability (It provides a lot of mechanisms to make sure that your data is available, doing range partition of keys across servers and spreading out the keys across various regions of your data in HDFS. It keeps read-only copies of data in secondary regions);
+
+  - Automatic Sharding;
+
+  - Replication (You can do different modes of replication with HBase servers);
+
+  - Security;
+
+  - SQL-like access (Hive, Spark, Impala);
+
+#
+
+_HBase Example_
+
+- **Step 1:** Access HBase shell:
+
+`$ hbase shell`
+
+- **Step 2:** Create Table:
+
+`hbase(main):002:0> create 'userinfotable',{NAME=>'username'},{NAME=>'fullname'},{NAME=>'homedir'}`
+
+- **Step 3:** Add data:
+
+```
+hbase(main):002:0> put 'userinfotable','r1','username','vcsa'
+hbase(main):002:0> put 'userinfotable','r2','username','sasuser'
+hbase(main):002:0> put 'userinfotable','r3','username','postfix'
+hbase(main):002:0> put 'userinfotable','r1','fullname','VirtualMachine Admin'
+hbase(main):002:0> put 'userinfotable','r2','fullname','SAS Admin'
+hbase(main):002:0> put 'userinfotable','r3','fullname','Postfix User'
+hbase(main):002:0> put 'userinfotable','r1','homedir','/home/vcsa'
+hbase(main):002:0> put 'userinfotable','r2','homedir','/var/sasuser'
+hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
+```
+
+- **Step 4:** Scan table after data entry:
+
+`hbase(main):002:0> scan 'userinfotable'`
+
+- **Step 5:** Select info from all rows corresponding to column 'fullname'
+
+`hbase(main):002:0> scan 'userinfotable',{COLUMNS=>'fullname'}`
