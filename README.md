@@ -19,7 +19,14 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 - **Cisco CCNA Datacenter Concepts**
   - [Tips](ccnadc.md)
-  
+
+#
+
+## 5. Infrastructure as Code
+
+- **Vagrant**
+  - [Tips](vagrant.md)
+
 #
 
 ## 9. Cloud Providers
