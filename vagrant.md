@@ -35,6 +35,7 @@ end
 **OBS:** Common commands in Vagrant
 
 _$ Vagrant_
+
             - up
 
             - status
