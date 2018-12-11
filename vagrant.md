@@ -36,13 +36,23 @@ end
 
 _$ Vagrant_
             - up
+
             - status
+
             - halt
+
             - reload
+
             - provision
+
             - ssh
+
             - destroy
+
             - suspend
+
             - resume
+
             - reload --provision
+
             - provision --debug
