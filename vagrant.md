@@ -34,7 +34,7 @@ end
 
 **OBS:** Common commands in Vagrant
 
-_$ Vagrant_
+_$ vagrant_
 
             - up
 
