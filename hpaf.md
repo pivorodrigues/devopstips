@@ -636,3 +636,21 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 - **Step 5:** Select info from all rows corresponding to column 'fullname'
 
 `hbase(main):002:0> scan 'userinfotable',{COLUMNS=>'fullname'}`
+
+#
+
+### Introduction to Hadoop Distributed File System (HDFS)
+
+- **HDFS Architecture and Configuration**
+
+- **Overview of HDFS Architecture**
+
+  - **HDFS Design Concept**
+
+    - Scalable distributed filesystem;
+
+    - Distribute data on local disks on several nodes;
+
+    - Low cost commodity hardware.
+
+<p align="center"><img src="images/hdfs-design-concept.png" width="500px"></p>
