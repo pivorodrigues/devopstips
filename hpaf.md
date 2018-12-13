@@ -654,3 +654,8 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
     - Low cost commodity hardware.
 
 <p align="center"><img src="images/hdfs-design-concept.png" width="500px"></p>
+
+
+  - **HDFS Design Factors**
+
+    - 
