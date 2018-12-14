@@ -693,14 +693,12 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
 - **Summary of HDFS Architecture**
 
- - **Single NameNode:** a master server that manages the file system namespace and regulates access to files by clients.
+  - **Single NameNode:** a master server that manages the file system namespace and regulates access to files by clients.
 
- - **Multiple DataNodes:** tipically one per node in the cluster. Functions:
+  - **Multiple DataNodes:** tipically one per node in the cluster. Functions:
 
-  - Manage storage;
+    - Manage storage;
 
-  - Serving read/write requests from clients;
+    - Serving read/write requests from clients;
 
-  - Block creation, deletion, replication based on instructions from NameNode.
-
-   
+    - Block creation, deletion, replication based on instructions from NameNode.
