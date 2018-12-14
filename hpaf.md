@@ -658,4 +658,49 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
   - **HDFS Design Factors**
 
-    - 
+    - Hundreds/Thousands of nodes => Need to handle node/disk failures;
+
+    - Portability across heterogeneous hardware/ software;
+
+    - Handle large data sets;
+
+    - High throughput.
+
+
+  - **Aproach to meet HDFS design goals**
+
+    - Simplified coherency model - Write once read many. That simplifies the number of operations you have to do to commit the write;
+
+    - Data replication - Helps to handle hardware failures. So what you do is try to spread the data, same piece of data on different nodes;
+
+    - Move computation close to data - That improves your performance and throughput;
+
+    - Relax [POSIX](https://whatis.techtarget.com/definition/POSIX-Portable-Operating-System-Interface) requirements - increase throughput.
+
+#
+
+- **HDFS ARCHITECTURE**
+
+<p align="center"><img src="images/hdfsdesign.png" width="500px"></p>
+
+  - There is a Namenode which essentially carries all the MetaData;
+
+  - The data is spread out over DataNodes;
+
+  - If you have a file that gets broken up into blocks and these blocks are placed on the DataNodes, they're replicated among the DataNodes;
+
+#  
+
+- **Summary of HDFS Architecture**
+
+ - **Single NameNode:** a master server that manages the file system namespace and regulates access to files by clients.
+
+ - **Multiple DataNodes:** tipically one per node in the cluster. Functions:
+
+  - Manage storage;
+
+  - Serving read/write requests from clients;
+
+  - Block creation, deletion, replication based on instructions from NameNode.
+
+   
