@@ -660,7 +660,7 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
     - Hundreds/Thousands of nodes => Need to handle node/disk failures;
 
-    - Portability across heterogeneous hardware/ software;
+    - Portability across heterogeneous hardware/software;
 
     - Handle large data sets;
 
@@ -669,13 +669,13 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
   - **Aproach to meet HDFS design goals**
 
-    - Simplified coherency model - Write once read many. That simplifies the number of operations you have to do to commit the write;
+    - **Simplified coherency model** - Write once read many. That simplifies the number of operations you have to do to commit the write;
 
-    - Data replication - Helps to handle hardware failures. So what you do is try to spread the data, same piece of data on different nodes;
+    - **Data replication** - Helps to handle hardware failures. So what you do is try to spread the data, same piece of data on different nodes;
 
-    - Move computation close to data - That improves your performance and throughput;
+    - **Move computation close to data** - That improves your performance and throughput;
 
-    - Relax [POSIX](https://whatis.techtarget.com/definition/POSIX-Portable-Operating-System-Interface) requirements - increase throughput.
+    - **Relax [POSIX](https://whatis.techtarget.com/definition/POSIX-Portable-Operating-System-Interface) requirements** - increase throughput.
 
 #
 
@@ -702,3 +702,53 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
     - Serving read/write requests from clients;
 
     - Block creation, deletion, replication based on instructions from NameNode.
+
+#
+
+- **The HDFS Performance Envelope**
+
+  - **HDFS block size**
+
+    - Default block size is 64MB;
+
+    - Good for large files;
+
+    - So a 10GB file will be broken into: _10x1024/64 = 160 blocks_.
+
+  - **Importance of the number of blocks in a file**
+
+    - **Namenode memory usage:** Every block represented as object (default replication this will be further increased 3X);
+
+    - **Number of map tasks:** data tipically processed block at a time.
+
+  - **Large number of small files: Impact on the NameNode**
+
+    - **Memory usage:** circa 150 bytes per object. 1 billion object = 300GB memory!
+
+    - **Network Load:** number of checks with datanodes proportional to number of blocks;
+
+    - **Map Tasks:** depends on number of blocks. 10GB data, 32k file size = 327.680 map tasks;
+
+      - Lots of queued tasks;
+
+      - Large overhead of spin up/tear down for each task;
+
+      - Inneficient disk I/O with small sizes.
+
+      _So in all aspects, having too many map tasks is not good._
+
+    - **HDFS optimized for large files**
+
+      - **Key takeaway** - lots of small files is bad!
+
+      - Solutions:
+
+        - Merge/Concatenate files;
+
+        - Sequence files;
+
+        - HBase, HIVE configuration;
+
+        - CombineFileInputFormat.
+
+#        
