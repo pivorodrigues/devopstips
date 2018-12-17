@@ -67,7 +67,7 @@
 
 #
 
-<p align="center"><img src="images/tcp-dod.jpg" width="350px"></p>
+<p align="center"><img src="images/tcp-dod.jpg" width="500px"></p>
 
 #
 
@@ -76,7 +76,7 @@
 **IPv4** - 32 bits (4 octets)
 **IPv6** - 128 bits (8 field with 4 hexadecimal numbers)
 
-<p align="center"><img src="images/ipv4-ipv6.png" width="350px"></p>
+<p align="center"><img src="images/ipv4-ipv6.png" width="500px"></p>
 
 #
 
@@ -92,4 +92,4 @@
 
 _IPv4 Classes_
 
-<p align="center"><img src="images/ipv4-classes.png" width="350px"></p>
+<p align="center"><img src="images/ipv4-classes.png" width="500px"></p>
