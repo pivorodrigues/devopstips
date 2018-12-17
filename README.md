@@ -29,6 +29,15 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 #
 
+## 8. Software and Infrastructure Monitoring
+
+### 8.2 Application Monitoring
+
+- **New Relic**
+  - [Tips](newrelic.md)
+
+#
+
 ## 9. Cloud Providers
 
 ### **AWS**
