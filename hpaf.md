@@ -751,4 +751,10 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
         - CombineFileInputFormat.
 
-#        
+#
+
+- **Read/Write Processes in HDFS**
+
+  - **Write process in HDFS**
+
+    -

@@ -68,3 +68,28 @@
 #
 
 <p align="center"><img src="images/tcp-dod.jpg" width="350px"></p>
+
+#
+
+## IPv4 and IPv6 Addressing
+
+**IPv4** - 32 bits (4 octets)
+**IPv6** - 128 bits (8 field with 4 hexadecimal numbers)
+
+<p align="center"><img src="images/ipv4-ipv6.jpg" width="350px"></p>
+
+#
+
+## IPv4, Classes, VLSM and CIDR
+
+**VLSM** - Variable Lenght Subnet Mask
+
+**CIDR** - Classless Inter-Domain Routing
+
+**Classes** - Logical division of the IPv4's set
+
+#
+
+_IPv4 Classes_
+
+<p align="center"><img src="images/ipv4-classes.jpg" width="350px"></p>
