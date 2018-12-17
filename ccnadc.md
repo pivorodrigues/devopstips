@@ -93,3 +93,12 @@
 _IPv4 Classes_
 
 <p align="center"><img src="images/ipv4-classes.png" width="600px"></p>
+
+#
+
+## Classical Network Equipments
+
+- **Hubs** (Work in Layer 1)
+- **Bridges** (Work in Layer 2)
+- **Switches** (Work on Layer 2)
+- **Routers** (Work on Layer 3)
