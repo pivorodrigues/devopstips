@@ -765,6 +765,20 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
 <p align="center"><img src="images/hdfs_write_process_2.png" width="500px"></p>
 
-- NameNode responds with list of DataNodes / Rack Aware
+- NameNode responds with list of DataNodes / Rack Aware:
 
 <p align="center"><img src="images/hdfs_write_process_3.png" width="500px"></p>
+
+- First DataNode receives data, writes to local and forwards to second DataNode:
+
+<p align="center"><img src="images/hdfs_write_process_4.png" width="500px"></p>
+
+<p align="center"><img src="images/hdfs_write_process_5.png" width="500px"></p>
+
+- NameNode commits file creation into persistent store. Receives heartbeat and block reports:
+
+<p align="center"><img src="images/hdfs_write_process_6.png" width="500px"></p>
+
+- Client gets DataNode list from NameNode. Read from replica closest to reader:
+
+<p align="center"><img src="images/hdfs_write_process_7.png" width="500px"></p>
