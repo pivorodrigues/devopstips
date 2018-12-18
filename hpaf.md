@@ -757,4 +757,10 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
   - **Write process in HDFS**
 
-    -
+    - Client request to create file:
+
+<p align="center"><img src="images/hdfs_write_process_1.png" width="500px"></p>
+
+    - NameNode contacted once a block of data is accumulated:
+
+<p align="center"><img src="images/hdfs_write_process_2.png" width="500px"></p>    
