@@ -763,4 +763,8 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
 - NameNode contacted once a block of data is accumulated:
 
-<p align="center"><img src="images/hdfs_write_process_2.png" width="500px"></p>    
+<p align="center"><img src="images/hdfs_write_process_2.png" width="500px"></p>
+
+- NameNode responds with list of DataNodes / Rack Aware
+
+<p align="center"><img src="images/hdfs_write_process_3.png" width="500px"></p>
