@@ -43,7 +43,7 @@ http {
 
   - **Apache:** By default, Apache is configured in what's called prefork mode, meaning that had spawned a set number of processors, each of which can serve a single request at a time regardless of whether that request is for a PHP script or an image.
 
-  <p align="center"><img src="images/apache1.png" width="500px"></p>
+  <p align="center"><img src="images/apache1.png" width="400px"></p>
 
   - **NGINX:** NGINX deals with the requests asynchronously, meaning that a single NGINX process can serve multiple requests concurrently, with that number basically just depending on the system resources available to the NGINX process.
 
@@ -55,7 +55,7 @@ http {
 
   - **Apache:** Apache accepts a preconfigured number of requests, rejecting the rest.
 
-  <p align="center"><img src="images/apache2.png" width="400px"></p>
+  <p align="center"><img src="images/apache2.png" width="300px"></p>
 
   - **NGINX:** NGINX will serve static resources without the need to involve any server side languages. NGINX also can handle concurrent requests and potentially receive thousands of requests in a single processing thread, and respond to them as fast as it can without turning down any of those requests. These features make NGINX provides **faster static resources** and **higher concurrency** than Apache.  
 
