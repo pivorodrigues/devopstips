@@ -55,10 +55,10 @@ http {
 
   - **Apache:** Apache accepts a preconfigured number of requests, rejecting the rest.
 
-  <p align="center"><img src="images/apache2.png" width="700px"></p>
+  <p align="center"><img src="images/apache2.png" width="400px"></p>
 
   - **NGINX:** NGINX will serve static resources without the need to involve any server side languages. NGINX also can handle concurrent requests and potentially receive thousands of requests in a single processing thread, and respond to them as fast as it can without turning down any of those requests. These features make NGINX provides **faster static resources** and **higher concurrency** than Apache.  
 
-  <p align="center"><img src="images/nginx2.png" width="700px"></p>
+  <p align="center"><img src="images/nginx2.png" width="500px"></p>
 
 #
