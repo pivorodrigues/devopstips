@@ -40,3 +40,7 @@ http {
 #
 
 - **NGINX vs Apache**
+
+  - **Apache:** By default, Apache is configured in what's called prefork mode, meaning that had spawned a set number of processors, each of which can serve a single request at a time regardless of whether that request is for a PHP script or an image.
+
+  <p align="center"><img src="images/apache1.png" width="500px"></p>
