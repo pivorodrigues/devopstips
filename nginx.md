@@ -49,4 +49,7 @@ http {
 
       NGINX, unlike Apache, can't embed server side programming languages into its own processes, meaning that all requests for Dynamic Content has to be dealt with by a completely separate process like PHP-FPM *(FastCGI Process Manager)* and then reverse proxy back to the client via NGINX.
 
+
   <p align="center"><img src="images/nginx1.png" width="700px"></p>
+
+#
