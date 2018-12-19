@@ -757,7 +757,7 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
 **Write process in HDFS**
 
-- Client request to create file:
+- Client request to create file (With client side buffering/caching):
 
 <p align="center"><img src="images/hdfs_write_process_1.png" width="500px"></p>
 

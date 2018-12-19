@@ -22,16 +22,25 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 #
 
-## 5. Infrastructure as Code
+## 5. What is and how to setup a ______
+
+### 5.1. Web Server
+
+- **Nginx**
+  - [Tips](nginx.md)
+
+#
+
+## 6. Learn Infrastructure as Code
 
 - **Vagrant**
   - [Tips](vagrant.md)
 
 #
 
-## 8. Software and Infrastructure Monitoring
+## 8. Learn how to monitor software and infrastructure
 
-### 8.2 Application Monitoring
+### 8.2. Application Monitoring
 
 - **New Relic**
   - [Tips](newrelic.md)
