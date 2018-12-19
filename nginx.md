@@ -1,11 +1,11 @@
-# Nginx Fundamentals
+# NGINX Fundamentals
 
 *Based on the Udemy´s course - [Nginx Fundamentals - High Performance Servers from Scratch]*
 (https://www.udemy.com/nginx-fundamentals/)
 
 #
 
-## 1. About Nginx
+## 1. About NGINX
 
 - High Performance :truck:;
 
@@ -36,3 +36,7 @@ http {
     }
 }
 ```
+
+#
+
+- **NGINX vs Apache**
