@@ -805,7 +805,7 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
 - **HDFS Replication**
 
-  - Default replication is 3;
+  - Default replication is **3**;
 
   - Parameter: _dfs.replication_;
 
@@ -826,3 +826,21 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
     - dfs.namenodes.fs-limits.max-blocks-per-file: _Maximum number of blocks per file_.
 
 **Full list:** http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/hdfs-default.xml
+
+#
+
+**HDFS Performance and Robustness**
+
+- **Common Failures**
+
+  - _DataNode Failures:_ Server can fail, disk can crash, data corruption;
+
+  - _Network Failures_;
+
+  - _NameNode Failures:_ Disk failure, node failure;
+
+- **HDFS Robustness**
+
+  - NameNode receives heartbeat and block reports from DataNodes.
+
+<p align="center"><img src="images/hdfsrobustness.png" width="500px"></p>
