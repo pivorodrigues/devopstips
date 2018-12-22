@@ -789,13 +789,13 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
 **HDFS Tuning Parameters**
 
-- HDFS configuration file
+- **HDFS configuration file**
 
   - Parameters are in _hdfs-site.xml_;
 
   - Commercial vendors have GUI based management consoles to make changes.
 
-- HDFS Block Size
+- **HDFS Block Size**
 
   - Impacts NameNode memory, number of map tasks and hence performance;
 
@@ -803,7 +803,7 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
   - dfs.blocksize or dfs.block.size _(Size parameters to be changed)_.
 
-- HDFS Replication
+- **HDFS Replication**
 
   - Default replication is 3;
 
@@ -819,7 +819,7 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
     - Lower replication **=>** more space;
 
-- HDFS most important parameters
+- **HDFS most important parameters**
 
     - dfs.datanode.handler.count(10): _Sets the number of server threads on each datanode_;
 
