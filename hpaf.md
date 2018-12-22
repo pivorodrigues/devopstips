@@ -844,3 +844,11 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
   - NameNode receives heartbeat and block reports from DataNodes.
 
 <p align="center"><img src="images/hdfsrobustness.png" width="500px"></p>
+
+- **Mitigation of common failures**
+
+  - _Checksum computed_ on file creation;
+
+  - _Checksums stored in HDFS namespace_;
+
+  - Used to check retrieved data. _Re-read from alternate replica need_.
