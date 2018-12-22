@@ -782,3 +782,47 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 - Client gets DataNode list from NameNode. Read from replica closest to reader:
 
 <p align="center"><img src="images/hdfs_write_process_7.png" width="500px"></p>
+
+#
+
+**HDFS Performance and Tuning**
+
+**HDFS Tuning Parameters**
+
+- HDFS configuration file
+
+  - Parameters are in _hdfs-site.xml_;
+
+  - Commercial vendors have GUI based management consoles to make changes.
+
+- HDFS Block Size
+
+  - Impacts NameNode memory, number of map tasks and hence performance;
+
+  - 64MB is the default. Can be changed in the workloads. Typically bumped up to 128MB;
+
+  - dfs.blocksize or dfs.block.size _(Size parameters to be changed)_.
+
+- HDFS Replication
+
+  - Default replication is 3;
+
+  - Parameter: _dfs.replication_;
+
+  - Tradeoffs:
+
+    - Lower it to reduce replication cost;
+
+    - Less robust;
+
+    - Higher replication can make data local to more workers;
+
+    - Lower replication **=>** more space;
+
+- HDFS most important parameters
+
+    - dfs.datanode.handler.count(10): _Sets the number of server threads on each datanode_;
+
+    - dfs.namenodes.fs-limits.max-blocks-per-file: _Maximum number of blocks per file_.
+
+**Full list:** http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/hdfs-default.xml
