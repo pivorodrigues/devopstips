@@ -922,3 +922,13 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
   - HBase is a good example of an application that runs on top of HDFS with good integration;
 
   - Spark can run directly on HDFS without other Hadoop components.
+
+#
+
+**HDFS Commands**
+
+- **HDFS User Commands:**
+
+  - List files in /: `$ hdfs dfs -ls /`
+
+  - 
