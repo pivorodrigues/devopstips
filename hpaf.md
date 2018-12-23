@@ -931,4 +931,16 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
   - List files in /: `$ hdfs dfs -ls /`
 
-  - 
+  - Make a directory: `$ hdfs dfs -mkdir /user/test`
+
+  - Create a local file: `$ dd if=/dev/urandom of=sample.txt bs=64M count=16` _(Creates 1GB file called sample.txt on the local filesystem)_
+
+  - Copy the created file to the user's directory in HDFS: `$ hdfs dfs -put sample.txt /user/test`
+
+  - List the copied file in HDFS: `$ hdfs dfs -ls /user/test/sample.txt`
+
+  _OBS1: Whatever files created in the quickstart (with dd command) aren't in HDFS, they are on a local file system on the node. So, we have to activate port tagging to the HDFS file system. The command to do that is: $ hdfs dfs -put sample.txt._
+
+  _OBS2: The number after the permissions in file list, shows the file replication, as we can see in the image above:_
+
+  <p align="center"><img src="images/filereplication.png" width="500px"></p>
