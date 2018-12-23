@@ -956,3 +956,41 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
   - Summary report: `$ hdfs dfsadmin -report`
 
 #
+
+**Native Java API for HDFS**
+
+- **FSDataInputStream Methods**
+
+  - _read_: read bytes;
+
+  - _readFully_: read from stream to buffer;
+
+  - _seek_: seek to given offset;
+
+  - _getPos_: get current position in stream.
+
+- **FSDataOutputStream Methods**
+
+  - _getPos_: get current position in stream;
+
+  - _hflush_: flush out the data in client's user buffer;
+
+  - _close_: close the underlying output stream.
+
+- **Reading from HDFS using API**
+
+  - _get_ an instance of FileSystem:
+
+    `FileSystem fs = FileSystem.get(URI.create(uri),conf);`
+
+  - _Open_ an input stream:
+
+    `in = fs.open(new Path(uri));`
+
+  - Use IO utilities to _copy_ from input stream:
+
+    `IOUtils.copyBytes(in, System.out,4096,false);`
+
+  - Close the stream:
+
+    `IOUtils.closeStream(in);`
