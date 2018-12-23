@@ -852,3 +852,21 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
   - _Checksums stored in HDFS namespace_;
 
   - Used to check retrieved data. _Re-read from alternate replica need_.
+
+  - Multiple copies of central metadata structures;
+
+  - Failover to standby NameNode - manual by default.
+
+- **Performance**
+
+  - Changing blocksize and replication factor can improve performance;
+
+  - Hadoop distcp allows parallel transfer of files.
+
+- **Replication trade offs w.r.t robustness**
+
+  - Reducing replication has a trade off w.r.t robustness:
+
+    - Might lose a node or local disk during the run - _cannot recover if there is no replication_;
+
+    - If there is data corruption of a block from one of the datanodes - _again, cannot recover without replication_.
