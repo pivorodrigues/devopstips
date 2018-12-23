@@ -994,3 +994,21 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
   - Close the stream:
 
     `IOUtils.closeStream(in);`
+
+- **Writing to HDFS using API**
+
+  - _get_ an instance of FileSystem:
+
+    `FileSystem fs = FileSystem.get(URI.create(outuri),conf);`
+
+  - _Create_ a file:
+
+    `out = fs.create(new Path(outuri));`
+
+  - Write to output stream:
+
+    `out.write(buffer, 0, nbytes);`
+
+  - Close the file:
+
+    `out.close()`
