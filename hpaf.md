@@ -941,6 +941,6 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
   _OBS1: Whatever files created in the quickstart (with dd command) aren't in HDFS, they are on a local file system on the node. So, we have to activate port tagging to the HDFS file system. The command to do that is: $ hdfs dfs -put sample.txt._
 
-  _OBS2: The number after the permissions in file list, shows the file replication, as we can see marked in red in the image above:_
+  _OBS2: The number after the permissions in file list, shows the file replication, as we can see marked in red in the image below:_
 
   <p align="center"><img src="images/filereplication.png" width="500px"></p>
