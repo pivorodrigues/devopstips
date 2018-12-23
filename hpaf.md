@@ -870,3 +870,55 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
     - Might lose a node or local disk during the run - _cannot recover if there is no replication_;
 
     - If there is data corruption of a block from one of the datanodes - _again, cannot recover without replication_.
+
+#
+
+**HDFS Access, Commands, APIs and Applications**
+
+- **Overview of HDFS Access, APIs and Applications**
+
+- **HDFS Commands**
+
+  - Invoked via bin/hdfs script;
+
+  - User commands - filesystem shell commands for routine operations;
+
+  - Administrator commands;
+
+  - Debug commands;
+
+  - Details at: https://hadoop.apache.org/docs/current//hadoop-project-dist/hadoop-hdfs/HDFSCommands.html
+
+- **Application programming interfaces**
+
+  - **Native Java API:** Base class org.apache.hadoop.fs.FileSystem;
+
+  - **C API for HDFS:** libhdfs, header file (hdfs.h);
+
+  - **WebHDFS REST API:** HTTP, Get, Put, Post and Delete operations.
+
+- **HDFS NFS Gateway**
+
+  - Mount HDFS as a filesystem on the client;
+
+  - Browse files using regular filesystem commands;
+
+  - Upload/Download files from HDFS;
+
+  - Stream data to HDFS.
+
+- **Several other options!**
+
+  - **Apache Flume:** collecting, aggregating streaming data and moving into HDFS;
+
+  - **Apache Sqoop:** Bulk transfer between Hadoop and datastores.
+
+- **Applications using HDFS**
+
+  - Can use API to interact with HDFS;
+
+  - Core component of Hadoop Stack - used by all applications;
+
+  - HBase is a good example of an application that runs on top of HDFS with good integration;
+
+  - Spark can run directly on HDFS without other Hadoop components.
