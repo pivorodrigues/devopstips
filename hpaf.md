@@ -949,4 +949,10 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
   - User commands:
 
-  <p align="center"><img src="images/usercommands.png" width="500px"></p>  
+  <p align="center"><img src="images/usercommands.png" width="500px"></p>
+
+- **HDFS Administrator Commands**
+
+  - Summary report: `$ hdfs dfsadmin -report`
+
+#
