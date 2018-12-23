@@ -944,3 +944,9 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
   _OBS2: The number after the permissions in file list, shows the file replication, as we can see marked in red in the image below:_
 
   <p align="center"><img src="images/filereplication.png" width="500px"></p>
+
+  - HDFS fsck: `$ hdfs fsck /user/test/sample.txt` _(This command is not like linux's hdfs. It shows you the file information in HDFS)_
+
+  - User commands:
+
+  <p align="center"><img src="images/usercommands.png" width="500px"></p>  
