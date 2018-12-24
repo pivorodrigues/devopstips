@@ -1012,3 +1012,68 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
   - Close the file:
 
     `out.close()`
+
+- **REST API for HDFS**
+
+  - **Enabling WebHDFS**
+
+    - In _hdfs-site.xml_
+
+      - dfs.webhdfs.enabled
+
+      - dfs.webhdfs.authentication.kerberos.principal
+
+      - dfs.webhdfs.authentication.kerberos.keytab  
+
+  - **Accessing hdfs-site.xml**
+
+      - Command: `$ more /etc/hadoop/conf/hdfs-site.xml`
+
+  - _Example of dfs.webhdfs.enable configuration inside the /etc/haddop/conf/hdfs-site.xml)_
+
+  ```
+  <property>
+     <name>dfs.webhdfs.enabled</name>
+     <value>true</value>
+  </property>
+  ```
+
+- **Authentication**
+
+  - If security is off:
+
+  `$ curl -i "http://<HOST>:<PORT>/webhdfs/v1/<PATH>?[user.name=<USER>&]op=..."`
+
+  - Security on with Kerberos:
+
+  `$ curl -i --negotiate -u : "http://<HOST>:<PORT/webhdfs/v1/<PATH>?op=..."`
+
+  - Security on using Hadoop delegation token:
+
+  `$ curl -i "http://<host>:<port>/webhdfs/v1/<PATH>?delegation=<TOKEN>&op=..."`
+
+- **HTTP GET Requests**
+
+  `$ curl -i "http://quickstart.cloudera:14000/webhdfs/v1/user/cloudera?user.name=cloudera&op=GETFILESTATUS"`
+
+- **HTTP PUT Requests**
+
+  `$ curl -i -X PUT "http://quickstart.cloudera:14000/webhdfs/v1/user/test?user.name=cloudera&op=MKDIRS&permission=755"`
+
+- **HTTP GET request on status**
+
+  `$ dd if=/dev/urandom of=sample.txt bs=64M count=16`
+
+  `$ hdfs dfs -put sample.txt /user/test/`
+
+  `$ curl -i "http://quickstart.cloudera:14000/wehdfs/v1/user/test?user.name=cloudera&op=GETCONTENTSUMMARY"`
+
+- **HTTP Operations**
+
+  - _HTTP GET:_ file status, checksums, attributes;
+
+  - _HTTP PUT:_ create, change ownership, rename, permissions, snapshot;
+
+  - _HTTP POST:_ append, concatenate;
+
+  - _HTTP DELETE:_ delete files, snapshot.
