@@ -1077,3 +1077,13 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
   - _HTTP POST:_ append, concatenate;
 
   - _HTTP DELETE:_ delete files, snapshot.
+
+- _Resources:_
+
+  - Commands:https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HDFSCommands.html
+
+  - JAVA API: http://hadoop.apache.org/docs/current/api/org/apache/hadoop/fs/FileSystem.html
+
+  - C/libhdfs: https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/LibHdfs.html
+
+  - WebHDFS API:https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/WebHDFS.html
