@@ -1087,3 +1087,27 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
   - C/libhdfs: https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/LibHdfs.html
 
   - WebHDFS API:https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/WebHDFS.html
+
+#
+
+### Introduction to Map/Reduce
+
+**Introduction Map/Reduce**
+
+- **The Problem:** Big data means lots of hard drives.
+
+- **The Solution:** Lots of data means we should bring computation to data.
+
+#
+
+- **The Problem:** Lots of disks.
+
+- **Possibility 1:** Data needs updating, so:
+
+<p align="center"><img src="images/mr1.png" width="500px"></p>
+
+- **Possibility 2:** Need to sweep through data, so:
+
+<p align="center"><img src="images/mr2.png" width="500px"></p>
+
+#
