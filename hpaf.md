@@ -1111,3 +1111,31 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 <p align="center"><img src="images/mr2.png" width="500px"></p>
 
 #
+
+**The Map/Reduce Framework**
+
+- **The Framework:**
+
+  - **User defines:**
+
+    - A. <key, value>
+
+    _Explanation: All our data is gonna be placed into key-value pairs. We could think of it as that a key-value pair is gonna become our basic unit of data and our unit of analysis._
+
+    - B. Mapper and Reduce functions
+
+    _Explanation: The user has to specify mapper and reducer functions. The mapper is the function that applied to the data, and the reducer is the function that is applied to the intermediate results that is gonna come from Hadoop._
+
+  - **Hadoop handles the logistics:**
+
+    _Explanation: Hadoop handles all the logistics of parallel execution, of the map and reduce functions, producing the intermediate results and communicating those results to the reducers._
+
+  - **The Logistics:**
+
+    - Hadoop handles the distribution and execution:
+
+    _Explanation: Hadoop distributes the map functions to the data. Hadoop shuffles and groups data according to the key-value pairs. All pairs with the same key are grouped together and passed to the same reducer._
+
+  - **Map/Reduce Flow**
+
+    - User defines a map function:
