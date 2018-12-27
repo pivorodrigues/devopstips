@@ -1092,7 +1092,7 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
 ### Introduction to Map/Reduce
 
-**Introduction Map/Reduce**
+**Introduction to Map/Reduce:**
 
 - **The Problem:** Big data means lots of hard drives.
 
