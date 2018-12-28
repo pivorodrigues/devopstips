@@ -1142,8 +1142,30 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
       - _map()_
 
-    - The function _map()_ reads data and outputs _<key,value>_:
+    - The _map()_ function reads data and outputs _<key,value>_:
 
-      - _The function will read in the data and output a key-value pair._
+      - _The map function will read in the data and output a key-value pair._
 
-<p align="center"><img src="images/key-value.png" width="500px"></p>      
+<p align="center"><img src="images/key-value.png" width="500px"></p>
+
+    - User defines a reduce function:
+
+      - _reduce()_
+
+    - The _reduce()_ function reads _<key,value>_ and outputs your result:
+
+      - _The reduce function is built to read in the key-value pair and output a result._
+
+<p align="center"><img src="images/key-value-reduce.png" width="500px"></p>
+
+    - Hadoop distributes data map() to data:
+
+<p align="center"><img src="images/maptodata.png" width="500px"></p>
+
+    - Haddop groups <key,value> data:
+
+<p align="center"><img src="images/hadoopgroups.png" width="500px"></p>
+
+    - Hadoop distributes groups to reducers():
+
+<p align="center"><img src="images/groupstoreducers.png" width="500px"></p>
