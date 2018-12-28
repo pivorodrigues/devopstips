@@ -1139,3 +1139,11 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
   - **Map/Reduce Flow**
 
     - User defines a map function:
+
+      - _map()_
+
+    - The function _map()_ reads data and outputs _<key,value>_:
+
+      - _The function will read in the data and output a key-value pair._
+
+<p align="center"><img src="images/key-value.png" width="500px"></p>      
