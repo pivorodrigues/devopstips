@@ -1148,24 +1148,24 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
 <p align="center"><img src="images/key-value.png" width="500px"></p>
 
-    - User defines a reduce function:
+- User defines a reduce function:
 
-      - _reduce()_
+  - _reduce()_
 
-    - The _reduce()_ function reads _<key,value>_ and outputs your result:
+- The _reduce()_ function reads _<key,value>_ and outputs your result:
 
-      - _The reduce function is built to read in the key-value pair and output a result._
+  - _The reduce function is built to read in the key-value pair and output a result._
 
 <p align="center"><img src="images/key-value-reduce.png" width="500px"></p>
 
-    - Hadoop distributes data map() to data:
+- Hadoop distributes data map() to data:
 
 <p align="center"><img src="images/maptodata.png" width="500px"></p>
 
-    - Haddop groups <key,value> data:
+- Haddop groups <key,value> data:
 
 <p align="center"><img src="images/hadoopgroups.png" width="500px"></p>
 
-    - Hadoop distributes groups to reducers():
+- Hadoop distributes groups to reducers():
 
 <p align="center"><img src="images/groupstoreducers.png" width="500px"></p>
