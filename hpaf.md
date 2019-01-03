@@ -1209,3 +1209,29 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 - Mappers: simple and separable;
 
 - Reducers: easy consolidation.
+
+#
+
+**MapReduce: Trending Wordcount (Example)**
+
+- Twitter Data: date, message, location... [other metadata]
+
+  - **Task1:** Get word count by day;
+
+  - **Task2:** Get total word count.
+
+- _Solutions:_
+
+  - **Task1:**
+
+    - Get word count by day;
+
+    - Design: Use composite key;
+
+    - Map/Reduce: <date word, count>.
+
+  - **Task2:**
+
+    - Get total word count;
+
+    - Easy way: re-use the previous wordcount.    
