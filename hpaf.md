@@ -1169,3 +1169,43 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 - Hadoop distributes groups to reducers():
 
 <p align="center"><img src="images/groupstoreducers.png" width="500px"></p>
+
+#
+
+**Map/Reduce Examples and Principles**
+
+**Recall the framework**
+
+- User defines <key, value>, mapper and reducer;
+
+<p align="center"><img src="images/map-reduce.png" width="500px"></p>
+
+- Hadoop handles the logistics _(Parallelization, shuffling and grouping of key value pairs)_.
+
+<p align="center"><img src="images/hadoop-logistics.png" width="500px"></p>
+
+**Hadoop rule of thumb**
+
+- 1 mapper per data split (tipically);
+
+- 1 reducer per computer core (best parallelism).
+
+**Wordcount strategy**
+
+- Let <word, 1> be the <key, value>;
+
+- Simple mapper and reducer;
+
+- Hadoop did the hard work of shuffling and grouping.
+
+**Good key-value properties**
+
+- Simple;
+
+- Enables reducers to get correct output.
+
+**Good task decomposition**
+
+- Mappers: simple and separable;
+
+- Reducers: easy consolidation.
