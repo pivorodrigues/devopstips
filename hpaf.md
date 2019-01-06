@@ -1444,14 +1444,14 @@ _We can put that date information into the value part of the field and let Hadoo
 
   - Trade-offs:
 
-    ```
-      If:
-          size of (N/R) is high
-      Then:
-          shuffle costs are also high
-      But:
-          reducer complexity is lower  
-    ```
+  ```
+    If:
+        size of (N/R) is high
+    Then:
+        shuffle costs are also high
+    But:
+        reducer complexity is lower  
+  ```
 
 - **Vector to Matrices**
 
