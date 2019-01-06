@@ -1337,3 +1337,21 @@ _We can put that date information into the value part of the field and let Hadoo
   - Reducer now can join the data and put date back into key:
 
 <p align="center"><img src="images/reducer-join.png" width="400px"></p>
+
+#
+
+**MapReduce Example: Vector Multiplication**
+
+- Task: Multiply 2 arrays of _N_ numbers:
+
+  - A basic mathematical operation;
+
+  - Let's assume _N_ is very large.
+
+<p align="center"><img src="images/vectors.png" width="400px"></p>
+
+<p align="center"><img src="images/data-partitioned.png" width="400px"></p>
+
+- Main design consideration: need elements with same index together:
+
+  - _Let <key, value> = <index, number>_
