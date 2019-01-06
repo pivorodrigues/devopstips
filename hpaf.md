@@ -1442,7 +1442,7 @@ _We can put that date information into the value part of the field and let Hadoo
       Then: N/R<N (less shuffling to do)
     ```
 
-  - Tradeoffs:
+  - Trade-offs:
 
     ```
       If:
@@ -1461,4 +1461,56 @@ _We can put that date information into the value part of the field and let Hadoo
 
 #
 
-  
+**MapReduce Summary**
+
+- **Task Decomposition**
+
+  - Mappers are separate and independent;
+
+  - Mappers work on data parts;
+
+- **Design Considerations**
+
+  - \<key, value\> must enable correct output;
+
+  - Let Hadoop do the hard work;
+
+  - Trade-offs;
+
+  - Programming > Hadoop;
+
+  - Common mappers:
+
+    - Filter (subset data);
+
+    - Identity (just pass data);
+
+    - Splitter (as for counting);
+
+  - Composite \<keys\>;
+
+  - Extra info in <values>;
+
+  - Cascade Map/Reduce jobs;
+
+  - Bin keys into ranges;
+
+  - Aggregate map output when possible (combiner option);
+
+- **Potential Limitations of Map/Reduce**
+
+  - Must fit \<key, value\>;
+
+  - Map/Reduce data nor persistent;
+
+  - Requires programming/debugging;
+
+  - Not interactive;
+
+- **Beyond Map/Reduce**
+
+  - Data access tools (Pig HIVE);
+
+    - SQL like syntax;
+
+  - Interactivity and Persistency (Spark);
