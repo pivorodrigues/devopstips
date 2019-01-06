@@ -1381,3 +1381,9 @@ _We can put that date information into the value part of the field and let Hadoo
 <p align="center"><img src="images/vectormult6.png" width="400px"></p>
 
 #
+
+**Computacional Costs of Vector Multiplication**
+
+- **For Vector Multiplication**
+
+  - How many \<index, number\> are output from map()?
