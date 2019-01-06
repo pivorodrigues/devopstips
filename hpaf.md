@@ -1387,3 +1387,78 @@ _We can put that date information into the value part of the field and let Hadoo
 - **For Vector Multiplication**
 
   - How many \<index, number\> are output from map()?
+
+  ```
+    For: 2 Vectors with
+         N indices each
+
+    Then:
+         2N <index, number>
+         are output from map()  
+  ```         
+
+  - How many \<index\> groups have to be shuffled by Hadoop?
+
+  ```
+    For: 2N indices and
+         N pairs
+
+    Then:
+         N groups are shuffled to
+         reducers.
+  ```
+
+  _OBS: The actual cost of this operation is gonna depend on how Hadoop partitions the data, how many reducers there are, how many computer nodes there are and the communication cost between computer nodes, for example._
+
+  - Can we reduce shuffling cost?
+
+    - Try: combine map indices in mapper. _(works better for Wordcount)_
+
+    - Or try: use index ranges of lenght R. _(Re-number the indices into bins)_
+
+  _Explanation:_
+
+  - For example, let R=10 and bin the array indices:
+
+  1. Let's say we bin the indices into ranges of lenght ten. We start with the original _N_ keys.
+
+  2. We put each set of ten ranges into a bin, then we use the bins as the key.
+
+  3. So now, instead of _N_ indices, now there are N/10 indices.
+
+  4. The new key is now the index bin number and the original index number can be put into the value field to be used later.
+
+  5. Bin one from vector A will still group with bin one from vector B and reduce will still be able to finish the multiplication by using the original indexes that are now part of the value field.
+
+<p align="center"><img src="images/binindices.png" width="400px"></p>
+
+    - Now shuffling costs depend on N/R groups. Now we can rewrite the shuffling cost using N divided by B.
+
+    ```
+      If: R=1
+      Then: N/R=N groups (same as before)
+
+      If: R>1
+      Then: N/R<N (less shuffling to do)
+    ```
+
+  - Tradeoffs:
+
+    ```
+      If:
+          size of (N/R) is high
+      Then:
+          shuffle costs are also high
+      But:
+          reducer complexity is lower  
+    ```
+
+- **Vector to Matrices**
+
+  - Matrix multiplication needs row-index and col-index in the keys;
+
+  - Matrix multiplication more pertinent to data analytic topics;
+
+#
+
+  
