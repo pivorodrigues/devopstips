@@ -1234,4 +1234,42 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
     - Get total word count;
 
-    - Easy way: re-use the previous wordcount.    
+    - Easy way: re-use the previous wordcount.
+
+#
+
+**MapReduce Example: Joining Data**
+
+- _Task:_ combine datasets by key
+
+  - A standard data management function;
+
+  - In pseudo SQL:
+
+    `Select * from table A, table B, where A.key=B.key`
+
+  - Joins can be inner, left or right outer. _(We will consider the inner join, where only matching cases are selected for retrieval. Meaning, matching cases in both the first table or in the second table.)_
+
+#
+
+- _Task:_ given two wordcount datasets...
+
+  - **File A: <word, total-count>** _(Total Wordcount)_
+
+<p align="center"><img src="images/filea-totalwordcount.png" width="500px"></p>
+
+  - **File B: <date word, day-count>** _(Wordcount by date word combinantion)_
+
+<p align="center"><img src="images/fileb-datewordcombinantion.png" width="500px"></p>
+
+#
+
+- _Task:_ combine by word
+
+  - **File A: <word, total-count> File B: <date word, day-count>**
+
+<p align="center"><img src="images/combinebyword.png" width="500px"></p>
+
+  - Result wanted: **File AjoinB: <word date, day-count total-count>**
+
+<p align="center"><img src="images/resultwanted.png" width="500px"></p>  
