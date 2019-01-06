@@ -1284,11 +1284,11 @@ _Keep in mind that the info you need could be spread out over different parts. S
 
 - **Key-Value and Task Decomposition**
 
-  - Main design consideration:
+- Main design consideration:
 
   _Join depends on word (e.g. Select * where A.word=b.word)_
 
-  - For the join:
+- For the join:
 
     - Let \<key\> = word
 
@@ -1298,10 +1298,16 @@ _Keep in mind that the info you need could be spread out over different parts. S
 
     _The mapper should set the word to be the key._
 
-    - Note:
+- Note:
 
 <p align="center"><img src="images/wordalreadythekey.png" width="500px"></p>
 
 <p align="center"><img src="images/datafilteredout.png" width="500px"></p>
 
 <p align="center"><img src="images/shoulddate.png" width="500px"></p>
+
+_We can put that date information into the value part of the field and let Hadoop just carry that extra information._
+
+<p align="center"><img src="images/valuefield.png" width="500px"></p>
+
+-
