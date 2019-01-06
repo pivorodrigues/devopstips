@@ -1272,4 +1272,36 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
 - Result wanted: **File AjoinB: <word date, day-count total-count>**
 
-<p align="center"><img src="images/resultwanted.png" width="400px"></p>  
+<p align="center"><img src="images/resultwanted.png" width="400px"></p>
+
+#
+
+- **Recall that data is split in parts**
+
+_Keep in mind that the info you need could be spread out over different parts. Specially when this is a large dataset. How do we gather the right pieces of data to produce the joint output?_
+
+<p align="center"><img src="images/datasplit.png" width="500px"></p>
+
+- **Key-Value and Task Decomposition**
+
+  - Main design consideration:
+
+  _Join depends on word (e.g. Select * where A.word=b.word)_
+
+  - For the join:
+
+    - Let <key> = word
+
+    - Let <value> = other info
+
+    <word, ...>
+
+    _The mapper should set the word to be the key._
+
+    - Note:
+
+<p align="center"><img src="images/wordalreadythekey.png" width="500px"></p>
+
+<p align="center"><img src="images/datafilteredout.png" width="500px"></p>
+
+<p align="center"><img src="images/shoulddate.png" width="500px"></p>
