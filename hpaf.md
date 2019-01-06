@@ -1320,7 +1320,7 @@ _We can put that date information into the value part of the field and let Hadoo
 
   - **File A: <word, total-count> File B_new: <word, date day-count>**
 
-<p align="center"><img src="images/hadoopshuffle.png" width="400px"></p>
+<p align="center"><img src="images/hadoop-shuffle.png" width="400px"></p>
 
   - Let's focus on 1 key:
 
@@ -1337,5 +1337,3 @@ _We can put that date information into the value part of the field and let Hadoo
   - Reducer now can join the data and put date back into key:
 
 <p align="center"><img src="images/reducer-join.png" width="400px"></p>
-
-  
