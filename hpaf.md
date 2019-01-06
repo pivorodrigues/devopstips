@@ -1290,9 +1290,9 @@ _Keep in mind that the info you need could be spread out over different parts. S
 
   - For the join:
 
-    - Let <key> = word
+    - Let \<key\> = word
 
-    - Let <value> = other info
+    - Let \<value\> = other info
 
     <word, ...>
 
