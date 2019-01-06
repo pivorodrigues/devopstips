@@ -1310,4 +1310,32 @@ _We can put that date information into the value part of the field and let Hadoo
 
 <p align="center"><img src="images/valuefield.png" width="500px"></p>
 
--
+- Now data sets are:
+
+  - **File A: <word, total-count> File B_new: <word, date count>**
+
+<p align="center"><img src="images/newdatasets.png" width="500px"></p>
+
+- How will Hadoop shuffle and group these?
+
+  - **File A: <word, total-count> File B_new: <word, date day-count>**
+
+<p align="center"><img src="images/hadoopshuffle.png" width="400px"></p>
+
+  - Let's focus on 1 key:
+
+<p align="center"><img src="images/1key.png" width="400px"></p>
+
+  - Hadoop gathers the data for a join:
+
+<p align="center"><img src="images/gathers-join.png" width="400px"></p>
+
+  - Reducer now has all the data for same word grouped together:
+
+<p align="center"><img src="images/reducer-grouped.png" width="400px"></p>
+
+  - Reducer now can join the data and put date back into key:
+
+<p align="center"><img src="images/reducer-join.png" width="400px"></p>
+
+  
