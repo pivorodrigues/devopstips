@@ -1272,4 +1272,4 @@ hbase(main):002:0> put 'userinfotable','r3','homedir','/user/postfix'
 
 - Result wanted: **File AjoinB: <word date, day-count total-count>**
 
-<p align="center"><img src="images/resultwanted.png" width="500px"></p>  
+<p align="center"><img src="images/resultwanted.png" width="400px"></p>  
