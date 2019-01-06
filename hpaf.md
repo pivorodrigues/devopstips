@@ -1489,7 +1489,7 @@ _We can put that date information into the value part of the field and let Hadoo
 
   - Composite \<keys\>;
 
-  - Extra info in <values>;
+  - Extra info in \<values\>;
 
   - Cascade Map/Reduce jobs;
 
