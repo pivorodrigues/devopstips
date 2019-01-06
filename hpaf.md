@@ -1432,15 +1432,15 @@ _We can put that date information into the value part of the field and let Hadoo
 
 <p align="center"><img src="images/binindices.png" width="400px"></p>
 
-    - Now shuffling costs depend on N/R groups. Now we can rewrite the shuffling cost using N divided by B.
+- Now shuffling costs depend on N/R groups. Now we can rewrite the shuffling cost using N divided by B.
 
-    ```
-      If: R=1
-      Then: N/R=N groups (same as before)
+  ```
+    If: R=1
+    Then: N/R=N groups (same as before)
 
-      If: R>1
-      Then: N/R<N (less shuffling to do)
-    ```
+    If: R>1
+    Then: N/R<N (less shuffling to do)
+  ```
 
   - Trade-offs:
 
