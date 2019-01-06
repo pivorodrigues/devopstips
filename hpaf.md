@@ -1355,3 +1355,29 @@ _We can put that date information into the value part of the field and let Hadoo
 - Main design consideration: need elements with same index together:
 
   - _Let <key, value> = <index, number>_
+
+- **Problem:** array partitions don't have an index. The files are just NUMBERS!!!
+
+  - Hadoop MapReduce implementation does have some ways to get extra information from the **execution environment** or from the **configuration settings**;
+
+<p align="center"><img src="images/environment-information.png" width="400px"></p>
+
+  - That information is available to the mapper with special function calls. This extra information can be passed along in the key value output, or it can be used as a side effect in which the mapper puts some data outside the Hadoop system;
+
+<p align="center"><img src="images/info-mapreduce.png" width="400px"></p>
+
+- _Example:_
+
+<p align="center"><img src="images/vectormult1.png" width="400px"></p>
+
+<p align="center"><img src="images/vectormult2.png" width="400px"></p>
+
+<p align="center"><img src="images/vectormult3.png" width="400px"></p>
+
+<p align="center"><img src="images/vectormult4.png" width="400px"></p>
+
+<p align="center"><img src="images/vectormult5.png" width="400px"></p>
+
+<p align="center"><img src="images/vectormult6.png" width="400px"></p>
+
+#
