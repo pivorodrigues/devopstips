@@ -1522,3 +1522,29 @@ _We can put that date information into the value part of the field and let Hadoo
 **Introduction to Hadoop Spark**
 
   - **Shortcomings of MapReduce**
+
+    - _Force your pipeline into Map/Reduce steps:_ Everytime you implement a workflow in MapReduce, you have to force your data analysis workflow into a map and a reduce phase. Sometimes, this cannot accommodate every data analysis workflow.
+
+    - _Read from disk for each MapReduce job:_ MapReduce relies heavily on reading data from disk, specially if you have iterative algorithms that require cycling several times through the data. Pipelines like this are very common in Machine Learning. You will be reading data from this many times. This makes your analyst pipeline very slow.
+
+    - _Only native JAVA programming interface:_ It´s possible to use Python and other languages, but, that requires to go through the streaming module that makes the implementation more complex and not very efficient, specially when you are running not with text data, but with floating point numbers.
+
+  - **Solutions?**
+
+    - New Framework: same features of MapReduce and more;
+
+    - Capable of reusing Hadoop ecosystem, like, HDFS, Yarn, etc;
+
+    - Born in UC Berkeley, but, today is managed by Apache Foundation, like Hadoop.
+
+  - **Solution by Spark**
+
+    - _Accomodate other workflows:_ Spark provides a very rich programming interface that gives you more than 20 highly efficient distributed operations;
+
+    - _Iterative algorithms:_ In-memory caching of data specified by the user;
+
+    - _Interactivity and support to other languages:_ Python, Scala and R interfaces. Interactive shells.
+
+  - **100TB sorting competition**
+
+  <p align="center"><img src="images/sorting-competition.png" width="400px"></p>
