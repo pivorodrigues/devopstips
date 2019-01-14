@@ -1531,7 +1531,7 @@ _We can put that date information into the value part of the field and let Hadoo
 
   - **Solutions?**
 
-    - New Framework: same features of MapReduce and more;
+    - _New Framework:_ same features of MapReduce and more;
 
     - Capable of reusing Hadoop ecosystem, like, HDFS, Yarn, etc;
 
