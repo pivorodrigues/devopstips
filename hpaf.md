@@ -1514,3 +1514,9 @@ _We can put that date information into the value part of the field and let Hadoo
     - SQL like syntax;
 
   - Interactivity and Persistency (Spark);
+
+### Introduction to Hadoop Spark
+
+- **Introduction to Hadoop Spark**
+
+    - **Shortcomings of MapReduce**
