@@ -1548,3 +1548,7 @@ _We can put that date information into the value part of the field and let Hadoo
   - **100TB sorting competition**
 
   <p align="center"><img src="images/sorting-competition.png" width="400px"></p>
+
+#
+
+**Architecture of Spark**
