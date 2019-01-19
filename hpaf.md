@@ -1608,10 +1608,14 @@ _We can put that date information into the value part of the field and let Hadoo
 
   - **Wordcount in Spark: map**
 
-    `def split_words(line):
-          return line.split()`
+    ```
+    def split_words(line):
+        return line.split()
+    ```
 
-    `def create_pair(word):
-          return (word, 1)`
+    ```
+    def create_pair(word):
+        return (word, 1)
+    ```
 
     `pairs_RDD=text_RDD.flatMap(split_words).map(create_pair)`
