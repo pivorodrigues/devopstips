@@ -1582,4 +1582,12 @@ _We can put that date information into the value part of the field and let Hadoo
 
   - **From the PySpark console:**
 
-    ```integer_RDD = sc.paralellize(range(10), 3)```  
+    `integer_RDD = sc.paralellize(range(10), 3)`
+
+  - **Gather all data on the driver:**
+
+    `integer_RDD.collect()`
+
+    **Out:** _[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]_
+
+  
