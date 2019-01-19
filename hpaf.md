@@ -1555,4 +1555,6 @@ _We can put that date information into the value part of the field and let Hadoo
 
   - **Worker Node:** In Spark we have a general executor Java Virtual Machine. It can execute tasks related to mapping stages, reducing stages or other Spark specific workflows. The Java Virtual Machine is the core where all the computation is executed. This is the interface to the rest of the Hadoop Ecosystem. If we have the Hadoop File System, on each worker node some of the data will be stored locally. The most important point of this computing framework is to bring the computation to the data. Spark will send some computational jobs to be executed on the data are already available on the machine.
 
-    If you are using PySpark, there will be several Python Processes.
+  If you are using PySpark, there will be several Python processes. Generally one per task, but, you can configure it depending on your application. The Python processes are connected to the Java Virtual Machine and data are shipped from the Java Virtual Machine to Python for processing.
+
+  <p align="center"><img src="images/workernodes.png" width="400px"></p>
