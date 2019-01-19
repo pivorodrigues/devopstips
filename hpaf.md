@@ -1565,3 +1565,21 @@ _We can put that date information into the value part of the field and let Hadoo
   <p align="center"><img src="images/clustermanager.png" width="400px"></p>
 
   <p align="center"><img src="images/driverprogram.png" width="400px"></p>
+
+#
+
+**Resilient Distributed Dataset**
+
+- **RDD (Resilient Distributed Dataset):** The RDD or Resilient Distributed Dataset are the data containers used by Spark to store yor data.
+
+  - **Dataset:** Data storage created from: HDFS, S3, HBase, JSON, text or local hierarchy of folders;
+
+  - **Distributed:** Distributed across the cluster of machines. The data is divided in partitions, atomic chunks of data;
+
+  - **Resilient:** Recover from errors, e.g. node failure and slow processes. Tracks history of each partition. In every point in your calculations, Spark knows which are the partitions needed to recreate the partition in case it gets lost. If that happens, then Spark automatically figures out where it can start from to recompute what's the minimum amount of processing needed to recover the lost partition.
+
+- **Check Partitions:**
+
+  - **From the PySpark console:**
+
+  ```integer_RDD = sc.paralellize(range(10), 3)```  
