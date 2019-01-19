@@ -1590,4 +1590,28 @@ _We can put that date information into the value part of the field and let Hadoo
 
     **Out:** _[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]_
 
-  
+  - **Maintain splitting in partitions:**
+
+    **Out:** _[[0,1,2], [3,4,5], [6,7,8,9]]_
+
+- **Read text into Spark:**
+
+  - **from local filesystem:**
+
+    `text_RDD = sc.textFile("file:///home/cloudera/testfile1")`
+
+  - **from HDFS:**
+
+    `text_RDD = sc.textfile("/user/cloudera/input/textfile1")`
+
+    `text_RDD.take(1)` #outputs the first line
+
+  - **Wordcount in Spark: map**
+
+    `def split_words(line):
+          return line.split()`
+
+    `def create_pair(word):
+          return (word, 1)`
+
+    `pairs_RDD=text_RDD.flatMap(split_words).map(create_pair)`
