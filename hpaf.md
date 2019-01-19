@@ -1582,4 +1582,4 @@ _We can put that date information into the value part of the field and let Hadoo
 
   - **From the PySpark console:**
 
-  ```integer_RDD = sc.paralellize(range(10), 3)```  
+    ```integer_RDD = sc.paralellize(range(10), 3)```  
