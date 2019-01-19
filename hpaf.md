@@ -1558,3 +1558,10 @@ _We can put that date information into the value part of the field and let Hadoo
   - If you are using PySpark, there will be several Python processes. Generally one per task, but, you can configure it depending on your application. The Python processes are connected to the Java Virtual Machine and data are shipped from the Java Virtual Machine to Python for processing.
 
   <p align="center"><img src="images/workernodes.png" width="400px"></p>
+
+  - We can have hundreds or thousands of worker nodes. It's important to have a system that can automatically manage provisioning and restarting of these nodes, and this system is called the cluster manager. Spark supports two interfaces for cluster management. One is YARN, which is the Hadoop cluster manager,
+  and the other is a Standalone mode. Standalone mode means that there is a special Spark process that takes care of restarting nodes that are failing, or starting nodes at the beginning of the computation. And instead, using the YARN interface has an advantage because we can use this in conjunction with Hadoop MapReduce and other Hadoop.
+
+  <p align="center"><img src="images/clustermanager.png" width="400px"></p>
+
+  
