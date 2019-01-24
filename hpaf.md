@@ -1619,3 +1619,38 @@ _We can put that date information into the value part of the field and let Hadoo
     ```
 
     `pairs_RDD=text_RDD.flatMap(split_words).map(create_pair)`
+
+    `pairs_RDD.collect()`
+
+    **Out[]**:[(u'A', 1),
+    (u'long', 1)
+    (u'time', 1)
+    (u'ago', 1)
+    (u'in', 1)
+    (u'a', 1)
+    (u'galaxy', 1)
+    (u'far', 1)
+    (u'far', 1)
+    (u'away', 1)]
+
+  - **Wordcount in Spark: reduce**
+
+    ```
+    def sum_counts(a, b):
+      return a + b
+    ```
+
+    `wordcounts_RDD = pairs_RDD.reduceByKey(sum_counts)`
+
+    `wordcounts_RDD.collect()`
+
+    **Out[]**:
+    [(u'A', 1),
+    (u'ago', 1)
+    (u'far', 2)
+    (u'away', 1)
+    (u'in', 1)
+    (u'long', 1)
+    (u'a', 1)
+    (u'time', 1)
+    (u'galaxy', 1)]
