@@ -1623,14 +1623,23 @@ _We can put that date information into the value part of the field and let Hadoo
     `pairs_RDD.collect()`
 
     **Out[]**:[(u'A', 1),
+
     (u'long', 1)
+
     (u'time', 1)
+
     (u'ago', 1)
+
     (u'in', 1)
+
     (u'a', 1)
+
     (u'galaxy', 1)
+
     (u'far', 1)
+
     (u'far', 1)
+
     (u'away', 1)]
 
   - **Wordcount in Spark: reduce**
@@ -1645,12 +1654,25 @@ _We can put that date information into the value part of the field and let Hadoo
     `wordcounts_RDD.collect()`
 
     **Out[]**:
+
     [(u'A', 1),
+
     (u'ago', 1)
+
     (u'far', 2)
+
     (u'away', 1)
+
     (u'in', 1)
+
     (u'long', 1)
+
     (u'a', 1)
+
     (u'time', 1)
+
     (u'galaxy', 1)]
+
+#
+
+**Spark Transformations**
