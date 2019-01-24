@@ -1743,3 +1743,15 @@ _We can put that date information into the value part of the field and let Hadoo
  **flatMap:** map then flatten output
 
  <p align="center"><img src="images/flatmap.png" width="500px"></p>
+
+#
+
+ - **filter (function):** Filter function takes one element of my RDD and for each of this element returns either _True_ or _False_. _True_ if we wanna keep this element or _False_ if we don´t. The code example below takes the input word, then transforms it to lowercase and checks if this starts with **a**. If it starts with **a**, it returns _True_. If not, it returns _False_. It is filtering out everything that doesn´t start with **a**.
+
+ ```
+ def starts_with_a(word):
+    return word.lower().startswith("a")
+ words_RDD.filter(starts_with_a).collect()
+ ```
+
+ **Out[]:** [u'A', u'ago', u'a', u'away]
