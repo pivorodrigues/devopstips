@@ -1764,14 +1764,14 @@ words_RDD.filter(starts_with_a).collect()
 
 - **coalesce:** At the example below, it´s introduced the function _"glom"_, which is very useful for debbugging purposes because turns the content of one partition into an array. In the example, we can parallelize on the range of numbers between 0 and 9, and we specify that in parallelize we want to have 4 partitions. So Spark is going to transfer our data from the driver program to our worker nodes in 4 partitions. And, by calling _glom_ and then _collect_, we can find out how this data set was split in this 4 partitions. With transformation **coalesce**, we can reduce the number of partitions. This is used a lot after filtering, where you have reduced the size of your dataset and is not very useful to have a large number of partitions, but it´s better to reduce it to a more manageable number. Generally, it´s a local operation.
 
- `sc.parallelize(range(10), 4).glom().collect()`
+`sc.parallelize(range(10), 4).glom().collect()`
 
- **Out[]:** [[0, 1], [2, 3], [4,5], [6, 7, 8, 9]]
+**Out[]:** [[0, 1], [2, 3], [4,5], [6, 7, 8, 9]]
 
- `sc.parallelize(range(10),4).coalesce(2).glom().collect()`
+`sc.parallelize(range(10),4).coalesce(2).glom().collect()`
 
- **Out[]:** [[0, 1, 2, 3], [4, 5, 6, 7, 8, 9]]
+**Out[]:** [[0, 1, 2, 3], [4, 5, 6, 7, 8, 9]]
 
- **coalesce:** reduce the number of partitions
+**coalesce:** reduce the number of partitions
 
- <p align="center"><img src="images/coalesce.png" width="450px"></p>
+<p align="center"><img src="images/coalesce.png" width="450px"></p>
