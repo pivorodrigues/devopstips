@@ -1676,3 +1676,29 @@ _We can put that date information into the value part of the field and let Hadoo
 #
 
 **Spark Transformations**
+
+  - RDD are immutable;
+
+  - Never modify RDD in place;
+
+  - Transform RDD to another RDD;
+
+  - All the transformations are lazy;
+
+  - **Create RDD:**
+
+    - From local filesystem:
+
+      `text_RDD = sc.textFile("file:///home/cloudera/testfile1")`
+
+  - **Apply a transformation: map**
+
+    - **map:** apply function to each element of RDD
+
+      ```
+      def lower(line):
+        return line.lower()
+      lower_text_RDD = text_RDD.map(lower)
+      ```    
+
+<p align="center"><img src="images/rddpartitions.png" width="400px"></p>
