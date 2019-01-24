@@ -1707,55 +1707,55 @@ _We can put that date information into the value part of the field and let Hadoo
 
 **Other transformations**
 
- - **flatMap (function):** flatMap is very similar to Map. In the Map case we have one element as an input and one element as an output. Instead, flatMap accepts a function that might have any number of output for one input.
+- **flatMap (function):** flatMap is very similar to Map. In the Map case we have one element as an input and one element as an output. Instead, flatMap accepts a function that might have any number of output for one input.
 
- ```
- def split_words(line):
-    return line.split()
- words_RDD = text_RDD.flatMap(split_words)
- words_RDD.collect()
+```
+def split_words(line):
+  return line.split()
+words_RDD = text_RDD.flatMap(split_words)
+words_RDD.collect()
 ```
 
- **Out[]**:
+**Out[]**:
 
- [u'A',
+[u'A',
 
- u'long',
+u'long',
 
- u'time',
+u'time',
 
- u'ago',
+u'ago',
 
- u'in',
+u'in',
 
- u'a',
+u'a',
 
- u'galaxy',
+u'galaxy',
 
- u'far',
+u'far',
 
- u'far',
+u'far',
 
- u'away',]
+u'away',]
 
- **OBS:** _The output is just the list of all of the words._
+**OBS:** _The output is just the list of all of the words._
 
- **flatMap:** map then flatten output
+**flatMap:** map then flatten output
 
- <p align="center"><img src="images/flatmap.png" width="500px"></p>
+<p align="center"><img src="images/flatmap.png" width="500px"></p>
 
 #
 
- - **filter (function):** Filter function takes one element of my RDD and for each of this element returns either _True_ or _False_. _True_ if we wanna keep this element or _False_ if we don´t. The code example below takes the input word, then transforms it to lowercase and checks if this starts with **a**. If it starts with **a**, it returns _True_. If not, it returns _False_. It is filtering out everything that doesn´t start with **a**.
+- **filter (function):** Filter function takes one element of my RDD and for each of this element returns either _True_ or _False_. _True_ if we wanna keep this element or _False_ if we don´t. The code example below takes the input word, then transforms it to lowercase and checks if this starts with **a**. If it starts with **a**, it returns _True_. If not, it returns _False_. It is filtering out everything that doesn´t start with **a**.
 
- ```
- def starts_with_a(word):
-    return word.lower().startswith("a")
- words_RDD.filter(starts_with_a).collect()
- ```
+```
+def starts_with_a(word):
+  return word.lower().startswith("a")
+words_RDD.filter(starts_with_a).collect()
+```
 
- **Out[]:** [u'A', u'ago', u'a', u'away]
+**Out[]:** [u'A', u'ago', u'a', u'away]
 
- **filter:** keep only elements where func is true
+**filter:** keep only elements where func is true
 
- <p align="center"><img src="images/filter.png" width="500px"></p>
+<p align="center"><img src="images/filter.png" width="500px"></p>
