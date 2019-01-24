@@ -1755,3 +1755,7 @@ _We can put that date information into the value part of the field and let Hadoo
  ```
 
  **Out[]:** [u'A', u'ago', u'a', u'away]
+
+ **filter:** keep only elements where func is true
+
+ <p align="center"><img src="images/filter.png" width="500px"></p>
