@@ -1823,8 +1823,11 @@ So, let´s collect, so that we can get the data back to the driver for inspectio
 `groupbyKey`: (K,V) pairs => (K, iterable of all V)
 
 (A,1)
+
 (B,8)  =>  (A,[1,2,5])
+
 (A,2)  =>  (B, [8])   
+
 (A,5)
 
 **Example (Directly in Spark):** `pairs_RDD.groupByKey().collect()`
