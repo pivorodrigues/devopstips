@@ -1871,3 +1871,9 @@ On the receiving side, on the final operation. And then, the data are requested 
 And this data is transferred from the source to the final destination._
 
 <p align="center"><img src="images/shuffle.png" width="500px"></p>
+
+_Know shuffle, avoid it_
+
+- Which operations cause it?
+
+- Is it necessary?
