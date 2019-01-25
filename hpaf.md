@@ -1844,3 +1844,9 @@ for k,v pairs_RDD.groupByKey().collect():
 ```
 
 <p align="center"><img src="images/outgbk2.png" width="450px"></p>
+
+`groupbyKey`: (K,V) pairs => (K, iterable of all V)
+
+<p align="center"><img src="images/gbkshuffle.png" width="450px"></p>
+
+<p align="center"><img src="images/gbknarrowwide.png" width="450px"></p>
