@@ -1850,3 +1850,24 @@ for k,v pairs_RDD.groupByKey().collect():
 <p align="center"><img src="images/gbkshuffle.png" width="450px"></p>
 
 <p align="center"><img src="images/gbknarrowwide.png" width="450px"></p>
+
+#
+
+**reduceByKey(func):** We use this to go through all of our words and some of our word counts. The result of this reduceByKey operation is a pair of key and values, where for each key, we have a value which is the result of the reduction of all of the _Vs_ accross our dataset with these functions. So if we have a sum, it's going to be the sum of all our accounts across our data set.
+
+`reduceByKey(func)`: (K,V) pairs => (K, result of reduction by func on all V)
+
+#
+
+**repartitions(NumPartitions):** similar to coalesce, shuffles all data to increase or decrease number of partitions to numPartitions.
+
+#
+
+**Shuffle:** Shuffle is a global redistribution of data and it has a high impact on performance. It´s one of the most performance heavy operations that you have in in your data analysis pipeline.
+
+_And so how this works? So let's take a look at, as usual, our couple of nodes. So you see here that the key A is available on both nodes. And this list will transferred over the network from the second node to the first.
+And How does this actually happen? So, the first step is that on the source side, the data are written to disk, and they are written to local disk, already separated. They're already ordered by the partition in which they're gonna be.
+On the receiving side, on the final operation. And then, the data are requested over the network from the output nodes.
+And this data is transferred from the source to the final destination._
+
+<p align="center"><img src="images/shuffle.png" width="500px"></p>
