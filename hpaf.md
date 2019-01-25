@@ -1877,3 +1877,15 @@ _Know shuffle, avoid it_
 - Which operations cause it?
 
 - Is it necessary?
+
+#
+
+_Really need groupByKey?_
+
+`groupbyKey`: (K,V) pairs => (K, iterable of all V)
+
+If you plan to call **reduce** later in the pipeline, use **reduceByKey** instead.
+
+<p align="center"><img src="images/gbkplusreduce.png" width="450px"></p>
+
+<p align="center"><img src="images/rbk.png" width="450px"></p>
