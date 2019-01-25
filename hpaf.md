@@ -1775,3 +1775,69 @@ words_RDD.filter(starts_with_a).collect()
 **coalesce:** reduce the number of partitions
 
 <p align="center"><img src="images/coalesce.png" width="450px"></p>
+
+#
+
+**Wide transformations**
+
+- **Transformations of (K,V) pairs:** We have our input text file which is a dataset of where each element is a line of text then we run flatMap and we provide the function split_words that splits each line into the words. And finally,
+we call the map transformation with the function create pair. And the output of this is a key value pair where the key is the word and the value is always one. Because then we want to sum all those ones to get the final counts for each word.
+
+```
+def create_pair(word):
+  return (word,1)
+```
+
+`pairs_RDD=text_RDD.flatMap(split_words).map(create_pair)`
+
+So, let´s collect, so that we can get the data back to the driver for inspection. And you see that the output here is the least of words, and each of them has the key one. So the operation I would like to show you is groupByKey. So what groupByKey does is it takes, as an input, an RDD of key value pairs. And, as an output, transfers all the data that has the same key, to the same partition.
+
+`pairs_RDD.collect()`
+
+**Out[]**:
+
+[(u'A',1),
+
+(u'long',1),
+
+(u'time',1)
+
+(u'ago',1)
+
+(u'in',1)
+
+(u'a',1)
+
+(u'galaxy',1)
+
+(u'far',1)
+
+(u'far',1)
+
+(u'away',1])
+
+#
+
+**groupByKey:** groupByKey takes as an input, a RDD of key value pairs. And, as an output, transfers all the data that has the same key to the same partition.
+
+`groupbyKey`: (K,V) pairs => (K, iterable of all V)
+
+(A,1)
+(B,8)  =>  (A,[1,2,5])
+(A,2)  =>  (B, [8])   
+(A,5)
+
+**Example (Directly in Spark):** `pairs_RDD.groupByKey().collect()`
+
+<p align="center"><img src="images/outgbk1.png" width="450px"></p>
+
+or
+
+(Python Code)
+
+```
+for k,v pairs_RDD.groupByKey().collect():
+  print "Key:", k, ",Values:", list(v)
+```
+
+<p align="center"><img src="images/outgbk2.png" width="450px"></p>
