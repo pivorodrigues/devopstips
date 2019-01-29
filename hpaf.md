@@ -1937,3 +1937,21 @@ If you plan to call **reduce** later in the pipeline, use **reduceByKey** instea
   Key: a, Values: [1]
 
   **<MORE output>**
+
+- **Spark Dag of Transformations**
+
+  1. The left RDD is our initial text RDD, where each element is aligned;
+
+  2. Then flatMap transform this in another RDD, where each element now instead is a word;
+
+  3. Then we have a map that transformed the word in key value pairs;
+
+  4. Then, finally, groupbyKey, that takes the sum of all our counts accross all of our data sets.
+
+  In case we lose a partition, Spark knows the lineage, so knows how the dependency is going so needs to recover everything that has been lost from the beginning. The same happens to all the nodes. It goes back down to HDFS and read the relevant part of the data that has been lost and then reprocess everything through the final output.
+
+  <p align="center"><img src="images/dag1.png" width="450px"></p>
+
+  <p align="center"><img src="images/dag2.png" width="450px"></p>
+
+  <p align="center"><img src="images/dag3.png" width="450px"></p>
