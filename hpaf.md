@@ -1921,3 +1921,19 @@ If you plan to call **reduce** later in the pipeline, use **reduceByKey** instea
   for k,v in pairs_RDD.groupByKey().collect():
     print "Key:", k, ",Values:", list(v)
   ```
+
+  **Out[]:** Key: A, Values: [1]
+
+  Key: ago, Values: [1]
+
+  Key: far, Values: [1]
+
+  Key: away, Values: [1]
+
+  Key: in, Values: [1]
+
+  Key: long, Values: [1]
+
+  Key: a, Values: [1]
+
+  **<MORE output>**
