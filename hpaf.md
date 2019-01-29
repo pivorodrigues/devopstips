@@ -1899,3 +1899,22 @@ If you plan to call **reduce** later in the pipeline, use **reduceByKey** instea
 <p align="center"><img src="images/dag.png" width="500px"></p>
 
 <p align="center">**Track dependencies!** _(also known as lineage provenance)_</p>
+
+- **DAG in Spark**
+
+  - Nodes are RDDs
+
+  - Arrows are transformations
+
+  - The system is used by Spark to recover lost partitions. If for some reason, maybe one node fails, some process goes out of memory or there's some disk issues, Spark exactly knows how to recover your data by going back through the execution graph and re-executing whatever is needed to recreate your lost data.
+
+  <p align="center"><img src="images/narrowwide.png" width="500px"></p>
+
+- **Transformations of (K,V) pairs**
+
+  ```
+  def create_pair(word):
+    return(word,1)
+  ```
+
+  `pairs_RDD=text_RDD.flatMap(split_words).map(create_pair)`  
