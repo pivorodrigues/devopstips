@@ -1898,4 +1898,4 @@ If you plan to call **reduce** later in the pipeline, use **reduceByKey** instea
 
 <p align="center"><img src="images/dag.png" width="500px"></p>
 
-**Track dependencies!** _(also known as lineage provenance)_
+<p align="center">**Track dependencies!** _(also known as lineage provenance)_</p>
