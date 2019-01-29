@@ -1889,3 +1889,13 @@ If you plan to call **reduce** later in the pipeline, use **reduceByKey** instea
 <p align="center"><img src="images/gbkplusreduce.png" width="450px"></p>
 
 <p align="center"><img src="images/rbk.png" width="450px"></p>
+
+#
+
+**Job scheduling, Actions, Caching and Shared Variables**
+
+- **Directed Acyclic Graph (DAG) Scheduler:** It´s a collection of nodes, which are connected by edges. Those nodes are acyclic. If you start from a node and then you follow arrows down, you can never go back to the previous node.
+
+<p align="center"><img src="images/dag.png" width="500px"></p>
+
+**Track dependencies!** _(also known as lineage provenance)_
