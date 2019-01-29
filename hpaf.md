@@ -1970,4 +1970,30 @@ If you plan to call **reduce** later in the pipeline, use **reduceByKey** instea
 
   _In previous lectures, we already use one action which is collect. The purpose of this action was to get data, from an RDD distributed across the nodes, back to our driver program. And we saw in the last video, that Spark builds a Directed Acyclic Graph of our data analysis pipeline. And when, we finally choose the last step, which is an action. Finally, a spark sends all the tasks for execution to the nodes. And Collect, or another action like Take, copies the results of the driver. If the results are too large to fit on the driver memory, then there is an opportunity to write them directly to HDFS, instead._
 
-  
+  - **How collect works?**
+
+  In the bottom right corner of the slide, you can find a simple beta processing pipeline, so you can imagine we are reading from HDFS. Applying, if you trust formations, that at the end we have our final results after groupbyKey. And then, at this step, we call collect, and collect would take care of copying all of our results back to the Java virtual machine on the driver program. And then, this will be piped also to our python shell.
+
+  <p align="center"><img src="images/collectaction.png" width="450px"></p>
+
+  - **Actions**
+
+    - **collect()** - copy all elements to the driver;
+
+    - **take(n)** - copy first n elements;
+
+    - **reduce(func)** - aggregate elements with func (takes 2 elements, returns 1);
+
+    - **saveAsTextFile(filename)** - save to local file or HDFS.
+
+#
+
+- **Memory Caching in Spark**
+
+  - **Caching:**
+
+    - By default each job re-processes from HDFS;
+
+    - Mark RDD with **.cache()**
+
+    - Lazy.
