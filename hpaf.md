@@ -1915,6 +1915,9 @@ If you plan to call **reduce** later in the pipeline, use **reduceByKey** instea
   ```
   def create_pair(word):
     return(word,1)
-  ```
 
-  `pairs_RDD=text_RDD.flatMap(split_words).map(create_pair)`  
+  pairs_RDD=text_RDD.flatMap(split_words).map(create_pair)
+
+  for k,v in pairs_RDD.groupByKey().collect():
+    print "Key:", k, ",Values:", list(v)
+  ```
