@@ -1955,3 +1955,19 @@ If you plan to call **reduce** later in the pipeline, use **reduceByKey** instea
   <p align="center"><img src="images/dag2.png" width="450px"></p>
 
   <p align="center"><img src="images/dag3.png" width="450px"></p>
+
+#
+
+- **Actions in Spark**
+
+  - **What is an action?**
+
+    - Final stage of workflow;
+
+    - Triggers execution of the Dag;
+
+    - Returns results to the Driver or writes to HDFS.
+
+  _In previous lectures, we already use one action which is collect. The purpose of this action was to get data, from an RDD distributed across the nodes, back to our driver program. And we saw in the last video, that Spark builds a Directed Acyclic Graph of our data analysis pipeline. And when, we finally choose the last step, which is an action. Finally, a spark sends all the tasks for execution to the nodes. And Collect, or another action like Take, copies the results of the driver. If the results are too large to fit on the driver memory, then there is an opportunity to write them directly to HDFS, instead._
+
+  
