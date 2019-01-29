@@ -1998,8 +1998,66 @@ If you plan to call **reduce** later in the pipeline, use **reduceByKey** instea
 
     - Lazy.
 
-  - **When and why we need to use caching in Spark?**
+  - **Why we need to use caching in Spark?**
 
   _Once Spark prepares a Directed Acyclic Graph with our computation, we call an action to complete and submit this job for execution. The problem is that if we do this twice, if we have two different data analysis pipelines, even if they share most of the processing, still Spark is going to execute them independently. So if they are, for example, reading data, doing some data cleaning, and then do two different kind of processing, unfortunately we cannot, by default, share the cleaning stage between the two different pipelines. And the purpose of caching is exactly to address this issue._
 
   _So once we have one RDD which is going to be re-used in the future, we can call the cache method on this objects, and these will trigger caching of this in memory. So next time we need to use this again, even if it's on another Spark job that we execute later, this is going to be read from memory. And so it's gonna be a lot faster. And this method, like transformations, is lazy. That means that we mark this to be cached, but it's not cached straightaway. The first time that this RDD is going to be computed, then it will be stored in memory from then on._
+
+  - **When do we need to use the cache on Spark??**
+
+    - Generally not the input data;
+
+    - Do validation and cleaning;
+
+    - Cache for iterative algorithm;
+
+  - **How could we use caching in Spark?**
+
+    - Memory (most common);
+
+    - Disk (rare);
+
+    - Both (for heavy calculations).
+
+  - **What kind of speedups can we achieve with caching?**
+
+    - Easily 10x or even 100x depending on application;
+
+    - Caching is gradual;
+
+    - Fault tolerant.
+
+  - **Wordcount with caching**
+
+  from HDFS:
+
+  `text_RDD=sc.textFile("/user/cloudera/input/testfile1")`
+
+  ```
+  def split_words(line):
+    return line.split()
+  ```
+
+  ```
+  def create_pair(word):
+    return(word,1)
+  ```
+
+  ```
+  pairs_RDD=text_RDD.flatMap(split_words).map(create_pair)
+  pairs_RDD.cache()
+  ```
+
+  ```
+  def sum_counts(a,b):
+    return a+b
+  ```
+
+  `wordcounts_RDD=pairs_RDD.reduceByKey(sum_counts`
+
+  **First job:**
+  wordcounts_RDD.collect()
+
+  **Second job:**
+  pairs_RDD.take(1)
