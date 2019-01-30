@@ -2061,3 +2061,43 @@ If you plan to call **reduce** later in the pipeline, use **reduceByKey** instea
 
   **Second job:**
   pairs_RDD.take(1)
+
+#
+
+- **Broadcast Variables**
+
+  - Large variable used in all nodes;
+
+  - Transfer just once per Executor;
+
+  - Efficient peer-to-peer transfer.
+
+  - **Broadcast variable example:**
+
+    - For example large configuration dictionary or lookup table:
+
+    `config = sc.broadcast({"order":3, "filter":True})`
+
+    `config.value`
+
+#
+
+- **Acumulator**
+
+  - Common pattern of accumulating to a variable accross the cluster;
+
+  - Write-only on nodes.
+
+  - **Accumulator example:**
+
+    ```
+    accum = sc.accumulator(0)
+    def test_accum(x)
+      accum.add(x)
+    ```
+
+    `sc.parallelize([1, 2, 3, 4]).foreach(test_accum)`
+
+    `accum.value`
+
+    **Out[]:** 10
