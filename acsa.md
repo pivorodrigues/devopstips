@@ -168,3 +168,13 @@
     - Integrates with many different AWS services;
 
     - Supports PCI DSS Compliance.
+
+- **Key Terminology For IAM**
+
+  1. Users
+
+  2. Groups
+
+  3. Policies
+
+  4. Roles
