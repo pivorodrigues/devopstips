@@ -171,10 +171,10 @@
 
 - **Key Terminology For IAM**
 
-  1. Users
+  1. **Users:** End users such as people, employees of an organization, etc;
 
-  2. Groups
+  2. **Groups:** A collection of users. Each user in the group will inherit the permissions of the group.
 
-  3. Policies
+  3. **Policies:** Policies are made up of documents, called Policy Documents. These documents are in a format called JSON and they give pemissions as to what a User/Group/Role is able to do.
 
-  4. Roles
+  4. **Roles:** You create roles and then assign them to AWS Resources.
