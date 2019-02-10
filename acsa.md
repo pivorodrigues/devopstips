@@ -113,7 +113,7 @@
 
 - **Cloudwatch** - Monitoring Service _(Very important to the exam)_ :star:
 
--  **CloudFormation** - Infrastructure as Code tool _(Very important to the exam)_ :star:
+- **CloudFormation** - Infrastructure as Code tool _(Very important to the exam)_ :star:
 
 - **CloudTrail** - A log tool for all AWS changes and operations _(Very important to the exam)_ :star:
 
@@ -140,3 +140,31 @@
 - **Data Pipeline** - A tool to share data between your AWS applications
 
 #
+
+### Identity Access Management 101
+
+- **What Is IAM?**
+
+  - **IAM** allows you to manage users and their level of access to the AWS Console.
+
+- **Key Features of IAM**
+
+  - Identity Access Management (IAM) offers the following features:
+
+    - Centralised control of your AWS account;
+
+    - Shared Access to your AWS account;
+
+    - Granular permissions;
+
+    - Identity Federation (including Active Directory, Facebook, Linkedin etc);
+
+    - Multifactor Authentication;
+
+    - Provide temporary access for users/devices and services where necessary;
+
+    - Allows you to set up your own password rotation policy;
+
+    - Integrates with many different AWS services;
+
+    - Supports PCI DSS Compliance.
