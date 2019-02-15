@@ -178,3 +178,37 @@
   3. **Policies:** Policies are made up of documents, called Policy Documents. These documents are in a format called JSON and they give pemissions as to what a User/Group/Role is able to do.
 
   4. **Roles:** You create roles and then assign them to AWS Resources.
+
+#
+
+###IAM Lab
+
+- **Recommendations and best practices**
+
+  - Personallize IAM user login link;  
+
+  - Activate MFA (Multi-factor Authentication);
+
+  - Create users;
+
+  - Create groups;
+
+  - Create roles;
+
+- **OBS:**
+
+  - **IAM is universal**. It does note apply to regions at this time;
+
+  - The **"root account"** is simply yhe account created when first setup your AWS account. It has complete Admin access;
+
+  - New users have **NO permissions** when first created;
+
+  - New users are assigned **Access Key ID & Secret Access Keys** when first created;
+
+  - **These are not the same as a password.** You cannot use the Access Key ID & Secret Access Key to login in the console. You can use this to access AWS via the APIs and Command Line, however;
+
+  - **You only get to view these once.** If you lose them, you have to regenerate them. So, save them in a secure location;
+
+  - **Always setup Multifactor Authentication on your root account;**
+
+  - **You can create and customise your own password rotation policies;**
