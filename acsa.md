@@ -143,6 +143,8 @@
 
 ### Identity Access Management 101
 
+<p align="right"><img src="images/iamlogo.png" width="250px"></p>
+
 - **What Is IAM?**
 
   - **IAM** allows you to manage users and their level of access to the AWS Console.
@@ -215,7 +217,7 @@
 
 #
 
-- **IAM policy example (Json):**
+- **IAM policy example (JSON):**
 
 ```
   {
