@@ -232,4 +232,4 @@
 
 #
 
-### S3 - 101 <img src="images/s3logo.png" width="40px">
+### S3 - 101 <img src="images/s3logo.png" width="20px">
