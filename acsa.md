@@ -233,3 +233,47 @@
 #
 
 ### S3 - 101 <img src="images/s3logo.png" width="20px">
+
+- **What is Amazon S3 (Simple Storage Service)?**
+
+  - **S3** provides developers and IT teams with secure, durable, highly-scalable object storage. Amazon S3 is easy to use, with a simple web services interface to store and retrieve any amount of data from anywhere on the web. S3 is a safe place to store your files. It is a Object-based storage. The data is spread across multiple devices and facilities.
+
+- **S3 - The basics**
+
+  - S3 is Object-based - i.e. allows you to upload files;
+
+  - Files can be from 0 bytes to 5 terabytes;
+
+  - There is unlimited storage. But, you have to be careful with your budget;
+
+  - Files are storage in buckets;
+
+  - S3 is a universal namespace. That is, names must be unique globally;
+
+  - https://s3-eu-west-1.amazonaws.com/acloudguru
+
+  - When you upload a file to S3, you will receive a HTTP 200 code if the upload was successfull.
+
+- **Data Consistency Model for S3** :star:
+
+  - Read after write consistency for PUTS of new objects;
+
+  - Eventual consistency for overwrite PUTS and DELETS (can take some time to propagate);
+
+- **S3 is a simple key-value store**
+
+  - S3 is object based. Objects consist of the following:
+
+    - Key (This is simply the name of the objetc);
+
+    - Value (This is simply the data and is made up of a sequence of bytes);
+
+    - Version ID (Important of Versioning);
+
+    - Metadata (Data about data you storing);
+
+    - Subresources:
+
+      - Access control lists;
+
+      - Torrent.
