@@ -181,7 +181,7 @@
 
 #
 
-### IAM Lab
+**IAM Lab**
 
 - **Recommendations and best practices**
 
@@ -212,3 +212,5 @@
   - **Always setup Multifactor Authentication on your root account;**
 
   - **You can create and customise your own password rotation policies;**
+
+#
