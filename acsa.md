@@ -143,7 +143,7 @@
 
 ### Identity Access Management 101
 
-<p align="right"><img src="images/iamlogo.png" width="250px"></p>
+<p align="right"><img src="images/iamlogo.png" width="50px"></p>
 
 - **What Is IAM?**
 
