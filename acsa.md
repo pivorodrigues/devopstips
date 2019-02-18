@@ -181,7 +181,7 @@
 
 #
 
-###IAM Lab
+### IAM Lab
 
 - **Recommendations and best practices**
 
