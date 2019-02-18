@@ -280,20 +280,26 @@
 
 - **S3 - The Basics (Again!!!)**
 
-    - Built for 99.99% availability for the S3 platform;
+  - Built for 99.99% availability for the S3 platform;
 
-    - Amazon guarantees 99.9% availability;
+  - Amazon guarantees 99.9% availability;
 
-    - Amazon guarantees 99.999999999% durability for S3 information (Remember 11 x 9s);
+  - Amazon guarantees 99.999999999% durability for S3 information (Remember 11 x 9s);
 
-    - Tiered storage available;
+  - Tiered storage available;
 
-    - Lifecycle management;
+  - Lifecycle management;
 
-    - Versioning;
+  - Versioning;
 
-    - Encyption;
+  - Encryption;
 
-    - Secure your data using Access Control Lists and Bucket Policies.
+  - Secure your data using Access Control Lists and Bucket Policies.
 
-    
+- **S3 - Storage Tiers/Classes**
+
+  - **S3 Standard:** 99.99% availabilty, 99.999999999% durability, stored redundantly across multiple devices in multiple facilities, and is designed to sustain the loss of 2 facilities concurrently;
+
+  - **S3 - IA:** (Infrequently Accessed): For data that is accessed less frequently, but requires rapid access when needed. Lower fee than S3, but, you are charged a retrieval fee;
+
+  
