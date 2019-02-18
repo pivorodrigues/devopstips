@@ -141,7 +141,7 @@
 
 #
 
-### Identity Access Management 101 <img src="images/iamlogo.png" width="10px"></p>
+### Identity Access Management - 101 <img src="images/iamlogo.png" width="10px">
 
 - **What Is IAM?**
 
@@ -229,3 +229,7 @@
     ]
   }
 ```
+
+#
+
+### S3 - 101 <img src="images/s3logo.png" width="10px">
