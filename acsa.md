@@ -213,4 +213,17 @@
 
   - **You can create and customise your own password rotation policies;**
 
-#
+- **IAM policy example (Json):**
+
+```
+  {
+    "Version":"2012-10-17",
+    "Statement":[
+      {
+        "Effect": "Allow",
+        "Action": "*",
+        "Resource:" "*"
+      }
+    ]
+  }
+```
