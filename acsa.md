@@ -277,3 +277,23 @@
       - Access control lists;
 
       - Torrent.
+
+- **S3 - The Basics (Again!!!)**
+
+    - Built for 99.99% availability for the S3 platform;
+
+    - Amazon guarantees 99.9% availability;
+
+    - Amazon guarantees 99.999999999% durability for S3 information (Remember 11 x 9s);
+
+    - Tiered storage available;
+
+    - Lifecycle management;
+
+    - Versioning;
+
+    - Encyption;
+
+    - Secure your data using Access Control Lists and Bucket Policies.
+
+    
