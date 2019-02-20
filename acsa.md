@@ -332,4 +332,34 @@
 
   - **S3 Storage Classes/Tiers*:**
 
-    - 
+    - **S3** (durable, immediatly available, frequently accessed);
+
+    - **S3 - IA** (durable, immediatly available, infrequently accessed);
+
+    - **S3 One Zone - IA** (even cheaper than IA, but only in one availabilty zone);
+
+    - **Glacier -** Archived data, where you can wait 3 - 5 hours before accessing.
+
+  - **Remember the core fundamentals of an S3 object:**
+
+    - Key (name)
+
+    - Value (data)
+
+    - Version ID
+
+    - Metadata
+
+    - Subresources
+
+      - ACL (Access Control List)
+
+      - Torrent
+
+  - Object-based storage only (for files)
+
+  - Sucessfull uploads will generate a HTTP 200 status code
+
+  - **Not suitable to install operating systems, databases or applications on**
+
+  - **Read the S3 FAQs before taking the exam. It comes up A LOT!!!**
