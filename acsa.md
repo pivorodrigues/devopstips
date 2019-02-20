@@ -308,4 +308,22 @@
 
 <p align="center"><img src="images/s3Classes.png" width="500px"></p>
 
-#
+- **S3 - Charges**
+
+  - Charged for:
+
+    - Storage;
+
+    - Requests;
+
+    - Storage Management Pricing;
+
+    - Data Transfer Pricing;
+
+    - Transfer Acceleration.
+
+  - _What is S3 Transfer Acceleration?_
+
+  Amazon S3 Transfer Acceleration enables fast, easy and secure transfers of files over long distances between your end users and an S3 bucket. Transfer Acceleration takes advantage of Amazon CloudFront´s globally distributed edge locations. As the data arrives at an edge location, data is routed to Amazon S3 over an optimized network path.
+
+  <p align="center"><img src="images/s3ta.png" width="500px"></p>
