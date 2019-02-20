@@ -305,3 +305,5 @@
   - **S3 One Zone - IA:** Want a lower-cost option for infrequently accessed data, but do not require the multiple Availability Zone data resilience;
 
   - **Glacier:** Very cheap, but used for archival only. Expedited, Standard or Bulk. A Standard retrieval time takes 3 - 5 hours.
+
+<p align="center"><img src="images/s3classes.png" width="350px"></p>
