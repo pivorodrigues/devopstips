@@ -246,13 +246,15 @@
 
   - There is unlimited storage. But, you have to be careful with your budget;
 
-  - Files are storage in buckets;
+  - Files are storage in buckets*;
 
   - S3 is a universal namespace. That is, names must be unique globally;
 
   - https://s3-eu-west-1.amazonaws.com/acloudguru
 
   - When you upload a file to S3, you will receive a HTTP 200 code if the upload was successfull.
+
+  _*Buckets: It´s basically a folder which you´re going to store all your objects and objects are simply files._
 
 - **Data Consistency Model for S3** :star:
 
