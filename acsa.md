@@ -390,8 +390,6 @@
 
   - BY DEFAULT, BUCKETS ARE **PRIVATE** AND ALL OBJECTS STORED INSIDE THEM ARE PRIVATE.
 
-<p>
-
 - **S3 - Versioning Lab (Exam Tips)**
 
   - Stores all versions of an object (including all writes and even if you delete an object);
@@ -402,4 +400,4 @@
 
   - Integrates with Lifecycle rules;
 
-  - Versioning´s MFA Delete capability, which uses multi-factor authentication, can be used to provide an additional layer of security.</p>
+  - Versioning´s MFA Delete capability, which uses multi-factor authentication, can be used to provide an additional layer of security.
