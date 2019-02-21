@@ -390,6 +390,8 @@
 
   - BY DEFAULT, BUCKETS ARE **PRIVATE** AND ALL OBJECTS STORED INSIDE THEM ARE PRIVATE.
 
+<p>
+
 - **S3 - Versioning Lab (Exam Tips)**
 
   - Stores all versions of an object (including all writes and even if you delete an object);
