@@ -402,4 +402,4 @@
 
   - Integrates with Lifecycle rules;
 
-  - Versioning´s MFA Delete capability, which uses multi-factor authentication, can be used to provide an additional layer of security.
+  - Versioning´s MFA Delete capability, which uses multi-factor authentication, can be used to provide an additional layer of security.</p>
