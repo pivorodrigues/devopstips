@@ -382,10 +382,22 @@
 
       - Server side encryption with Amazon S3 Managed Keys (SSE-S3);
 
-      - Server side encryption with KMS (SSe-KMS);
+      - Server side encryption with KMS (SSE-KMS);
 
       - Server side encryption with Customer Provided Keys (SSE-C).
 
   - Control access to buckets using either a bucket ACL or using Bucket Policies;
 
   - BY DEFAULT, BUCKETS ARE **PRIVATE** AND ALL OBJECTS STORED INSIDE THEM ARE PRIVATE.
+
+- **S3 - Versioning Lab (Exam Tips)**
+
+  - Stores all versions of an object (including all writes and even if you delete an object);
+
+  - Great backup tool;
+
+  - Once enable, Versioning cannot be disable, only suspended;
+
+  - Integrates with Lifecycle rules;
+
+  - Versioning´s MFA Delete capability, which uses multi-factor authentication, can be used to provide an additional layer of security.
