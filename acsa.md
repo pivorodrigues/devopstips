@@ -461,3 +461,7 @@ _(https://aws.amazon.com/pt/solutions/cross-region-replication-monitor/)_
     - Archive to the Glacier Storage Class (30 days after IA, if relevant);
 
     - Permanently delete.
+
+#
+
+**CloudFront CDN Overview** <img src="images/cloudfront.png" width="20px">    
