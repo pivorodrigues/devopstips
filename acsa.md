@@ -402,6 +402,38 @@
 
   - Versioning´s MFA Delete capability, which uses multi-factor authentication, can be used to provide an additional layer of security.
 
-- **Cross Region Replication - Lab**
+- **S3 - Cross Region Replication Lab**
 
-  - 
+  - **Steps to do cross region replication via command line:**
+
+    1. Install _awscli_ (https://docs.aws.amazon.com/pt_br/cli/latest/userguide/cli-chap-install.html) _Obs: I used homebrew to install it._;
+
+    2. Create a group with administrator permissions;
+
+    3. Add user to the administrator group;
+
+    4. Configure glogcli with the command: `$ aws configure`;
+
+    5. Enter the user's **AWS Access Key ID** and **AWS Secret Access Key**;
+
+    6. Test with the command: `$ aws s3 ls`;
+
+    7. Copy content from a bucket to another with the command: `$ aws s3 cp --recursive s3://myversioningbucket-pivorodrigues s3://pivorodrigues-sydney`
+
+    8. Check the replication of the files and test the replication of another versions of them.
+
+  - **S3 - Cross Region Replication Exam Tips**
+
+    - Versioning must be enabled on both the source and destination buckets;
+
+    - Regions must be unique;
+
+    - Files in an existing bucket are not replicated automatically. All subsequent updated files will be replicated automatically;
+
+    - You cannot replicate to multiple buckets or use daisy chaining (at this time);
+
+    - Delete markers are NOT replicated;
+
+    - Deleting individual versions or delete markers will not be replicated;
+
+    - Understand what Cross Region Replication is at a high level.
