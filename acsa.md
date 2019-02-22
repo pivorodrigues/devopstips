@@ -490,4 +490,10 @@ _(https://aws.amazon.com/pt/solutions/cross-region-replication-monitor/)_
 
 - **CloudFront - Exam Tips**
 
-  - 
+  - **Edge Locations** are not just READ only, you can write to the too (i.e. put an object on to them);
+
+  - Objects are cached for the life of the **TTL (Time To Live)**;
+
+  - You can clear cached objects, but you will be **charged**;
+
+# 
