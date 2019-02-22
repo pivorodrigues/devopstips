@@ -7,14 +7,14 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 ## 0. Code Version Control
 
-- **GIT** :white_check_mark:
+- **GIT** <img src="images/check-png.png" width="20px">
   - [Tips](git.md)
 
 #
 
 ## 4. Networking and Security
 
-- **Networking for Web Developers** :white_check_mark:
+- **Networking for Web Developers** <img src="images/check-png.png" width="20px">
   - [Tips](nfwd.md)
 
 - **Cisco CCNA Datacenter Concepts**
@@ -61,5 +61,5 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 ### Apache Hadoop
 
-- **[Coursera] Hadoop Platform and Application Framework** :white_check_mark:
+- **[Coursera] Hadoop Platform and Application Framework** <img src="images/check-png.png" width="20px">
   - [My Notes](hpaf.md)
