@@ -52,7 +52,7 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 ### **AWS**
 
 - **AWS Certified Solutions Architecht**
-  - [A Cloud Guru](acsa.md) <img src="images/acloudguru.png" width="20px">
+  - [A Cloud Guru](acsa.md) <img src="images/acloudguru.png" width="30px">
   - [Amazon Web Services - A practical guide](https://github.com/open-guides/og-aws)
 
 #

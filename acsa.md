@@ -1,4 +1,4 @@
-# <img src="images/acloudguru.png" width="20px"> AWS Certified Solutions Architecht - A Cloud Guru <img src="images/acloudguru.png" width="20px">
+# <img src="images/acloudguru.png" width="30px"> AWS Certified Solutions Architecht - A Cloud Guru <img src="images/acloudguru.png" width="30px">
 
 ## Exam Blue Print
 
