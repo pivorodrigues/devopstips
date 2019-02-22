@@ -236,7 +236,7 @@ _(https://aws.amazon.com/pt/iam/)_
 
 ### AWS Object Storage and CDN - S3, Glacier and CloudFront
 
-#### S3 - 101 <img src="images/s3logo.png" width="20px">
+**S3 - 101** <img src="images/s3logo.png" width="20px">
 
 _(https://aws.amazon.com/pt/s3/)_
 
