@@ -478,4 +478,16 @@ _(https://aws.amazon.com/pt/solutions/cross-region-replication-monitor/)_
 
     - **Distribution** - This is the name given the CDN which consists of a collection of Edge Locations.
 
+    - **Web Distribution** - Typically used for Websites.
+
+    - **RTMP** - Used for Media Streaming.
+
     <p align="center"><img src="images/cdnoverview.png" width="500px"></p>
+
+  - Amazon CloudFront can be used to deliver your entire website, including dynamic, static, streaming and interactive content using a global network of edge locations. Requests for your content are automatically routed to the nearest edge location, so, content is delivered with the best possible performance.
+
+  Amazon CloudFront is optimized to work with other Amazon Web Services, like Amazon Simple Storage Service (Amazon S3), Amazon Elastic Compute Cloud (EC2), Amazon Elastic Load Balancing, and Amazon Route53. Amazon CloudFront also works seamlessly with any non-AWS origin server, which stores the original, definitive versions of your files.
+
+- **CloudFront - Exam Tips**
+
+  - 
