@@ -143,6 +143,8 @@
 
 ### Identity Access Management - 101 <img src="images/iamlogo.png" width="10px">
 
+_(https://aws.amazon.com/pt/iam/)_
+
 - **What Is IAM?**
 
   - **IAM** allows you to manage users and their level of access to the AWS Console.
@@ -437,3 +439,5 @@
     - Deleting individual versions or delete markers will not be replicated;
 
     - Understand what Cross Region Replication is at a high level.
+
+- **Lifecycle Management and Glacier - Lab**
