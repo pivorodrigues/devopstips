@@ -1,4 +1,4 @@
-# :cloud: AWS Certified Solutions Architecht - My Notes :cloud:
+# :cloud: AWS Certified Solutions Architecht - A Cloud Guru :cloud:
 
 ## Exam Blue Print
 
@@ -496,4 +496,4 @@ _(https://aws.amazon.com/pt/solutions/cross-region-replication-monitor/)_
 
   - You can clear cached objects, but you will be **charged**;
 
-# 
+#
