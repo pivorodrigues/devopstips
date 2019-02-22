@@ -236,6 +236,8 @@ _(https://aws.amazon.com/pt/iam/)_
 
 ### S3 - 101 <img src="images/s3logo.png" width="20px">
 
+_(https://aws.amazon.com/pt/s3/)_
+
 - **What is Amazon S3 (Simple Storage Service)?**
 
   - **S3** provides developers and IT teams with secure, durable, highly-scalable object storage. Amazon S3 is easy to use, with a simple web services interface to store and retrieve any amount of data from anywhere on the web. S3 is a safe place to store your files. It is a Object-based storage. The data is spread across multiple devices and facilities.
@@ -406,6 +408,8 @@ _(https://aws.amazon.com/pt/iam/)_
 
 - **S3 - Cross Region Replication Lab**
 
+_(https://aws.amazon.com/pt/solutions/cross-region-replication-monitor/)_
+
   - **Steps to do cross region replication via command line:**
 
     1. Install _awscli_ (https://docs.aws.amazon.com/pt_br/cli/latest/userguide/cli-chap-install.html) _Obs: I used homebrew to install it._;
@@ -439,5 +443,7 @@ _(https://aws.amazon.com/pt/iam/)_
     - Deleting individual versions or delete markers will not be replicated;
 
     - Understand what Cross Region Replication is at a high level.
+
+    _(https://docs.aws.amazon.com/pt_br/AmazonS3/latest/dev/ObjectVersioning.html)_    
 
 - **Lifecycle Management and Glacier - Lab**
