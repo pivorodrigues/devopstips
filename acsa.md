@@ -446,4 +446,16 @@ _(https://aws.amazon.com/pt/solutions/cross-region-replication-monitor/)_
 
     _(https://docs.aws.amazon.com/pt_br/AmazonS3/latest/dev/ObjectVersioning.html)_    
 
-- **Lifecycle Management and Glacier - Lab**
+- **Lifecycle Management, S3 - IA and Glacier - Lab**
+
+  - Can be used in conjunction with versioning;
+
+  - Can be applied to current versions and previous versions;
+
+  - Following actions can now be done:
+
+    - Transition to the Standard - Infrequently Access Storage Class (Minimum 30 days after the creation date);
+
+    - Archive to the Glacier Storage Class (30 days after IA, if relevant);
+
+    - Permanently delete.
