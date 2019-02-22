@@ -464,4 +464,18 @@ _(https://aws.amazon.com/pt/solutions/cross-region-replication-monitor/)_
 
 #
 
-**CloudFront CDN Overview** <img src="images/cloudfront.png" width="20px">    
+**CloudFront CDN Overview** <img src="images/cloudfront.png" width="20px">
+
+  - **What is a CDN?**
+
+    - _A content delivery network (CDN) is a system of distributed servers (network) that deliver webpages and other web content to a user based on the geographic locations of the user, the origin of the webpage and a content delivery server._
+
+  - **CloudFront - Key Terminology**
+
+    - **Edge Location** - This is the location where content will be cached. This is separate to an AWS Region/AZ.
+
+    - **Origin** - This is the origin of all the files that the CDN will distribute. This can be either an S3 Bucket, an EC2 Instance, an Elastic Load Balancer or Route 53.
+
+    - **Distribution** - This is the name given the CDN which consists of a collection of Edge Locations.
+
+    <p align="center"><img src="images/cdnoverview.png" width="500px"></p>
