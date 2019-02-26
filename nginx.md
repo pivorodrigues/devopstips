@@ -63,7 +63,9 @@ http {
 
 #
 
-**How to install Nginx from Source Code**
+**How to install Nginx from Source Code with additional modules**
+
+_The additional modules cannot be installed by package manager_
 
 - Download the source code:
 
@@ -80,3 +82,15 @@ http {
   or
 
   `$ yum install libpcre3 libpcre3-dev zlib1g zlib1g-dev libssl-dev`
+
+- Install Nginx with custom configuration:
+
+  `$ ./configure --sbin-path=/usr/bin/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-pcre --pid-path=/var/run/nginx.pid --with-http_ssl_module`
+
+  `$ make`
+
+  `$ make configure`
+
+#
+
+  
