@@ -62,3 +62,21 @@ http {
   <p align="center"><img src="images/nginx2.png" width="500px"></p>
 
 #
+
+**How to install Nginx from Source Code**
+
+- Download the source code:
+
+  `$ wget https://nginx.org/download/nginx-1.15.9.tar.gz`
+
+- Extract the source code:
+
+  `$ tar -xzvf nginx-1.15.9.tar.gz`
+
+- Install the system dependencies:
+
+  `$ apt install libpcre3 libpcre3-dev zlib1g zlib1g-dev libssl-dev`
+
+  or
+
+  `$ yum install libpcre3 libpcre3-dev zlib1g zlib1g-dev libssl-dev`
