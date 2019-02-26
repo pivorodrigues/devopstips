@@ -63,7 +63,7 @@ http {
 
 #
 
-**How to install Nginx from Source Code with additional modules**
+**How to install NGINX from Source Code with additional modules**
 
 _The additional modules cannot be installed by package manager_
 
@@ -83,7 +83,7 @@ _The additional modules cannot be installed by package manager_
 
   `$ yum install libpcre3 libpcre3-dev zlib1g zlib1g-dev libssl-dev`
 
-- Install Nginx with custom configuration:
+- Install NGINX with custom configuration:
 
   `$ ./configure --sbin-path=/usr/bin/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-pcre --pid-path=/var/run/nginx.pid --with-http_ssl_module`
 
@@ -99,4 +99,36 @@ _The additional modules cannot be installed by package manager_
 
 #
 
-**Adding an Nginx Service**
+**Adding an NGINX Service**
+
+- Create the NGINX systemd service file:
+
+  `$ touch /lib/systemd/system/nginx.service`
+
+- Paste the content in the NGINX systemd service file _(https://www.nginx.com/resources/wiki/start/topics/examples/systemd/)_:
+
+  ```
+    [Unit]
+    Description=The NGINX HTTP and reverse proxy server
+    After=syslog.target network.target remote-fs.target nss-lookup.target
+
+    [Service]
+    Type=forking
+    PIDFile=/var/run/nginx.pid
+    ExecStartPre=/usr/bin/nginx -t
+    ExecStart=/usr/bin/nginx
+    ExecReload=/usr/bin/nginx -s reload
+    ExecStop=/bin/kill -s QUIT $MAINPID
+    PrivateTmp=true
+
+    [Install]
+    WantedBy=multi-user.target
+  ```
+
+- Start the NGINX service:
+
+  `$ systemctl start nginx`
+
+- Set NGINX to start in boot:
+
+  `$ systemctl enable nginx`  
