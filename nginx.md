@@ -91,7 +91,11 @@ _The additional modules cannot be installed by package manager_
 
   `$ make install`
 
-  `$ nginx -V`
+  `$ nginx -V` _Check the Nginx's version_
+
+  `$ nginx` _Start the Nginx_
+
+  `$ nginx -s <signal>` _Send a signal to Nginx, like stop, start, reload, etc._
 
 #
 
