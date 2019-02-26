@@ -89,8 +89,10 @@ _The additional modules cannot be installed by package manager_
 
   `$ make`
 
-  `$ make configure`
+  `$ make install`
+
+  `$ nginx -V`
 
 #
 
-  
+**Adding an Nginx Service**
