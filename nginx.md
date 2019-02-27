@@ -131,4 +131,20 @@ _The additional modules cannot be installed by package manager_
 
 - Set NGINX to start in boot:
 
-  `$ systemctl enable nginx`  
+  `$ systemctl enable nginx`
+
+#
+
+**Understanding Configuration Terms**
+
+- **Context:**
+
+  `server_name mydomain.com`
+
+- **Directives:**
+
+- **Main context:** Is where we configure global directives that apply to the master process.
+
+- Contains an http context, where we define a virtual host similar to an Apache V host and location contexts for matching
+
+<p align="center"><img src="images/maincontext.png" width="500px"></p>
