@@ -143,8 +143,8 @@ _The additional modules cannot be installed by package manager_
 
 - **Directives:**
 
-- **Main context:** Is where we configure global directives that apply to the master process.
+  - **Main context:** Is where we configure global directives that apply to the master process.
 
-- Contains an http context, where we define a virtual host similar to an Apache V host and location contexts for matching
+  <p align="center"><img src="images/maincontext.png" width="500px"></p>
 
-<p align="center"><img src="images/maincontext.png" width="500px"></p>
+  - Contains an http context, where we define a virtual host similar to an Apache V host and location contexts for matching
