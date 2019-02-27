@@ -147,4 +147,53 @@ _The additional modules cannot be installed by package manager_
 
   <p align="center"><img src="images/maincontext.png" width="500px"></p>
 
-  - Contains an http context, where we define a virtual host similar to an Apache V host and location contexts for matching
+  - **HTTP Context:** It contains anything for HTTP related.
+
+  ```
+  http {
+    index index.html;
+
+    server {
+      server_name www.domain1.com;
+      access_log logs/domain1.access.log main;
+
+      root /var/www/domain1.com/htdocs;
+    }
+
+    server {
+      server_name www.domain2.com;
+      access_log  logs/domain2.access.log main;
+
+      root /var/www/domain2.com/htdocs;
+
+      location /some_path {
+        add_header header_name header_value;
+      }
+    }
+  }
+  ```
+
+  - **Server context:** is where we define a virtual host similar to an Apache V host.
+
+  ```
+    server {
+      server_name www.domain2.com;
+      access_log  logs/domain2.access.log main;
+
+      root /var/www/domain2.com/htdocs;
+
+      location /some_path {
+        add_header header_name header_value;
+      }
+    }
+  ```
+
+  - **Location context:** Is used for matching URI locations on incoming requests to the parent server context.
+
+  ```
+    location /some_path {
+      add_header header_name header_value;
+    }
+  ```  
+
+#
