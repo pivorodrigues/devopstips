@@ -137,11 +137,11 @@ _The additional modules cannot be installed by package manager_
 
 **Understanding Configuration Terms**
 
-- **Context:**
-
-  `server_name mydomain.com`
-
 - **Directives:**
+
+  `server_name mydomain.com;`
+
+- **Contexts:** Are the sections within the configuration where directives can be set for that given context.
 
   - **Main context:** Is where we configure global directives that apply to the master process.
 
