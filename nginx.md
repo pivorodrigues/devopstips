@@ -268,7 +268,7 @@ _The additional modules cannot be installed by package manager_
     }
   ```
 
-- Class Location Block example:
+- Course Location Block example:
 
   ```
     events {}
