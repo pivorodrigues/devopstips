@@ -229,4 +229,84 @@ _The additional modules cannot be installed by package manager_
 
 - Test Nginx delivery with curl:
 
-  `$ curl -I http://167.99.93.26/index.html`    
+  `$ curl -I http://167.99.93.26/index.html`
+
+#
+
+**Location Blocks**
+
+- Location Block syntax:
+
+  ```
+    server {
+      location URI {
+        ...handle response
+      }
+    }
+  ```
+
+- My Location Block conf example:
+
+  ```
+    events {}
+
+    http {
+
+      include mime.types;
+
+      server {
+
+        listen 80;
+        server_name 172.31.95.110;
+
+        root /sites/demo;
+
+        location /healthcheck {
+           return 200 'WORKING';
+        }
+      }
+    }
+  ```
+
+- Class Location Block example:
+
+  ```
+    events {}
+
+    http {
+
+      include mime.types;
+
+      server {
+
+        listen 80;
+        server_name 167.99.93.26;
+
+        root /sites/demo;
+
+        # Preferential Prefix match
+        location ^~ /Greet2 {
+          return 200 'Hello from NGINX "/greet" location.';
+        }
+
+        # # Exact match
+        # location = /greet {
+        #   return 200 'Hello from NGINX "/greet" location - EXACT MATCH.';
+        # }
+
+        # # REGEX match - case sensitive
+        # location ~ /greet[0-9] {
+        #   return 200 'Hello from NGINX "/greet" location - REGEX MATCH.';
+        # }
+
+        # REGEX match - case insensitive
+        location ~* /greet[0-9] {
+          return 200 'Hello from NGINX "/greet" location - REGEX MATCH INSENSITIVE.';
+        }
+      }
+    }
+  ```  
+
+#
+
+**Variables**
