@@ -310,3 +310,15 @@ _The additional modules cannot be installed by package manager_
 #
 
 **Variables**
+
+- **Configuration Variables:**
+
+  - set $var 'something';
+
+- **NGINX Module Variables:**
+
+  - $http, $uri, $args
+
+- **NGINX Alphabetical index of variables:**
+
+- http://nginx.org/en/docs/varindex.html  
