@@ -197,3 +197,36 @@ _The additional modules cannot be installed by package manager_
   ```  
 
 #
+
+**Creating a virtual host**
+
+- /etc/nginx/nginx.conf
+
+  ```
+    events {}
+
+      http {
+
+        include mime.types;
+
+          server {
+
+            listen 80;
+            server_name 167.99.93.26;
+
+            root /sites/demo;
+          }
+      }
+  ```
+
+- Test Nginx's syntax:
+
+  `$ nginx -t`
+
+- Reload Nginx:
+
+  `$ systemctl reload nginx`
+
+- Test Nginx delivery with curl:
+
+  `$ curl -I http://167.99.93.26/index.html`    
