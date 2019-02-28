@@ -235,7 +235,7 @@ _The additional modules cannot be installed by package manager_
 
 **Location Blocks**
 
-- Location Block syntax:
+- Location Block basic syntax:
 
   ```
     server {
