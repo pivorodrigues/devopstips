@@ -537,3 +537,7 @@ _OBS: Now in the console, CloudFront is in the Network and Content Delivery menu
 #
 
 **Storage Gateway** <img src="images/storage-gateway.png" width="20px">
+
+- AWS Storage Gateway is a service that connects an on-premises software appliance with cloud-based storage to provide seamless and secure integration between an organization's on-premises IT environment and AWS's storage infrastructure. The service enables you to securely store data to the AWS cloud for scalable and cost-effective storage.
+
+<p align="center"><img src="images/sgexplained.png" width="350px"></p>  
