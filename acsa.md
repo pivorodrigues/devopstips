@@ -554,7 +554,7 @@ _OBS: Now in the console, CloudFront is in the Network and Content Delivery menu
 
     - Cached Volumes
 
-  - Tape Gateway (VTL)
+    - Tape Gateway (VTL)
 
 - **File Gateway (NFS):** Files are stored as objects in your S3 buckets, accessed through a Network File System (NFS) mount point. Ownership, permissions and timestamps are durably stored in S3 in the user-metadata of the object associated with the file. Once objects are transferred to S3, they can be managed as native S3 objects, and bucket policies such as versioning, lifecycle management and cross-region replication apply directly to objects stored in your bucket.
 
@@ -569,3 +569,7 @@ _OBS: Now in the console, CloudFront is in the Network and Content Delivery menu
   - **Cached Volumes:** Cached volumes let you use Amazon Simple Storage Service (Amazon S3) as your primary data storage while retaining frequently accessed data locally in your storage gateway. Cached volumes minimize the need to scale your on-premises storage infrastructure, while still providing your applications with low-latency access to their frequently accessed data. You can create storage volumes up to 32 TiB in size and attach to them as iSCSI devices from your on-premises application servers. You gateway stores data that you write to these volumes in Amazon S3 and retains recently data in your on-premises storage gateway's cache and upload buffer storage. 1GB - 32TB in size for Cached Volumes.
 
   <p align="center"><img src="images/aws-storage-gateway-cached-diagram.png" width="500px"></p>
+
+  - **Tape Gateway:** Tape Gateway offers a durable, cost-effective solution to archive your data in the AWS Cloud. The VTL interface it provides lets you leverage your existing tape-based backup application infrastructure to store data on virtual tape cartridges that you create on yout tape gateway. Each tape gateway is preconfigured with a media charger and tape drives, which are available to your existing client backup applications as iSCSI devices. You add tape cartridges as you need to archive your data. Supported by NetBackup, Backup Exec, Veeam etc.
+
+  <p align="center"><img src="images/vtldiagram.png" width="500px"></p>  
