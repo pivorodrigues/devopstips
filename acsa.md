@@ -532,4 +532,8 @@ _OBS: Now in the console, CloudFront is in the Network and Content Delivery menu
 
       - Server Side Encryption With Customer Provided Keys - **SSE-C**;
 
-  - Client Side Encryption.    
+  - Client Side Encryption.
+
+#
+
+**Storage Gateway** <img src="images/storage-gateway.png" width="20px">
