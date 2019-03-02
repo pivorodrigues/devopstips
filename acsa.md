@@ -496,4 +496,40 @@ _(https://aws.amazon.com/pt/solutions/cross-region-replication-monitor/)_
 
   - You can clear cached objects, but you will be **charged**;
 
+- **Create a CloudFront CDN - Lab**
+
+_OBS: Now in the console, CloudFront is in the Network and Content Delivery menu._
+
 #
+
+**S3 - Security & Encryption**
+
+- **Securing your buckets**
+
+  - By default, all newly created buckets are **private**;
+
+  - You can setup access control to your buckets using:
+
+    - Bucket policies;
+
+    - Access Control Lists (ACLs);
+
+  - S3 buckets can be configured to create access logs, which log all requests made to the S3 bucket. This can be done to another bucket.
+
+- **Encryption**
+
+  - In transit:
+
+    - SSL/TLS
+
+  - At Rest:
+
+    - Server side encryption:
+
+      - S3 Managed Keys - **SSE-S3**;
+
+      - AWS Key Management Service, Managed Keys - **SSE-KMS**;
+
+      - Server Side Encryption With Customer Provided Keys - **SSE-C**;
+
+  - Client Side Encryption.    
