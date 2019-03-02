@@ -558,4 +558,4 @@ _OBS: Now in the console, CloudFront is in the Network and Content Delivery menu
 
 - **File Gateway (NFS):** Files are stored as objects in your S3 buckets, accessed through a Network File System (NFS) mount point. Ownership, permissions and timestamps are durably stored in S3 in the user-metadata of the object associated with the file. Once objects are transferred to S3, they can be managed as native S3 objects, and bucket policies such as versioning, lifecycle management and cross-region replication apply directly to objects stored in your bucket.
 
-<p align="center"><img src="images/file-gateway-concepts-diagram.png" width="350px"></p>
+<p align="center"><img src="images/file-gateway-concepts-diagram.png" width="500px"></p>
