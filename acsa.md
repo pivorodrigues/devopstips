@@ -559,3 +559,9 @@ _OBS: Now in the console, CloudFront is in the Network and Content Delivery menu
 - **File Gateway (NFS):** Files are stored as objects in your S3 buckets, accessed through a Network File System (NFS) mount point. Ownership, permissions and timestamps are durably stored in S3 in the user-metadata of the object associated with the file. Once objects are transferred to S3, they can be managed as native S3 objects, and bucket policies such as versioning, lifecycle management and cross-region replication apply directly to objects stored in your bucket.
 
 <p align="center"><img src="images/file-gateway-concepts-diagram.png" width="500px"></p>
+
+- **Volume Gateway:** The volume interface presents your applications with disk volumes using iSCSI block protocol. Data written to these volumes can be asynchronously backed up as point-in-time snapshots of your volumes and stored in the cloud as Amazon EBS snapshots. Snapshots are incremental backups that captured only changed blocks. All snapshot storage is also compressed to minimize yout storage charges.
+
+  - **Stored Volumes:** Stored volumes let you store your primary data locally, while asynchronously backing up that to AWS. Stored volumes provide your on-premises applications with low-latency access to their entire datasets, while providing durable, off-site backups. You can create storage volumes and mount then as iSCSI devices from your on-premises application servers. Data written to your stored volumes is stored on your on-premises storage hardware. This data is asynchronously backed up to Amazon Simple Storage Service (Amazon S3) in the form of Amazon Elastic Block Store (Amazon EBS) snapshots. 1GB - 16TB in size for Stored Volumes.
+
+  <p align="center"><img src="images/aws-storage-gateway-stored-diagram.png" width="500px"></p>
