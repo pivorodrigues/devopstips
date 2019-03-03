@@ -570,7 +570,7 @@ _OBS: Now in the console, CloudFront is in the Network and Content Delivery menu
 
   <p align="center"><img src="images/aws-storage-gateway-cached-diagram.png" width="500px"></p>
 
-  - **Tape Gateway:** Tape Gateway offers a durable, cost-effective solution to archive your data in the AWS Cloud. The VTL interface it provides lets you leverage your existing tape-based backup application infrastructure to store data on virtual tape cartridges that you create on yout tape gateway. Each tape gateway is preconfigured with a media charger and tape drives, which are available to your existing client backup applications as iSCSI devices. You add tape cartridges as you need to archive your data. Supported by NetBackup, Backup Exec, Veeam etc.
+  - **Tape Gateway:** Tape Gateway offers a durable, cost-effective solution to archive your data in the AWS Cloud. The VTL interface it provides lets you leverage your existing tape-based backup application infrastructure to store data on virtual tape cartridges that you create on your tape gateway. Each tape gateway is preconfigured with a media charger and tape drives, which are available to your existing client backup applications as iSCSI devices. You add tape cartridges as you need to archive your data. Supported by NetBackup, Backup Exec, Veeam etc.
 
   <p align="center"><img src="images/vtldiagram.png" width="500px"></p>
 
