@@ -67,3 +67,7 @@ Os nomes da tabela e das colunas são utilizados para facilitar a interpretaçã
   - **Atributo:** Os atributos de uma relação constituem as colunas da tabela. Por exemplo, na tabela Departamento temos os atributos ID, NOME e ID_REGIAO. É importante ressaltar que todo Atributo possui um Domínio. O conjunto dos atributos de uma tabela constituem o seu Esquema.
 
   <p align="center"><img src="images/atributo.png" width="300px"></p>
+
+  - **Tupla:** As tuplas de uma relação constituem as linhas da tabela. Por exemplo, na Tabela Departamento, a linha do Departamento de Vendas constitui uma tupla da relação. O conjunto das Tuplas de uma tabela constituem a sua Instância.
+
+  <p align="center"><img src="images/tupla.png" width="300px"></p>
