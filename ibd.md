@@ -17,3 +17,53 @@
 - **Dados:** Conjunto de valores armazenados pelo banco de dados em seus arquivos.
 
 - **Catálogo:** Armazena meta-dados, ou seja, informações referentes ao tipo e organização dos dados do banco.
+
+#
+
+**Modelos de dados**
+
+O Modelo de Dados é basicamente um conjunto de conceitos utilizados para descrever um banco de dados. Não existe uma única forma de representação deste modelo, porém qualquer forma que permita a correta compreensão das estruturas de dados compreendidas no banco de dados pode ser considerada adequada.
+
+Os tipos de modelo são:
+
+- **Alto nível ou modelo de dados conceitual:** Fornece uma visão mais próxima do modo como os usuários visualizam os dados realmente O modelo entidade-relacionamento e o funcional são exemplos deste tipo de abordagem.
+
+- **Baixo nível ou modelo de dados físico:** Fornece uma visão mais detalhada do modo como os dados estão realmente armazenados no computador . O modelo relacional, o modelo de rede e o hierárquico e o orientado a objetos são exemplos deste tipo de representação.
+
+**Esquemas e instâncias**
+
+Em qualquer modelo de dados utilizado, é importante distinguir a “descrição” do banco de dados do “banco de dados” por si próprio. A descrição de um banco de dados é chamada de “esquema de um banco de dados” e é especificada durante o projeto do banco de dados. Geralmente, poucas mudanças ocorrem no esquema do banco de dados.
+
+Os dados armazenados em um banco de dados em um determinado instante do tempo formam um conjunto chamado de “instância do banco de dados”. A instância altera toda vez que uma alteração no banco de dados é feita.
+
+O SGBD é responsável por garantir que toda instância do banco de dados satisfaça ao esquema do banco de dados, respeitando sua estrutura e suas restrições.
+
+**Arquitetura Três Esquemas:** Visando facilitar o desenvolvimento de sistemas e realçar as vantagens da utilização de Sistemas de Banco de Dados foi criada a Arquitetura Três Esquemas, cuja  principal meta é separar as aplicações do usuário do banco de dados físico.
+ 
+Os esquemas podem ser definidos como:
+
+- **Esquema EXTERNO (mapeamento externo/conceitual):** Descreve as visões do banco de dados para um grupo de usuários; cada visão descreve quais porções do banco de dados um grupo de usuários terá acesso.
+
+- **Esquema CONCEITUAL (mapeamento conceitual/interno):** Descreve a estrutura do banco como um todo; é uma descrição global do banco de dados, que não fornece detalhes do modo com os dados estão fisicamente armazenados.
+
+- **Esquema INTERNO:** Descreve a estrutura de armazenamento físico do banco de dados; utiliza um modelo de dados e descreve detalhadamente os dados armazenados e os caminhos de acesso ao banco de dados.
+
+#
+
+**Modelo Relacional:** O modelo relacional se propõe a representar os dados em uma coleção de relações. Desta forma, as relações são vistas como tabelas de valores, onde cada linha representa uma coleção de dados relacionados. Estes valores podem ser interpretados como fatos descrevendo uma instância de uma entidade ou de um relacionamento do mundo real.
+Os nomes da tabela e das colunas são utilizados para facilitar a interpretação dos valores armazenados em cada linha da tabela.
+
+  - **Relação:** No modelo relacional uma relação é uma tabela onde são armazenados dados. Por exemplo, podemos ter em nosso Banco de Dados as Relações Departamento e Região que armazenam respectivamente os dados dos departamentos e das regiões. As relações apresentam as seguintes características:
+
+    1. Não há tuplas duplicadas em uma relação;
+
+    2. Ordem das tuplas na relação não é relevante para diferenciar as relações;
+
+    3. Os valores dos atributos devem ser atômicos, não sendo divisíveis em componentes.
+
+    <p align="center"><img src="images/relacao.png" width="500px"></p>
+
+
+  - **Atributo:** Os atributos de uma relação constituem as colunas da tabela. Por exemplo, na tabela Departamento temos os atributos ID, NOME e ID_REGIAO. É importante ressaltar que todo Atributo possui um Domínio. O conjunto dos atributos de uma tabela constituem o seu Esquema.
+
+  <p align="center"><img src="images/atributo.png" width="500px"></p>
