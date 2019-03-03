@@ -66,4 +66,4 @@ Os nomes da tabela e das colunas são utilizados para facilitar a interpretaçã
 
   - **Atributo:** Os atributos de uma relação constituem as colunas da tabela. Por exemplo, na tabela Departamento temos os atributos ID, NOME e ID_REGIAO. É importante ressaltar que todo Atributo possui um Domínio. O conjunto dos atributos de uma tabela constituem o seu Esquema.
 
-  <p align="center"><img src="images/atributo.png" width="500px"></p>
+  <p align="center"><img src="images/atributo.png" width="300px"></p>
