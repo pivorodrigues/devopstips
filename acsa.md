@@ -627,3 +627,36 @@ _OBS: Now in the console, CloudFront is in the Network and Content Delivery menu
 [**S3 Transfer Acceleration**](https://aws.amazon.com/pt/s3/faqs/#s3ta)
 
 <p align="center"><img src="images/s3transfer.png" width="500px"></p>
+
+#
+
+[**S3 Website - Lab**](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/dev/WebsiteHosting.html)
+
+- **Exam Tips:**
+
+  - You can use bucket policies to make entire S3 buckets public;
+
+  - JSON bucket policy example:
+
+    ```
+    {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+              "Sid": "PublicReadGetObject",
+              "Effect": "Allow",
+              "Principal": "*",
+              "Action": [
+                "s3:GetObject"
+              ],
+              "Resource": [
+                "arn:aws:s3:::BUCKET_NAME/*"
+              ]
+            }
+        ]
+    }
+    ```
+
+    - You can use S3 to host **STATIC** websites (such as .html). Websites that require database connections such as Wordpress, cannot be hosted on S3;
+
+    - S3 scales automatically to meet your demand. Many enterprises will put static websites on S3 when they think there is going to be a large number of requests (such as for a movie preview for example).
