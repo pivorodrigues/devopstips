@@ -623,3 +623,7 @@ _OBS: Now in the console, CloudFront is in the Network and Content Delivery menu
 <p align="center"><img src="images/snowball-lab2.png" width="500px"></p>
 
 #
+
+[**S3 Transfer Acceleration**](https://aws.amazon.com/pt/s3/faqs/#s3ta)
+
+<p align="center"><img src="images/s3transfer.png" width="500px"></p>
