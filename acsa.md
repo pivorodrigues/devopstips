@@ -657,6 +657,6 @@ _OBS: Now in the console, CloudFront is in the Network and Content Delivery menu
     }
     ```
 
-    - You can use S3 to host **STATIC** websites (such as .html). Websites that require database connections such as Wordpress, cannot be hosted on S3;
+  - You can use S3 to host **STATIC** websites (such as .html). Websites that require database connections such as Wordpress, cannot be hosted on S3;
 
-    - S3 scales automatically to meet your demand. Many enterprises will put static websites on S3 when they think there is going to be a large number of requests (such as for a movie preview for example).
+  - S3 scales automatically to meet your demand. Many enterprises will put static websites on S3 when they think there is going to be a large number of requests (such as for a movie preview for example).
