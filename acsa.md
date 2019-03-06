@@ -616,4 +616,10 @@ _OBS: Now in the console, CloudFront is in the Network and Content Delivery menu
 
     - Export from S3.
 
+- **Snowball Lab:**
+
+<p align="center"><img src="images/snowball-lab1.png" width="500px"></p>
+
+<p align="center"><img src="images/snowball-lab2.png" width="500px"></p>
+
 #
