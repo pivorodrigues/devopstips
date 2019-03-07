@@ -236,7 +236,7 @@ _(https://aws.amazon.com/pt/iam/)_
 
 ### AWS Object Storage and CDN - S3, Glacier and CloudFront
 
-**S3 - 101** <img src="images/s3logo.png" width="20px">
+[**S3 - 101**](https://aws.amazon.com/pt/s3/faqs/) <img src="images/s3logo.png" width="20px">
 
 _(https://aws.amazon.com/pt/s3/)_
 
@@ -630,7 +630,7 @@ _OBS: Now in the console, CloudFront is in the Network and Content Delivery menu
 
 #
 
-[**S3 Website - Lab**](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/dev/WebsiteHosting.html)
+[**S3 Static Website - Lab**](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/dev/WebsiteHosting.html)
 
 - **Exam Tips:**
 
@@ -660,3 +660,13 @@ _OBS: Now in the console, CloudFront is in the Network and Content Delivery menu
   - You can use S3 to host **STATIC** websites (such as .html). Websites that require database connections such as Wordpress, cannot be hosted on S3;
 
   - S3 scales automatically to meet your demand. Many enterprises will put static websites on S3 when they think there is going to be a large number of requests (such as for a movie preview for example).
+
+- **Last Few Tips - S3:**
+
+  - Write to S3 - HTTP 200 code for a sucessfull write;
+
+  - You can load files to S3 much faster by enabling multipart upload;
+
+  - Read the S3 FAQ before taking the exam. It comes up a LOT.
+
+#
