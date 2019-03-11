@@ -48,6 +48,6 @@ Once your agent is properly installed and data is reporting to your application,
 
     `NEW_RELIC_CONFIG_FILE=newrelic.ini newrelic-admin run-program YOUR_COMMAND_OPTIONS`
 
-    If you cannot run the admin script in this way, please read the [advanced install instructions](https://docs.newrelic.com/docs/agents/python-agent/installation-configuration/python-agent-installation) for more context and other install options.
+    - If you cannot run the admin script in this way, please read the [advanced install instructions](https://docs.newrelic.com/docs/agents/python-agent/installation-configuration/python-agent-installation) for more context and other install options.
 
   5. Start or restart your Python web application or WSGI server. Wait five minutes and look for data in your New Relic account.
