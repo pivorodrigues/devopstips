@@ -345,7 +345,7 @@ _The additional modules cannot be installed by package manager_
 
   _return_ **307** /some/path;
 
-- **Example:**
+- **Redirect example:**
 
     ```
     events {}
@@ -378,3 +378,11 @@ _The additional modules cannot be installed by package manager_
   <p align="center"><img src="images/redirect1.png" width="500px"></p>
 
   <p align="center"><img src="images/redirect2.png" width="500px"></p>
+
+  - **Rewrites:** A rewrite mutates the URI internally:
+
+  <p align="center"><img src="images/rewrite1.png" width="500px"></p>
+
+  <p align="center"><img src="images/rewrite2.png" width="500px"></p>
+
+  <p align="center"><img src="images/rewrite3.png" width="500px"></p>
