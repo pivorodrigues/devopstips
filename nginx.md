@@ -326,3 +326,13 @@ _The additional modules cannot be installed by package manager_
 - **Article:** [If is Evil](https://www.nginx.com/resources/wiki/start/topics/depth/ifisevil/)
 
 #
+
+**Rewrites and Redirects**
+
+- **Rewrite directive:**
+
+  `rewrite pattern URI`
+
+- **Return directive:**
+
+  `return status URI`
