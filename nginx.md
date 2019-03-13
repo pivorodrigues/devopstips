@@ -361,16 +361,15 @@ _The additional modules cannot be installed by package manager_
 
         root /sites/demo;
 
-        location /healthcheck {
-           return 200 'WORKING';
-        }
+        rewrite ^/user/\w+ /greet;
 
-        location /logo {
-           return 307 /thumb.png;
-         }
+        location /greet {
+            return 200 "Hello User";
+        }
        }
     }
     ```
+
 - **Difference between rewrites and redirects:**
 
   - **Redirects:** A redirect simply tells the client that performing the request where to go instead:
@@ -386,3 +385,30 @@ _The additional modules cannot be installed by package manager_
   <p align="center"><img src="images/rewrite2.png" width="500px"></p>
 
   <p align="center"><img src="images/rewrite3.png" width="500px"></p>
+
+- **Redirect Example:**
+
+    ```
+      events {}
+
+      http {
+
+        include mime.types;
+
+        server {
+
+          listen 80;
+          server_name 172.31.95.110;
+
+          root /sites/demo;
+
+          location /healthcheck {
+             return 200 'WORKING';
+          }
+
+          location /logo {
+             return 307 /thumb.png;
+           }
+         }
+      }
+    ```
