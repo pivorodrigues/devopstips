@@ -374,3 +374,7 @@ _The additional modules cannot be installed by package manager_
 - **Difference between rewrites and redirects:**
 
   - **Redirects:** A redirect simply tells the client that performing the request where to go instead:
+
+  <p align="center"><img src="images/redirect1.png" width="500px"></p>
+
+  <p align="center"><img src="images/redirect2.png" width="500px"></p>
