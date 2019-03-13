@@ -336,3 +336,41 @@ _The additional modules cannot be installed by package manager_
 - **Return directive:**
 
   `return status URI`
+
+- The standard return statement takes a status code and a data or string sentence:
+
+  _return_ **200** "Hello World",  
+
+- If the response code being a **300** variant, which is for a redirect statement, the return directives behaviour changes and then excepts an URI as the second parameter A URI to which the client should be redirected:
+
+  _return_ **307** /some/path;
+
+- **Example:**
+
+    ```
+    events {}
+
+    http {
+
+      include mime.types;
+
+      server {
+
+        listen 80;
+        server_name 172.31.95.110;
+
+        root /sites/demo;
+
+        location /healthcheck {
+           return 200 'WORKING';
+        }
+
+        location /logo {
+           return 307 /thumb.png;
+         }
+       }
+    }
+    ```
+- **Difference between rewrites and redirects:**
+
+  - **Redirects:** A redirect simply tells the client that performing the request where to go instead:
