@@ -321,4 +321,8 @@ _The additional modules cannot be installed by package manager_
 
 - **NGINX Alphabetical index of variables:**
 
-- http://nginx.org/en/docs/varindex.html  
+- http://nginx.org/en/docs/varindex.html
+
+- **Article:** [If is Evil](https://www.nginx.com/resources/wiki/start/topics/depth/ifisevil/)
+
+#
