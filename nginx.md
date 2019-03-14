@@ -412,3 +412,7 @@ _The additional modules cannot be installed by package manager_
          }
       }
     ```
+
+- **Try-Files and Named Locations**
+
+  - Try-Files as with the return and rewrite directives, can be used in the _server context_. Applying to all incoming requests or inside a location context.
