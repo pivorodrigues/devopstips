@@ -425,4 +425,34 @@ _The additional modules cannot be installed by package manager_
       }
     }
   ```
-   
+
+  - What Try-files allows us to do is have Nginx check for a resource to respond worth in number of locations relative to the root directory with a final argument that result in a rewrite and re-evaluation as the rewrite directive.
+
+  - **Try-files example:**
+
+    ```
+      events {}
+
+      http {
+
+        include mime.types;
+
+        server {
+
+          listen 80;
+          server_name 172.31.95.110;
+
+          root /sites/demo;
+
+          try_files $uri /cat.png /greet /friendly_404;
+
+          location /friendly_404 {
+             return 404 'Sorry, that file could not be found.';
+          }
+
+          location /greet {
+             return 200 "Hello User";
+           }
+         }
+      }
+    ```
