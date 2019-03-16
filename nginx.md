@@ -495,4 +495,45 @@ _The additional modules cannot be installed by package manager_
 
 #
 
-      
+**Logging**
+
+  [[Article] Configuring Logging](https://docs.nginx.com/nginx/admin-guide/monitoring/logging/)
+
+  - Nginx provides us two log files for standard: **access.log** and **error.log**.
+
+  - **Log files:** _(As our installation)_
+
+    - **error.log:** `--error-log-path=/var/log/nginx/error.log`
+
+    - **access.log:** `--http-log-path=/var/log/nginx/access.log`
+
+  _OBS:_ Keep in mind that 404 is a perfectly valid response and by no means an error in itself.
+
+  ```
+    events {}
+
+    http {
+
+      include mime.types;
+
+      server {
+
+        listen 80;
+        server_name 167.99.93.26;
+
+        root /sites/demo;
+
+        location /secure {
+
+          # Add context specific log
+          access_log /var/log/nginx/secure.access.log;
+
+          # Disable logs for context
+          #access_log off;
+
+          return 200 "Welcome to secure area.";
+        }
+
+      }
+    }
+  ```
