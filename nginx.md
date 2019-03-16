@@ -648,3 +648,38 @@ _The additional modules cannot be installed by package manager_
   and
 
   `$ systemctl status php7.2-fpm`
+
+  - **PHP Conf Example:**
+
+  ```
+    user www-data;
+
+    events {}
+
+    http {
+
+      include mime.types;
+
+      server {
+
+        listen 80;
+        server_name 167.99.93.26;
+
+        root /sites/demo;
+
+        index index.php index.html;
+
+        location / {
+          try_files $uri $uri/ =404;
+        }
+
+        location ~\.php$ {
+          # Pass php requests to the php-fpm service (fastcgi)
+          include fastcgi.conf;
+          fastcgi_pass unix:/run/php/php7.1-fpm.sock;
+        }
+
+      }
+    }
+  ```
+  
