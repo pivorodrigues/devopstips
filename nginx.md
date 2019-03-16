@@ -621,7 +621,7 @@ _The additional modules cannot be installed by package manager_
 
 [[Article] Understanding and Implementing FastCGI Proxying in Nginx](https://www.digitalocean.com/community/tutorials/understanding-and-implementing-fastcgi-proxying-in-nginx)
 
-- Nginx isn't able to embed its server side language processors. So, instead the, we need to configure a standalone PHP service named php-fqm, to which Nginx will pass the request for processing and then upon receiving the response, typically a html, returning that to the client.  
+- Nginx isn't able to embed its server side language processors. So, instead the, we need to configure a standalone PHP service named php-fpm, to which Nginx will pass the request for processing and then upon receiving the response, typically a html, returning that to the client.  
 
 <p align="center"><img src="images/nginx-php1.png" width="500px"></p>
 
@@ -632,3 +632,19 @@ _The additional modules cannot be installed by package manager_
 ...
 
 <p align="center"><img src="images/nginx-php3.png" width="500px"></p>
+
+...
+
+**Configuring the PHP:**
+
+  1. _Install the latest stable version of php-fpm:_
+
+  `$ apt install php-fpm -y`
+
+  2. _Check the php-fpm installation:_
+
+  `$ systemctl list-units | grep php`
+
+  and
+
+  `$ systemctl status php7.2-fpm`
