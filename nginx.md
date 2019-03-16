@@ -461,4 +461,38 @@ _The additional modules cannot be installed by package manager_
 
   - **Named Locations**
 
-    - Named Location simply means assigning a name to a location context and using a directive, such as try-files.  
+    - Named Location simply means assigning a name to a location context and using a directive, such as try-files. Use that location by its name, ensuring no re-evaluation has to happen on that final argument, but, instead, just a definitive call to the name location.
+
+    ```
+      events {}
+
+      http {
+
+        include mime.types;
+
+        server {
+
+          listen 80;
+          server_name 167.99.93.26;
+
+          root /sites/demo;
+
+
+          try_files $uri /cat.png /greet @friendly_404;
+
+          location @friendly_404 {
+            return 404 "Sorry, that file could not be found.";
+          }
+
+
+          location /greet {
+            return 200 "Hello User";
+          }
+
+        }
+      }
+    ```
+
+#
+
+      
