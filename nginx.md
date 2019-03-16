@@ -623,6 +623,10 @@ _The additional modules cannot be installed by package manager_
 
 <p align="center"><img src="images/nginx-php1.png" width="500px"></p>
 
+...
+
 <p align="center"><img src="images/nginx-php2.png" width="500px"></p>
+
+...
 
 <p align="center"><img src="images/nginx-php3.png" width="500px"></p>
