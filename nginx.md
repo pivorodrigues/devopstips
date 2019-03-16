@@ -618,3 +618,11 @@ _The additional modules cannot be installed by package manager_
 #
 
 **PHP Processing**  
+
+- Nginx isn't able to embed its server side language processors. So, instead the, we need to configure a standalone PHP service named php-fqm, to which Nginx will pass the request for processing and then upon receiving the response, typically a html, returning that to the client.  
+
+<p align="center"><img src="images/nginx-php1.png" width="500px"></p>
+
+<p align="center"><img src="images/nginx-php2.png" width="500px"></p>
+
+<p align="center"><img src="images/nginx-php3.png" width="500px"></p>
