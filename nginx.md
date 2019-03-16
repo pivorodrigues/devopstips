@@ -537,3 +537,7 @@ _The additional modules cannot be installed by package manager_
       }
     }
   ```
+
+#
+
+**Inheritance and Directive Types** _...to be continue..._
