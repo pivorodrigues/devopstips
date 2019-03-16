@@ -143,6 +143,8 @@ _The additional modules cannot be installed by package manager_
 
 - **Contexts:** Are the sections within the configuration where directives can be set for that given context.
 
+[[Article] Understanding the Nginx Configuration File Structure and Configuration Contexts](https://www.digitalocean.com/community/tutorials/understanding-the-nginx-configuration-file-structure-and-configuration-contexts)
+
   - **Main context:** Is where we configure global directives that apply to the master process.
 
   <p align="center"><img src="images/maincontext.png" width="500px"></p>
@@ -456,3 +458,7 @@ _The additional modules cannot be installed by package manager_
          }
       }
     ```
+
+  - **Named Locations**
+
+    - Named Location simply means assigning a name to a location context and using a directive, such as try-files.  
