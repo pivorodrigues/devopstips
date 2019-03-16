@@ -63,6 +63,8 @@ http {
 
 #
 
+## 2. Installation
+
 **How to install NGINX from Source Code with additional modules**
 
 _The additional modules cannot be installed by package manager_
@@ -134,6 +136,8 @@ _The additional modules cannot be installed by package manager_
   `$ systemctl enable nginx`
 
 #
+
+## 3. Configuration
 
 **Understanding Configuration Terms**
 
@@ -610,3 +614,7 @@ _The additional modules cannot be installed by package manager_
      }
    }
   ```
+
+#
+
+**PHP Processing**  
