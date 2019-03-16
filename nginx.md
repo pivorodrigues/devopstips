@@ -509,6 +509,8 @@ _The additional modules cannot be installed by package manager_
 
   _OBS:_ Keep in mind that 404 is a perfectly valid response and by no means an error in itself.
 
+  - **Logging conf example:**
+
   ```
     events {}
 
