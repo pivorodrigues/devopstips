@@ -617,7 +617,9 @@ _The additional modules cannot be installed by package manager_
 
 #
 
-**PHP Processing**  
+**PHP Processing**
+
+[[Article] Understanding and Implementing FastCGI Proxying in Nginx](https://www.digitalocean.com/community/tutorials/understanding-and-implementing-fastcgi-proxying-in-nginx)
 
 - Nginx isn't able to embed its server side language processors. So, instead the, we need to configure a standalone PHP service named php-fqm, to which Nginx will pass the request for processing and then upon receiving the response, typically a html, returning that to the client.  
 
