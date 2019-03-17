@@ -724,4 +724,8 @@ _The additional modules cannot be installed by package manager_
 
 <p align="center"><img src="images/nginx_processes.png" width="500px"></p>
 
-  - The **worker_processes** directive:
+- The **worker_processes** directive: we can change the number of Nginx worker processes setting in the conf file (/etc/nginx/nginx.conf):
+
+  `worker_processes 2;`
+
+<p align="center"><img src="images/nginx_processes_0.png" width="500px"></p>
