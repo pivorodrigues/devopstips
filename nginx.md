@@ -724,8 +724,147 @@ _The additional modules cannot be installed by package manager_
 
 <p align="center"><img src="images/nginx_processes.png" width="500px"></p>
 
+- We have two directives: **worker_processes_ and **worker_connections**.
+
 - The **worker_processes** directive: we can change the number of Nginx worker processes setting in the conf file (/etc/nginx/nginx.conf):
 
   `worker_processes 2;`
 
 <p align="center"><img src="images/nginx_processes_0.png" width="500px"></p>
+
+- Increasing the number of workers Nginx spawns doesn't necessarily results in better performance. Nginx workers handle the process requests assynchronously. They will handle incoming requests as fast as their hardware are capable of. Creating a second worker process simply does not increase the harware's performance. One core of a cpu cannot share processes. A single Nginx worker process can only ever run on a sigle CPU call. We can 99% of the time configure Nginx to run the exact number of processes as the server CPU has.
+
+<p align="center"><img src="images/nginx_cpu.png" width="500px"></p>
+
+- If you are tempted to create a higher number of worker processes in the hope that your server will perform better, think of two worker processes on a single core as having two workers capable of only running at 50 percent.
+
+<p align="center"><img src="images/nginx_cpu_0.png" width="500px"></p>
+
+- When we set the _worker_processes_ directive to _auto_, Nginx will spawn one worker for each cpu core, as we can see below.
+
+  ```
+    user www-data;
+
+    worker_processes auto;
+
+    events {}
+
+    http {
+
+      include mime.types;
+
+      server {
+
+        listen 80;
+        server_name 167.99.93.26;
+
+        root /sites/demo;
+
+        index index.php index.html;
+
+        location / {
+          try_files $uri $uri/ =404;
+        }
+
+        location ~\.php$ {
+          # Pass php requests to the php-fpm service (fastcgi)
+          include fastcgi.conf;
+          fastcgi_pass unix:/run/php/php7.2-fpm.sock;
+        }
+
+      }
+    }
+  ```
+
+<p align="center"><img src="images/nginx_processes_0.png" width="500px"></p>
+
+- _OBS:_ To discover how cpu's do we have in our server, we have to those commands:
+
+  `$ nproc`
+
+  or
+
+  `$ lscpu`
+
+- The **worker_connections** directive: sets the number of connections each worker process can accept. It's not a number that we can simply increase. The server has a limit that how many files can be opened at once. We can check the file limit running the command `$ ulimit -n`. We can set this directive to that number in order to really max out the server.
+
+  ```
+    user www-data;
+
+      worker_processes auto;
+
+      events {
+        worker_connections 1024;
+      }
+
+      http {
+
+        include mime.types;
+
+        server {
+
+          listen 80;
+          server_name 167.99.93.26;
+
+          root /sites/demo;
+
+          index index.php index.html;
+
+          location / {
+            try_files $uri $uri/ =404;
+          }
+
+          location ~\.php$ {
+            # Pass php requests to the php-fpm service (fastcgi)
+            include fastcgi.conf;
+            fastcgi_pass unix:/run/php/php7.2-fpm.sock;
+          }
+
+        }
+      }
+  ```
+
+- We now also have the maximum number of concurrent requests our server should be able to accept. As each of those work_processes can open the set number of connections or requests. These two directives _(processes and connections)_ being the most important to understand in order to really optimize the Nginx's process for performance.
+
+<p align="center"><img src="images/nginx_max_conn.png" width="500px"></p>
+
+- **The PID directive:** This directive allow us to reconfigure the process ID _(PID)_ location via the configuration file.
+
+  ```
+    user www-data;
+
+      #pid /var/run/new_nginx.pid;
+
+      worker_processes auto;
+
+      events {
+        worker_connections 1024;
+      }
+
+      http {
+
+        include mime.types;
+
+        server {
+
+          listen 80;
+          server_name 167.99.93.26;
+
+          root /sites/demo;
+
+          index index.php index.html;
+
+          location / {
+            try_files $uri $uri/ =404;
+          }
+
+          location ~\.php$ {
+            # Pass php requests to the php-fpm service (fastcgi)
+            include fastcgi.conf;
+            fastcgi_pass unix:/run/php/php7.2-fpm.sock;
+          }
+
+        }
+    }
+  ```
+    
