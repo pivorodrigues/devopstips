@@ -738,7 +738,7 @@ _The additional modules cannot be installed by package manager_
 
 - If you are tempted to create a higher number of worker processes in the hope that your server will perform better, think of two worker processes on a single core as having two workers capable of only running at 50 percent.
 
-<p align="center"><img src="images/nginx_cpu_0.png" width="500px"></p>
+<p align="center"><img src="images/nginx_cpu_0.png" width="300px"></p>
 
 - When we set the _worker_processes_ directive to _auto_, Nginx will spawn one worker for each cpu core, as we can see below.
 
@@ -867,4 +867,3 @@ _The additional modules cannot be installed by package manager_
         }
     }
   ```
-    
