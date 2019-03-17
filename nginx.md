@@ -715,3 +715,13 @@ _The additional modules cannot be installed by package manager_
       }
     }
   ```
+
+#
+
+**Worker Processes**
+
+- The master process is the actual Nginx service or software instance which we started. The master process or Nginx itself. Then spawns work processes which listens for and response to client requests. The default number of worker processes for Nginx is one.
+
+<p align="center"><img src="images/nginx_processes.png" width="500px"></p>
+
+  - The **worker_processes** directive:
