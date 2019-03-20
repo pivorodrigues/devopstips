@@ -886,10 +886,18 @@ _The additional modules cannot be installed by package manager_
 
 - **Buffering directives:**
 
-  - **client_body_buffer_size:** This directive setting the amount of memory to allocate for buffering the POST data from a client. Post data most likelly coming from a form submission which in this case is set to 10k _(Kilobytes)_.
+  - **client_body_buffer_size:** This directive sets the amount of memory to allocate for buffering the POST data from a client. Post data most likelly coming from a form submission which in this case is set to 10k _(Kilobytes)_.
 
     ```
       # Buffer size for POST submissions
       client_body_buffer_size 10K; <---
       client_max_body_size 8m;
+    ```
+
+  - **client_max_body_size:** This directive sets the maximum acceptable size of POST requests. In this case, meaning don´t accept POST requests of more than 8 megabytes.
+
+    ```
+      # Buffer size for POST submissions
+      client_body_buffer_size 10K;
+      client_max_body_size 8m; <---
     ```
