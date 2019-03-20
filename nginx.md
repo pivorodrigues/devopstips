@@ -874,4 +874,8 @@ _The additional modules cannot be installed by package manager_
 
 - **Buffering:** Buffer is when a process or an Nginx worker reads data into memory or RAM before writing to its next destination.
 
-<p align="center"><img src="images/nginx_buffer1.png" width="500px"></p>
+<p align="center"><img src="images/nginx_buffer1.png" width="400px"></p>
+
+- Nginx receives  a request which it reads from a TCP port (80), writes that request data to memory, which is buffering. Or, if the buffer is too small for the amount of data being read, writes some of it to disk.
+
+<p align="center"><img src="images/nginx_buffer2.png" width="500px"></p>
