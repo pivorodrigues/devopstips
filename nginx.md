@@ -943,3 +943,72 @@ _The additional modules cannot be installed by package manager_
   ```
 
   <p align="center"><img src="images/sendfile.png" width="500px"></p>
+
+  - **tcp_nopush:** Enables Nginx to optimize the size of those data packets being sent to the client.
+
+  ```
+    # Optimise sendfile packets
+    tcp_nopush on;
+  ```
+
+- **Buffers and Timeouts conf example:**
+
+  ```
+  user www-data;
+
+  worker_processes auto;
+
+  events {
+  worker_connections 1024;
+  }
+
+  http {
+
+    include mime.types;
+
+    # Buffer size for POST submissions
+    client_body_buffer_size 10K;
+    client_max_body_size 8m;
+
+    # Buffer size for Headers
+    client_header_buffer_size 1k;
+
+    # Max time to receive client headers/body
+    client_body_timeout 12;
+    client_header_timeout 12;
+
+    # Max time to keep a connection open for
+    keepalive_timeout 15;
+
+    # Max time for the client accept/receive a response
+    send_timeout 10;
+
+    # Skip buffering for static files
+    sendfile on;
+
+    # Optimise sendfile packets
+    tcp_nopush on;
+
+    server {
+
+      listen 80;
+      server_name 167.99.93.26;
+
+      root /sites/demo;
+
+      index index.php index.html;
+
+      location / {
+        try_files $uri $uri/ =404;
+      }
+
+      location ~\.php$ {
+        # Pass php requests to the php-fpm service (fastcgi)
+        include fastcgi.conf;
+        fastcgi_pass unix:/run/php/php7.1-fpm.sock;
+      }
+
+    }
+  }
+  ```
+#  
