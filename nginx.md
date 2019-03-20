@@ -894,7 +894,7 @@ _The additional modules cannot be installed by package manager_
       client_max_body_size 8m;
     ```
 
-  - **client_max_body_size:** This directive sets the maximum acceptable size of POST requests. In this case, meaning don´t accept POST requests of more than 8 megabytes.
+  - **client_max_body_size:** This directive sets the maximum acceptable size of POST requests. In this case, meaning don´t accept POST requests of more than 8 megabytes. If it is large than 8 megabytes, the server will respond with a **413** error, which means **Request Entity too Large**.
 
     ```
       # Buffer size for POST submissions
