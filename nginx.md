@@ -883,3 +883,13 @@ _The additional modules cannot be installed by package manager_
 - **Timeouts:** They simply suggest a cut off time for a given event. If a receiving request froma client stops after a certain number of seconds, this preventing a client from sending an endless stream of data and eventually breaking the server.
 
 <p align="center"><img src="images/timeouts.png" width="400px"></p>
+
+- **Buffering directives:**
+
+  - **client_body_buffer_size:** This directive setting the amount of memory to allocate for buffering the POST data from a client. Post data most likelly coming from a form submission which in this case is set to 10k _(Kilobytes)_.
+
+  ```
+  # Buffer size for POST submissions
+  client_body_buffer_size 10K; <---
+  client_max_body_size 8m;
+  ```
