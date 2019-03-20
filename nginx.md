@@ -894,10 +894,29 @@ _The additional modules cannot be installed by package manager_
       client_max_body_size 8m;
     ```
 
-  - **client_max_body_size:** This directive sets the maximum acceptable size of POST requests. In this case, meaning don´t accept POST requests of more than 8 megabytes. If it is large than 8 megabytes, the server will respond with a **413** error, which means **Request Entity too Large**.
+  - **client_max_body_size:** This directive sets the maximum acceptable size of POST requests. In this case, meaning don´t accept POST requests of more than 8 megabytes. If it is large than 8 megabytes, the server will respond with a **413** error, which means **Request Entity too Large**. This being a safety measure to ensure a user doesn´t mistakenly or maliciously send a very large POST request, which could cause the server to slow down, use a lot of disk space, etc.
 
     ```
       # Buffer size for POST submissions
       client_body_buffer_size 10K;
       client_max_body_size 8m; <---
     ```
+
+  - **client_header_buffer_size:** As the name suggests, the amount of memory to allocate to reading request headers. 1 kilobyte is more than enough for 99% of requests. It is typically  being a small amount of data.
+
+    ```
+      # Buffer size for Headers
+      client_header_buffer_size 1k;
+    ```
+
+  - **client_body_timeout and client_header_timeout:** In this case, the body timeout does not refer to the time it takes to transmit the entire request body, but rather the time between consecutive read operations. Those reads that happen to the buffer. In the example, the setting means 12 milliseconds.
+
+    ```
+      # Max time to receive client headers/body
+      client_body_timeout 12;
+      client_header_timeout 12;
+    ```  
+
+   - _OBS: Nginx allows us to sit times as follows in example below._
+
+   <p align="center"><img src="images/nginx_time_directive.png" width="500px"></p>
