@@ -879,3 +879,7 @@ _The additional modules cannot be installed by package manager_
 - Nginx receives  a request which it reads from a TCP port (80), writes that request data to memory, which is buffering. Or, if the buffer is too small for the amount of data being read, writes some of it to disk.
 
 <p align="center"><img src="images/nginx_buffer2.png" width="500px"></p>
+
+- **Timeouts:** They simply suggest a cut off time for a given event. If a receiving request froma client stops after a certain number of seconds, this preventing a client from sending an endless stream of data and eventually breaking the server.
+
+<p align="center"><img src="images/timeouts.png" width="400px"></p>
