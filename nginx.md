@@ -917,6 +917,29 @@ _The additional modules cannot be installed by package manager_
       client_header_timeout 12;
     ```  
 
-   - _OBS: Nginx allows us to sit times as follows in example below._
+  - _OBS: Nginx allows us to sit times as follows in example below._
 
    <p align="center"><img src="images/nginx_time_directive.png" width="300px"></p>
+
+  - **keepalive_timeout:** This directive sets the amount of time Nginx should keep a connection client open for in case more data is on the way. This is extremely useful when a client is requesting a number of files and keeping a connection open reduces the time it takes to open another new connection. Equally not wanting to leave connections open for too long as this can result in a pool of max connections being used up. For the most part, there´s no reason a connection would have to stay open beyond a few milliseconds before continuing. The most clients will close connections properly, meaning this timeout won't even apply.
+
+    ```
+      # Max time to keep a connection open for
+      keepalive_timeout 15;
+    ```  
+
+  - **send_timeout:** If a client does not receive any of the response data in this amount of time, doesn't have to be all of the response data, but none of it at all. A boughts ending the response all together.
+
+    ```
+      # Max time for the client accept/receive a response
+      send_timeout 10;
+    ```
+
+  - **sendfile:** Meaning when sending a client data from disk, like static files like images, don't use a buffer. Read that data from the disk and write it directly to the response.
+
+  ```
+    # Skip buffering for static files
+    sendfile on;
+  ```
+
+  <p align="center"><img src="images/sendfile.png" width="500px"></p>
