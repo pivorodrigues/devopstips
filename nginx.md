@@ -872,4 +872,6 @@ _The additional modules cannot be installed by package manager_
 
 **Buffers and Timeouts**
 
-- **Buffering:**   
+- **Buffering:** Buffer is when a process or an Nginx worker reads data into memory or RAM before writing to its next destination.
+
+<p align="center"><img src="images/nginx_buffer1.png" width="500px"></p>
