@@ -919,4 +919,4 @@ _The additional modules cannot be installed by package manager_
 
    - _OBS: Nginx allows us to sit times as follows in example below._
 
-   <p align="center"><img src="images/nginx_time_directive.png" width="500px"></p>
+   <p align="center"><img src="images/nginx_time_directive.png" width="300px"></p>
