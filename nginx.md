@@ -1054,3 +1054,19 @@ _The additional modules cannot be installed by package manager_
       or
 
       `load_module modules/ngx_http_image_filter_module.so` _(Example)_
+
+#
+
+## 4. Performance
+
+**Headers and Expires**
+
+  - Expires headers are essentially a response header informing the client or browser how long it can cache that response for.
+
+  <p align="center"><img src="images/nginx_expires_1.png" width="400px"></p>
+
+  - We can tell the browser to cache a copy of an object for a relatively long time. And doing so avoid any future requests for that object drastically improving the website load times and often overlook a reduction in requests to our server.
+
+  <p align="center"><img src="images/nginx_expires_2.png" width="400px"></p>
+
+  <p align="center"><img src="images/nginx_expires_3.png" width="400px"></p>
