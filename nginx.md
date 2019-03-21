@@ -872,7 +872,7 @@ _The additional modules cannot be installed by package manager_
 
 **Buffers and Timeouts**
 
-[[Article]Configuration file measurement units](http://nginx.org/en/docs/syntax.html)
+[[Article] Configuration file measurement units](http://nginx.org/en/docs/syntax.html)
 
 - **Buffering:** Buffer is when a process or an Nginx worker reads data into memory or RAM before writing to its next destination.
 
@@ -1015,9 +1015,9 @@ _The additional modules cannot be installed by package manager_
   ```
 #
 
-- **Adding Dynamic Modules**
+**Adding Dynamic Modules**
 
-[[Article]ngx_http_image_filter_module](http://nginx.org/en/docs/http/ngx_http_image_filter_module.html)
+[[Article] ngx_http_image_filter_module](http://nginx.org/en/docs/http/ngx_http_image_filter_module.html)
 
   - To add dynamic modules, we have to rebuild Nginx from source. Dynamic Modules are modules that we can load selectively from the Nginx configuration, unlike static modules, which are always loaded.
 
