@@ -1070,3 +1070,50 @@ _The additional modules cannot be installed by package manager_
   <p align="center"><img src="images/nginx_expires_2.png" width="400px"></p>
 
   <p align="center"><img src="images/nginx_expires_3.png" width="400px"></p>
+
+  - **Headers and Expires conf example:**
+
+    ```
+    user www-data;
+
+    worker_processes auto;
+
+    events {
+      worker_connections 1024;
+    }
+
+    http {
+
+      include mime.types;
+
+      server {
+
+        listen 80;
+        server_name 167.99.93.26;
+
+        root /sites/demo;
+
+        index index.php index.html;
+
+        location / {
+          try_files $uri $uri/ =404;
+        }
+
+        location ~\.php$ {
+          # Pass php requests to the php-fpm service (fastcgi)
+          include fastcgi.conf;
+          fastcgi_pass unix:/run/php/php7.1-fpm.sock;
+        }
+
+        location ~* \.(css|js|jpg|png)$ {
+          access_log off;
+          add_header Cache-Control public;
+          add_header Pragma public;
+          add_header Vary Accept-Encoding;
+          expires 1M;
+        }
+
+      }
+    }
+    ```
+  <p align="center"><img src="images/nginx_expires_request.png" width="400px"></p>
