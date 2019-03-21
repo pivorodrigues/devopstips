@@ -1011,4 +1011,10 @@ _The additional modules cannot be installed by package manager_
     }
   }
   ```
-#  
+#
+
+- **Adding Dynamic Modules**
+
+  - To add dynamic modules, we have to rebuild Nginx from source. Dynamic Modules are modules that we can load selectively from the Nginx configuration, unlike static modules, which are always loaded.
+
+  <p align="center"><img src="images/nginx_modules.png" width="400px"></p>
