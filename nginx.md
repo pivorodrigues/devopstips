@@ -1040,3 +1040,14 @@ _The additional modules cannot be installed by package manager_
   `$ systemctl reload nginx` _(Reloads the Nginx)_
 
   `$ systemctl status nginx` _(Checks the Nginx status)_
+
+  - **To load installed dynamic modules:**
+
+    - Add the the module directive in the main context of Nginx's conf file:
+
+      `load_module modules/<module name>`
+
+      or
+
+      `load_module modules/ngx_http_image_filter_module.so` _(Example)_
+      
