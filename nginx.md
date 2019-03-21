@@ -1021,25 +1021,25 @@ _The additional modules cannot be installed by package manager_
 
   - **Installing Nginx Dynamic Modules:**
 
-  `$ cd /root/nginx-1.15.0` _(Goes to Nginx downloaded source code directory)_
+    `$ cd /root/nginx-1.15.0` _(Goes to Nginx downloaded source code directory)_
 
-  `$ nginx -V` _(Shows the Nginx install parameters)_
+    `$ nginx -V` _(Shows the Nginx install parameters)_
 
-  `$ ./configure --help` or `./configure --help | grep -i dynamic` _(Lists all the Nginx's install flags to available modules and configurations)_
+    `$ ./configure --help` or `./configure --help | grep -i dynamic` _(Lists all the Nginx's install flags to available modules and configurations)_
 
-  `$ apt install libgd-dev` _(Installs the required library)_
+    `$ apt install libgd-dev` _(Installs the required library)_
 
-  `$ ./configure --sbin-path=/usr/bin/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-pcre --pid-path=/var/run/nginx.pid --with-http_ssl_module --with-http_image_filter_module=dynamic --modules-path=/etc/nginx/modules` _(Rebuilds the Nginx with http image filter dynamic module)_
+    `$ ./configure --sbin-path=/usr/bin/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-pcre --pid-path=/var/run/nginx.pid --with-http_ssl_module --with-http_image_filter_module=dynamic --modules-path=/etc/nginx/modules` _(Rebuilds the Nginx with http image filter dynamic module)_
 
-  `$ make` _(Prepares the Nginx package to finish the installation)_
+    `$ make` _(Prepares the Nginx package to finish the installation)_
 
-  `$ make install` _(Finishes the installation)_
+    `$ make install` _(Finishes the installation)_
 
-  `$ nginx -V` _(Checks the Nginx installation)_
+    `$ nginx -V` _(Checks the Nginx installation)_
 
-  `$ systemctl reload nginx` _(Reloads the Nginx)_
+    `$ systemctl reload nginx` _(Reloads the Nginx)_
 
-  `$ systemctl status nginx` _(Checks the Nginx status)_
+    `$ systemctl status nginx` _(Checks the Nginx status)_
 
   - **To load installed dynamic modules:**
 
@@ -1050,4 +1050,3 @@ _The additional modules cannot be installed by package manager_
       or
 
       `load_module modules/ngx_http_image_filter_module.so` _(Example)_
-      
