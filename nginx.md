@@ -1117,3 +1117,9 @@ _The additional modules cannot be installed by package manager_
     }
     ```
   <p align="center"><img src="images/nginx_expires_request.png" width="800px"></p>
+
+#
+
+**Compressed Responses with gzip**
+
+  
