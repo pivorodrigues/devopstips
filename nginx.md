@@ -1122,6 +1122,8 @@ _The additional modules cannot be installed by package manager_
 
 **Compressed Responses with gzip**
 
+[[Article]Module ngx_http_gzip_module](http://nginx.org/en/docs/http/ngx_http_gzip_module.html)
+
 - When a client requests a resource, typically a static file such a JavaScript or a CSS, that client can indicate its ability to accept compressed data. All modern browsers are capable to this. We can compress a response on the server, typically using **gzip**, which drastically reduces its size and as a result, reduces the time it takes for the client to receive that response. The client or browser has the responsability of decompressing before rendering it.
 
 <p align="center"><img src="images/nginx_gzip.png" width="500px"></p>
@@ -1135,3 +1137,61 @@ _The additional modules cannot be installed by package manager_
 - A larger number results in smaller files, but requiring more server resources:
 
 <p align="center"><img src="images/nginx_gzip_2.png" width="400px"></p>
+
+- It´s important to note that at levels over 5, the reduction in file size or response size becomes very minor. Three or four are good options for a decent amount of compression:
+
+<p align="center"><img src="images/nginx_gzip_3.png" width="500px"></p>
+
+- **Compressed Responses conf example:**
+
+  ```
+    user www-data;
+
+    worker_processes auto;
+
+    events {
+      worker_connections 1024;
+    }
+
+    http {
+
+      include mime.types;
+
+      gzip on;
+      gzip_comp_level 3;
+
+      gzip_types text/css;
+      gzip_types text/javascript;
+
+      server {
+
+        listen 80;
+        server_name 167.99.93.26;
+
+        root /sites/demo;
+
+        index index.php index.html;
+
+        location / {
+          try_files $uri $uri/ =404;
+        }
+
+        location ~\.php$ {
+          # Pass php requests to the php-fpm service (fastcgi)
+          include fastcgi.conf;
+          fastcgi_pass unix:/run/php/php7.1-fpm.sock;
+        }
+
+        location ~* \.(css|js|jpg|png)$ {
+          access_log off;
+          add_header Cache-Control public;
+          add_header Pragma public;
+          add_header Vary Accept-Encoding;
+          expires 1M;
+        }
+
+      }
+    }
+  ```
+
+#    
