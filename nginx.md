@@ -1125,3 +1125,13 @@ _The additional modules cannot be installed by package manager_
 - When a client requests a resource, typically a static file such a JavaScript or a CSS, that client can indicate its ability to accept compressed data. All modern browsers are capable to this. We can compress a response on the server, typically using **gzip**, which drastically reduces its size and as a result, reduces the time it takes for the client to receive that response. The client or browser has the responsability of decompressing before rendering it.
 
 <p align="center"><img src="images/nginx_gzip.png" width="500px"></p>
+
+- The gzip compression directives must be written in HTTP location. This is the default gzip compression directive: `gzip on;`.
+
+- **Compression level:** We need to configure the compression we´ve just enable. The directive to set the level of compression is `gzip_comp_level`, which is the amount of the compression used. A lower number results in larger files, but, requiring less server resources:
+
+<p align="center"><img src="images/nginx_gzip1.png" width="400px"></p>
+
+- A larger number results in smaller files, but requiring more server resources:
+
+<p align="center"><img src="images/nginx_gzip2.png" width="400px"></p>
