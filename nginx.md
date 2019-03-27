@@ -1130,8 +1130,8 @@ _The additional modules cannot be installed by package manager_
 
 - **Compression level:** We need to configure the compression we´ve just enable. The directive to set the level of compression is `gzip_comp_level`, which is the amount of the compression used. A lower number results in larger files, but, requiring less server resources:
 
-<p align="center"><img src="images/nginx_gzip1.png" width="400px"></p>
+<p align="center"><img src="images/nginx_gzip_1.png" width="400px"></p>
 
 - A larger number results in smaller files, but requiring more server resources:
 
-<p align="center"><img src="images/nginx_gzip2.png" width="400px"></p>
+<p align="center"><img src="images/nginx_gzip_2.png" width="400px"></p>
