@@ -1122,4 +1122,6 @@ _The additional modules cannot be installed by package manager_
 
 **Compressed Responses with gzip**
 
-  
+- When a client requests a resource, typically a static file such a JavaScript or a CSS, that client can indicate its ability to accept compressed data. All modern browsers are capable to this. We can compress a response on the server, typically using **gzip**, which drastically reduces its size and as a result, reduces the time it takes for the client to receive that response. The client or browser has the responsability of decompressing before rendering it.
+
+<p align="center"><img src="images/nginx_gzip.png" width="500px"></p>
