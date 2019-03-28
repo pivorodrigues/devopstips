@@ -1292,3 +1292,41 @@ _The additional modules cannot be installed by package manager_
   ```  
 
 #
+
+**HTTP2**
+
+- **HTTP2 definitions:**
+
+  1. **Binary Protocol:**
+
+    - HTTP2 is a binary protocol. HTTP1 is a textual protocol. Binary data is a far more compact way of transferring data and it greatly reduces the chance of errors during data transfer.
+
+  2. **Compressed Headers:**
+
+    - HTTP2 compresses response headers, which reduces response time.
+
+  3. **Persistent Connections:**
+
+    - HTTP2 uses persistent connections.
+
+  4. **Multiplex Streaming:**
+
+    - The HTTP2´s persistent connections are multiplexed, meaning that multiple assets, such as stylesheets _(css)_, scripts _(js)_ and html can be combined into a single stream of binary data and transmitted over a single connection. HTTP1 requires a dedicated connection for each resource.
+
+  5. **Server Push:**
+
+    - HTTP2 can perform a server push, meaning that the client _- the browser -_ can be informed if assets, such as scripts, images or stylesheets, along with the initial request for the page.
+
+- **HTTP2 Connections:**
+
+  - In HTTP1 we use three connections in total to load a very simple web page:
+
+  <p align="center"><img src="images/nginx_http2_1.png" width="500px"></p>
+
+  - In HTTP2 we use one connection in total to load a very simple web page:
+
+  <p align="center"><img src="images/nginx_http2_2.png" width="500px"></p>
+
+  - HTTPS we use two connections in total to load a very simple web page:
+
+  <p align="center"><img src="images/nginx_http2_3.png" width="500px"></p>
