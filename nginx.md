@@ -1295,6 +1295,8 @@ _The additional modules cannot be installed by package manager_
 
 **HTTP2**
 
+[[Article] How To Create a Self-Signed SSL Certificate for Nginx in Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-16-04)
+
 - **HTTP2 definitions:**
 
   1. **Binary Protocol:**
@@ -1331,4 +1333,97 @@ _The additional modules cannot be installed by package manager_
 
   <p align="center"><img src="images/nginx_http2_3.png" width="500px"></p>
 
-- **How to configure HTTP2 and SSL modules:**
+- **How to install and enable HTTP2 and SSL modules (as root):**
+
+  1. Go to the Nginx's source code directory:
+
+      `$ cd /nginx-1.15.9`
+
+  2. Check the Nginx's configure arguments:
+
+      `$ nginx -V`
+
+  3. Run configure with the help flag to list all the available HTTP2 configurations:
+
+      `$ ./configure --help | grep -i http_v2`
+
+  4. Run configure with all modules:
+
+      `$ ./configure --sbin-path=/usr/bin/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-pcre --pid-path=/var/run/nginx.pid --with-http_ssl_module --with-http_image_filter_module=dynamic --modules-path=/etc/nginx/modules --with-http_v2_module`  
+
+  5. Run make:
+
+      `$ make`
+
+  6. Complete the install:
+
+      `$ make install`
+
+  7. Restart the Nginx:
+
+      `$ systemctl restart nginx`
+
+  8. Create the ssl directory:
+
+      `$ mkdir /etc/nginx/ssl`
+
+  9. Generate the ssl certificates:
+
+      `$ openssl req -x509 -days 10 -nodes -newkey rsa:2048 -keyout /etc/nginx/ssl/self.key -out /etc/nginx/ssl/self.crt`
+
+  10. Edit the Nginx's conf file:
+
+      - In the server context, add the follow lines:
+
+        `listen 443 ssl http2;`
+
+        `ssl_certificate /etc/nginx/ssl/self.crt;`
+
+        `ssl_certificate_key /etc/nginx/ssl/self.key;`
+
+  11. Reload Nginx:
+
+        `$ systemctl reload nginx`  
+
+- **HTTP2 conf example:**
+
+  ```
+    user www-data;
+
+    worker_processes auto;
+
+    events {
+      worker_connections 1024;
+    }
+
+    http {
+
+      include mime.types;
+
+      server {
+
+        listen 443 ssl http2;
+        server_name 167.99.93.26;
+
+        root /sites/demo;
+
+        index index.php index.html;
+
+        ssl_certificate /etc/nginx/ssl/self.crt;
+        ssl_certificate_key /etc/nginx/ssl/self.key;
+
+        location / {
+          try_files $uri $uri/ =404;
+        }
+
+        location ~\.php$ {
+          # Pass php requests to the php-fpm service (fastcgi)
+          include fastcgi.conf;
+          fastcgi_pass unix:/run/php/php7.1-fpm.sock;
+        }
+
+      }
+    }
+  ```  
+
+#
