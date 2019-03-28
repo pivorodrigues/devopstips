@@ -1206,10 +1206,10 @@ _The additional modules cannot be installed by package manager_
 
   - _In HTTP context:_
 
-    `fastcgi_cache_path /tmp/nginx_cache levels=1:2 keys_zone=ZONE_1:100m inactive=60m;`
+  `fastcgi_cache_path /tmp/nginx_cache levels=1:2 keys_zone=ZONE_1:100m inactive=60m;`
 
   <p align="center"><img src="images/nginx_tmp_cache.png" width="500px"></p>
 
-      `fastcgi_cache_key "$scheme$request_method$host$request_uri"`
+  `fastcgi_cache_key "$scheme$request_method$host$request_uri"`
 
   <p align="center"><img src="images/nginx_cache_key.png" width="500px"></p>  
