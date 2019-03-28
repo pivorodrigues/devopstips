@@ -1210,6 +1210,6 @@ _The additional modules cannot be installed by package manager_
 
   <p align="center"><img src="images/nginx_tmp_cache.png" width="500px"></p>
 
-    `fastcgi_cache_key "$scheme$request_method$host$request_uri"`
+      `fastcgi_cache_key "$scheme$request_method$host$request_uri"`
 
   <p align="center"><img src="images/nginx_cache_key.png" width="500px"></p>  
