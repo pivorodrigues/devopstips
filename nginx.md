@@ -1122,7 +1122,7 @@ _The additional modules cannot be installed by package manager_
 
 **Compressed Responses with gzip**
 
-[[Article]Module ngx_http_gzip_module](http://nginx.org/en/docs/http/ngx_http_gzip_module.html)
+[[Article] Module ngx_http_gzip_module](http://nginx.org/en/docs/http/ngx_http_gzip_module.html)
 
 - When a client requests a resource, typically a static file such a JavaScript or a CSS, that client can indicate its ability to accept compressed data. All modern browsers are capable to this. We can compress a response on the server, typically using **gzip**, which drastically reduces its size and as a result, reduces the time it takes for the client to receive that response. The client or browser has the responsability of decompressing before rendering it.
 
@@ -1231,6 +1231,9 @@ _The additional modules cannot be installed by package manager_
   `$ ab -n 100 -c 10 http://167.99.93.26` _(Where "n" refers to requests and "c" refers to connections)_
 
 - **FastCGI Cache conf example:**
+
+[[Article] Module ngx_http_fastcgi_module](http://nginx.org/en/docs/http/ngx_http_fastcgi_module.html)
+[[Resource] ab - Apache HTTP server benchmarking tool](https://httpd.apache.org/docs/2.4/programs/ab.html)
 
   ```
     user www-data;
