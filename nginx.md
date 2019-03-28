@@ -1198,6 +1198,9 @@ _The additional modules cannot be installed by package manager_
 
 **FastCGI Cache (Micro Cache)**
 
+[[Article] Module ngx_http_fastcgi_module](http://nginx.org/en/docs/http/ngx_http_fastcgi_module.html)
+[[Resource] ab - Apache HTTP server benchmarking tool](https://httpd.apache.org/docs/2.4/programs/ab.html)
+
 - An Nginx Micro Cache is a simple server side cache that allows us to store dynamic language responses, in order to avoid or, at least, minimize server side language processing. For websites relying heavily on server side languages and databases access such as PHP or MySQL, this cache can provide incredible performance benefits and drastically reduce server load.
 
 <p align="center"><img src="images/nginx_fastcgi.png" width="500px"></p>
@@ -1231,9 +1234,6 @@ _The additional modules cannot be installed by package manager_
   `$ ab -n 100 -c 10 http://167.99.93.26` _(Where "n" refers to requests and "c" refers to connections)_
 
 - **FastCGI Cache conf example:**
-
-[[Article] Module ngx_http_fastcgi_module](http://nginx.org/en/docs/http/ngx_http_fastcgi_module.html)
-[[Resource] ab - Apache HTTP server benchmarking tool](https://httpd.apache.org/docs/2.4/programs/ab.html)
 
   ```
     user www-data;
