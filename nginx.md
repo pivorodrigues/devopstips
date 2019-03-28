@@ -1201,3 +1201,11 @@ _The additional modules cannot be installed by package manager_
 - An Nginx Micro Cache is a simple server side cache that allows us to store dynamic language responses, in order to avoid or, at least, minimize server side language processing. For websites relying heavily on server side languages and databases access such as PHP or MySQL, this cache can provide incredible performance benefits and drastically reduce server load.
 
 <p align="center"><img src="images/nginx_fastcgi.png" width="500px"></p>
+
+- **Basic FastCGI configuration directives:**
+
+  - _In HTTP context:_
+
+  `fastcgi_cache_path /tmp/nginx_cache levels=1:2 keys_zone=ZONE_1:100m inactive=60m;`
+
+  <p align="center"><img src="images/nginx_tmp_cache.png" width="500px"></p>
