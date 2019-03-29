@@ -1430,6 +1430,10 @@ _The additional modules cannot be installed by package manager_
 
 **HTTP2 Server Push**
 
+[[Article] Introducing HTTP/2 Server Push with NGINX 1.13.9](https://www.nginx.com/blog/nginx-1-13-9-http2-server-push/)
+
+[[Resource] Nghttp2: HTTP/2 C Library](https://nghttp2.org/)
+
 - Server push, which is defined in the HTTP/2 specification, allows a server to pre‑emptively push resources to a remote client, anticipating that the client may soon request those resources. By doing so, you can potentially reduce the number of RTTs (round trip time – the time needed for a request and response) in a page‑load operation by one RTT or more, providing faster response to the user.
 
 - Server push can be used to prime a client with style sheets, images, and other resources that it will need to render a web page. You should take care to only push resources that are required; don’t push resources that a client is likely to already have cached.
