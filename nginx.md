@@ -1445,11 +1445,11 @@ _The additional modules cannot be installed by package manager_
         }
       ```
 
-    - **How to test a server push in Linux Ubuntu:**
+  - **How to test a server push in Linux Ubuntu:**
 
-        `$ apt install nghttp2-client`
+    `$ apt install nghttp2-client`
 
-        `$ nghttp -nys https://167.99.93.26/index.html`
+    `$ nghttp -nys https://167.99.93.26/index.html`
 
   - **Server Push conf example:**
 
