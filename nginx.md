@@ -1427,3 +1427,73 @@ _The additional modules cannot be installed by package manager_
   ```  
 
 #
+
+**HTTP2 Server Push**
+
+- Server push, which is defined in the HTTP/2 specification, allows a server to pre‑emptively push resources to a remote client, anticipating that the client may soon request those resources. By doing so, you can potentially reduce the number of RTTs (round trip time – the time needed for a request and response) in a page‑load operation by one RTT or more, providing faster response to the user.
+
+- Server push can be used to prime a client with style sheets, images, and other resources that it will need to render a web page. You should take care to only push resources that are required; don’t push resources that a client is likely to already have cached.
+
+  - **How to configure a server push:**
+
+    - _Into the server context:_
+
+      ```
+        location = /index.html {
+          http2_push /style.css;
+          http2_push /thumb.png;
+        }
+      ```
+
+    - **How to test a server push in Linux Ubuntu:**
+
+        `$ apt install nghttp2-client`
+
+        `$ nghttp -nys https://167.99.93.26/index.html`
+
+  - **Server Push conf example:**
+
+    ```
+      user www-data;
+
+      worker_processes auto;
+
+      events {
+        worker_connections 1024;
+      }
+
+      http {
+
+        include mime.types;
+
+        server {
+
+          listen 443 ssl http2;
+          server_name 167.99.93.26;
+
+          root /sites/demo;
+
+          index index.php index.html;
+
+          ssl_certificate /etc/nginx/ssl/self.crt;
+          ssl_certificate_key /etc/nginx/ssl/self.key;
+
+          location = /index.html {
+            http2_push /style.css;
+            http2_push /thumb.png;
+          }
+
+          location / {
+            try_files $uri $uri/ =404;
+          }
+
+          location ~\.php$ {
+            # Pass php requests to the php-fpm service (fastcgi)
+            include fastcgi.conf;
+            fastcgi_pass unix:/run/php/php7.1-fpm.sock;
+          }
+
+        }
+      }
+    ```
+#      
