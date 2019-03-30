@@ -1548,7 +1548,7 @@ _The additional modules cannot be installed by package manager_
         ssl_session_tickets on;
       ```
 
-      - _How to create DH Parameters: (Do it before syntax text and Nginx reload)_
+      - _How to create DH Parameters: (Do it before syntax test and Nginx reload)_
 
         `$ openssl dhparam 2048 -out /etc/nginx/ssl/dhparam.pem`
 
