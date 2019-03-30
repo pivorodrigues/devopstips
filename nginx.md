@@ -1504,7 +1504,11 @@ _The additional modules cannot be installed by package manager_
 
 ## 5. Security
 
-**HTTPS(SSL)**
+**HTTPS(SSL)** _(Secure Sockets Layer)_
+
+[[Article] Diffie–Hellman key exchange](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange)
+
+[[Article] Algorithms Explained: Diffie-Hellman](https://hackernoon.com/algorithms-explained-diffie-hellman-1034210d5100)
 
 - HTTP2 is only available over SSL connections.
 
@@ -1519,4 +1523,111 @@ _The additional modules cannot be installed by package manager_
       return 301 https://$host$request_uri;
     }
   ```
-    
+
+  - **How to improve the encryption and make the server more secure enabling TLS and other features (Transport Layer Security):**
+
+    - _In Server context:_
+
+      ```
+        #Disable SSL
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+
+        #Optimize cipher suits
+        ssl_prefer_server_ciphers on;
+        ssl_ciphers ECDH+AESGCM:ECDH+AES256:ECDH+AES128:DH+3DES:!ADH:!AECDH:!MD5;
+
+        #Enable DH (Diffie-Hellman) Parameters
+        ssl_dhparam /etc/nginx/ssl/dhparam.pem;
+
+        #Enable HSTS (HTTP Strict Transport Security)
+        add_header Strict-Transport-Security "max-age=31536000";
+
+        #SSl Sessions
+        ssl_session_cache shared:SSL:40m;
+        ssl_session_timeout 4h;
+        ssl_session_tickets on;
+      ```
+
+      - _How to create DH Parameters: (Do it before syntax text and Nginx reload)_
+
+        `$ openssl dhparam 2048 -out /etc/nginx/ssl/dhparam.pem`
+
+    - Those features are the five parts of fine tuning and optimizing the SSL connection:
+
+      - **Disable SSL (Use TLS only);**
+
+      - **Optimize Cipher Suits;**
+
+      - **Enable DH (Diffie-Hellman) Params;**
+
+      - **Enable HSTS (HTTP Strict Transport Security);**
+
+      - **Cache SSL Sessions.**
+
+    - **HTTPS(SSL) conf example:**
+
+      ```
+        user www-data;
+
+        worker_processes auto;
+
+        events {
+          worker_connections 1024;
+        }
+
+        http {
+
+          include mime.types;
+
+          # Redirect all traffic to HTTPS
+          server {
+            listen 80;
+            server_name 167.99.93.26;
+            return 301 https://$host$request_uri;
+          }
+
+          server {
+
+            listen 443 ssl http2;
+            server_name 167.99.93.26;
+
+            root /sites/demo;
+
+            index index.html;
+
+            ssl_certificate /etc/nginx/ssl/self.crt;
+            ssl_certificate_key /etc/nginx/ssl/self.key;
+
+            # Disable SSL
+            ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+
+            # Optimise cipher suits
+            ssl_prefer_server_ciphers on;
+            ssl_ciphers ECDH+AESGCM:ECDH+AES256:ECDH+AES128:DH+3DES:!ADH:!AECDH:!MD5;
+
+            # Enable DH Params
+            ssl_dhparam /etc/nginx/ssl/dhparam.pem;
+
+            # Enable HSTS
+            add_header Strict-Transport-Security "max-age=31536000" always;
+
+            # SSL sessions
+            ssl_session_cache shared:SSL:40m;
+            ssl_session_timeout 4h;
+            ssl_session_tickets on;
+
+            location / {
+              try_files $uri $uri/ =404;
+            }
+
+            location ~\.php$ {
+              # Pass php requests to the php-fpm service (fastcgi)
+              include fastcgi.conf;
+              fastcgi_pass unix:/run/php/php7.1-fpm.sock;
+            }
+
+          }
+        }
+      ```
+
+#
