@@ -1631,3 +1631,27 @@ _The additional modules cannot be installed by package manager_
       ```
 
 #
+
+**Rate Limiting**
+
+<p align="center"><img src="images/nginx_server_limit.png" width="500px"></p>
+
+- Rate limiting a server implies _- rather than simply limiting -_ managing incoming connections to the server for a specific reasons. Common reasons to rate limit a server can add an extra layer of security against:
+
+  - **Security** - _Brute Force Protection_
+
+  - **Reliability** - _Prevent Traffic Spikes_
+
+  - **Shaping** - _Service Priority_
+
+- **How to efficiently test the Rate Limiting:**
+
+  - _Install Siege:_
+
+    `$ apt install siege` _Obs: In CentOS based distributions, you have to compile from source code._
+
+  - _Test Rate Limiting using siege:_  
+
+    `$ siege -v -r 2 -c 5 https://167.99.93.26/thumb.png` _(Meaning run 2 tests of 5 concurrent connections --> c5 * r2 = 10 connections)_
+
+- **How to implement some basic rate limiting:**    
