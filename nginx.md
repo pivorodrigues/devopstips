@@ -1501,3 +1501,13 @@ _The additional modules cannot be installed by package manager_
       }
     ```
 #      
+
+## 5. Security
+
+**HTTPS(SSL)**
+
+- HTTP2 is only available over SSL connections.
+
+  - **How to redirect all the HTTP requests to the equivalent HTTPS requests:**
+
+  <p align="center"><img src="images/nginx_ssl_1.png" width="500px"></p>
