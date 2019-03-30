@@ -1524,7 +1524,7 @@ _The additional modules cannot be installed by package manager_
     }
   ```
 
-  - **How to improve the encryption and make the server more secure enabling TLS and other features (Transport Layer Security):**
+  - **How to improve the encryption and make the server more secure enabling TLS (Transport Layer Security) and other features:**
 
     - _In Server context:_
 
