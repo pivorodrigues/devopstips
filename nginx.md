@@ -1756,3 +1756,20 @@ _The additional modules cannot be installed by package manager_
 - Basic Auth provides a simple username and password layer to any part of your site.
 
 <p align="center"><img src="images/nginx_basic_auth.png" width="500px"></p>
+
+- **How to provide a password file in the** `.htpasswd` **and implement a basic auth**:
+
+  - _1. Install Apache Utils:_
+
+    `$ apt install apache2-utils` or `$ yum install httpd-tools`
+
+  - _2. Generate the password:_
+
+    `$ htpasswd -c /etc/nginx/.htpasswd user1`
+
+  - _3. Put this into the static location context:_
+
+    ```
+      auth_basic "Secure Area";
+      auth_basic_user_file /etc/nginx/.htpasswd;
+    ```  
