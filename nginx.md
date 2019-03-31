@@ -1866,28 +1866,28 @@ _The additional modules cannot be installed by package manager_
 
     1. Enter the Nginx's Source Code directory:
 
-      `$ cd ~/nginx-1.15.9`
+        `$ cd ~/nginx-1.15.9`
 
     2. Search the modules directives to disable:
 
-      `$ ./configure --help | grep -i without`
+        `$ ./configure --help | grep -i without`
 
     3. Check the Nginx's current configuration:
 
-      `$ nginx -V`
+        `$ nginx -V`
 
     4. Re-compile Nginx disabling http_autoindex_module (_--without-http_autoindex_module_):
 
-      `$ ./configure --sbin-path=/usr/bin/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-pcre --pid-path=/var/run/nginx.pid --with-http_ssl_module --with-http_image_filter_module=dynamic --modules-path=/etc/nginx/modules --with-http_v2_module --without-http_autoindex_module`
+        `$ ./configure --sbin-path=/usr/bin/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-pcre --pid-path=/var/run/nginx.pid --with-http_ssl_module --with-http_image_filter_module=dynamic --modules-path=/etc/nginx/modules --with-http_v2_module --without-http_autoindex_module`
 
-      `$ make`
+        `$ make`
 
-      `$ make install`
+        `$ make install`
 
   - **Hardening Nginx conf example:**
 
     ```
-      `user www-data;
+      user www-data;
 
       worker_processes auto;
 
@@ -1956,5 +1956,3 @@ _The additional modules cannot be installed by package manager_
     ```
 
 #
-
-      
