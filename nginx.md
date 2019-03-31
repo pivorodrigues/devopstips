@@ -1847,4 +1847,114 @@ _The additional modules cannot be installed by package manager_
 
 #
 
-**Hardening Nginx**      
+**Hardening Nginx**
+
+  - **How to Harden Nginx:**
+
+    - _Disable Nginx's version from headers (Into the http context):_
+
+      `server_tokens off;`
+
+    - _How to avoid Clickjacking (Into the server context):_
+
+      ```
+        add_header X-Frame-Options "SAMEORIGIN";
+        add_header X-XSS-Protection "1, mode=block";
+      ```
+
+    - _How to remove or disable unused or dangerous Nginx's modules:_
+
+    1. Enter the Nginx's Source Code directory:
+
+      `$ cd ~/nginx-1.15.9`
+
+    2. Search the modules directives to disable:
+
+      `$ ./configure --help | grep -i without`
+
+    3. Check the Nginx's current configuration:
+
+      `$ nginx -V`
+
+    4. Re-compile Nginx disabling http_autoindex_module (_--without-http_autoindex_module_):
+
+      `$ ./configure --sbin-path=/usr/bin/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-pcre --pid-path=/var/run/nginx.pid --with-http_ssl_module --with-http_image_filter_module=dynamic --modules-path=/etc/nginx/modules --with-http_v2_module --without-http_autoindex_module`
+
+      `$ make`
+
+      `$ make install`
+
+  - **Hardening Nginx conf example:**
+
+    ```
+      `user www-data;
+
+      worker_processes auto;
+
+      events {
+        worker_connections 1024;
+      }
+
+      http {
+
+        include mime.types;
+
+        server_tokens off;
+
+        # Redirect all traffic to HTTPS
+        server {
+          listen 80;
+          server_name 167.99.93.26;
+          return 301 https://$host$request_uri;
+        }
+
+        server {
+
+          listen 443 ssl http2;
+          server_name 167.99.93.26;
+
+          root /sites/demo;
+
+          index index.html;
+
+          add_header X-Frame-Options "SAMEORIGIN";
+          add_header X-XSS-Protection "1; mode=block";
+
+          ssl_certificate /etc/nginx/ssl/self.crt;
+          ssl_certificate_key /etc/nginx/ssl/self.key;
+
+          # Disable SSL
+          ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+
+          # Optimise cipher suits
+          ssl_prefer_server_ciphers on;
+          ssl_ciphers ECDH+AESGCM:ECDH+AES256:ECDH+AES128:DH+3DES:!ADH:!AECDH:!MD5;
+
+          # Enable DH Params
+          ssl_dhparam /etc/nginx/ssl/dhparam.pem;
+
+          # Enable HSTS
+          add_header Strict-Transport-Security "max-age=31536000" always;
+
+          # SSL sessions
+          ssl_session_cache shared:SSL:40m;
+          ssl_session_timeout 4h;
+          ssl_session_tickets on;
+
+          location / {
+            try_files $uri $uri/ =404;
+          }
+
+          location ~\.php$ {
+            # Pass php requests to the php-fpm service (fastcgi)
+            include fastcgi.conf;
+            fastcgi_pass unix:/run/php/php7.1-fpm.sock;
+          }
+
+        }
+      }
+    ```
+
+#
+
+      
