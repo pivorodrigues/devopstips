@@ -1654,4 +1654,21 @@ _The additional modules cannot be installed by package manager_
 
     `$ siege -v -r 2 -c 5 https://167.99.93.26/thumb.png` _(Meaning run 2 tests of 5 concurrent connections --> c5 * r2 = 10 connections)_
 
-- **How to implement some basic rate limiting:**    
+- **How to implement some basic rate limiting:**
+
+  - _In HTTP context:_
+
+    ```
+      #Define Limit Zone
+      limit_req_zone $request_uri zone=MYZONE:10m rate=1r/s;
+    ```
+
+  - _In the Location context:_
+
+  `limit_req zone=MYZONE;`  
+
+  - **Burst setting:** It changes the default behaviour of immediatly reject all requests, exceeding the limit to allow a number of requests to also be fulfilled.
+
+    `limit_req zone=MYZONE burst=5`
+
+    The server will now accept one plus five connections within the second (_1r/s + 5burst = 6 connections_). It does not however means that the five will be responded to immediatly. Instead, they will have to respect the specified limit. They will have to wait and won't be rejected. This feature provides us a bit of a buffer and rather than create hard limits. This allows us to implement more traffic shaping.
