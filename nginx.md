@@ -1751,4 +1751,8 @@ _The additional modules cannot be installed by package manager_
 
 #
 
-**Basic Auth**    
+**Basic Auth**
+
+- Basic Auth provides a simple username and password layer to any part of your site.
+
+<p align="center"><img src="images/nginx_basic_auth.png" width="500px"></p>
