@@ -1665,7 +1665,7 @@ _The additional modules cannot be installed by package manager_
 
   - _In the Location context:_
 
-  `limit_req zone=MYZONE;`  
+    `limit_req zone=MYZONE;`  
 
   - **Burst setting:** It changes the default behaviour of immediatly reject all requests, exceeding the limit to allow a number of requests to also be fulfilled.
 
