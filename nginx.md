@@ -1634,6 +1634,12 @@ _The additional modules cannot be installed by package manager_
 
 **Rate Limiting**
 
+[[Article] Siege: Load Testing Tool](https://www.joedog.org/siege-home/)
+
+[[Article] NGINX rate-limiting in a nutshell](https://medium.freecodecamp.org/nginx-rate-limiting-in-a-nutshell-128fe9e0126c)
+
+[[Article] Rate Limiting with NGINX and NGINX Plus](https://www.nginx.com/blog/rate-limiting-nginx/)
+
 <p align="center"><img src="images/nginx_server_limit.png" width="500px"></p>
 
 - Rate limiting a server implies _- rather than simply limiting -_ managing incoming connections to the server for a specific reasons. Common reasons to rate limit a server can add an extra layer of security against:
@@ -1672,3 +1678,77 @@ _The additional modules cannot be installed by package manager_
     `limit_req zone=MYZONE burst=5`
 
     The server will now accept one plus five connections within the second (_1r/s + 5burst = 6 connections_). It does not however means that the five will be responded to immediatly. Instead, they will have to respect the specified limit. They will have to wait and won't be rejected. This feature provides us a bit of a buffer and rather than create hard limits. This allows us to implement more traffic shaping.
+
+  - **Rate Limiting conf example:**
+
+    ```
+      `user www-data;
+
+      worker_processes auto;
+
+      events {
+        worker_connections 1024;
+      }
+
+      http {
+
+        include mime.types;
+
+        # Define limit zone
+        limit_req_zone $request_uri zone=MYZONE:10m rate=1r/s;
+
+        # Redirect all traffic to HTTPS
+        server {
+          listen 80;
+          server_name 167.99.93.26;
+          return 301 https://$host$request_uri;
+        }
+
+        server {
+
+          listen 443 ssl http2;
+          server_name 167.99.93.26;
+
+          root /sites/demo;
+
+          index index.html;
+
+          ssl_certificate /etc/nginx/ssl/self.crt;
+          ssl_certificate_key /etc/nginx/ssl/self.key;
+
+          # Disable SSL
+          ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+
+          # Optimise cipher suits
+          ssl_prefer_server_ciphers on;
+          ssl_ciphers ECDH+AESGCM:ECDH+AES256:ECDH+AES128:DH+3DES:!ADH:!AECDH:!MD5;
+
+          # Enable DH Params
+          ssl_dhparam /etc/nginx/ssl/dhparam.pem;
+
+          # Enable HSTS
+          add_header Strict-Transport-Security "max-age=31536000" always;
+
+          # SSL sessions
+          ssl_session_cache shared:SSL:40m;
+          ssl_session_timeout 4h;
+          ssl_session_tickets on;
+
+          location / {
+            limit_req zone=MYZONE burst=5 nodelay;
+            try_files $uri $uri/ =404;
+          }
+
+          location ~\.php$ {
+            # Pass php requests to the php-fpm service (fastcgi)
+            include fastcgi.conf;
+            fastcgi_pass unix:/run/php/php7.1-fpm.sock;
+          }
+
+        }
+      }
+    ```
+
+#
+
+**Basic Auth**    
