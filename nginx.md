@@ -2041,3 +2041,19 @@ _The additional modules cannot be installed by package manager_
         proxy_pass 'https://nginx.org/';
       }
     ```
+
+    _OBS: Unless we specify a proxy path, Nginx assumes the original request path._
+
+- **How to pass custom headers to the client using standard "add" directive:**
+
+  ```
+    location /php {
+
+      add_header proxied nginx;
+      proxy_pass 'http://localhost:9999/';
+    }
+  ```
+
+  `$ curl -I http://localhost:8888/php` _(Test the headers)_
+
+    <p align="center"><img src="images/nginx_proxy_headers.png" width="400px"></p>
