@@ -1968,3 +1968,50 @@ _The additional modules cannot be installed by package manager_
   - [Why ninety-day lifetimes for certificates?](https://letsencrypt.org/2015/11/09/why-90-days.html)
 
   - [Certbot Documentation](https://certbot.eff.org/docs/)
+
+  - [Let´s Encrypt Tutorial](https://letsecure.me/secure-web-deployment-with-lets-encrypt-and-nginx/)
+
+#
+
+## 6. Reverse Proxy and Load Balancing
+
+**Prerequisites**
+
+  - **Configure Nginx to respond 8888 port in your machine (No VM!):** _(/usr/local/etc/nginx/nginx.conf)_
+
+    ```
+      events {}
+
+        http {
+
+        server {
+
+          listen 8888;
+
+          location / {
+
+            return 200 "Hello From Nginx\n";
+          }
+        }  
+      }
+    ```
+
+  - **Test the Nginx Server:**
+
+    `$ nginx -t` _Test the Nginx conf syntax_
+
+    `$ nginx -c /usr/local/etc/nginx/nginx.conf` _Start the Nginx with the specific conf_
+
+    `$ curl http://localhost:8888`
+
+  - **Create file to respond by PHP:**
+
+    `$ touch /Users/<your_user>/resp.txt && echo "Hello from PHP server" > /Users/<your_user>/resp.txt`
+
+  - **Start the PHP Server:**
+
+    `$ php -S http://localhost:9999 resp.txt`
+
+  - **Test the PHP Server response:**
+
+    `$ curl http://localhost:9999`
