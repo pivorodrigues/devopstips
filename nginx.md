@@ -1977,6 +1977,10 @@ _The additional modules cannot be installed by package manager_
 
 **Prerequisites**
 
+[[Article] Built-in web server](https://www.php.net/manual/en/features.commandline.webserver.php)
+
+[[Article] Big list of http static server one-liners](https://gist.github.com/willurd/5720255)
+
   - **Configure Nginx to respond 8888 port in your machine (No VM!):** _(/usr/local/etc/nginx/nginx.conf)_
 
     ```
@@ -2019,6 +2023,10 @@ _The additional modules cannot be installed by package manager_
 #
 
 **Reverse Proxy**
+
+[[Article] NGINX Reverse Proxy Documentation](https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/)
+
+[[Article] ngx_http_proxy_module Documentation](http://nginx.org/en/docs/http/ngx_http_proxy_module.html)
 
   - Reverse Proxy act as an intermediary between a client _(the browser)_ and the resource itself.
 
@@ -2088,5 +2096,3 @@ _The additional modules cannot be installed by package manager_
         }
       ```
 #
-
-      
