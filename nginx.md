@@ -1956,3 +1956,15 @@ _The additional modules cannot be installed by package manager_
     ```
 
 #
+
+**Let´s Encrypt - SSL Certificates**
+
+- **Links:**
+
+  - [Let´s Encrypt](https://letsencrypt.org/)
+
+  - [Certbot](https://certbot.eff.org/)
+
+  - [Why ninety-day lifetimes for certificates?](https://letsencrypt.org/2015/11/09/why-90-days.html)
+
+  - [Certbot Documentation](https://certbot.eff.org/docs/)
