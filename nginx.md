@@ -2108,3 +2108,21 @@ _The additional modules cannot be installed by package manager_
   **2.** Provide redundancy when one or more of our load balancers servers fail for whichever reason. The load balancer should be able to recognize that and redirect the requests to any of the remaining available servers.
 
   <p align="center"><img src="images/nginx_lb2.png" width="500px"></p>
+
+- **How to configure and test Load Balancer:**
+
+  - **Create the files and run the PHP servers (In separate terminals):**
+
+      `$ echo 'PHP Server 1' > s1`
+
+      `$ echo 'PHP Server 2' > s2`
+
+      `$ echo 'PHP Server 3' > s3`
+
+      `$ php -S localhost:10001 s1`
+
+      `$ php -S localhost:10002 s2`
+
+      `$ php -S localhost:10003 s3`
+
+  - **Create a new Nginx conf file:** _(In /usr/local/etc/nginx/load-balancer.conf)_
