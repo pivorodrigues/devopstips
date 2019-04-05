@@ -2057,3 +2057,36 @@ _The additional modules cannot be installed by package manager_
   `$ curl -I http://localhost:8888/php` _(Test the headers)_
 
     <p align="center"><img src="images/nginx_proxy_headers.png" width="300px"></p>
+
+  - **Reverse Proxy conf example:**
+
+    ```
+      events {}
+
+        http {
+
+        server {
+
+          listen 8888;
+
+          location / {
+
+            return 200 "Hello From Nginx\n";
+          }
+
+          location /php {
+
+            add_header proxied nginx;
+            proxy_pass 'http://localhost:9999/';
+          }
+
+          location /nginxorg {
+
+              proxy_pass 'https://nginx.org/';
+            }  
+          }  
+        }
+      ```
+#
+
+      
