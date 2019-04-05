@@ -2015,3 +2015,11 @@ _The additional modules cannot be installed by package manager_
   - **Test the PHP Server response:**
 
     `$ curl http://localhost:9999`
+
+#
+
+**Reverse Proxy**
+
+  - Reverse Proxy act as an intermediary between a client _(the browser)_ and the resource itself.
+
+    <p align="center"><img src="images/nginx_reverse_proxy.png" width="500px"></p>
