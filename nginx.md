@@ -2096,3 +2096,15 @@ _The additional modules cannot be installed by package manager_
         }
       ```
 #
+
+**Load Balancer**
+
+- A Load Balancer should achieve two objectives:
+
+  **1.** Distribute requests to multiple servers thus reducing the load on those individual servers.
+
+  <p align="center"><img src="images/nginx_lb1.png" width="500px"></p>
+
+  **2.** Provide redundancy when one or more of our load balancers servers fail for whichever reason. The load balancer should be able to recognize that and redirect the requests to any of the remaining available servers.
+
+  <p align="center"><img src="images/nginx_lb2.png" width="500px"></p>
