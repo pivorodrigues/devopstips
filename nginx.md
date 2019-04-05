@@ -2023,3 +2023,21 @@ _The additional modules cannot be installed by package manager_
   - Reverse Proxy act as an intermediary between a client _(the browser)_ and the resource itself.
 
     <p align="center"><img src="images/nginx_reverse_proxy.png" width="500px"></p>
+
+  - **How to configure a basic proxy reverse to respond PHP:** _(Into server context)_
+
+    ```
+      location /php {
+
+        proxy_pass 'http://localhost:9999/';
+      }
+    ```
+
+  - **How to configure a basic proxy reverse to respond an external content:** _(Into server context)_
+
+    ```
+      location /nginxorg {
+
+        proxy_pass 'https://nginx.org/';
+      }
+    ```
