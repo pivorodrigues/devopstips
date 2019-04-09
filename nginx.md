@@ -2200,13 +2200,14 @@ _The additional modules cannot be installed by package manager_
         }
       ```  
 
-    - **Reload the configuration file:**
+  - **Reload the configuration file:**
 
-      `$ nginx -s reload`
+    `$ nginx -s reload`
 
-    - **Test the Load Balancing (Obs: This is the Round-Robin rule)**
+  - **Test the Load Balancing (Obs: This is the Round-Robin rule)**
 
-      `$ while sleep 1; do curl http://localhost:8888; done` _(Should be alternate between PHP Server 1, 2 and 3)_  
+    `$ while sleep 1; do curl http://localhost:8888; done` _(Should be alternate between PHP Server 1, 2 and 3)_  
 
-    - _OBS: You can test killing one or two php servers and restarting them..._   
+  - _OBS: You can test killing one or two php servers and restarting them..._   
+
 #
