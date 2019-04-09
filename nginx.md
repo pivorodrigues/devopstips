@@ -2212,7 +2212,7 @@ _The additional modules cannot be installed by package manager_
 
 #
 
-- **Load Balancer Options**
+**Load Balancer Options**
 
 [[Article] How to configure load balancing using Nginx](https://upcloud.com/community/tutorials/configure-load-balancing-nginx/)
 
