@@ -2182,7 +2182,7 @@ _The additional modules cannot be installed by package manager_
       ```
         events {}
 
-          http {
+        http {
           upstream php_servers{
             server localhost:10001;
             server localhost:10002;
@@ -2197,8 +2197,8 @@ _The additional modules cannot be installed by package manager_
             proxy_pass http://php_servers;
             }
           }
-        }    
-     ```
+        }
+      ```  
 
     - **Reload the configuration file:**
 
