@@ -2129,7 +2129,7 @@ _The additional modules cannot be installed by package manager_
 
       `$ touch load-balancer.conf`
 
-      - **Paste the content of the conf:**
+      - **Paste the content of the conf file:**
 
         ```
           events {}
