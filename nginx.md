@@ -2180,25 +2180,25 @@ _The additional modules cannot be installed by package manager_
     - **Load Balancing conf example:**
 
       ```
-      events {}
+        events {}
 
-        http {
-        upstream php_servers{
-          server localhost:10001;
-          server localhost:10002;
-          server localhost:10003;
-              }
+          http {
+          upstream php_servers{
+            server localhost:10001;
+            server localhost:10002;
+            server localhost:10003;
+                }
 
-        server {
+          server {
 
-                listen 8888;
+                  listen 8888;
 
-                location / {
-          proxy_pass http://php_servers;
+                  location / {
+            proxy_pass http://php_servers;
+            }
           }
-        }
-      }    
-    ```
+        }    
+     ```
 
     - **Reload the configuration file:**
 
