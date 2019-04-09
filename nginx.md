@@ -2206,8 +2206,26 @@ _The additional modules cannot be installed by package manager_
 
   - **Test the Load Balancing (Obs: This is the Round-Robin rule)**
 
-    `$ while sleep 1; do curl http://localhost:8888; done` _(Should be alternate between PHP Server 1, 2 and 3)_  
+    `$ while sleep 1; do curl http://localhost:8888; done` _(Should be alternate between PHP Servers 1, 2 and 3)_  
 
   - _OBS: You can test killing one or two php servers and restarting them..._   
+
+#
+
+- **Load Balancer Options**
+
+[[Article] How to configure load balancing using Nginx](https://upcloud.com/community/tutorials/configure-load-balancing-nginx/)
+
+  - **Sticky Sessions (ip hash):** A request is bound to a user's IP address and always when possibly proxy to the same server. This allows to maintain user sessions for things like login state, etc. This is very useful for load balancing websites or services that rely heavily on server sessions or session state.
+
+    - **Add the following instruction into the upstream directive:**
+
+      `ip_hash;`
+
+  - **Least-Conn:** This method directs the requests to the server with the least active connections at that time. It works more fairly than round-robin would with applications where requests might sometimes take longer to complete.    
+
+    - **Add the following instruction into the upstream directive:**
+
+      `least_conn;`
 
 #
