@@ -2099,6 +2099,10 @@ _The additional modules cannot be installed by package manager_
 
 **Load Balancer**
 
+[[Article] Using Nginx as a Load Balancer](http://nginx.org/en/docs/http/load_balancing.html)
+[[Article] Nginx Load Balancing Guide](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/)
+[[Article] ngx_http_upstream_module Documentation](http://nginx.org/en/docs/http/ngx_http_upstream_module.html)
+
 - A Load Balancer should achieve two objectives:
 
   **1.** Distribute requests to multiple servers thus reducing the load on those individual servers.
@@ -2146,4 +2150,63 @@ _The additional modules cannot be installed by package manager_
               }
             }
           }
-        ```  
+        ```
+    - **Run the Nginx with the exact conf location:**
+
+      `$ nginx -c /usr/local/etc/nginx/load-balancer.conf`
+
+    - **Test Nginx with this specifically conf:**  
+
+      `$ curl http://localhost:8888/` _(Should be return "PHP Server 1")_
+
+  - **Let´s implement the Load Balancing:**
+
+      - **Implement Upstream Module:**
+
+      _(Into the HTTP context)_
+
+      ```
+        upstream php_servers {
+          server localhost:10001;
+          server localhost:10002;
+          server localhost:10003;
+        }
+      ```
+
+      _(Into the "location /" directive)_
+
+      `proxy_pass http://php_servers;`
+
+    - **Load Balancing conf example:**
+
+      ```
+      events {}
+
+        http {
+        upstream php_servers{
+          server localhost:10001;
+          server localhost:10002;
+          server localhost:10003;
+              }
+
+        server {
+
+                listen 8888;
+
+                location / {
+          proxy_pass http://php_servers;
+          }
+        }
+      }    
+    ```
+
+    - **Reload the configuration file:**
+
+      `$ nginx -s reload`
+
+    - **Test the Load Balancing (Obs: This is the Round-Robin rule)**
+
+      `$ while sleep 1; do curl http://localhost:8888; done` _(Should be alternate between PHP Server 1, 2 and 3)_  
+
+    - _OBS: You can test killing one or two php servers and restarting them..._   
+#
