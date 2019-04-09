@@ -26,7 +26,7 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 ### 5.1. Web Server
 
-- **NGINX**
+- **NGINX** <img src="images/Check-png.png" width="20px">
   - [Tips](nginx.md)
 
 #
