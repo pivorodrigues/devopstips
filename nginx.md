@@ -2128,3 +2128,22 @@ _The additional modules cannot be installed by package manager_
   - **Create a new Nginx conf file:** _(In /usr/local/etc/nginx/load-balancer.conf)_
 
       `$ touch load-balancer.conf`
+
+      - **Paste the content of the conf:**
+
+        ```
+          events {}
+
+            http {
+
+            server {
+
+              listen 8888;
+
+              location / {
+                proxy_pass 'http://localhost:10001/';
+
+              }
+            }
+          }
+        ```  
