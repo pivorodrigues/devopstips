@@ -2229,3 +2229,102 @@ _The additional modules cannot be installed by package manager_
       `least_conn;`
 
 #
+
+**GeoIP**
+
+[[Article] Nginx HTTP GeoIP Module](http://nginx.org/en/docs/http/ngx_http_geoip_module.html)
+
+- **Install the GeoIP Lib:**
+
+  `$ apt install libgeoip-dev -y`
+
+- **Reconfigure Nginx with the GeoIP module:**
+
+  `$ ./configure --sbin-path=/usr/bin/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-pcre --pid-path=/var/run/nginx.pid --with-http_ssl_module --with-http_image_filter_module=dynamic --modules-path=/etc/nginx/modules --with-http_v2_module --without-http_autoindex_module --with-http_geoip_module`
+
+  `$ make`
+
+  `$ make install`
+
+- **Reload Nginx:**
+
+  `$ systemctl reload nginx` or `$ nginx -s reload`
+
+- **Download the MaxMind GeoIP Database:**
+
+  `$ mkdir /etc/nginx/geoip`
+
+  `$ cd /etc/nginx/geoip`
+
+- **Download GeoLite2 City and GeoLite2 Country from MaxMind website** (https://dev.maxmind.com/geoip/geoip2/geolite2/):
+
+  `$ wget https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.tar.gz`
+
+  `$ wget https://geolite.maxmind.com/download/geoip/database/GeoLite2-Country.tar.gz`
+
+- **Extract the tar files:**
+
+  `$ tar -xzvf ...`
+
+- **Configure the GeoIP module:** _(Into the HTTP context)_
+
+  ```
+    #GEOIP
+    geoip_country /etc/nginx/geoip/GeoLite2-Country_20190409/GeoLite2-Country.mmdb;
+    geoip_city /etc/nginx/geoip/GeoLite2-City_20190409/GeoLite2-City.mmdb;
+  ```  
+
+- **Test Nginx:**
+
+  `$ nginx -t`
+
+- **Reload Nginx:**
+
+  `$ systemctl reload nginx` or `$ nginx -s reload`
+
+- **Add the Nginx GeoIP Variables:** _(As a location directive)_
+
+  ```
+    location /geo_country {
+      return 200 "Visiting from $geoip_country_name";
+    }
+  ```
+
+  ```
+    location /geo_city {
+      return 200 "Visiting from $geoip_city_name";
+    }
+  ```
+- **Reload Nginx:**
+
+  `$ systemctl reload nginx` or `$ nginx -s reload`  
+
+#
+
+**Video Streaming**
+
+[[Article] Nginx HTTP mp4 Module](http://nginx.org/en/docs/http/ngx_http_mp4_module.html)
+
+- **Reconfigure Nginx with the http mp4 module:**
+
+  `$ ./configure --sbin-path=/usr/bin/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-pcre --pid-path=/var/run/nginx.pid --with-http_ssl_module --with-http_image_filter_module=dynamic --modules-path=/etc/nginx/modules --with-http_v2_module --without-http_autoindex_module --with-http_geoip_module --with-http_mp4_module`
+
+  `$ make`
+
+  `$ make install`
+
+- **Add the mp4 instructions to the Nginx conf file:** _(As a location directive)_
+
+  ```
+    location ~ \.mp4$ {
+      root /sites/downloads/;
+      mp4;
+      mp4_buffer_size 4M;
+      mp4_max_buffer_size 10M;
+
+    }
+  ```
+
+- **Reload Nginx:**
+
+  `$ systemctl reload nginx` or `$ nginx -s reload`  
