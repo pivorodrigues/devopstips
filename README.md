@@ -63,10 +63,3 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 - **[Coursera] Hadoop Platform and Application Framework** <img src="images/Check-png.png" width="20px">
   - [My Notes](hpaf.md)
-
-#
-
-## 11. College Classes
-
-- **[Estacio] Implementação de Banco de Dados**
-  - [My Notes](ibd.md)
