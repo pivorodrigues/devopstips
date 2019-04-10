@@ -6,3 +6,7 @@
 #
 
 ## 1. Installing and Understanding Elasticsearch
+
+- **Configure Port-Forwarding in VirtualBox (To access our Ubuntu VM):**
+
+<p align="center"><img src="images/elk-portforwarding.png" width="400px"></p>
