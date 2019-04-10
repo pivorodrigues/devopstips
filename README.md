@@ -45,6 +45,11 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 - **New Relic**
   - [Tips](newrelic.md)
 
+### 8.3. Logs Management
+
+- **ELK Stack**
+  - [Tips](elk.md)
+
 #
 
 ## 9. Cloud Providers
