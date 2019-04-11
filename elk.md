@@ -126,3 +126,27 @@
   - Often used for log analysis.
 
   <p align="center"><img src="images/elk-kibana.png" width="500px"></p>
+
+**Logstash/Beats Overview**
+
+  - Ways to feed data into Elasticsearch;
+
+  - FileBeat can monitor log files, parse them and import into Elasticsearch in near-real-time;
+
+  - Logstash also pushes data into Elasticsearch from many machines;
+
+  - not just log files.
+
+**X-Pack Overview (Paid Elasticsearch add on)**
+
+  - Security;
+
+  - Alerting;
+
+  - Monitoring;
+
+  - Reporting;
+
+  - Machine Learning;
+
+  - Graph Exploration.
