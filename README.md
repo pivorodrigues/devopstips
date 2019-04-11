@@ -49,9 +49,8 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 - **ELK Stack**
   - [Tips](elk.md)
-
   - [Introduction to Elasticsearch and the ELK Stack, Part 1](https://dzone.com/articles/introduction-to-elasticsearch-and-the-elk-stack)
-  
+
 #
 
 ## 9. Cloud Providers
