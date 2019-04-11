@@ -97,6 +97,6 @@
       '
   ```
 
-[[Resources]](https://sundog-education.com/elasticsearch/)
+  [[Sundog ELK Resources]](https://sundog-education.com/elasticsearch/)
 
 #
