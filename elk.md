@@ -100,3 +100,29 @@
   [[Sundog ELK Resources]](https://sundog-education.com/elasticsearch/)
 
 #
+
+**Elasticsearch Overview**
+
+  - Started off as scalable Lucene;
+
+  - Horizontally scalable search engine;
+
+  - Each "shard" is an inverted index of documents;
+
+  - But not just for full text search!
+
+  - Can handle structured data and can aggregate data quickly;
+
+  - Often a faster solution than Hadoop/Spark/Flink/etc.
+
+  <p align="center"><img src="images/elk-query.png" width="500px"></p>
+
+**Kibana Overview**
+
+  - Web UI for searching and visualizing;
+
+  - Complex aggregations, graphs, charts;
+
+  - Often used for log analysis.
+
+  <p align="center"><img src="images/elk-kibana.png" width="500px"></p>
