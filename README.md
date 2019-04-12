@@ -12,6 +12,14 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 #
 
+## 1. Learn a Programming Language
+
+- **Python**
+
+  - [Comparing Python Virtual Environment tools](https://towardsdatascience.com/comparing-python-virtual-environment-tools-9a6543643a44)
+
+#
+
 ## 3. Learn about Managing Servers
 
 - **Process Monitoring**
