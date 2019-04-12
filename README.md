@@ -15,13 +15,15 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 ## 3. Learn about Managing Servers
 
 - **Process Monitoring**
-
   - [lsof](https://medium.com/@copyconstruct/lsof-f2b224eee7b5)
   - [top](https://www.booleanworld.com/guide-linux-top-command/)
 
 #
 
 ## 4. Networking and Security
+
+- **HTTP**
+  - [MDN Web Docs](https://developer.mozilla.org/pt-BR/docs/Web/HTTP)
 
 - **Networking for Web Developers** <img src="images/Check-png.png" width="20px">
   - [Tips](nfwd.md)
