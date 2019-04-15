@@ -16,7 +16,7 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 - **Python**
 
-  - [Comparing Python Virtual Environment tools](https://towardsdatascience.com/comparing-python-virtual-environment-tools-9a6543643a44)
+  - [[Comparing Python Virtual Environment tools]<img src="images/Check-png.png" width="20px">](https://towardsdatascience.com/comparing-python-virtual-environment-tools-9a6543643a44)
 
 #
 
@@ -46,7 +46,7 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 ### 5.1. Web Server
 
 - **NGINX** <img src="images/Check-png.png" width="20px">
-  - [Tips](nginx.md)
+  - [Nginx Fundamentals: High Performance Servers from Scratch](nginx.md)
 
 #
 
@@ -68,8 +68,14 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 - **ELK Stack**
   - [Tips](elk.md)
-  - [Introduction to Elasticsearch and the ELK Stack, Part 1](https://dzone.com/articles/introduction-to-elasticsearch-and-the-elk-stack)
+  - [[Introduction to Elasticsearch and the ELK Stack, Part 1]]<img src="images/Check-png.png" width="20px">(https://dzone.com/articles/introduction-to-elasticsearch-and-the-elk-stack)
   - [Introduction to Elasticsearch and the ELK Stack, Part 2](https://dzone.com/articles/introduction-to-elasticsearch-and-the-elk-stack-pa)
+  - [How To Install Elasticsearch, Logstash, and Kibana (Elastic Stack) on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-18-04)
+
+- **Prometheus**
+  - [How To Query Prometheus on Ubuntu 14.04 Part 1](https://www.digitalocean.com/community/tutorials/how-to-query-prometheus-on-ubuntu-14-04-part-1)
+  - [How To Query Prometheus on Ubuntu 14.04 Part 2](https://www.digitalocean.com/community/tutorials/how-to-query-prometheus-on-ubuntu-14-04-part-2)
+  - [QUERYING PROMETHEUS](https://prometheus.io/docs/prometheus/latest/querying/basics/)
 
 #
 
@@ -88,7 +94,7 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 ### Data Science
 
 - **Articles**
-  - [How To Get Your Data Scientist Career Started](https://www.forbes.com/sites/louiscolumbus/2019/04/14/how-to-get-your-data-scientist-career-started/#1e5fe9f47e5c)
+  - [[How To Get Your Data Scientist Career Started]<img src="images/Check-png.png" width="20px">](https://www.forbes.com/sites/louiscolumbus/2019/04/14/how-to-get-your-data-scientist-career-started/#1e5fe9f47e5c)
 
 ### Apache Hadoop
 
