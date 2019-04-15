@@ -68,7 +68,7 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 - **ELK Stack**
   - [Tips](elk.md)
-  - [[Introduction to Elasticsearch and the ELK Stack, Part 1]]<img src="images/Check-png.png" width="20px">(https://dzone.com/articles/introduction-to-elasticsearch-and-the-elk-stack)
+  - [[Introduction to Elasticsearch and the ELK Stack, Part 1]<img src="images/Check-png.png" width="20px">](https://dzone.com/articles/introduction-to-elasticsearch-and-the-elk-stack)
   - [Introduction to Elasticsearch and the ELK Stack, Part 2](https://dzone.com/articles/introduction-to-elasticsearch-and-the-elk-stack-pa)
   - [How To Install Elasticsearch, Logstash, and Kibana (Elastic Stack) on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-18-04)
 
