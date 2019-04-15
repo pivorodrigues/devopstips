@@ -16,7 +16,7 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 - **Python**
 
-  - [[Comparing Python Virtual Environment tools]<img src="images/Check-png.png" width="20px">](https://towardsdatascience.com/comparing-python-virtual-environment-tools-9a6543643a44)
+  - [Comparing Python Virtual Environment tools <img src="images/Check-png.png" width="20px">](https://towardsdatascience.com/comparing-python-virtual-environment-tools-9a6543643a44)
 
 #
 
@@ -94,7 +94,7 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 ### Data Science
 
 - **Articles**
-  - [[How To Get Your Data Scientist Career Started]<img src="images/Check-png.png" width="20px">](https://www.forbes.com/sites/louiscolumbus/2019/04/14/how-to-get-your-data-scientist-career-started/#1e5fe9f47e5c)
+  - [How To Get Your Data Scientist Career Started <img src="images/Check-png.png" width="20px">](https://www.forbes.com/sites/louiscolumbus/2019/04/14/how-to-get-your-data-scientist-career-started/#1e5fe9f47e5c)
 
 ### Apache Hadoop
 
