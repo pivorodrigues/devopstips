@@ -83,7 +83,12 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 #
 
-## 10. Big Data Tools
+## 10. Big Data, Data Science and Machine Learning
+
+### Data Science
+
+- **Articles**
+  - [How To Get Your Data Scientist Career Started](https://www.forbes.com/sites/louiscolumbus/2019/04/14/how-to-get-your-data-scientist-career-started/#1e5fe9f47e5c)
 
 ### Apache Hadoop
 
