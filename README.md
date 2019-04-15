@@ -15,7 +15,6 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 ## 1. Learn a Programming Language
 
 - **Python**
-
   - [Comparing Python Virtual Environment tools <img src="images/Check-png.png" width="20px">](https://towardsdatascience.com/comparing-python-virtual-environment-tools-9a6543643a44)
 
 #
