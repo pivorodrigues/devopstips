@@ -75,7 +75,7 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 - **Prometheus**
   - [How To Query Prometheus on Ubuntu 14.04 Part 1](https://www.digitalocean.com/community/tutorials/how-to-query-prometheus-on-ubuntu-14-04-part-1)
   - [How To Query Prometheus on Ubuntu 14.04 Part 2](https://www.digitalocean.com/community/tutorials/how-to-query-prometheus-on-ubuntu-14-04-part-2)
-  - [QUERYING PROMETHEUS](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+  - [Querying Prometheus](https://prometheus.io/docs/prometheus/latest/querying/basics/)
 
 #
 
