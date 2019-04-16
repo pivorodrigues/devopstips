@@ -1,5 +1,5 @@
 # DevOps Tips!
-A Repository to concentrate all my *Tips* and *Readings* about DevOps and SRE concepts.
+A Repository to concentrate all my *Notes* and *Readings* about DevOps and SRE concepts.
 
 This repository is based in this [Kamranahmedse](https://github.com/kamranahmedse) DevOps Roadmap:
 
@@ -8,7 +8,7 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 ## 0. Code Version Control
 
 - **GIT** <img src="images/Check-png.png" width="20px">
-  - [Tips](git.md)
+  - [My Notes](git.md)
 
 #
 
@@ -36,10 +36,10 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
   - [time-to-live (TTL)](https://searchnetworking.techtarget.com/definition/time-to-live)  
 
 - **Networking for Web Developers** <img src="images/Check-png.png" width="20px">
-  - [Tips](nfwd.md)
+  - [My Notes](nfwd.md)
 
 - **Cisco CCNA Datacenter Concepts**
-  - [Tips](ccnadc.md)
+  - [My Notes](ccnadc.md)
 
 
 #
@@ -56,7 +56,7 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 ## 6. Learn Infrastructure as Code
 
 - **Vagrant**
-  - [Tips](vagrant.md)
+  - [My Notes](vagrant.md)
 
 #
 
@@ -70,7 +70,7 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 ### 8.2. Application Monitoring
 
 - **New Relic**
-  - [Tips](newrelic.md)
+  - [My Notes](newrelic.md)
 
   - **[Articles]**
     - [Best Practices for Monitoring Cloud-Based Applications and Infrastructure](https://newrelic.com/resource/best-practices-for-monitoring-your-move-to-the-cloud)
