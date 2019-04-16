@@ -113,6 +113,8 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 - **Articles**
   - [How To Get Your Data Scientist Career Started <img src="images/Check-png.png" width="20px">](https://www.forbes.com/sites/louiscolumbus/2019/04/14/how-to-get-your-data-scientist-career-started/#1e5fe9f47e5c)
   - [Learning Data Science: Our Favorite Resources To Learn Data Science From Free To Not](https://hackernoon.com/learning-data-science-our-favorite-resources-to-learn-data-science-from-free-to-not-47beb6424de1)
+  - [Machine Learning for Operations](https://thenewstack.io/machine-learning-for-operations/)
+  - [How 20th Century Fox uses ML to predict a movie audience](https://cloud.google.com/blog/products/ai-machine-learning/how-20th-century-fox-uses-ml-to-predict-a-movie-audience)
 
 ### Apache Hadoop
 
