@@ -70,10 +70,10 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 ### 8.2. Application Monitoring
 
 - **New Relic**
-  - [My Notes](newrelic.md)
+    - [My Notes](newrelic.md)
 
   - **[Articles]**
-    - [Best Practices for Monitoring Cloud-Based Applications and Infrastructure](https://newrelic.com/resource/best-practices-for-monitoring-your-move-to-the-cloud)
+      - [Best Practices for Monitoring Cloud-Based Applications and Infrastructure](https://newrelic.com/resource/best-practices-for-monitoring-your-move-to-the-cloud)
 
 ### 8.3. Logs Management
 
