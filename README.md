@@ -32,11 +32,15 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 - **HTTP**
   - [MDN Web Docs](https://developer.mozilla.org/pt-BR/docs/Web/HTTP)
 
+- **TTL**
+  - [time-to-live (TTL)](https://searchnetworking.techtarget.com/definition/time-to-live)  
+
 - **Networking for Web Developers** <img src="images/Check-png.png" width="20px">
   - [Tips](nfwd.md)
 
 - **Cisco CCNA Datacenter Concepts**
   - [Tips](ccnadc.md)
+
 
 #
 
@@ -56,12 +60,20 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 #
 
+## 7. Learn some CI/CD Tool
+
+- **[Articles]**
+    - [What is CICD — Concepts in Continuous Integration and Deployment](https://medium.com/@nirespire/what-is-cicd-concepts-in-continuous-integration-and-deployment-4fe3f6625007)
+
 ## 8. Learn how to monitor software and infrastructure
 
 ### 8.2. Application Monitoring
 
 - **New Relic**
   - [Tips](newrelic.md)
+
+  - **[Articles]**
+    - [Best Practices for Monitoring Cloud-Based Applications and Infrastructure](https://newrelic.com/resource/best-practices-for-monitoring-your-move-to-the-cloud)
 
 ### 8.3. Logs Management
 
