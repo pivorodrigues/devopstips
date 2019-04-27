@@ -1,6 +1,6 @@
 # My Docker Cheat Sheet
 
-*Based on some courses, lessons, studies and articles*
+*Based on some courses, lessons and articles*
 
 ### How Containers Work
 
