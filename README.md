@@ -118,5 +118,5 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 ### Apache Hadoop
 
-- **[Coursera] Hadoop Platform and Application Framework** <img src="images/Check-png.png" width="20px">
-  - [My Notes](hpaf.md)
+- **[Coursera] Hadoop Platform and Application Framework**
+  - [My Notes](hpaf.md) <img src="images/Check-png.png" width="20px">
