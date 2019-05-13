@@ -150,3 +150,9 @@
   - Machine Learning;
 
   - Graph Exploration.
+
+#
+
+**Intro to HTTP and RESTful API's**
+
+  - **METHOD:** the _"verb"_ of the request. GET, POST, PUT or DELETE;
