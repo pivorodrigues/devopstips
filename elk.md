@@ -201,7 +201,7 @@
 
   - A way to issue HTTP requests from the command line. From code, you´ll use whatever library you use for HTTP/REST in the same way.
 
-      _$ curl -H "Content-Type:application/json" <URL> -d '<BODY>'_
+      `$ curl -H "Content-Type:application/json" <URL> -d '<BODY>'`
 
 **Examples:**
 
