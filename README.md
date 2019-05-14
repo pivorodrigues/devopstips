@@ -57,8 +57,13 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 ## 6. Learn Infrastructure as Code
 
-- **Vagrant**
-  - [My Notes](vagrant.md)
+- **Containers**
+  - **Docker**
+    - [Docker, containers, VMs and orchestration technology for the beginners](https://medium.com/faun/docker-containers-vms-and-orchestration-technology-for-the-beginners-68ae979bce5a)
+
+- **Infrastructure Provisioning**
+  - **Vagrant**
+    - [My Notes](vagrant.md)  
 
 #
 
