@@ -23,8 +23,8 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 ## 3. Learn about Managing Servers
 
 - **Process Monitoring**
-  - [lsof](https://medium.com/@copyconstruct/lsof-f2b224eee7b5)
-  - [top](https://www.booleanworld.com/guide-linux-top-command/)
+  - [lsof <img src="images/Check-png.png" width="20px">](https://medium.com/@copyconstruct/lsof-f2b224eee7b5)
+  - [A Guide to the Linux “Top” Command](https://www.booleanworld.com/guide-linux-top-command/)
 
 #
 
