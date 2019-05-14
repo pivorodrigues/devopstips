@@ -1,7 +1,7 @@
 # DevOps Tips!
 A Repository to concentrate all my *Notes* and *Readings* about DevOps and SRE concepts.
 
-This repository is based in this [Kamranahmedse](https://github.com/kamranahmedse) DevOps Roadmap:
+This repository is inspired by this [Kamranahmedse](https://github.com/kamranahmedse) DevOps Roadmap:
 
 <p align="center"><img src="images/devops.png" width="700px"></p>
 
@@ -16,6 +16,10 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 - **Python**
   - [What exactly can you do with Python? Here are Python’s 3 main applications <img src="images/Check-png.png" width="20px">](https://medium.freecodecamp.org/what-can-you-do-with-python-the-3-main-applications-518db9a68a78)
+  - [Python 101: The Basics](https://medium.com/the-renaissance-developer/python-101-the-basics-441136fb7cc3)
+  - [Python 101: Data Structures](https://medium.com/the-renaissance-developer/python-101-data-structures-a397bcc2bd30)
+  - [Python 101: Object Oriented Programming part 1](https://medium.com/the-renaissance-developer/search?q=Python%20101)
+  - [Python 101: Object Oriented Programming part 2](https://medium.com/the-renaissance-developer/python-101-object-oriented-programming-part-2-8e0db3ddd531)
   - [Learning Python: From Zero to Hero](https://medium.freecodecamp.org/learning-python-from-zero-to-hero-120ea540b567)
   - [Comparing Python Virtual Environment tools <img src="images/Check-png.png" width="20px">](https://towardsdatascience.com/comparing-python-virtual-environment-tools-9a6543643a44)
 
