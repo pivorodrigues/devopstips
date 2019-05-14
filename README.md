@@ -15,6 +15,7 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 ## 1. Learn a Programming Language
 
 - **Python**
+  - [What exactly can you do with Python? Here are Python’s 3 main applications <img src="images/Check-png.png" width="20px">](https://medium.freecodecamp.org/what-can-you-do-with-python-the-3-main-applications-518db9a68a78)
   - [Comparing Python Virtual Environment tools <img src="images/Check-png.png" width="20px">](https://towardsdatascience.com/comparing-python-virtual-environment-tools-9a6543643a44)
 
 #
@@ -50,6 +51,7 @@ This repository is based in this [Kamranahmedse](https://github.com/kamranahmeds
 
 - **NGINX** <img src="images/Check-png.png" width="20px">
   - [Nginx Fundamentals: High Performance Servers from Scratch](nginx.md)
+  - [Nginx Admin's Handbook](https://github.com/trimstray/nginx-admins-handbook)
 
 #
 
