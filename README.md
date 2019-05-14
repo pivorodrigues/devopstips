@@ -57,6 +57,7 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 - **NGINX**
   - [Nginx Fundamentals: High Performance Servers from Scratch - My Notes <img src="images/Check-png.png" width="20px">](nginx.md)
   - [Nginx Admin's Handbook](https://github.com/trimstray/nginx-admins-handbook)
+  - [Dynamic DNS Resolution in Nginx](https://medium.com/driven-by-code/dynamic-dns-resolution-in-nginx-22133c22e3ab)
 
 #
 
@@ -112,9 +113,10 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 
 ### **AWS**
 
-- **AWS Certified Solutions Architecht**
+- **AWS Certified Solutions Architect**
   - [A Cloud Guru - Exam Tips](acsa.md) <img src="images/acg.png" width="30px">
   - [Amazon Web Services - A practical guide](https://github.com/open-guides/og-aws)
+  - [AWS Transit Gateway Routing in Multiple Accounts](https://medium.com/driven-by-code/aws-transit-gateway-routing-in-multiple-accounts-713b10ca7b34)
 
 #
 
