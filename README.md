@@ -23,6 +23,10 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
   - [Learning Python: From Zero to Hero](https://medium.freecodecamp.org/learning-python-from-zero-to-hero-120ea540b567)
   - [Comparing Python Virtual Environment tools <img src="images/Check-png.png" width="20px">](https://towardsdatascience.com/comparing-python-virtual-environment-tools-9a6543643a44)
 
+- **Django**
+
+  - [Modern Django — Part 0: Introduction and Initial Setup](https://medium.com/@djstein/modern-django-part-0-introduction-and-initial-setup-657df48f08f8)
+
 #
 
 ## 3. Learn about Managing Servers
