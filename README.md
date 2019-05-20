@@ -22,6 +22,7 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
   - [Python 101: Object Oriented Programming part 2](https://medium.com/the-renaissance-developer/python-101-object-oriented-programming-part-2-8e0db3ddd531)
   - [Learning Python: From Zero to Hero](https://medium.freecodecamp.org/learning-python-from-zero-to-hero-120ea540b567)
   - [Comparing Python Virtual Environment tools <img src="images/Check-png.png" width="20px">](https://towardsdatascience.com/comparing-python-virtual-environment-tools-9a6543643a44)
+  - [Replacing Bash Script with Python](https://github.com/ninjaaron/replacing-bash-scripting-with-python)
 
 - **Django**
 
