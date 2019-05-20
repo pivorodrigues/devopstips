@@ -24,6 +24,7 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
   - [Comparing Python Virtual Environment tools <img src="images/Check-png.png" width="20px">](https://towardsdatascience.com/comparing-python-virtual-environment-tools-9a6543643a44)
   - [Replacing Bash Script with Python](https://github.com/ninjaaron/replacing-bash-scripting-with-python)
   - [10 Python File System Methods You Should Know](https://towardsdatascience.com/10-python-file-system-methods-you-should-know-799f90ef13c2)
+  - [Everything About Python - Beginner To Advanced](https://medium.com/fintechexplained/everything-about-python-from-beginner-to-advance-level-227d52ef32d2)
 
 - **Django**
 
