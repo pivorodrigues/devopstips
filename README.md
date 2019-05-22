@@ -157,4 +157,5 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
   - [DevOps Launch Checklist](https://sysadmincasts.com/episodes/70-devops-launch-checklist)
 
 - **SRE**
+  - [SRE fundamentals: SLIs, SLAs and SLOs](https://cloud.google.com/blog/products/gcp/sre-fundamentals-slis-slas-and-slos)
   - [How to Avoid the 5 SRE Implementation Traps that Catch Even the Best Teams](https://thenewstack.io/how-to-avoid-the-5-sre-implementation-traps-that-catch-even-the-best-teams/)
