@@ -67,6 +67,9 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
   - [Nginx Fundamentals: High Performance Servers from Scratch - My Notes <img src="images/Check-png.png" width="20px">](nginx.md)
   - [Nginx Admin's Handbook](https://github.com/trimstray/nginx-admins-handbook)
   - [Dynamic DNS Resolution in Nginx](https://medium.com/driven-by-code/dynamic-dns-resolution-in-nginx-22133c22e3ab)
+  - [Logging HTTP Request Metadata With Nginx, Lua, Logstash, and Elasticsearch](https://dzone.com/articles/logging-http-request-metadata-with-nginx-lua-logst)
+  - [Kubernetes Cheat Sheet](https://linuxacademy.com/blog/containers/kubernetes-cheat-sheet/)
+  - [Kubernetes basic glossary](https://blog.lelonek.me/kubernetes-basic-glossary-9ca0416e3948)
 
 #
 
@@ -76,9 +79,13 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
   - **Docker**
     - [Docker, containers, VMs and orchestration technology for the beginners](https://medium.com/faun/docker-containers-vms-and-orchestration-technology-for-the-beginners-68ae979bce5a)
 
+  - **Kubernetes**
+    - [Learn Kubernetes in Under 3 Hours: A Detailed Guide to Orchestrating Containers](https://medium.freecodecamp.org/learn-kubernetes-in-under-3-hours-a-detailed-guide-to-orchestrating-containers-114ff420e882)  
+
 - **Configuration Management**
   - **Ansible**
-      - [Ansible](https://opensource.com/article/19/4/ansible-procedures)  
+      - [How to use Ansible to document procedures](https://opensource.com/article/19/4/ansible-procedures)
+      - [Adventures with Ansible: Lessons learned from real-world deployments](https://www.redhat.com/en/blog/adventures-ansible-lessons-learned-real-world-deployments)
 
 - **Infrastructure Provisioning**
   - **Vagrant**
@@ -97,9 +104,8 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 
 - **New Relic**
     - [My Notes](newrelic.md)
-
-  - **[Articles]**
-      - [Best Practices for Monitoring Cloud-Based Applications and Infrastructure](https://newrelic.com/resource/best-practices-for-monitoring-your-move-to-the-cloud)
+    - [Best Practices for Monitoring Cloud-Based Applications and Infrastructure](https://newrelic.com/resource/best-practices-for-monitoring-your-move-to-the-cloud)
+    - [Best Practices for Monitoring Digital Customer Experience](https://newrelic.com/resource/digital-customer-experience-best-practices)
 
 ### 8.3. Logs Management
 
@@ -148,7 +154,7 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 
 - **[Coursera] Hadoop Platform and Application Framework**
   - [My Notes](hpaf.md) <img src="images/Check-png.png" width="20px">
-
+  - [Big Data in Little Spaces: Hadoop and Spark At The Edge](https://www.nextplatform.com/2019/04/09/big-data-in-little-spaces-hadoop-and-spark-at-the-edge/)
 #
 
 ## 11. DevOps and SRE Culture and Concepts
@@ -159,3 +165,4 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 - **SRE**
   - [SRE fundamentals: SLIs, SLAs and SLOs](https://cloud.google.com/blog/products/gcp/sre-fundamentals-slis-slas-and-slos)
   - [How to Avoid the 5 SRE Implementation Traps that Catch Even the Best Teams](https://thenewstack.io/how-to-avoid-the-5-sre-implementation-traps-that-catch-even-the-best-teams/)
+  - [When SREs and Kubernetes Are Worth It — And When They Aren’t](https://thenewstack.io/a-google-engineer-on-when-an-sre-and-kubernetes-are-and-not-worth-it/)
