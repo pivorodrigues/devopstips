@@ -76,6 +76,10 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
   - **Docker**
     - [Docker, containers, VMs and orchestration technology for the beginners](https://medium.com/faun/docker-containers-vms-and-orchestration-technology-for-the-beginners-68ae979bce5a)
 
+- **Configuration Management**
+  - **Ansible**
+      - [Ansible](https://opensource.com/article/19/4/ansible-procedures)  
+
 - **Infrastructure Provisioning**
   - **Vagrant**
     - [My Notes](vagrant.md)  
@@ -138,8 +142,19 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
   - [Learning Data Science: Our Favorite Resources To Learn Data Science From Free To Not](https://hackernoon.com/learning-data-science-our-favorite-resources-to-learn-data-science-from-free-to-not-47beb6424de1)
   - [Machine Learning for Operations](https://thenewstack.io/machine-learning-for-operations/)
   - [How 20th Century Fox uses ML to predict a movie audience](https://cloud.google.com/blog/products/ai-machine-learning/how-20th-century-fox-uses-ml-to-predict-a-movie-audience)
+  - [How To Get Your Data Scientist Career Started](How to Avoid the 5 SRE Implementation Traps that Catch Even the Best Teams)
 
 ### Apache Hadoop
 
 - **[Coursera] Hadoop Platform and Application Framework**
   - [My Notes](hpaf.md) <img src="images/Check-png.png" width="20px">
+
+#
+
+## 11. DevOps and SRE Culture and Concepts
+
+- **DevOps**
+  - [DevOps Launch Checklist](https://sysadmincasts.com/episodes/70-devops-launch-checklist)
+
+- **SRE**
+  - [How to Avoid the 5 SRE Implementation Traps that Catch Even the Best Teams](https://thenewstack.io/how-to-avoid-the-5-sre-implementation-traps-that-catch-even-the-best-teams/)
