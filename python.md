@@ -3,7 +3,7 @@ _(Based on Data Science Academy Course)_
 
 ### Numbers and Operations
 
-- Number types: int and float
+- **Number types: int and float**
 
   - We can use the function **type()** to discover what type of number we are using.
 
@@ -26,4 +26,6 @@ _(Based on Data Science Academy Course)_
       int(a)
     ```
 
-   
+  **OBS:** [_Python Built-in Functions_](https://docs.python.org/3.3/library/functions.html)
+
+- **Number operations**
