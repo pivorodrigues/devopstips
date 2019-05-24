@@ -7,7 +7,7 @@ _(Based on Data Science Academy Course)_
 
   - We can use the function **type()** to discover what type of number we are using.
 
-    - Example:
+    Example:
 
     ```
       a = 5
