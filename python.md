@@ -7,9 +7,23 @@ _(Based on Data Science Academy Course)_
 
   - We can use the function **type()** to discover what type of number we are using.
 
-    Example:
+    _Example:_
 
     ```
       a = 5
       type(a)
-    ```  
+    ```
+
+  - We can convert types of numbers.
+
+    _Example:_
+
+    ```
+      a = 5
+      float(a)
+
+      a = 5.5
+      int(a)
+    ```
+
+   
