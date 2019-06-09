@@ -312,7 +312,11 @@ _(https://aws.amazon.com/pt/s3/)_
 
   - **S3 One Zone - IA:** Want a lower-cost option for infrequently accessed data, but do not require the multiple Availability Zone data resilience;
 
-  - **Glacier:** Very cheap, but used for archival only. Expedited, Standard or Bulk. A Standard retrieval time takes 3 - 5 hours.
+  - **S3 - Intelligent Tiering:** Designed to optimize costs by automatically moving data to the most cost-effective access tier, without perfomance impact or operational overhead;
+
+  - **S3 Glacier:** Is a secure, durable and low-cost storage class for data archiving. Retrieval times configurable from minutes to hours;
+
+  - **S3 Glacier Deep Archive:** S3 Glacier Deep Archive is Amazon's S3 lowest-cost storage class where a retrieval time of 12 hours is acceptable. 
 
 <p align="center"><img src="images/s3Classes.png" width="500px"></p>
 
@@ -380,7 +384,7 @@ _(https://aws.amazon.com/pt/s3/)_
 
   - Upload an object to S3 receive a HTTP 200 Code;
 
-  - S3, S3 - IA, S3 Reduced Redundancy Storage;
+  - S3, S3 - IA, S3 - IA (One Zone), S3 Glacier;
 
   - Encryption:
 
@@ -422,7 +426,7 @@ _(https://aws.amazon.com/pt/solutions/cross-region-replication-monitor/)_
 
     3. Add user to the administrator group;
 
-    4. Configure glogcli with the command: `$ aws configure`;
+    4. Configure awscli with the command: `$ aws configure`;
 
     5. Enter the user's **AWS Access Key ID** and **AWS Secret Access Key**;
 
