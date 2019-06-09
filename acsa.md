@@ -348,29 +348,31 @@ _(https://aws.amazon.com/pt/s3/)_
 
     - **Glacier -** Archived data, where you can wait 3 - 5 hours before accessing.
 
-  - **Remember the core fundamentals of an S3 object:**
-
-    - Key (name)
-
-    - Value (data)
-
-    - Version ID
-
-    - Metadata
-
-    - Subresources
-
-      - ACL (Access Control List)
-
-      - Torrent
-
   - Object-based storage only (for files)
 
   - Sucessfull uploads will generate a HTTP 200 status code
 
   - **Not suitable to install operating systems, databases or applications on**
 
+  - You can turn on **MFA Delete** (Multi-factor authentication)
+
   - **Read the S3 FAQs before taking the exam. It comes up A LOT!!!**
+
+- **The Key Fundamentals of S3 are:**
+  
+  - Key (This is simply the name of the object)
+
+  - Value (This is simply the data and is made up of a sequence of bytes)
+
+  - Version ID (Important of Versioning)
+
+  - Metadata (Data about data you are storing)
+
+  - Subresources:
+
+    - Access rontrol Lists
+
+    - Torrent  	 
 
 - **Create an S3 Bucket - Exam Tips**
 
