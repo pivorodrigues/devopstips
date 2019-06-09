@@ -18,13 +18,13 @@
 
 #
 
-## The 10.000 foot overview 2018
+## The 10.000 foot overview 2019 (Exam Tips)
 
-- **Region** - A geographycal area or a physical location with two or more availability zones.
+- **Region** - A is a physical location in the world which consists of two or more Availability Zones (AZ´s).
 
-- **Availability Zone** - Discrete data centers with redundant power, networking and connectivity in separate facilities.
+- **Availability Zone** - Is on or more discrete data centers, each with redundant power, networking and connectivity, housed in separate facilities.
 
-- **Edge Location** - Endpoints for AWS for caching content. Consists in CloudFront, Amazon's Content Delivery Network (CDN). *PS: There are many more edge locations than regions*
+- **Edge Location** - Are endpoints for AWS which are used for caching content. Typically this consists in CloudFront, Amazon's Content Delivery Network (CDN). *PS: There are many more edge locations than regions*
 
 #
 
@@ -177,7 +177,7 @@ _(https://aws.amazon.com/pt/iam/)_
 
   2. **Groups:** A collection of users. Each user in the group will inherit the permissions of the group.
 
-  3. **Policies:** Policies are made up of documents, called Policy Documents. These documents are in a format called JSON and they give pemissions as to what a User/Group/Role is able to do.
+  3. **Policies:** Policies are made up of documents, called Policy Documents. These documents are in a format called JSON and they give permissions as to what a User/Group/Role is able to do.
 
   4. **Roles:** You create roles and then assign them to AWS Resources.
 

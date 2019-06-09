@@ -150,3 +150,69 @@
   - Machine Learning;
 
   - Graph Exploration.
+
+#
+
+**Intro to HTTP and RESTful API's**
+
+  - **METHOD:** the _"verb"_ of the request. GET, POST, PUT or DELETE;
+
+  - **PROTOCOL:** what _flavor_ or _version_ of HTTP (HTTP/1.1);
+
+  - **HOST:** what web server you want to talk to;
+
+  - **URL:** what resource is being requested;
+
+  - **BODY:** extra data needed by the server;
+
+  - **HEADERS:** user-agent, content-type, etc.
+
+**Pragmatic definition of RESTful API's:** _using HTTP requests to communicate with web services._
+
+  - **Examples:**
+
+    - GET requests retrieve information (like search results);
+
+    - PUT requests insert or replace new information;
+
+    - DELETE requests delete information.
+
+**REST fancy-speak**
+
+  - Representational State Transfer (Six guiding constraints):
+
+    - Client-server architecture;
+
+    - Statelessness;
+
+    - Cacheability;
+
+    - Layered system;
+
+    - Code on demand (ie, sending Javascript);
+
+    - Uniform interface.
+
+**Why REST?**
+
+  - Language and system independent.
+
+**The curl command:**
+
+  - A way to issue HTTP requests from the command line. From code, you´ll use whatever library you use for HTTP/REST in the same way.
+
+      `$ curl -H "Content-Type:application/json" <URL> -d '<BODY>'`
+
+**Examples:**
+
+  ```
+      $ curl -H "Content-Type: application/json" -XGET '127.0.0.1:9200/shakespeare/_search?pretty' -d'
+      {
+      "query":{
+      "match_phrase":{
+      "text_entry":"to be or not to be"
+      }
+      }
+      }
+      '
+  ```
