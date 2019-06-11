@@ -14,6 +14,9 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 
 ## 1. Learn a Programming Language
 
+- **Developer Skills**
+  - [15 Tips on How to Improve as a Junior Developer](https://www.codementor.io/learn-programming/15-ways-to-improve-as-a-junior-developer)
+
 - **Python**
   - [My Notes](python.md)
   - [What exactly can you do with Python? Here are Python’s 3 main applications <img src="images/Check-png.png" width="20px">](https://medium.freecodecamp.org/what-can-you-do-with-python-the-3-main-applications-518db9a68a78)
@@ -26,6 +29,7 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
   - [Replacing Bash Script with Python](https://github.com/ninjaaron/replacing-bash-scripting-with-python)
   - [10 Python File System Methods You Should Know](https://towardsdatascience.com/10-python-file-system-methods-you-should-know-799f90ef13c2)
   - [Everything About Python - Beginner To Advanced](https://medium.com/fintechexplained/everything-about-python-from-beginner-to-advance-level-227d52ef32d2)
+  - [Python Systemd Tutorial](https://github.com/torfsen/python-systemd-tutorial)
 
 - **Django**
 
@@ -150,6 +154,8 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
   - [Machine Learning for Operations](https://thenewstack.io/machine-learning-for-operations/)
   - [How 20th Century Fox uses ML to predict a movie audience](https://cloud.google.com/blog/products/ai-machine-learning/how-20th-century-fox-uses-ml-to-predict-a-movie-audience)
   - [How To Get Your Data Scientist Career Started](https://www.forbes.com/sites/louiscolumbus/2019/04/14/how-to-get-your-data-scientist-career-started/)
+  - [Causal Data Science](https://medium.com/causal-data-science/causal-data-science-721ed63a4027)
+  - [Introducing AresDB: Uber’s GPU-Powered Open Source, Real-time Analytics Engine](https://eng.uber.com/aresdb/)
 
 ### Apache Hadoop
 
