@@ -73,8 +73,6 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
   - [Nginx Admin's Handbook](https://github.com/trimstray/nginx-admins-handbook)
   - [Dynamic DNS Resolution in Nginx](https://medium.com/driven-by-code/dynamic-dns-resolution-in-nginx-22133c22e3ab)
   - [Logging HTTP Request Metadata With Nginx, Lua, Logstash, and Elasticsearch](https://dzone.com/articles/logging-http-request-metadata-with-nginx-lua-logst)
-  - [Kubernetes Cheat Sheet](https://linuxacademy.com/blog/containers/kubernetes-cheat-sheet/)
-  - [Kubernetes basic glossary](https://blog.lelonek.me/kubernetes-basic-glossary-9ca0416e3948)
 
 #
 
@@ -85,7 +83,9 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
     - [Docker, containers, VMs and orchestration technology for the beginners](https://medium.com/faun/docker-containers-vms-and-orchestration-technology-for-the-beginners-68ae979bce5a)
 
   - **Kubernetes**
-    - [Learn Kubernetes in Under 3 Hours: A Detailed Guide to Orchestrating Containers](https://medium.freecodecamp.org/learn-kubernetes-in-under-3-hours-a-detailed-guide-to-orchestrating-containers-114ff420e882)  
+    - [Learn Kubernetes in Under 3 Hours: A Detailed Guide to Orchestrating Containers](https://medium.freecodecamp.org/learn-kubernetes-in-under-3-hours-a-detailed-guide-to-orchestrating-containers-114ff420e882)
+    - [Kubernetes Cheat Sheet](https://linuxacademy.com/blog/containers/kubernetes-cheat-sheet/)
+    - [Kubernetes basic glossary](https://blog.lelonek.me/kubernetes-basic-glossary-9ca0416e3948)
 
 - **Configuration Management**
   - **Ansible**
