@@ -29,3 +29,27 @@ _(Based on Data Science Academy Course)_
   **OBS:** [_Python Built-in Functions_](https://docs.python.org/3.3/library/functions.html)
 
 - **Number operations**
+
+#
+
+### Conditionals and Loops
+
+- **Range: function range()**
+
+  **Sintax:**
+
+    `range([start],[stop],[step])`
+
+  **Examples:**
+
+    ```
+      for i in range(5, 101, 2):
+          print(i)
+    ```
+
+    ```
+      list = ["strawberry", "banana", "pineapple", "grape"]
+      list_size = len(list)
+      for i in range(0, list_size):
+          print(list[i])
+    ```      

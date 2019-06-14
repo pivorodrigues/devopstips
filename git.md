@@ -93,3 +93,5 @@
 ```$ git log --graph``` *(Show the logs in graphics)*
 
 ```$ git cherry-pick <commit>``` *(Make the merge with a specific commit)*
+
+`$ git rebase <branch>` *(It takes all the changes commited in one branch and replicates to another)*
