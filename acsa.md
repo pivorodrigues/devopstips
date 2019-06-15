@@ -673,6 +673,6 @@ _OBS: Now in the console, CloudFront is in the Network and Content Delivery menu
 
   - You can load files to S3 much faster by enabling multipart upload;
 
-  - Read the S3 FAQ before taking the exam. It comes up a LOT.
+  - Read the S3 FAQ before taking the exam. It comes up a LOT. A LOT!!!
 
 #
