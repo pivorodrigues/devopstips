@@ -73,3 +73,24 @@
 #
 
   - **External Datasources Support**
+
+    - Example:
+
+    ```
+      data "terraform_remote_state" "shared" {
+        backend = "s3"
+        config {
+          bucket = "globo-tf"
+          key    = "network/vpc"
+          region = "us-east-1"
+        }
+      }
+
+      resource "aws_instance" "ec2_instance" {
+        vpc_id                  = "${data.terraform_remote_state.shared.vpc_id}"
+        key_pair                = "${data.terraform_remote_state.shared.key_name}"
+        subnet_id               = "${data.terraform_remote_state.shared.public_subnets, 0}"
+      }
+    ```
+
+#
