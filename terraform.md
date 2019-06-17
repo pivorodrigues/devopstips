@@ -35,17 +35,21 @@
         }
       }
     ```  
+#
 
   - **Conditional Support**
 
-  ```
-    resource "aws_eip" "instance_eip" {
-      count                     = "${var.attach_eip ? 1 : 0}"
-      vpc                       = true
-      instance                  = "${element(aws_instance.ec2_generic_instance.*.id,count.index)}"
-      associate_with_private_ip = "${element(aws_instance.ec2_generic_instance.*.private_ip,count.index)}"
-    }
-  ```
+    - Example:
+
+    ```
+      resource "aws_eip" "instance_eip" {
+        count                     = "${var.attach_eip ? 1 : 0}"
+        vpc                       = true
+        instance                  = "${element(aws_instance.ec2_generic_instance.*.id,count.index)}"
+        associate_with_private_ip = "${element(aws_instance.ec2_generic_instance.*.private_ip,count.index)}"
+      }
+    ```
+#
 
   - **Many Built-in Functions**
 
@@ -66,5 +70,6 @@
         }
       }
     ```
+#
 
   - **External Datasources Support**
