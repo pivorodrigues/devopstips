@@ -80,6 +80,7 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 
 - **Containers**
   - **Docker**
+    - [My Notes](docker.md)
     - [Docker, containers, VMs and orchestration technology for the beginners](https://medium.com/faun/docker-containers-vms-and-orchestration-technology-for-the-beginners-68ae979bce5a)
 
   - **Kubernetes**
