@@ -1,4 +1,4 @@
-# Workshop - Terraform <img src="images/terraform-logo.png" width="20px">
+# Workshop - Terraform <img src="images/terraform-logo.png" width="40px">
 
 ### Features
 
