@@ -145,3 +145,22 @@
 
     `$ terraform plan --destroy`
     `$ terraform destroy # It will ask you, unless --force`
+
+#
+
+### Examples
+
+  - **1. A simple infrastructure**
+
+    - _1.1 Build a simple infrastructure:_
+
+      ```
+        resource "aws_instance" "example" {
+          ami             = "ami-6edd3078"
+          instance_type   = "t2.micro"
+
+          tags {
+              Name = "Test Machine"
+          }
+        }
+      ```
