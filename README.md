@@ -94,7 +94,10 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 
 - **Infrastructure Provisioning**
   - **Vagrant**
-    - [My Notes](vagrant.md)  
+    - [My Notes](vagrant.md)
+
+  - **Terraform**
+    - [My Notes](terraform.md)
 
 #
 
