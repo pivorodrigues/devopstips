@@ -128,3 +128,20 @@
 #
 
 ### Workflow
+
+  - **Step 1 - Create Configuration**
+
+    `$ vim main.tf`
+
+  - **Step 2 - Check the execution plan**
+
+    `$ terraform plan`
+
+  - **Step 3 - Build the Infrastructure**
+
+    `$ terraform apply`
+
+  - **Step X - Deploy the Infrastructure**
+
+    `$ terraform plan --destroy`
+    `$ terraform destroy # It will ask you, unless --force`
