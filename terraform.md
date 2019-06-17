@@ -1,6 +1,38 @@
 # Workshop - Terraform <img src="images/terraform-logo.png" width="30px">
 
+### What is Terraform?
+
+  _"Terraform is a tool for building, changing and versioning infrastructure safely and efficiently."_
+
 ### Features
+
+  - **Manages the infrastructure, period.**
+
+    - It is not a configuration management tool
+
+  - **Popular infrastructure providers**
+
+    - AWS
+
+    - DigitalOcean
+
+    - GCE
+
+    - Azure
+
+  - **Enable Multiple Providers**
+
+  - **Infrastructure as Code**
+
+    - Configurations files (.tf)
+
+  - **Execution Plans**
+
+    - What Terraform will do
+
+  - **Resource Graph**
+
+    - Parallelizes the creation and modification of any non-dependent resources    
 
   - **Variables support**
 
@@ -94,3 +126,5 @@
     ```
 
 #
+
+### Workflow
