@@ -274,4 +274,15 @@
             Name = "Test Machine"
           }
         }
+      ```
+
+    Before planning and applying:
+
+      `$ terraform get`
+
+    To destroy it use the: `--target`
+
+      ```
+        $ terraform plan --destroy --target module.security_group
+        $ terraform destroy --target module.security_group
       ```  
