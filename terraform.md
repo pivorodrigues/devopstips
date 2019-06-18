@@ -220,3 +220,15 @@
           vpc_security_group_ids = ["${aws_security_group.ssh.id}"]
         }
       ```  
+
+  - **3.1. Isolating components (A.K.A Modules)**
+
+    ```
+      - main.tf
+      |
+      - security_group
+        |
+        - main.tf
+        |
+        - outputs.tf
+    ```      
