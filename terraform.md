@@ -278,11 +278,11 @@
 
     Before planning and applying:
 
-      `$ terraform get`
+        `$ terraform get`
 
     To destroy it use the: `--target`
 
-      ```
-      $ terraform plan --destroy --target module.security_group
-      $ terraform destroy --target module.security_group
-      ```  
+        ```
+        $ terraform plan --destroy --target module.security_group
+        $ terraform destroy --target module.security_group
+        ```  
