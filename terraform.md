@@ -164,3 +164,24 @@
           }
         }
       ```
+
+    - _1.2. Improve It:_
+
+      ```
+        resource "aws_security_group" "ssh" {
+          name = "allow_ssh"
+          description = "Allow SSH connections"
+
+          ingress {
+            from_port = 22
+            to_port = 22
+            protocol = "tcp"
+            cidr_blocks = ["0.0.0.0/0"]
+          }
+        }
+
+        resource "aws_instance" "example" {
+          ...
+          vpc_security_group_ids = ["${aws_security_group.ssh.id}"]
+        }
+      ```  
