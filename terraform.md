@@ -184,4 +184,14 @@
           ...
           vpc_security_group_ids = ["${aws_security_group.ssh.id}"]
         }
-      ```  
+      ```
+
+  - **2.1. Isolating Parts**
+
+    - When invoking any command that loads the Terraform configuration, Terraform loads all configuration files within the directory specified in alphabetical order.
+
+      ```
+        - main.tf
+        |
+        - security_group.tf
+      ```    
