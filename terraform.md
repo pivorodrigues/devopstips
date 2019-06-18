@@ -231,4 +231,46 @@
           - main.tf
           |
           - outputs.tf
-      ```      
+      ```
+
+    - security_group/main.tf:
+
+      ```
+        resource "aws_security_group" "ssh" {
+          name = "allow_ssh"
+          description = "Allow SSH connections"
+
+          ingress {
+            from_port = 22
+            to_port = 22
+            protocol = "tcp"
+            cidr_blocks = ["0.0.0.0/0"]
+          }
+        }
+      ```
+
+    - security_group/outputs.tf
+
+      ```
+          output "group_id" {
+            value = "${aws_security_group.ssh.id}"
+          }
+      ```
+
+    - main.tf
+
+      ```
+        module "security_group" {
+          source = "./security_group"
+        }
+
+        resource "aws_instance" "example" {
+          ami             = "ami-6edd3078"
+          instance_type   = "t2.micro"
+          vpc_security_group_ids = ["$module.security_group.group"]
+
+          tags {
+            Name = "Test Machine"
+          }
+        }
+      ```  
