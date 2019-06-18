@@ -144,6 +144,7 @@
   - **Step X - Deploy the Infrastructure**
 
     `$ terraform plan --destroy`
+
     `$ terraform destroy # It will ask you, unless --force`
 
 #
