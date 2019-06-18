@@ -223,12 +223,12 @@
 
   - **3.1. Isolating components (A.K.A Modules)**
 
-    ```
-      - main.tf
-      |
-      - security_group
-        |
+      ```
         - main.tf
         |
-        - outputs.tf
-    ```      
+        - security_group
+          |
+          - main.tf
+          |
+          - outputs.tf
+      ```      
