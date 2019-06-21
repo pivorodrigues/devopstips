@@ -12,6 +12,8 @@ _(Based on Data Science Academy Course)_
     ```
       a = 5
       type(a)
+
+      <class 'int'>
     ```
 
   - We can convert types of numbers.
@@ -21,9 +23,11 @@ _(Based on Data Science Academy Course)_
     ```
       a = 5
       float(a)
+      5.0
 
       a = 5.5
       int(a)
+      5
     ```
 
   **OBS:** [_Python Built-in Functions_](https://docs.python.org/3.3/library/functions.html)
