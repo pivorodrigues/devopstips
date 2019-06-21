@@ -18,7 +18,6 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
   - [15 Tips on How to Improve as a Junior Developer](https://www.codementor.io/learn-programming/15-ways-to-improve-as-a-junior-developer)
 
 - **Python**
-  - [My Notes](python.md)
   - [What exactly can you do with Python? Here are Python’s 3 main applications <img src="images/Check-png.png" width="20px">](https://medium.freecodecamp.org/what-can-you-do-with-python-the-3-main-applications-518db9a68a78)
   - [Python 101: The Basics](https://medium.com/the-renaissance-developer/python-101-the-basics-441136fb7cc3)
   - [Python 101: Data Structures](https://medium.com/the-renaissance-developer/python-101-data-structures-a397bcc2bd30)
