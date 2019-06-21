@@ -34,6 +34,12 @@ _(Based on Data Science Academy Course)_
 
 - **Number operations**
 
+	- **Sum:** `+`
+	- **Subtraction:** `-`
+	- **Multiplication:** `*`
+	- **Division:** `/`
+
+
 #
 
 ### Conditionals and Loops
