@@ -35,9 +35,12 @@ _(Based on Data Science Academy Course)_
 - **Number operations**
 
 	- **Sum:** `+`
-	- **Subtraction:** `-`
-	- **Multiplication:** `*`
-	- **Division:** `/`
+	- **Difference:** `-`
+	- **Product:** `*`
+	- **Quotient:** `/`
+	- **Floored Quotient:** `//`
+	
+
 
 
 #
