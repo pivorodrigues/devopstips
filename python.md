@@ -39,7 +39,8 @@ _(Based on Data Science Academy Course)_
 	- **Product:** `*`
 	- **Quotient:** `/`
 	- **Floored Quotient:** `//`
-	
+	- **Remainder:** `%`
+	- **Power:** `**`
 
 
 
