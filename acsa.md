@@ -40,9 +40,9 @@
 
   - **Compute**
 
-   - EC2
+    - EC2
 
-   - Lambda
+    - Lambda
 
   - **Databases**
 
