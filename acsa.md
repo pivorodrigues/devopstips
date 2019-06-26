@@ -20,15 +20,45 @@
 
 ## The 10.000 foot overview 2019 (Exam Tips)
 
-- **Region** - A is a physical location in the world which consists of two or more Availability Zones (AZ´s).
+- **Region** - A Region is a geographical area. Is a physical location in the world which consists of two or more Availability Zones (AZ´s).
 
-- **Availability Zone** - Is on or more discrete data centers, each with redundant power, networking and connectivity, housed in separate facilities.
+- **Availability Zone** - Is one or more discrete data centers, each with redundant power, networking and connectivity, housed in separate facilities.
 
-- **Edge Location** - Are endpoints for AWS which are used for caching content. Typically this consists in CloudFront, Amazon's Content Delivery Network (CDN). *PS: There are many more edge locations than regions*
+- **Edge Location** - Are endpoints for AWS which are used for caching content. Typically this consists of CloudFront, Amazon's Content Delivery Network (CDN). *PS: There are many more edge locations than regions*
 
 #
 
-## AWS Services
+## What Do I Need To Know To Pass My Solutions Architect Exam?
+
+  - **Security, Identity & Compliance**
+
+    - IAM
+
+  - **Storage**
+
+    - S3
+
+  - **Compute**
+
+   - EC2
+
+   - Lambda
+
+  - **Databases**
+
+    - RDS
+
+    - DynamoDB
+
+    - Redshift
+
+  - **Network & Content Delivery**
+
+    - Route 53
+
+#
+
+## AWS - High Level Services
 
 ### Compute
 
@@ -80,7 +110,7 @@
 
 #
 
-### Migration
+### Migration & Transfer
 
 - **AWS Migration Hub** - Application tracking service
 
@@ -109,7 +139,7 @@
 
 #
 
-### Management Tools
+### Management & Governance
 
 - **Cloudwatch** - Monitoring Service _(Very important to the exam)_ :star:
 
@@ -316,7 +346,7 @@ _(https://aws.amazon.com/pt/s3/)_
 
   - **S3 Glacier:** Is a secure, durable and low-cost storage class for data archiving. Retrieval times configurable from minutes to hours;
 
-  - **S3 Glacier Deep Archive:** S3 Glacier Deep Archive is Amazon's S3 lowest-cost storage class where a retrieval time of 12 hours is acceptable. 
+  - **S3 Glacier Deep Archive:** S3 Glacier Deep Archive is Amazon's S3 lowest-cost storage class where a retrieval time of 12 hours is acceptable.
 
 <p align="center"><img src="images/s3Classes.png" width="500px"></p>
 
@@ -363,7 +393,7 @@ _(https://aws.amazon.com/pt/s3/)_
   - **Read the S3 FAQs before taking the exam. It comes up A LOT!!!**
 
 - **The Key Fundamentals of S3 are:**
-  
+
   - Key (This is simply the name of the object)
 
   - Value (This is simply the data and is made up of a sequence of bytes)
