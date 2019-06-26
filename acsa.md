@@ -227,7 +227,7 @@ _(https://aws.amazon.com/pt/iam/)_
 
   - Create roles;
 
-- **OBS:**
+- **IAM Exam Tips**
 
   - **IAM is universal**. It does note apply to regions at this time;
 
