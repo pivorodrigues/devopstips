@@ -35,6 +35,7 @@
   - Estar pronto para agir;
 
   - Entregar resultados.
+  
 
 **Os SA's da Amazon tornam os clientes bem-sucedidos quando:**
 
@@ -49,6 +50,7 @@
   - Ensinam;
 
   - Inventam, simplificam e inovam.
+
 
 **Para gerar sucesso em longo prazo, os SA's da Amazon devem saber:**
 
