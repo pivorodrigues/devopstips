@@ -14,4 +14,52 @@
 
   - Variedade de serviços.
 
-## Módulo 2: AWS Solution Architects  
+#  
+
+## Módulo 2: AWS Solution Architects
+
+**Princípios de liderança da Amazon:**
+
+  - Obsessão pelo cliente;
+
+  - Aprender a ser curioso;
+
+  - Conquistar confiança;
+
+  - Envolver-se profundamente;
+
+  - Inventar e simplificar;
+
+  - Pensar grande;
+
+  - Estar pronto para agir;
+
+  - Entregar resultados.
+
+**Os SA's da Amazon tornam os clientes bem-sucedidos quando:**
+
+  - Definem o escopo;
+
+  - Envolvem-se profundamente;
+
+  - Projetam as soluções do "Well-architected";
+
+  - Conquistam confiança;
+
+  - Ensinam;
+
+  - Inventam, simplificam e inovam.
+
+**Para gerar sucesso em longo prazo, os SA's da Amazon devem saber:**
+
+  - Que a migração para a nuvem é um processo;
+
+  - Que os clientes precisam de experiência e ajuda do SA;
+
+  - Conhecer seus clientes;
+
+  - Conhecer a plataforma e os serviços da AWS;
+
+  - Agir no melhor interesse em longo prazo do cliente;
+
+  - Usar a estratégia de longo prazo.
