@@ -1,4 +1,4 @@
-# AWS Solutions Training for Partners: Foundations - Technical
+# <img src="images/amazon-web-services-logo.png width="30px"> AWS Solutions Training for Partners: Foundations <img src="images/amazon-web-services-logo.png width="30px">
 
 ## Módulo 1: Clientes estão mudando para a AWS
 
