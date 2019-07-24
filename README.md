@@ -145,6 +145,7 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 
 - **AWS Certified Solutions Architect**
   - [A Cloud Guru - Exam Tips](acsa.md) <img src="images/acg.png" width="30px">
+  - [AWS Solutions Training for Partners: Foundations - Technical - Notes](astpf.md)
   - [Amazon Web Services - A practical guide](https://github.com/open-guides/og-aws)
   - [AWS Transit Gateway Routing in Multiple Accounts](https://medium.com/driven-by-code/aws-transit-gateway-routing-in-multiple-accounts-713b10ca7b34)
 
