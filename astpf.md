@@ -14,7 +14,6 @@
 
   - Variedade de serviços.
 
-#  
 
 ## Módulo 2: AWS Solution Architects
 
