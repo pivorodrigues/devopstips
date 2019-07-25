@@ -122,3 +122,9 @@
 **Regiões e Zonas de disponibilidade da AWS**
 
 <p align="center"><img src="images/aws-regions.png" width="700px"></p>
+
+#
+
+**Mapa de regiões da AWS**
+
+<p align="center"><img src="images/aws-region-map.png" width="700px"></p>
