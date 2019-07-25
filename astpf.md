@@ -114,4 +114,11 @@
 
 **O todo é maior que a soma das partes**
 
-<p align="center"><img src="images/aws-external-services.png" width="700px"></p>      
+<p align="center"><img src="images/aws-external-services.png" width="700px"></p>
+
+
+## Módulo 4: Conceitos de Arquitetura AWS
+
+**Regiões e Zonas de disponibilidade da AWS**
+
+<p align="center"><img src="images/aws-regions.png" width="700px"></p>
