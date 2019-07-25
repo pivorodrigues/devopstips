@@ -236,4 +236,4 @@
 
 **Nomes de instâncias do Amazon EC2**
 
-<p align="center"><img src="images/aws-instance-name.png" width="700px"></p>
+<p align="center"><img src="images/aws-instance-name.png" width="500px"></p>
