@@ -128,3 +128,19 @@
 **Mapa de regiões da AWS**
 
 <p align="center"><img src="images/aws-region-map.png" width="700px"></p>
+
+#
+
+**Conceitos:**
+
+  - **Região:** Área geográfica específica no globo;
+
+  - **Zona de disponibilidade:** Múltiplas locações isoladas (datacenters);
+
+  - **Edge Locations:** Pontos de presença da AWS, AWS Cloudfront.
+
+#
+
+**Pontos de presença da AWS**
+
+<p align="center"><img src="images/aws-points-presence.png" width="700px"></p>
