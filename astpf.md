@@ -190,3 +190,20 @@
 **Modelo de segurança compartilhada**
 
 <p align="center"><img src="images/aws-shared-security.png" width="700px"></p>
+
+#
+
+**Infrastructure as Code**
+
+ - O AWS é baseado em APIs;
+
+ - Os SDKs são usados para criar e operar.
+
+
+## Módulo 5: Elementos fundamentais
+
+**Serviços fundamentais da AWS**
+
+<p align="center"><img src="images/aws-fundamental-services.png" width="700px"></p>
+
+#
