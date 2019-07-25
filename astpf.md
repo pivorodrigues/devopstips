@@ -137,10 +137,46 @@
 
   - **Zona de disponibilidade:** Múltiplas locações isoladas (datacenters);
 
-  - **Edge Locations:** Pontos de presença da AWS, AWS Cloudfront.
+  - **Edge Locations:** Pontos de presença da AWS, AWS Cloudfront (CDN).
 
 #
 
 **Pontos de presença da AWS**
 
 <p align="center"><img src="images/aws-points-presence.png" width="700px"></p>
+
+#
+
+**Robustez regional da AWS**
+
+  - Dois centros de trânsito redundantes;
+
+  - Instalações altamente espelhadas e conectadas;
+
+  - 16 (agora 18) regiões;
+
+  - As regiões estão localizadas em áreas geográficas separadas;
+
+  - As regiões são isoladas umas das outras;
+
+  - Cada região tem várias zonas de disponibilidade;
+
+  - Os dados nunca são movidos de uma região para outra pela AWS;
+
+  - As zonas de disponibilidade estão em locais isolados (energia, rede, zona de inundação, etc.) dentro das regiões;
+
+  - As zonas de disponibilidade têm um ou mais datacenters (algumas têm até 8);
+
+  - As zonas de disponibilidade são projetadas para oferecer alta disponibilidade dos serviços aos clientes;
+
+  - As zonas de disponibilidade em uma região têm uma latência inferior a 1ms entre elas;
+
+  - Cada criação de datacenter da AWS possui entre 50.000 e 80.000 servidores físicos;
+
+#
+
+**O gerenciamento contínuo**
+
+<p align="center"><img src="images/aws-continuous-management.png" width="700px"></p>
+
+#
