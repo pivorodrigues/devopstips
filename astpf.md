@@ -180,3 +180,9 @@
 <p align="center"><img src="images/aws-continuous-management.png" width="700px"></p>
 
 #
+
+**Serviços gerenciados: Global, regional e zonal**
+
+<p align="center"><img src="images/aws-managed-services.png" width="700px"></p>
+
+#
