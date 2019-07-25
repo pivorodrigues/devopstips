@@ -110,6 +110,8 @@
 
       - Identidade e compatibilidade.
 
+#
+
 **O todo é maior que a soma das partes**
 
 <p align="center"><img src="images/aws-external-services.png" width="700px"></p>      
