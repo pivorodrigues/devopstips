@@ -207,3 +207,33 @@
 <p align="center"><img src="images/aws-fundamental-services.png" width="700px"></p>
 
 #
+
+**Amazon Elastic Compute Cloud (Amazon EC2)**
+
+  - Instância de máquina virtual em execução em um hipervisor da AWS;
+
+  - Suporte para várias distribuições do Linux ou Microsoft Windows;
+
+  - O cliente controla o sistema operacional do host com contas root e de administrador;
+
+  - O cliente é responsável por todos os aplicativos instalados.
+
+**Famílias do EC2**
+
+  - [Uso geral](https://aws.amazon.com/pt/ec2/instance-types/#General_Purpose)
+
+  - [Computação otimizada](https://aws.amazon.com/pt/ec2/instance-types/#Compute_Optimized)
+
+  - [Memória otimizada](https://aws.amazon.com/pt/ec2/instance-types/#Memory_Optimized)
+
+  - [Armazenamento denso](https://aws.amazon.com/pt/ec2/instance-types/#Storage_Optimized)
+
+  - E/S otimizada
+
+  - [GPU](https://aws.amazon.com/pt/ec2/instance-types/#Accelerated_Computing)
+
+  - Micro
+
+**Nomes de instâncias do Amazon EC2**
+
+<p align="center"><img src="images/aws-instance-name.png" width="700px"></p>
