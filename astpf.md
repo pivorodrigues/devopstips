@@ -186,3 +186,7 @@
 <p align="center"><img src="images/aws-managed-services.png" width="700px"></p>
 
 #
+
+**Modelo de segurança compartilhada**
+
+<p align="center"><img src="images/aws-shared-security.png" width="700px"></p>
