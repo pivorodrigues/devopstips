@@ -67,4 +67,7 @@
 
   - Usar a estratégia de longo prazo.
 
-#
+
+## Módulo 3: Você sabe mais do que imagina
+
+<p align="center"><img src="images/aws-common-services.png" width="500px"></p>
