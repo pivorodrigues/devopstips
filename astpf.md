@@ -202,7 +202,7 @@
 
 ## Módulo 5: Elementos fundamentais
 
-**Serviços fundamentais da AWS**
+**Serviços fundamentais da AWS: Computação**
 
 <p align="center"><img src="images/aws-fundamental-services.png" width="700px"></p>
 
@@ -299,3 +299,33 @@
   - Integra-se ao Auto Scaling para uso ideal.
 
 <p align="center"><img src="images/aws-fargate.png" width="500px"></p>
+
+**AWS Lambda**
+
+  - Serviço de computação stateless, executa o código em resposta a um evento;
+
+  - Acionamento em milissegundos;
+
+  - Faturado em incrementos de 100 ms + memória;
+
+  - Pague somentte pelo o que usar;
+
+  - Os servidores virtuais não são necessários;
+
+  - Casos de uso:
+
+    - Criar aplicativos modulares, escaláveis e leves;
+
+    - Processamento de dados sem servidor sob demanda;
+
+    - Use o AWS Step Functions para orquestrar arquiteturas do Lambda;
+
+    - Execute a validação dos dados, filtragem, classificação e outras transformações;
+
+    - Miniaturas de imagem, atividade no aplicativo, cliques no website e saída do dispositivo.
+
+#
+
+**Serviços fundamentais da AWS: Armazenamento**    
+
+<p align="center"><img src="images/aws-fundamental-services.png" width="700px"></p>
