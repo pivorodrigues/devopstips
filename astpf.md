@@ -237,3 +237,7 @@
 **Nomes de instâncias do Amazon EC2**
 
 <p align="center"><img src="images/aws-instance-name.png" width="500px"></p>
+
+**Opções de definição de preço do Amazon EC2**
+
+<p align="center"><img src="images/aws-price-options.png" width="700px"></p>
