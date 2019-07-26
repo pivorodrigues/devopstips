@@ -234,10 +234,68 @@
 
   - Micro
 
+#
+
 **Nomes de instâncias do Amazon EC2**
 
 <p align="center"><img src="images/aws-instance-name.png" width="500px"></p>
 
+#
+
 **Opções de definição de preço do Amazon EC2**
 
 <p align="center"><img src="images/aws-price-options.png" width="700px"></p>
+
+#
+
+**Auto Scaling do Amazon EC2**
+
+  - Escale as instâncias do Amazon EC2 de forma contínua e automática;
+
+  - Inicie ou encerre instâncias para atender à capacidade desejada;
+
+  - Mantenha a capacidade balanceada pelas AZs;
+
+  - Substitua instâncias não íntegras ou inacessíveis;
+
+  - Baseado em políticas;
+
+  - Integrado com outros serviços da AWS;
+
+  - Casos de uso:
+
+    - Escalabilidade dinâmica - otimize recursos do EC2 rapidamente;
+
+    - Reduza custos e gerencie a definição de preço;
+
+    - Gerenciamento de frotas - balanceamento, recuperação de falhas.
+
+**Amazon Container Services**
+
+  - Amazon Elastic Container Service (ECS) e Amazon Elastic Container service for Kubernetes (EKS);
+
+  - A AWS executa o gerenciamento do cluster do Amazon EC2 para os clientes;
+
+  - Elimina a complexidade da infraestrutura de contêineres em operação;
+
+  - Casos de uso:
+
+      - Implante os microsserviços para acelerar a inovação;
+
+      - Execute processos em lote;
+
+      - Migre os aplicativos legados sem precisar de alterações de código;
+
+      - Acelere o Machine Learning.
+
+**AWS Fargate**
+
+  - Permite que os clientes executem contêineres sem gerenciar um cluster;
+
+  - Expande o Amazon ECS e o EKS;
+
+  - Executa dezenas de milhares de contêineres em segundos;
+
+  - Integra-se ao Auto Scaling para uso ideal.
+
+<p align="center"><img src="images/aws-fargate.png" width="500px"></p>
