@@ -431,3 +431,17 @@
   - Uma forma de obter agilidade e segurança adicional.  
 
   <p align="center"><img src="images/aws-defined-vpc.png" width="250px"></p>
+
+**Amazon VPCs como estratégia**
+
+  - Como qualquer aplicativo de produção, as soluções dos serviços da AWS devem ser implantadas em um cenário de vários ambientes.
+
+    - Cada "ambiente" deve estar em sua própria Amazon VPC;
+
+    - No mínimo, considere os ambientes de produção e desenvolvimento de VPC;
+
+    - Se fizer sentido, adicione ambientes para teste, desenvolvimento futuro ("dev + 1"), preparação e outros propósitos;
+
+    - Lembre-se de que os ambientes da AWS com uso intermitente (como teste) podem ser interrompidos quando não estão em uso, ajudando a limitar os custos.
+
+    <p align="center"><img src="images/aws-strategy-vpcs.png" width="250px"></p>
