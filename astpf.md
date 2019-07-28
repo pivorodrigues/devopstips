@@ -444,4 +444,4 @@
 
     - Lembre-se de que os ambientes da AWS com uso intermitente (como teste) podem ser interrompidos quando não estão em uso, ajudando a limitar os custos.
 
-    <p align="center"><img src="images/aws-strategy-vpcs.png" width="250px"></p>
+    <p align="center"><img src="images/aws-strategy-vpcs.png" width="400px"></p>
