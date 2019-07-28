@@ -377,3 +377,35 @@
 **Classes de armazenamento do Amazon S3** [[link](https://aws.amazon.com/pt/s3/storage-classes/?nc=sn&loc=3)]    
 
 <p align="center"><img src="images/aws-s3-classes.png" width="700px"></p>
+
+**Amazon Data Lakes** [[link](https://aws.amazon.com/pt/big-data/datalakes-and-analytics/)]
+
+<p align="center"><img src="images/aws-data-lakes.png" width="700px"></p>
+
+#
+
+**Serviços fundamentais da AWS: Rede** [[link](https://aws.amazon.com/pt/vpc/)]
+
+<p align="center"><img src="images/aws-fundamental-services.png" width="700px"></p>
+
+#
+
+**Amazon Virtual Private Cloud (Amazon VPC)**
+
+  - Sub-redes virtuais isoladas na Nuvem AWS;
+
+  - Seguro, com alta performance, altamente configurável;
+
+  - Suporte de segurança sofisticado;
+
+  - Casos de uso:
+
+    - Hospedar recursos públicos e privados;
+
+    - Organizar/isolar componentes do aplicativo;
+
+    - Isolar recursos por entidade lógica, grupo, sensibilidade ou função;
+
+    - Estender redes locais para a nuvem.
+
+**    
