@@ -208,7 +208,7 @@
 
 #
 
-**Amazon Elastic Compute Cloud (Amazon EC2)**
+**Amazon Elastic Compute Cloud (Amazon EC2)** [[link](https://aws.amazon.com/pt/ec2/)]
 
   - Instância de máquina virtual em execução em um hipervisor da AWS;
 
@@ -218,7 +218,7 @@
 
   - O cliente é responsável por todos os aplicativos instalados.
 
-**Famílias do EC2**
+**Famílias do EC2** [[link](https://aws.amazon.com/pt/ec2/instance-types/)]
 
   - [Uso geral](https://aws.amazon.com/pt/ec2/instance-types/#General_Purpose)
 
@@ -242,13 +242,13 @@
 
 #
 
-**Opções de definição de preço do Amazon EC2**
+**Opções de definição de preço do Amazon EC2** [[link](https://aws.amazon.com/pt/ec2/pricing/)]
 
 <p align="center"><img src="images/aws-price-options.png" width="700px"></p>
 
 #
 
-**Auto Scaling do Amazon EC2**
+**Auto Scaling do Amazon EC2** [[link](https://aws.amazon.com/pt/autoscaling/)]
 
   - Escale as instâncias do Amazon EC2 de forma contínua e automática;
 
@@ -270,7 +270,7 @@
 
     - Gerenciamento de frotas - balanceamento, recuperação de falhas.
 
-**Amazon Container Services**
+**Amazon Container Services (ECS)** [[link](https://aws.amazon.com/pt/ecs/)]
 
   - Amazon Elastic Container Service (ECS) e Amazon Elastic Container service for Kubernetes (EKS);
 
@@ -288,7 +288,7 @@
 
       - Acelere o Machine Learning.
 
-**AWS Fargate**
+**AWS Fargate** [[link](https://aws.amazon.com/pt/fargate/)]
 
   - Permite que os clientes executem contêineres sem gerenciar um cluster;
 
@@ -300,7 +300,7 @@
 
 <p align="center"><img src="images/aws-fargate.png" width="500px"></p>
 
-**AWS Lambda**
+**AWS Lambda** [[link](https://aws.amazon.com/pt/lambda/)]
 
   - Serviço de computação stateless, executa o código em resposta a um evento;
 
@@ -332,7 +332,7 @@
 
 #
 
-**Amazon Elastic Block Storage (EBS)**
+**Amazon Elastic Block Storage (EBS)** [[link](https://aws.amazon.com/pt/ebs/)]
 
   - Volumes de armazenamento de bloco para uso com instâncias do Amazon EC2;
 
@@ -352,7 +352,7 @@
 
 #
 
-**Amazon Simple Storage Service (Amazon S3)**
+**Amazon Simple Storage Service (Amazon S3)** [[link](https://aws.amazon.com/pt/s3/?nc=sn&loc=0)]
 
   - Armazenamento de objetos altamente escalável, confiável, rápido e durável;
 
