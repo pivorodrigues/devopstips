@@ -487,3 +487,5 @@
     - Internet Gateway;
 
     - AWS Identity and Access Management (IAM).
+
+**Application Load Balancer (ALB)** [[link](https://docs.aws.amazon.com/pt_br/elasticloadbalancing/latest/application/introduction.html)]
