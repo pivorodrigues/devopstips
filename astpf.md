@@ -374,6 +374,6 @@
 
     - Data lakes.
 
-**Classes de armazenamento do Amazon S3**    
+**Classes de armazenamento do Amazon S3** [[link](https://aws.amazon.com/pt/s3/storage-classes/?nc=sn&loc=3)]    
 
 <p align="center"><img src="images/aws-s3-classes.png" width="700px"></p>
