@@ -467,3 +467,5 @@
   - AWS PrivateLink;
 
   - Interface de rede elástica (ENI).  
+
+  <p align="center"><img src="images/vpc-conect-diagram.png" width="500px"></p>
