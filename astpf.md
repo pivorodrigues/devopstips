@@ -430,4 +430,4 @@
 
   - Uma forma de obter agilidade e segurança adicional.  
 
-  <p align="center"><img src="images/aws-defined-vpc.png" width="400px"></p>
+  <p align="center"><img src="images/aws-defined-vpc.png" width="250px"></p>
