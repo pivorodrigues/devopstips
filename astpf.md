@@ -444,4 +444,26 @@
 
     - Lembre-se de que os ambientes da AWS com uso intermitente (como teste) podem ser interrompidos quando não estão em uso, ajudando a limitar os custos.
 
-    <p align="center"><img src="images/aws-strategy-vpcs.png" width="500px"></p>
+    <p align="center"><img src="images/aws-strategy-vpcs.png" width="450px"></p>
+
+**Conectividade do datacenter corporativo da Amazon VPC** [[link](https://docs.aws.amazon.com/pt_br/vpc/latest/userguide/what-is-amazon-vpc.html)]    
+
+- Formas de se conectar a recursos em uma Amazon VPC:
+
+  - Pela internet;
+
+  - Rede privada virtual (VPN) usando IPSec;
+
+    - _Configurada em minutos._
+
+  - AWS Direct Connect;
+
+    - _Serviço prestado pelos parceiros da Amazon Partner Network (APN);_
+
+    - _A instalação pode levar semanas._
+
+  - AWS Direct Connect Gateway;
+
+  - AWS PrivateLink;
+
+  - Interface de rede elástica (ENI).  
