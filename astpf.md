@@ -489,3 +489,21 @@
     - AWS Identity and Access Management (IAM).
 
 **Application Load Balancer (ALB)** [[link](https://docs.aws.amazon.com/pt_br/elasticloadbalancing/latest/application/introduction.html)]
+
+  - Parte do Elastic Load Balancing (ELB);
+
+  - Equilibra a carga na camada de aplicativo _(Camada 7)_;
+
+  - Oferece suporte à finalização e ao descarregamento de HTTPS;
+
+  - Aprimora a segurança do aplicativo;
+
+  - Roteia solicitações com base no conteúdo solicitado (URL);
+
+  - Casos de uso:
+
+    - Tráfegos HTTP e HTTPS;
+
+    - Roteamento de solicitação avançado;
+
+    - Microsserviços e aplicativos baseados em contêiner.
