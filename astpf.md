@@ -408,4 +408,26 @@
 
     - Estender redes locais para a nuvem.
 
-**    
+**Amazon VPC definida**
+
+  - Seção logicamente isolada da Nuvem AWS;
+
+  - Por padrão, não há acesso à internet e as instâncias não são endereçáveis pela internet;
+
+  - Controle completo sobre o ambiente de rede virtual;
+
+  - Conceitos de redes comprovados e bem compreendidos:
+
+    - Intervalo de endereços IP definidos pelo usuário;
+
+    - Sub-redes;
+
+    - Tabelas de rotas;
+
+    - Listas de acesso de controle;
+
+    - Gateways de rede;
+
+  - Uma forma de obter agilidade e segurança adicional.  
+
+  <p align="center"><img src="images/aws-defined-vpc.png" width="400px"></p>
