@@ -329,3 +329,51 @@
 **Serviços fundamentais da AWS: Armazenamento**    
 
 <p align="center"><img src="images/aws-fundamental-services.png" width="700px"></p>
+
+#
+
+**Amazon Elastic Block Storage (EBS)**
+
+  - Volumes de armazenamento de bloco para uso com instâncias do Amazon EC2;
+
+  - Armazenamento persistente anexado a instâncias do EC2 como disco nativo;
+
+  - Formatado usando um sistema de arquivos padrão do SO (como ext4 ou NTFS);
+
+  - Armazenamento escalável e de alta performance para aplicativos;
+
+  - Casos de uso:
+
+    - Volumes de inicialização/raiz para instância do Amazon EC2;
+
+    - Volumes de dados para aplicativos corporativos, como SAP, Microsoft Exchange e Microsoft Sharepoint;
+
+    - Bancos de dados relacionais ou NoSQL que oferecem suporte a milhões de usuários.
+
+#
+
+**Amazon Simple Storage Service (Amazon S3)**
+
+  - Armazenamento de objetos altamente escalável, confiável, rápido e durável;
+
+  - Armazene e recupere qualquer quantidade de dados em qualquer lugar online, usando HTTP e HTTPS;
+
+  - Um serviço laborioso que serve para muitos propósitos;
+
+  - Integrado com serviços de segurança da AWS, fornece acesso granular e criptografia transparente;
+
+  - Casos de uso:
+
+    - Hospedagem de arquivos de aplicativos;
+
+    - Backup para recuperação de desastres;
+
+    - Hospedagem na web estática;
+
+    - Dados de streaming;
+
+    - Data lakes.
+
+**Classes de armazenamento do Amazon S3**    
+
+<p align="center"><img src="images/aws-s3-classes.png" width="700px"></p>
