@@ -469,3 +469,21 @@
   - Interface de rede elástica (ENI).  
 
   <p align="center"><img src="images/vpc-conect-diagram.png" width="500px"></p>
+
+**Elastic Load Balancing (ELB)** [[link](https://aws.amazon.com/pt/elasticloadbalancing/)]
+
+  - Distribui automaticamente tráfego de aplicativos de entrada;
+
+  - Automaticamente incorpora novos recursos à medida que os aplicativos são escalados, automaticamente;
+
+  - Provisiona segurança robusta como Amazon VPC;
+
+  - Detecta e responde a falhas do aplicativo;
+
+  - Integra-se a outros serviços da AWS:
+
+    - Amazon Route 53;
+
+    - Internet Gateway;
+
+    - AWS Identity and Access Management (IAM).
