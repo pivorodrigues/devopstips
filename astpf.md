@@ -384,13 +384,13 @@
 
 #
 
-**Serviços fundamentais da AWS: Rede** [[link](https://aws.amazon.com/pt/vpc/)]
+**Serviços fundamentais da AWS: Rede** [[link](https://aws.amazon.com/pt/products/networking/)]
 
 <p align="center"><img src="images/aws-fundamental-services.png" width="700px"></p>
 
 #
 
-**Amazon Virtual Private Cloud (Amazon VPC)**
+**Amazon Virtual Private Cloud (Amazon VPC)** [[link](https://aws.amazon.com/pt/vpc/)]
 
   - Sub-redes virtuais isoladas na Nuvem AWS;
 
