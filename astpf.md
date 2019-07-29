@@ -326,7 +326,7 @@
 
 #
 
-**Serviços fundamentais da AWS: Armazenamento**    
+**Serviços fundamentais da AWS: Armazenamento** [[link](https://aws.amazon.com/pt/products/storage/)]     
 
 <p align="center"><img src="images/aws-fundamental-services.png" width="700px"></p>
 
@@ -567,3 +567,63 @@
     - Integrado com outros serviços da AWS;
 
       - Microssegmentação.
+
+#
+
+**Serviços fundamentais da AWS: Banco de Dados** [[link](https://aws.amazon.com/pt/products/databases/)]      
+
+<p align="center"><img src="images/aws-fundamental-services.png" width="700px"></p>
+
+#
+
+**Amazon Relational Database Service (RDS)** [[link](https://aws.amazon.com/pt/rds/)]
+
+  - Serviço gerenciado para MySQL, Oracle, Microsoft SQL Server, MariaDB e Amazon Aurora;
+
+  - Lida com tarefas demoradas de gerenciamento de banco de dados, como backups, gerenciamento de patches e replicação;
+
+  - Funciona com códigos, aplicativos e ferramentas existentes;
+
+  - Casos de uso:
+
+    - Aplicativos que requerem bancos de dados relacionais;
+
+    - Melhorando a performance, a disponibilidade e a escalabilidade do banco de dados.
+
+**Amazon Aurora** [[link](https://aws.amazon.com/pt/rds/aurora/)]
+
+  - Serviço de banco de dados relacional compatível com MySQL/PostgreSQL;
+
+  - Parte do Amazon RDS;
+
+  - Maior performance que o MySQL padrão e o PostgreSQL;
+
+  - Alta disponibilidade sem gerenciamento de servidor complexo;
+
+  - Escala e otimiza o armazenamento automaticamente;
+
+  - Casos de uso:
+
+    - Aplicativos usando bancos de dados relacionais;
+
+    - Substituir o MySQL ou o PostgreSQL hospedados no local ou no Amazon EC2.
+
+**Amazon DynamoDB** [[link](https://aws.amazon.com/pt/dynamodb/)]
+
+  - Serviço de banco de dados NoSQL rápido, flexível e gerenciado;
+
+  - Latência de milissegundos com um dígito em qualquer escala;
+
+  - Altamente disponível, replicado em várias Zonas de disponibilidade e entre as Regiões;
+
+  - Casos de uso:
+
+    - Aplicativos de banco de dados de alta performance;
+
+    - Ad tech;
+
+    - Big data;
+
+    - Jogos;
+
+    - Celular/IoT.
