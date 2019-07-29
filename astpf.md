@@ -645,3 +645,27 @@
     - Serviços de saúde;
 
     - Internet das Coisas (IoT).
+
+#
+
+**Serviços fundamentais da AWS: Segurança** [[link](https://aws.amazon.com/pt/security/)]      
+
+<p align="center"><img src="images/aws-fundamental-services.png" width="700px"></p>
+
+#
+
+**AWS Identity and Access Management (IAM)** [[link](https://aws.amazon.com/pt/iam/)]
+
+  - É um serviço fundamental de segurança da AWS;
+
+  - Cria e gerencia usuários, roles e grupos da AWS;
+
+  - Gerencia o controle de acesso refinado para recursos da AWS;
+
+  - Integra-se ao Microsoft Active Directory usando a federação de identidades SAML e o AWS Directory Service AD (AD Connector);
+
+  - Habilita o Single Sign-On (SSO);
+
+  - Permite segurança e capacidade de auditoria escaláveis e consistentes;
+
+  - Oferece suporte à autenticação multifator para usuários altamente privilegiados.
