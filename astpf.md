@@ -627,3 +627,21 @@
     - Jogos;
 
     - Celular/IoT.
+
+**Amazon ElastiCache** [[link](https://aws.amazon.com/pt/elasticache/)]
+
+  - Um serviço de Redis e Memcached totalmente gerenciado e compatível com código aberto;
+
+  - Melhora a performance entregando dados armazenados em memória com alta taxa de transferência e baixa latência;
+
+  - Casos de uso:
+
+    - Jogos;
+
+    - Ad tech;
+
+    - Serviços financeiros;
+
+    - Serviços de saúde;
+
+    - Internet das Coisas (IoT).
