@@ -507,3 +507,63 @@
     - Roteamento de solicitação avançado;
 
     - Microsserviços e aplicativos baseados em contêiner.
+
+**Network Load Balancer (NLB)** [[https://docs.aws.amazon.com/pt_br/elasticloadbalancing/latest/network/introduction.html](link)]
+
+  - A latência ultrabaixa lida com dezenas de milhões de solicitações por segundo;
+
+  - O recurso "IP por AZ" melhora a performance e a tolerância a falhas;
+
+  - Preserva o endereço IP de origem e as portas para conexões de entrada;
+
+  - As conexões podem ficar abertas por meses ou anos;
+
+  - Oferece suporte para failover entre endereços IP em e entre regiões;
+
+  - Casos de uso:
+
+    - Endereço IP codificado;
+
+    - Microsserviços.
+
+**Amazon CloudFront** [[link](https://aws.amazon.com/pt/cloudfront/)]
+
+  - Rede de entrega de conteúdo (CDN) com otimização;
+
+  - Distribui conteúdo para usuários finais com baixa latência e altas taxas de transferência de dados;
+
+  - Presença geográfica ampla além das Regiões da AWS;
+
+  - Acelera os dados enviados pelos usuários finais;
+
+  - Melhora a segurança aplicando a política na borda;
+
+  - Casos de uso:
+
+    - Como acelerar a performance de aplicativos Web;
+
+    - Armazenamento em cache de conteúdo da Web estático e resultados de consulta de banco de dados frequentes;
+
+    - Descarregamento de terminação TLS.
+
+**Amazon Route 53** [[link](https://aws.amazon.com/pt/route53/)]
+
+  - Serviço global de Domain Name System (DNS);
+
+  - Altamente disponível e escalável - SLA de disponibilidade 100%;
+
+  - Ferramenta crítica integrada com muitos serviços da AWS;
+
+  - Casos de uso:
+
+    - Roteamento otimizado;
+
+    - Distribuição ponderada;
+
+    - Failover;
+
+    - Compatibilidade de geolocalização;
+
+    - Integrado com outros serviços da AWS;
+
+      - Microssegmentação.
