@@ -670,4 +670,38 @@
 
   - Oferece suporte à autenticação multifator para usuários altamente privilegiados.
 
-**Identidades - Usuários, grupos e funções**  
+**Identidades - Usuários, grupos e funções**
+
+  - **ID do proprietário da conta (conta raiz)**
+
+    - Acesso a todos os serviços;
+
+    - Acesso ao faturamento;
+
+    - Acesso ao console e às APIs;
+
+    - Acesso ao suporte de atendimento ao cliente.
+
+  - **Usuários, grupos e funções do IAM**
+
+    - Acesso a serviços específicos;
+
+    - Acesso ao console e/ou às APIs;
+
+    - Acesso ao suporte de atendimento ao cliente (negócios e empresas).
+
+  - **Credenciais de segurança temporárias**
+
+    - Acesso a serviços específicos;
+
+    - Acesso ao controle e/ou às APIs;
+
+    - Data de expiração de acesso pré-definida pelo administrador.
+
+**AWS Key Management Service (KMS)**
+
+  - Serviço gerenciado que simplifica o gerenciamento e o uso de chaves de criptografia;
+
+  - Integrado com muitos serviços da AWS;
+
+  - Integrado com o AWS CloudTrail para provisionar logs auditáveis de uso de chave para atividades regulatórias e de compatibilidade.
