@@ -705,3 +705,41 @@
   - Integrado com muitos serviços da AWS;
 
   - Integrado com o AWS CloudTrail para provisionar logs auditáveis de uso de chave para atividades regulatórias e de compatibilidade.
+
+**AWS Web Application Firewall (WAF)**
+
+  - Protege aplicativos Web;
+
+  - Filtra o tráfego com base em regras personalizadas;
+
+  - Implanta facilmente como parte do Amazon CloudFront ou ELB;
+
+  - Provisiona métricas e dados detalhados de solicitações em tempo real;
+
+  - Configura manualmente ou via API da AWS;
+
+  - Integra regras de configuração do AWS WAF de terceiros, otimizadas para carga de trabalho;
+
+  - Oferece suporte para o AWS Firewall Manager para sincronizar as regras do AWS WAF em várias contas.
+
+**AWS Shield (Standard e Advanced)**
+
+  - Protege contra ataques de negação de serviço distribuído (DDoS);
+
+  - AWS Shield Standard:
+
+    - Aborda incidentes comuns de DDoS de camada 3-4;
+
+    - Monitora os fluxos de rede para detecção rápida de ataques;
+
+    - Mitiga os impactos do serviço automaticamente.
+
+  - AWS Shield Advanced:
+
+    - Fornece detecção e resposta à DDoS aprimorados;
+
+    - Tem suporte para regras personalizadas contra ataques sofisticados;
+
+    - Inclui uma equipe da AWS de resposta à DDoS disponível ininterruptamente;
+
+    - Cobre o custo do uso de recursos aumentado devido ao ataque.   
