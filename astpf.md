@@ -669,3 +669,5 @@
   - Permite segurança e capacidade de auditoria escaláveis e consistentes;
 
   - Oferece suporte à autenticação multifator para usuários altamente privilegiados.
+
+**Identidades - Usuários, grupos e funções**  
