@@ -698,7 +698,7 @@
 
     - Data de expiração de acesso pré-definida pelo administrador.
 
-**AWS Key Management Service (KMS)**
+**AWS Key Management Service (KMS)** [[link](https://aws.amazon.com/pt/kms/)]
 
   - Serviço gerenciado que simplifica o gerenciamento e o uso de chaves de criptografia;
 
@@ -706,7 +706,7 @@
 
   - Integrado com o AWS CloudTrail para provisionar logs auditáveis de uso de chave para atividades regulatórias e de compatibilidade.
 
-**AWS Web Application Firewall (WAF)**
+**AWS Web Application Firewall (WAF)** [[link](https://aws.amazon.com/pt/waf/)
 
   - Protege aplicativos Web;
 
@@ -722,7 +722,7 @@
 
   - Oferece suporte para o AWS Firewall Manager para sincronizar as regras do AWS WAF em várias contas.
 
-**AWS Shield (Standard e Advanced)**
+**AWS Shield (Standard e Advanced)** [[link](https://aws.amazon.com/pt/shield/)]
 
   - Protege contra ataques de negação de serviço distribuído (DDoS);
 
@@ -743,3 +743,87 @@
     - Inclui uma equipe da AWS de resposta à DDoS disponível ininterruptamente;
 
     - Cobre o custo do uso de recursos aumentado devido ao ataque.   
+
+#
+
+**Serviços fundamentais da AWS: Gerenciamento** [[link](https://aws.amazon.com/pt/products/management-tools/)]      
+
+<p align="center"><img src="images/aws-fundamental-services.png" width="700px"></p>
+
+#
+
+**Amazon Cloudwatch** [[link](https://aws.amazon.com/pt/cloudwatch/)]
+
+- Monitora recursos e aplicativos em nuvem da AWS;
+
+- Coleta e rastreia métricas, monitora arquivos de log e define alarmes;
+
+- Fornece visibilidade sobre o uso de recursos, perfomance de aplicativos e integridade operacional;
+
+- Permite que os clientes definam alarmes para enviar notificações ou realizar outras ações automatizadas;
+
+- Casos de uso:
+
+  - Gerenciamento de custos;
+
+  - Alertas de pagamento.
+
+**AWS CloudTrail** [[link](https://aws.amazon.com/pt/cloudtrail/)]
+
+- Serviço gerenciado que registra todos as chamadas da API da AWS para uma conta;
+
+- Registra informações sobre chamadas de API para o serviço da AWS;
+
+- Entrega resultados em arquivos de log para resposta automática;
+
+- Casos de uso:
+
+  - Segurança, alertar e compatibilidade;
+
+  - Solução de problemas;
+
+  - Correção.
+
+**AWS CloudFormation** [[link](https://aws.amazon.com/pt/cloudformation/)]
+
+- Cria e gerencia uma coleção de recursos relacionados da AWS para consistência de duplicação de ambientes;
+
+- Descreve conjuntos de recursos da AWS usando um arquivo de modelo chamado _pilhas_;
+
+- Personaliza valores para diferentes ambientes e regiões de aplicativos;
+
+- Mantém e atualiza a Infrastructure as Code (IaC);
+
+- Casos de uso:
+
+  - Padroniza implantações de aplicativos para escala e consistência;
+
+  - Testa, projeta e reverte automaticamente os recursos recém-provisionados;
+
+  - Replica arquiteturas de serviço globalmente em minutos.
+
+**AWS Config** [[link](https://aws.amazon.com/pt/config/)]
+
+- Serviço configurado para rastreamento de inventário da AWS, configuração e notificação de alteração de configuração.
+
+<p align="center"><img src="images/aws-config.png" width="700px"></p>
+
+**AWS Marketplace** [[link](https://aws.amazon.com/marketplace)]
+
+- 4.200 listas de software;
+
+- Mais de 1.280 ISVs participantes;
+
+- Mais de 481 milhões de horas por mês;
+
+- Implantado em 14 regiões da AWS;
+
+- Software de código aberto e comercial;
+
+- Traga sua própria licença;
+
+- Novas aquisições;
+
+- Integrado com o faturamento e o gerenciamento de custos da AWS;
+
+- Agrupa produtos no AWS Service Catalog.
