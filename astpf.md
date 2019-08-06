@@ -1,6 +1,6 @@
 # <img src="images/amazon-web-services-logo.png" width="30px"> AWS Solutions Training for Partners: Foundations <img src="images/amazon-web-services-logo.png" width="30px">
 
-#Seção 1: Introdução e fundamentos do arquiteto de soluções da AWS
+# Seção 1: Introdução e fundamentos do arquiteto de soluções da AWS
 
 ## Módulo 1: Clientes estão mudando para a AWS
 
@@ -837,8 +837,6 @@
 # Seção 2: Perguntas do cliente e o Well-Architected Framework
 
 ## Módulo 6: Perguntas do cliente
-
-#
 
 **Pergunta 1: O que mudará ao migrar para a AWS?**
 
