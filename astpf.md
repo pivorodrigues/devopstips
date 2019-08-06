@@ -909,3 +909,31 @@
 - Mão de obra?
 
 - Período de inatividade?
+
+#
+
+## Módulo 7: O AWS Well-Architected Framework
+
+**O AWS Well-Architected Framework: Finalidade**
+
+- O **AWS** Well-Architected **Framework**:
+
+  - Aumenta a conscientização sobre as melhores práticas arquitetônicas;
+
+  - Aborda áreas de base que são frequentemente negligenciadas;
+
+  - Fornece uma abordagem consistente para avaliar arquiteturas;
+
+  - É composto de:
+
+    - Perguntas;
+
+    - Pilares;
+
+    - Princípios de design.
+
+**O AWS Well-Architected Framework: Pilares**
+
+<p align="center"><img src="images/aws-well-architected.png" width="700px"></p>
+
+**Excelência Operacional (OE)**
