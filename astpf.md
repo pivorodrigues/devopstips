@@ -937,3 +937,25 @@
 <p align="center"><img src="images/aws-well-architected.png" width="700px"></p>
 
 **Excelência Operacional (OE)**
+
+Excelência operacional é a capacidade de executar e monitorar sistemas para provisionar valor empresarial e melhorar continuamente os processos e procedimentos de suporte. Ele envolve:
+
+  - Preparar
+
+  - Operar
+
+  - Evoluir
+
+**Segurança**
+
+Segurança é a capacidade de proteger informações, sistemas e ativos, ao mesmo tempo em que agrega valor empresarial por meio de avaliações de risco e estratégias de mitigação. Ela envolve:
+
+  - Gerenciamento de identidade e acesso;
+
+  - Controles de detetive;
+
+  - Proteção de infraestrutura;
+
+  - Proteção de dados;
+
+  - Resposta a incidentes.  
