@@ -1,5 +1,7 @@
 # <img src="images/amazon-web-services-logo.png" width="30px"> AWS Solutions Training for Partners: Foundations <img src="images/amazon-web-services-logo.png" width="30px">
 
+#Seção 1: Introdução e fundamentos do arquiteto de soluções da AWS
+
 ## Módulo 1: Clientes estão mudando para a AWS
 
 **Cinco benefícios fundamentais da computação em nuvem:**
@@ -827,3 +829,85 @@
 - Integrado com o faturamento e o gerenciamento de custos da AWS;
 
 - Agrupa produtos no AWS Service Catalog.
+
+**Fornecedores populares do AWS Marketplace por categoria**
+
+<p align="center"><img src="images/aws-marketplace-vendors.png" width="700px"></p>
+
+# Seção 2: Perguntas do cliente e o Well-Architected Framework
+
+## Módulo 6: Perguntas do cliente
+
+#
+
+**Pergunta 1: O que mudará ao migrar para a AWS?**
+
+- Operações de TI;
+
+- Como a engenharia se aproxima do desenvolvimento, teste e implantação de aplicativos;
+
+- A velocidade de inovação;
+
+- Despesas de capital para um modelo que depende de despesas operacionais;
+
+- Contratação e treinamento;
+
+- Segurança, monitoramento e compatibilidade.
+
+**Pergunta 2: Qual o nível de segurança da minha carga de trabalho da AWS?**
+
+- Quem está acessando o serviço?
+
+- Quais direitos eles precisam?
+
+- Como eles estão acessando?
+
+- Quais dados o aplicativo está usando?
+
+- Algum dos dados é confidencial?
+
+- Os dados foram criptografados?
+
+- Como o aplicativos está sendo monitorado?
+
+- O aplicativo está sujeito a ataques?
+
+- Quais ameaças são esperadas?
+
+**Pergunta 3: Como a AWS pode melhorar a continuidade dos negócios e a recuperação de desastres?**
+
+- Quão crítico é o aplicativo?
+
+- Quais são os objetivos de recuperação da empresa?
+
+- Como a AWS pode melhorar a continuidade dos negócios e a recuperação de desastres?
+
+**Pergunta 4: Como medir e comparar a performance de carga de trabalho na nuvem versus local?**
+
+- Quais métricas atuais são mais relevantes?
+
+- Quais são as métricas atuais de latência de rede?
+
+- Quais são as métricas de performance de banco de dados?
+
+- Quais informações o cliente precisa coletar e monitorar?
+
+- O cliente pode usar as mesmas ferramentas e métricas quando o aplicativo está na nuvem?
+
+**Pergunta 5: A execução de uma carga de trabalho na AWS versus no local custa mais ou menos?**
+
+- A organização considera o custo total de propriedade, ou TCO?
+
+- Despesas do Datacenter?
+
+- Imóveis?
+
+- Potência e refrigeração?
+
+- Hardware?
+
+- Software?
+
+- Mão de obra?
+
+- Período de inatividade?
