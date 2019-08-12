@@ -1019,3 +1019,27 @@ Eficiência de performance é a capacidade de usar recursos computacionais de ma
           - **Considere as opções de configuração:** Considere as opções de configuração, como otimização de armazenamento, configurações de nível de banco de dados, memória e cache.
 
           - **Considere os padrões de acesso:** Otimize a forma como você usa sistemas de banco de dados com base em seu padrão de acesso (por exemplo: índices, distribuição de chaves e partição, escalabilidade horizontal).
+
+<img src="images/aws-costs.png" width="20px"> **Otimização de custos (CO)** <img src="images/aws-costs.png" width="20px">
+
+Otimização de custos é a capacidade de evitar ou eliminar custos desnecessários ou recursos subaproveitados. Ela envolve:
+
+  - Recursos mais econômicos;
+
+  - Otimização em longo prazo;
+
+  - Fornecimento e demanda combinados;
+
+  - Conscientização sobre despesas.
+
+**Pergunta sobre otimização de recursos:** _CUSTO 1: Você está considerando os custos ao selecionar os serviços da AWS para sua solução?_
+
+  - **Resposta:** O Amazon EC2, Amazon EBS, Amazon S3, etc. são serviços da AWS. Serviços gerenciados, como Amazon RDS, Amazon DynamoDB, etc., são serviços da AWS de "nível superior". Ao selecionar os serviços básicos e os serviços gerenciados apropriados, você pode reduzir ou remover grande parte de sua sobrecarga administrativa e operacional, ficando livre para trabalhar em aplicativos e atividades relacionadas aos negócios.
+
+    - **Melhores práticas:**
+
+      - **Serviços selecionados para redução de custos:** Analise os serviços para ver quais você pode usar para reduzir os custos.
+
+      - **Otimização para custos de licença.**
+
+      - **Otimize usando uma abordagem sem servidor e baseada em contêiner:** Use o AWS Lambda, o Amazon S3, o Amazon DynamoDB e o Amazon ECS para reduzir custos.
