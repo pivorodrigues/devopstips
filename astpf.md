@@ -960,7 +960,7 @@ Segurança é a capacidade de proteger informações, sistemas e ativos, ao mesm
 
   - Resposta a incidentes.
 
-**Pergunta sobre segurança:** _SEC 12. Como garantir que você tenha a resposta adequada a incidentes?_
+**Pergunta sobre segurança:** _SEC 12: Como garantir que você tenha a resposta adequada a incidentes?_
 
   - **Resposta:** Instaurar as ferramentas e o acesso antes do incidente de segurança, além de praticar regularmente a resposta a acidentes, garantirá que a arquitetura seja atualizada para acomodar a investigação e a recuperação em tempo hábil.
 
@@ -992,8 +992,30 @@ Confiabilidade é a capacidade de um sistema de recuperar-se de falhas de infrae
 
       - **Múltiplas regiões e zonas de disponibilidade:** Distribua as cargas de aplicativos em múltiplas regiões e zonas de disponibilidade (usando por exemplo, DNS, ELB, Application Load Balance e API Gateway).
 
-      - **Dependências de baixo acoplamento:** Por exemplo, use sistemas de enfileiramento, sistemas de streamig, load balancers etc.;
+      - **Dependências de baixo acoplamento:** Por exemplo, use sistemas de enfileiramento, sistemas de streamig, load balancers etc.
 
       - **Degradação normal:** Quando as dependências de um componente não estão íntegras, o componente em si não é relatado como não íntegro. Ele é capaz de continuar a atender à solicitação de maneira degradada.
 
-<img src="images/aws-performance.png" width="20px"> **Eficiência de Performance** <img src="images/aws-performance.png" width="20px">
+<img src="images/aws-performance.png" width="20px"> **Eficiência de Performance (PE)** <img src="images/aws-performance.png" width="20px">
+
+Eficiência de performance é a capacidade de usar recursos computacionais de maneira eficiente para atender aos requisitos do sistema e manter essa eficiência à medida que as alterações na demanda e as tecnologias evoluem. O pilar de Eficiência de performance envolve:
+
+  - Seleção;
+
+  - Revisão;
+
+  - Monitoramento;
+
+  - Compensações.
+
+**Pergunta sobre eficiência de performance:** _PERF 4: Como escolher sua solução de banco de dados?_
+
+  - **Resposta:** A solução de banco de dados ideal para um sistema específico pode variar com base nos requisitos de disponibilidade, consistência, tolerância de partição, latência, durabilidade, escalabilidade e capacidade de consulta. Muitos sistemas usam diferentes soluções de banco de dados para vários subsistemas e permitem diferentes recursos para melhorar a performance. Selecionar a solução de banco de dados e os recursos inadequados para um sistema pode levar à diminuição da eficiência da performance.
+
+    - **Melhores práticas:**
+
+          - **Considere as características:** Considere as diferentes características (por exemplo, disponibilidade, consistência, tolerância de partição, latência, durabilidade, escalabilidade, capacidade de consulta) para que voc~e possa selecionar a abordagem de banco de dados com melhor desempenho a ser usada (relacional, No-SQL, warehouse, memória).
+
+          - **Considere as opções de configuração:** Considere as opções de configuração, como otimização de armazenamento, configurações de nível de banco de dados, memória e cache.
+
+          - **Considere os padrões de acesso:** Otimize a forma como você usa sistemas de banco de dados com base em seu padrão de acesso (por exemplo: índices, distribuição de chaves e partição, escalabilidade horizontal).
