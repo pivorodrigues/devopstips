@@ -1038,8 +1038,8 @@ Otimização de custos é a capacidade de evitar ou eliminar custos desnecessár
 
     - **Melhores práticas:**
 
-        - **Serviços selecionados para redução de custos:** Analise os serviços para ver quais você pode usar para reduzir os custos.
+      - **Serviços selecionados para redução de custos:** Analise os serviços para ver quais você pode usar para reduzir os custos.
 
-        - **Otimização para custos de licença.**
+      - **Otimização para custos de licença.**
 
-        - **Otimize usando uma abordagem sem servidor e baseada em contêiner:** Use o AWS Lambda, o Amazon S3, o Amazon DynamoDB e o Amazon ECS para reduzir custos.
+      - **Otimize usando uma abordagem sem servidor e baseada em contêiner:** Use o AWS Lambda, o Amazon S3, o Amazon DynamoDB e o Amazon ECS para reduzir custos.
