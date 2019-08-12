@@ -914,6 +914,8 @@
 
 ## Módulo 7: O AWS Well-Architected Framework
 
+[[link](https://aws.amazon.com/pt/architecture/well-architected/)]
+
 **O AWS Well-Architected Framework: Finalidade**
 
 - O **AWS** Well-Architected **Framework**:
@@ -1043,3 +1045,25 @@ Otimização de custos é a capacidade de evitar ou eliminar custos desnecessár
       - **Otimização para custos de licença.**
 
       - **Otimize usando uma abordagem sem servidor e baseada em contêiner:** Use o AWS Lambda, o Amazon S3, o Amazon DynamoDB e o Amazon ECS para reduzir custos.
+
+**Princípios de design**
+
+- O Well-Architected Framework identifica os princípios de design para facilitar um bom design na nuvem, incluindo:
+
+  - Princípios gerais de design
+
+  - Princípios de design específicos para pilares.
+
+**Habilitar rastreabilidade:** Registrar e auditar todas as ações e alterações em um ambiente; para responder automaticamente e agir.
+
+**Proposta de valor**
+
+**Ajudar  os clientes**
+
+  - Abordagem consistente para analisar as arquiteturas;
+
+  - Compreender e reduzir os riscos em uma arquitetura;
+
+  - Aprender as melhores práticas;
+
+  - Influenciar arquiteturas futuras.
