@@ -936,7 +936,7 @@
 
 <p align="center"><img src="images/aws-well-architected.png" width="700px"></p>
 
-<img src="images/aws-excellency.png" width="20px"> **Excelência Operacional (OE)**
+**Excelência Operacional (OE)** <img src="images/aws-excellency.png" width="20px">
 
 Excelência operacional é a capacidade de executar e monitorar sistemas para provisionar valor empresarial e melhorar continuamente os processos e procedimentos de suporte. Ele envolve:
 
