@@ -964,12 +964,12 @@ Segurança é a capacidade de proteger informações, sistemas e ativos, ao mesm
 
   - **Resposta:** Instaurar as ferramentas e o acesso antes do incidente de segurança, além de praticar regularmente a resposta a acidentes, garantirá que a arquitetura seja atualizada para acomodar a investigação e a recuperação em tempo hábil.
 
-  **Melhores práticas:**
+      - **Melhores práticas:**
 
-    - **Acesso pré-provisionado:** A Infosec tem o acesso adequado ou conta com meios para obter acesso rapidamente. Isso deve ser pré-provisionado para que uma resposta apropriada possa ser dada a um incidente.
+          - **Acesso pré-provisionado:** A Infosec tem o acesso adequado ou conta com meios para obter acesso rapidamente. Isso deve ser pré-provisionado para que uma resposta apropriada possa ser dada a um incidente.
 
-    - **Ferramentas pré-implantadas:** A Infosec tem as ferramentas certas pré-implantadas na AWS para que uma resposta possa ser apropriada ser dada a um incidente.
+          - **Ferramentas pré-implantadas:** A Infosec tem as ferramentas certas pré-implantadas na AWS para que uma resposta possa ser apropriada ser dada a um incidente.
 
-    - **Simulações não relacionadas à produção:** Simulações de resposta a incidentes são conduzidas regularmente no ambiente de não produção e as lições aprendidas são incorporadas à arquitetura e às operações.
+          - **Simulações não relacionadas à produção:** Simulações de resposta a incidentes são conduzidas regularmente no ambiente de não produção e as lições aprendidas são incorporadas à arquitetura e às operações.
 
-    - **Simulações na produção:** Simulações de respostas a incidentes são realizadas regurlarmente no ambiente de produção e o aprendizado incorporado na arquitetura e nas operações.
+          - **Simulações na produção:** Simulações de respostas a incidentes são realizadas regurlarmente no ambiente de produção e o aprendizado incorporado na arquitetura e nas operações.
