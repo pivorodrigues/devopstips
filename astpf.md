@@ -1014,11 +1014,11 @@ Eficiência de performance é a capacidade de usar recursos computacionais de ma
 
     - **Melhores práticas:**
 
-          - **Considere as características:** Considere as diferentes características (por exemplo, disponibilidade, consistência, tolerância de partição, latência, durabilidade, escalabilidade, capacidade de consulta) para que voc~e possa selecionar a abordagem de banco de dados com melhor desempenho a ser usada (relacional, No-SQL, warehouse, memória).
+        - **Considere as características:** Considere as diferentes características (por exemplo, disponibilidade, consistência, tolerância de partição, latência, durabilidade, escalabilidade, capacidade de consulta) para que voc~e possa selecionar a abordagem de banco de dados com melhor desempenho a ser usada (relacional, No-SQL, warehouse, memória).
 
-          - **Considere as opções de configuração:** Considere as opções de configuração, como otimização de armazenamento, configurações de nível de banco de dados, memória e cache.
+        - **Considere as opções de configuração:** Considere as opções de configuração, como otimização de armazenamento, configurações de nível de banco de dados, memória e cache.
 
-          - **Considere os padrões de acesso:** Otimize a forma como você usa sistemas de banco de dados com base em seu padrão de acesso (por exemplo: índices, distribuição de chaves e partição, escalabilidade horizontal).
+        - **Considere os padrões de acesso:** Otimize a forma como você usa sistemas de banco de dados com base em seu padrão de acesso (por exemplo: índices, distribuição de chaves e partição, escalabilidade horizontal).
 
 <img src="images/aws-costs.png" width="20px"> **Otimização de custos (CO)** <img src="images/aws-costs.png" width="20px">
 
