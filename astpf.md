@@ -973,3 +973,25 @@ Segurança é a capacidade de proteger informações, sistemas e ativos, ao mesm
           - **Simulações não relacionadas à produção:** Simulações de resposta a incidentes são conduzidas regularmente no ambiente de não produção e as lições aprendidas são incorporadas à arquitetura e às operações.
 
           - **Simulações na produção:** Simulações de respostas a incidentes são realizadas regurlarmente no ambiente de produção e o aprendizado incorporado na arquitetura e nas operações.
+
+**Confiabilidade**
+
+Confiabilidade é a capacidade de um sistema de recuperar-se de falhas de infraestrutura ou serviço, adquirir dinamicamente recursos de computação para atender à demanda e mitigar interrupções, como configurações incorretas ou problemas de rede temporários. Ela envolve:
+
+  - Fundamentos;
+
+  - Gerenciamente de alterações;
+
+  - Gerenciamento de falhas.
+
+**Pergunta sobre confiabilidade (Gerenciamento de falhas):** _REL 7: Como o seu sistema suporta falhas de componentes?_
+
+  - **Resposta:** Seus aplicativos conta com algum requisito, implícito ou explícito, para alta disponibilidade e baixo MTTR? Se sim, projete seus aplicativos com resiliência e distribua-os para que resistam às interrupções. Para atingir níveis superiores de disponibilidade, esta distribuição deve abranger localizações físicas diferentes. Arquitete camadas individuais (por exemplo, servidor da web, banco de dados) para obter resiliência, o que inclui monitoramento, autorrecuperação e notificação de interrupções e falhas significativas de eventos.
+
+    - **Melhores práticas:**
+
+      - **Múltiplas regiões e zonas de disponibilidade:** Distribua as cargas de aplicativos em múltiplas regiões e zonas de disponibilidade (usando por exemplo, DNS, ELB, Application Load Balance e API Gateway).
+
+      - **Dependências de baixo acoplamento:** Por exemplo, use sistemas de enfileiramento, sistemas de streamig, load balancers etc.;
+
+      - **Degradação normal:** Quando as dependências de um componente não estão íntegras, o componente em si não é relatado como não íntegro. Ele é capaz de continuar a atender à solicitação de maneira degradada.
