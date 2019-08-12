@@ -946,7 +946,7 @@ Excelência operacional é a capacidade de executar e monitorar sistemas para pr
 
   - Evoluir
 
-**Segurança**
+<img src="images/aws-security.png" width="20px"> **Segurança** <img src="images/aws-security.png" width="20px">
 
 Segurança é a capacidade de proteger informações, sistemas e ativos, ao mesmo tempo em que agrega valor empresarial por meio de avaliações de risco e estratégias de mitigação. Ela envolve:
 
@@ -974,7 +974,7 @@ Segurança é a capacidade de proteger informações, sistemas e ativos, ao mesm
 
           - **Simulações na produção:** Simulações de respostas a incidentes são realizadas regurlarmente no ambiente de produção e o aprendizado incorporado na arquitetura e nas operações.
 
-**Confiabilidade**
+<img src="images/aws-reliability.png" width="20px"> **Confiabilidade** <img src="images/aws-reliability.png" width="20px">
 
 Confiabilidade é a capacidade de um sistema de recuperar-se de falhas de infraestrutura ou serviço, adquirir dinamicamente recursos de computação para atender à demanda e mitigar interrupções, como configurações incorretas ou problemas de rede temporários. Ela envolve:
 
