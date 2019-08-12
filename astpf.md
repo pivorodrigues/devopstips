@@ -995,3 +995,5 @@ Confiabilidade é a capacidade de um sistema de recuperar-se de falhas de infrae
       - **Dependências de baixo acoplamento:** Por exemplo, use sistemas de enfileiramento, sistemas de streamig, load balancers etc.;
 
       - **Degradação normal:** Quando as dependências de um componente não estão íntegras, o componente em si não é relatado como não íntegro. Ele é capaz de continuar a atender à solicitação de maneira degradada.
+
+<img src="images/aws-performance.png" width="20px"> **Eficiência de Performance** <img src="images/aws-performance.png" width="20px">
