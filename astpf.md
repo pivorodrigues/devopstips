@@ -1058,7 +1058,7 @@ Otimização de custos é a capacidade de evitar ou eliminar custos desnecessár
 
 **Proposta de valor**
 
-**Ajudar  os clientes**
+- Ajudar  os clientes:
 
   - Abordagem consistente para analisar as arquiteturas;
 
