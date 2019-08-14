@@ -1067,3 +1067,69 @@ Otimização de custos é a capacidade de evitar ou eliminar custos desnecessár
   - Aprender as melhores práticas;
 
   - Influenciar arquiteturas futuras.
+
+#
+
+## Módulo 8: Como arquitetar uma solução da AWS
+
+**Princípios orientadores para os SAs da AWS**
+
+- A migração para a nuvem é um processo;
+
+- Os clientes precisam da experiência e da ajuda do SA;
+
+- Conhecer o cliente é fundamental;
+
+- Os serviços e ofertas da AWS;
+
+- Como agir no melhor interesse em longo prazo do cliente;
+
+- A primeira arquitetura não é a arquitetura final.
+
+**Arquitete uma solução para o cliente**
+
+- Compreenda os impactos nos negócios:
+
+  - Em que setor está o cliente?
+
+  - Qual valor o aplicativo tem para a empresa?
+
+  - De que forma isso é importante?
+
+- Identifique as partes interessadas;
+
+- Determine o ramo de atividade:
+
+  - Qual é o problema da empresa?
+
+- Compreenda os casos de estudo:
+
+  - Quem o usa?
+
+  - O que ele faz?
+
+  - Como os usuários acessam?
+
+- Como outros clientes fizeram isso?
+
+  - Encontre um [estudo de caso](https://aws.amazon.com/solutions/case-studies/) e [uma arquitetura de referência similar](https://aws.amazon.com/architecture/?awsf.quickstart-architecture-page-filter=highlight%23new).
+
+**Gerencie o escopo**
+
+- Os clientes estão entusiasmados com a AWS;
+
+- Muitas partes interessadas, muitos objetivos;
+
+- Concentrar a conversa em resultados específicos;
+
+- Identificar aplicativos candidatos à migração;
+
+- Identificar as velocidades e os feeds de um aplicativo;
+
+- Compreender o contexto comercial e operacional;
+
+- Desenvolver uma solução que aborde os dois contextos;
+
+- Definir critérios de sucesso mensuráveis e com prazo definido;
+
+- Entregar!
