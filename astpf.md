@@ -1254,4 +1254,4 @@ Recomendação sobre a solução preliminar:
 
   - Futuro Crescimento
 
-  <p align="center"><img src="images/aws-csi-case.png" width="500px"></p>
+  <p align="center"><img src="images/aws-csi-case.png" width="250px"></p>
