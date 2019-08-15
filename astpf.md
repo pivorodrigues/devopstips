@@ -1133,3 +1133,125 @@ Otimização de custos é a capacidade de evitar ou eliminar custos desnecessár
 - Definir critérios de sucesso mensuráveis e com prazo definido;
 
 - Entregar!
+
+## Módulo 9: Estudo de caso: Engajamento com o cliente.
+
+#
+
+**Empresa fictícia:** _CSI (Customer Satisfaction INC.)_ [[Link](https://content.aws.training/wbt/pttech/pt/m9/1.0.0/story_content/external_files/STPTF-Case_Study_Guide.pdf)]
+
+**Produto fictício:** _Persona_
+
+**Conheça o cliente**
+
+- Introduções;
+
+- Metas do panorama geral;
+
+- Projeto Shape Shift e o aplicativo Persona;
+
+- Requisitos funcionais:
+
+  - Crescer de 10 milhões para mais de 50 milhões de usuários.
+
+- Requisitos não funcionais:
+
+  - Agilidade
+
+- Arquitetura atual:
+
+  - Cluster de quatro hosts físicos com hypervisor VMWare;
+
+  - Firewall;
+
+  - Load Balancer;
+
+  - Oracle RAC - Master/Slave.
+
+**Compreenda os problemas**
+
+Problemas que levam a mudanças:
+
+  - Tempo;
+
+  - Disponibilidade;
+
+  - Recursos de nuvem limitados;
+
+  - Gerenciamento de riscos;
+
+  - Interrupções - falha de hardware e erro humano;
+
+  - Recuperação de desastres;
+
+  - Custos do segundo datacenter;
+
+  - Performance com número de usuários aumentado;
+
+  - Custos - software, hardware, instalações, transparência e outros.
+
+**Identifique as capacidade futuras**
+
+As capacidades futuras incluem:
+
+  - Velocidades de liberação do aplicativo e novas features;
+
+  - Habilidades do sistema de mensagens - novos canais, inovação de máquina, mobile;
+
+  - Java no Tomcat ou outras opções de código aberto;
+
+  - Segurança;
+
+  - Big Data;
+
+  - Flexibilidade.
+
+**Resuma as descobertas**
+
+**Avarias críticas**
+
+  - Prazo;
+
+  - Habilidades de nuvem limitadas;
+
+  - Escalabilidade;
+
+  - Custos.
+
+**Requisitos funcionais**
+
+  - Balanceamento de carga;
+
+  - Firewalls;
+
+  - Servidores Web;
+
+  - Banco de dados relacional.
+
+**Solução preliminar**
+
+Recomendação sobre a solução preliminar:
+
+  - Migração do tipo lift-and-shift;
+
+  - Única VPC;
+
+  - Única região;
+
+  - Pelo menos duas Zonas de disponibilidade;
+
+  - Elastic Load Balancing;
+
+  - Recursos de segurança de VPC, como os security groups;
+
+  - Instâncias do EC2 executando o Linux e o Apache Tomcat;
+
+  - Grupos de Auto Scaling do EC2;
+
+  - Aurora;
+
+  - Modelos do AWS CloudFormation;
+
+  - Futuro Crescimento
+
+  <p align="center"><img src="images/aws-csi-case.png" width="500px"></p>
