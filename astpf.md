@@ -1393,3 +1393,49 @@ Requisitos não funcionais definem como o aplicativo opera.
 Para (quase) qualquer aplicativos, as decisões devem ser tomadas em áreas-chave.
 
 <p align="center"><img src="images/aws-key-areas.png" width="700px"></p>
+
+**Bancos de dados e análise da AWS**
+
+[[link](https://aws.amazon.com/pt/dms/)]
+
+<p align="center"><img src="images/aws-databases.png" width="700px"></p>
+
+**Serviços de computação da AWS**
+
+[[link](https://aws.amazon.com/pt/products/compute/)]
+
+- Sem servidor (Serverless)
+
+  - AWS Lambda
+
+- Contêineres
+
+  - Amazon ECS, Amazon EKS
+
+  - AWS Fargate
+
+- Instâncias
+
+  - Amazon EC2    
+
+**Serviços de Armazenamento da AWS**
+
+[[link](https://aws.amazon.com/pt/products/storage/?nc2=h_m1)]
+
+Quais variedades de armazenamento você precisará?
+
+**Bloco:**
+
+- O Amazon EBS oferece a mais alta performance
+
+**Arquivo:**
+
+- O Amazon EFS permite várias montagens simultâneas
+
+**Objeto:**
+
+- Amazon S3 é o mais durável, escalável e econômico
+
+  - _No mínimo, use o Amazon S3 para backups_
+
+- Amaxon Glacier = armazenamento de longo termo  
