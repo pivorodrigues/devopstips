@@ -1321,3 +1321,51 @@ Os requisitos funcionais definem o que um aplicativo faz.
 Requisitos não funcionais definem como o aplicativo opera.
 
 <p align="center"><img src="images/aws-non-functional-requirements.png" width="700px"></p>
+
+**Perguntas não funcionais**
+
+- Como o aplicativo atenderá aos requisitos de performancem escalabilidade e elasticidade?
+
+  - Como a performance é medida? Como as necessidades mudam com o tempo?
+
+- Como o aplicativo será gerenciado e monitorado?
+
+  - Como você saberá se o aplicativo está funcionando? Como você lida com os problemas?
+
+- Como o aplicativo oferecerá durabilidade, confiabilidade e continuidade dos negócios?
+
+  - Qual é o requisito de tempo de atividade? Como o aplicativo atenderá a isso?
+
+- Como o aplicativo será protegido? Como ele atenderá aos padrões de compatibilidade e privacidade?
+
+  - Como você saberá se o aplicativo é seguro?
+
+- Como o aplicativo fornecerá usabilidade e globalização?
+
+  - Como você dará suporte a usuários com necessidades especiais (visão, mobilidade, desafios cognitivos)?
+
+  - Como você dará suporte para idiomas diferentes do inglês? Quais?
+
+- Documentação
+
+  - Como você manterá as informações sobre o aplicativos íntegras e atualizadas?
+
+**Estudo de caso: requisitos funcionais**
+
+- Finalidade do aplicativo
+
+  - Permite que os usuários se registrem e façam login na organização, permitindo o acesso a outros aplicativos
+
+- Entradas e saídas
+
+  - Humanos criam novos registros, usando a Web e dispositivos móveis
+
+    - Alguns dados são gerados por máquina (registros de data e hora)
+
+    - Um registro bem-sucedido gera um e-mail ou sms de boas-vindas
+
+  - Máquinas passam uma solicitação para um login
+
+    - Os humanos são convidados a provisionar um nome de usuário e senha
+
+    - O login bem-sucedido gera um token de autenticação para uso por outros aplicativos  
