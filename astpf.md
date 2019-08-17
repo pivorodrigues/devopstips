@@ -1315,3 +1315,9 @@ Para qualquer aplicativo, um arquiteto precisa compreender o valor que o aplicat
 Os requisitos funcionais definem o que um aplicativo faz.
 
 <p align="center"><img src="images/aws-functional-requirements.png" width="700px"></p>
+
+**Requisitos não funcionais**
+
+Requisitos não funcionais definem como o aplicativo opera.
+
+<p align="center"><img src="images/aws-non-functional-requirements.png" width="700px"></p>
