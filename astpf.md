@@ -1433,3 +1433,23 @@ Quais variedades de armazenamento você precisará?
   - _No mínimo, use o Amazon S3 para backups_
 
 - Amaxon Glacier = armazenamento de longo termo  
+
+**Gerenciamento e monitoramento** [[link](https://aws.amazon.com/pt/products/management-tools/?nc2=h_m1)]
+
+- Amazon CloudWatch e AWS CloudTrail
+
+  - Você precisa de métricas avançadas?
+
+  - Defina limites e alertas
+
+- Log Analytics
+
+  - Aplicativos devem emitir logs
+
+  - Correlacionar logs de infraestrutura e aplicativo
+
+  - Pode usar o Amazon Elasticsearch Service (Amazon ES)
+
+**Serviços de rede da AWS** [[link](https://aws.amazon.com/pt/products/networking/?nc2=h_m1)]
+
+<p align="center"><img src="images/aws-network-services.png" width="700px"></p>
