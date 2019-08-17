@@ -1314,4 +1314,4 @@ Para qualquer aplicativo, um arquiteto precisa compreender o valor que o aplicat
 
 Os requisitos funcionais definem o que um aplicativo faz.
 
-<p align="center"><img src="images/aws-functional-requirements.png" width="500px"></p>
+<p align="center"><img src="images/aws-functional-requirements.png" width="700px"></p>
