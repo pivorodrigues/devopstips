@@ -1136,8 +1136,6 @@ Otimização de custos é a capacidade de evitar ou eliminar custos desnecessár
 
 ## Módulo 9: Estudo de caso: Engajamento com o cliente.
 
-#
-
 **Empresa fictícia:** _CSI (Customer Satisfaction INC.)_ [[Link](https://content.aws.training/wbt/pttech/pt/m9/1.0.0/story_content/external_files/STPTF-Case_Study_Guide.pdf)]
 
 **Produto fictício:** _Persona_
