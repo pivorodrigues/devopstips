@@ -1453,3 +1453,11 @@ Quais variedades de armazenamento você precisará?
 **Serviços de rede da AWS** [[link](https://aws.amazon.com/pt/products/networking/?nc2=h_m1)]
 
 <p align="center"><img src="images/aws-network-services.png" width="700px"></p>
+
+**Segurança** [[link](https://aws.amazon.com/pt/products/security/?nc2=h_m1)]
+
+- Quais padrões de segurança existem na organização do cliente? Como o cliente as atenderá?
+
+- Quais são os requisitos regulamentares? Como você vai cumprir e comprovar compliance?
+
+<p align="center"><img src="images/aws-security-services.png" width="700px"></p>
