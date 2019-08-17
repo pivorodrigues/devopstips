@@ -1368,4 +1368,28 @@ Requisitos não funcionais definem como o aplicativo opera.
 
     - Os humanos são convidados a provisionar um nome de usuário e senha
 
-    - O login bem-sucedido gera um token de autenticação para uso por outros aplicativos  
+    - O login bem-sucedido gera um token de autenticação para uso por outros aplicativos
+
+**Estudo de caso: requisitos não funcionais**
+
+- Escalabilidade: 100.000.000 usuários
+
+- Privacidade e compatibilidade: proteja seus dados pessoais confidenciais
+
+- Tempo de atividade: sempre ativo - sem interrupções planejadas ou não planejadas
+
+  - Meta: 100%, mas, 99,99% é aceitável
+
+- Usabilidade: tem suporte para os principais navegadores da Web e móvel
+
+  - Tem suporte para usuários com problemas de visão e mobilidade
+
+  - Suporte para inglês, francês, espanhol, alemão, italiano e japonês
+
+#  
+
+**Decidindo quais serviços da AWS devem ser usados**
+
+Para (quase) qualquer aplicativos, as decisões devem ser tomadas em áreas-chave.
+
+<p align="center"><img src="images/aws-key-areas.png" width="700px"></p>
