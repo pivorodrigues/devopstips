@@ -1394,15 +1394,11 @@ Para (quase) qualquer aplicativos, as decisões devem ser tomadas em áreas-chav
 
 <p align="center"><img src="images/aws-key-areas.png" width="700px"></p>
 
-**Bancos de dados e análise da AWS**
-
-[[link](https://aws.amazon.com/pt/dms/)]
+**Bancos de dados e análise da AWS** [[link](https://aws.amazon.com/pt/dms/)]
 
 <p align="center"><img src="images/aws-databases.png" width="700px"></p>
 
-**Serviços de computação da AWS**
-
-[[link](https://aws.amazon.com/pt/products/compute/)]
+**Serviços de computação da AWS** [[link](https://aws.amazon.com/pt/products/compute/)]
 
 - Sem servidor (Serverless)
 
@@ -1418,9 +1414,7 @@ Para (quase) qualquer aplicativos, as decisões devem ser tomadas em áreas-chav
 
   - Amazon EC2    
 
-**Serviços de Armazenamento da AWS**
-
-[[link](https://aws.amazon.com/pt/products/storage/?nc2=h_m1)]
+**Serviços de Armazenamento da AWS** [[link](https://aws.amazon.com/pt/products/storage/?nc2=h_m1)]
 
 Quais variedades de armazenamento você precisará?
 
