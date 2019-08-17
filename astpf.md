@@ -1134,6 +1134,8 @@ Otimização de custos é a capacidade de evitar ou eliminar custos desnecessár
 
 - Entregar!
 
+#
+
 ## Módulo 9: Estudo de caso: Engajamento com o cliente.
 
 **Empresa fictícia:** _CSI (Customer Satisfaction INC.)_ [[Link](https://content.aws.training/wbt/pttech/pt/m9/1.0.0/story_content/external_files/STPTF-Case_Study_Guide.pdf)]
@@ -1253,3 +1255,63 @@ Recomendação sobre a solução preliminar:
   - Futuro Crescimento
 
   <p align="center"><img src="images/aws-csi-case.png" width="250px"></p>
+
+#
+
+## Módulo 10: Como engajar clientes e arquitetar soluções
+
+**Funcional e não funcional**
+
+- **Requisitos Funcionais** - elementos técnicos específicos de uma arquitetura de soluções:
+
+  - Quanto armazenamento o aplicativo precisa? Qual o tipo de armazenamento?
+
+  - O aplicativo usa um banco de dados? Quais tipos de dados o aplicativo consome?
+
+  - Que quantia de dados o aplicativo gera?
+
+  - Como o usuário acessa o aplicativo?
+
+- **Requisitos não funcionais** - metas organizacionais maiores, não específicas para um determinado aplicativo:
+
+  - Redução de custos;
+
+  - Aprimoramento de disponibilidade;
+
+  - Cumprimento de mandatos legais;
+
+  - Adição de recursos.
+
+**Estudo de caso: análise de requisitos**
+
+Projeto Shape Shift / Aplicativo Persona
+
+**Perguntas funcionais importantes**
+
+Para qualquer aplicativo, um arquiteto precisa compreender o valor que o aplicativo provisiona.
+
+- Por que o cliente deseja migrar um aplicativo para a nuvem?
+
+- Como esse aplicativo ajuda a organização a cumprir sua missão?
+
+- Como ele:
+
+  - Aumenta a receita?
+
+  - Diminui as despesas?
+
+  - Fornece um serviço fundamental às partes interessadas (clientes, fornecedores, reguladores, outros)?
+
+**Viabilidade**
+
+- Por que a computação em nuvem é a melhor abordagem à necessidade específica do cliente?
+
+- Por que usar um aplicativo para resolver o problema é do interesse do cliente?
+
+- Por que o aplicativo deve estar na nuvem?
+
+**Requisitos funcionais**
+
+Os requisitos funcionais definem o que um aplicativo faz.
+
+<p align="center"><img src="images/aws-functional-requirements.png" width="500px"></p>
