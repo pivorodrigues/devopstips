@@ -1462,4 +1462,4 @@ Quais variedades de armazenamento você precisará?
 
 <p align="center"><img src="images/aws-security-services.png" width="500px"></p>
 
-**Considerações adicionais: implantação**
+**Considerações adicionais: implantação** [[link](https://aws.amazon.com/devops/)]
