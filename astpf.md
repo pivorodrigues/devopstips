@@ -1461,3 +1461,5 @@ Quais variedades de armazenamento você precisará?
 - Quais são os requisitos regulamentares? Como você vai cumprir e comprovar compliance?
 
 <p align="center"><img src="images/aws-security-services.png" width="500px"></p>
+
+**Considerações adicionais: implantação**
