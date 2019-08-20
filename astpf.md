@@ -1477,3 +1477,15 @@ Quais variedades de armazenamento você precisará?
 - Como você implantará o código?  
 
 <p align="center"><img src="images/aws-pipeline.png" width="500px"></p>
+
+**Elasticidade**
+
+- Como será a escala do aplicativo?
+
+  - Escalar para aumentar o uso
+
+  - Diminuir a escala para contenção de custos
+
+- Como a escalabilidade afeta cada serviço em uso?
+
+<p align="center"><img src="images/aws-elasticity.png" width="500px"></p>  
