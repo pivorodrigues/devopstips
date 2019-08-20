@@ -1502,7 +1502,7 @@ Quais variedades de armazenamento você precisará?
 
 - Como você vai testar?
 
-**Considerações da migração:**
+**Considerações da migração**
 
 - Quase todos os projetos do mundo real têm alguns elementos legados, geralmente executados em sistemas locais.
 
@@ -1517,3 +1517,7 @@ Quais variedades de armazenamento você precisará?
     - Pode usar o mesmo mecanismo (como o MySQL -> MySQL) para diferentes mecanismos (como Oracle -> PostegreSQL).
 
 <p align="center"><img src="images/aws-migration.png" width="700px"></p>
+
+**Comparação das estratégias de migração**
+
+<p align="center"><img src="images/aws-migration-comparison.png" width="700px"></p>
