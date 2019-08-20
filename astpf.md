@@ -1521,3 +1521,7 @@ Quais variedades de armazenamento você precisará?
 **Comparação das estratégias de migração**
 
 <p align="center"><img src="images/aws-migration-comparison.png" width="700px"></p>
+
+**Os "seis Rs" da migração**
+
+<p align="center"><img src="images/aws-six-rs.png" width="700px"></p>
