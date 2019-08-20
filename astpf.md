@@ -1524,4 +1524,4 @@ Quais variedades de armazenamento você precisará?
 
 **Os "seis Rs" da migração**
 
-<p align="center"><img src="images/aws-six-rs.png" width="700px"></p>
+<p align="center"><img src="images/aws-six-rs.png" width="550px"></p>
