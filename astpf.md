@@ -1488,4 +1488,32 @@ Quais variedades de armazenamento você precisará?
 
 - Como a escalabilidade afeta cada serviço em uso?
 
-<p align="center"><img src="images/aws-elasticity.png" width="500px"></p>  
+<p align="center"><img src="images/aws-elasticity.png" width="500px"></p>
+
+**Disponibilidade e durabilidade**
+
+- Como você atenderá aos requisitos de disponibilidade?
+
+- O que acontece quando um componente falha?
+
+- O que acontece quando uma zona de disponibilidade fica indisponível?
+
+- O que acontece com os dados durante uma falha?
+
+- Como você vai testar?
+
+**Considerações da migração:**
+
+- Quase todos os projetos do mundo real têm alguns elementos legados, geralmente executados em sistemas locais.
+
+- A migração de dados, armazenamento e recursos de computação legados para a Nuvem AWS pode ser feita com o mínimo de interrupção.
+
+  - O AWS Server Migration Service (AWS SMS) replica máquinas virtuais VMWare para Amazon Machine Images (AMI) que podem ser lançadas nas instâncias do Amazon EC2.
+
+  - O AWS Storage Gateway e o AWS Snowball copiam dados do armazenamento local para o armazenamento na nuvem.
+
+  - O AWS Database Migration Service (AWS DMS) replica os dados de maneira que não cause interrupção.
+
+    - Pode usar o mesmo mecanismo (como o MySQL -> MySQL) para diferentes mecanismos (como Oracle -> PostegreSQL).
+
+<p align="center"><img src="images/aws-migration.png" width="500px"></p>
