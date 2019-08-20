@@ -1516,4 +1516,4 @@ Quais variedades de armazenamento você precisará?
 
     - Pode usar o mesmo mecanismo (como o MySQL -> MySQL) para diferentes mecanismos (como Oracle -> PostegreSQL).
 
-<p align="center"><img src="images/aws-migration.png" width="500px"></p>
+<p align="center"><img src="images/aws-migration.png" width="700px"></p>
