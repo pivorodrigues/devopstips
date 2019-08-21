@@ -1538,4 +1538,4 @@ Quais variedades de armazenamento você precisará?
 
   - 1 KB ou menos por usuário registrado
 
-_Este é um problema transacional, não analítico, por isso, não usaremos o [Amazon EMR](https://aws.amazon.com/pt/emr/), o [Amazon Redshift](https://aws.amazon.com/pt/redshift/) nem o [Amazon Athena](https://aws.amazon.com/pt/athena/). Este não é um problema gráfico, por isso, não usaremos o [Amazon Neptune](https://aws.amazon.com/pt/neptune/)_.  
+  _Este é um problema transacional, não analítico, por isso, não usaremos o [Amazon EMR](https://aws.amazon.com/pt/emr/), o [Amazon Redshift](https://aws.amazon.com/pt/redshift/) nem o [Amazon Athena](https://aws.amazon.com/pt/athena/). Este não é um problema gráfico, por isso, não usaremos o [Amazon Neptune](https://aws.amazon.com/pt/neptune/)_.  
