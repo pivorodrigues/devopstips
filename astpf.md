@@ -1538,4 +1538,22 @@ Quais variedades de armazenamento você precisará?
 
   - 1 KB ou menos por usuário registrado
 
-  _Este é um problema transacional, não analítico, por isso, não usaremos o [Amazon EMR](https://aws.amazon.com/pt/emr/), o [Amazon Redshift](https://aws.amazon.com/pt/redshift/) nem o [Amazon Athena](https://aws.amazon.com/pt/athena/). Este não é um problema gráfico, por isso, não usaremos o [Amazon Neptune](https://aws.amazon.com/pt/neptune/)_.  
+  _Este é um problema transacional, não analítico, por isso, não usaremos o [Amazon EMR](https://aws.amazon.com/pt/emr/), o [Amazon Redshift](https://aws.amazon.com/pt/redshift/) nem o [Amazon Athena](https://aws.amazon.com/pt/athena/). Este não é um problema gráfico, por isso, não usaremos o [Amazon Neptune](https://aws.amazon.com/pt/neptune/)_.
+
+- A escala total é difícil de prever, mas, pode ser grande
+
+  - Quer ter suporte para 100 milhões de usuários; esse número pode aumentar
+
+  - Precisa de performance rápida, mas, não em milissegundos
+
+  _Não precisamos do [Elasticache](https://aws.amazon.com/pt/elasticache/) para uma latência extremamente baixa. É possível atender melhor às necessidade de escala e performance rápida e consistente com o [Amazon Aurora](https://aws.amazon.com/pt/rds/aurora/) ou o [Amazon DynamoDB](https://aws.amazon.com/pt/dynamodb/)_.
+
+- Quer aumentar ou diminuir a escala para atender às necessidades em constante mudança
+
+  _O [Amazon DynamoDB](https://aws.amazon.com/pt/dynamodb/) faz isso muito bem; o [Amazon Aurora](https://aws.amazon.com/pt/rds/aurora/) também pode atender ao requisito_.
+
+- A equipe atual tem fortes habilidade em banco de dados relacional
+
+  _O [DynamoDB](https://aws.amazon.com/pt/dynamodb/) não é relacional. [Aurora](https://aws.amazon.com/pt/rds/aurora/) é a melhor escolha_.
+
+  _A AWS lança novos serviços com ferquência, portanto, verifique novas abordagens e serviços a serem usados. Suas suposições de design podem mudar_.
