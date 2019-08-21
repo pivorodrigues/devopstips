@@ -1557,3 +1557,17 @@ Quais variedades de armazenamento você precisará?
   _O [DynamoDB](https://aws.amazon.com/pt/dynamodb/) não é relacional. [Aurora](https://aws.amazon.com/pt/rds/aurora/) é a melhor escolha_.
 
   _A AWS lança novos serviços com ferquência, portanto, verifique novas abordagens e serviços a serem usados. Suas suposições de design podem mudar_.
+
+#
+
+**Estudo de caso: computação e armazenamento**
+
+- A equipe atual tem fortes habilidades em Java
+
+  - Preferência para manter aplicativos em Java
+
+  _Pode gerenciar Java usando o Apache Tomcat de código aberto_.
+
+- A escala total é difícil de prever, mas, pode ser grande
+
+  _O Amazon EC2 pode ser escalado automaticamente. Os contêineres ([Amazon ECS](https://aws.amazon.com/pt/ecs/), [Amazon EKS](https://aws.amazon.com/pt/eks/))  
