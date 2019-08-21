@@ -1572,6 +1572,18 @@ Quais variedades de armazenamento você precisará?
 
 - Deseja aumentar e reduzir a escala para atender às necessidades em constante mudança
 
-  _O Amazon EC2 pode ser escalado automaticamente. Os contêineres ([Amazon ECS](https://aws.amazon.com/pt/ecs/), [Amazon EKS](https://aws.amazon.com/pt/eks/)) podem ser escalados automaticamente de uma maneira melhor, mas podem adicionar muita complexidade_.
+  _O [Amazon EC2](https://aws.amazon.com/pt/ec2/) pode ser escalado automaticamente. Os contêineres ([Amazon ECS](https://aws.amazon.com/pt/ecs/), [Amazon EKS](https://aws.amazon.com/pt/eks/)) podem ser escalados automaticamente de uma maneira melhor, mas podem adicionar muita complexidade_.
 
-  
+- Sem servidor poderia funcionar
+
+  - Quer minimizar a mudança do sistema de registro legado
+
+  _O [AWS Fargate](https://aws.amazon.com/pt/fargate/) e o [AWS Lambda](https://aws.amazon.com/pt/lambda/) podem funcionar bem, mas, mudar para Serverless é uma grande mudança. O [Amazon EC2](https://aws.amazon.com/pt/ec2/) com grupos de Auto Scaling é a melhor escolha_.
+
+- Somente as necessidades de armazenamento são para o banco de dados
+
+  - Será necessário armazenamento local para servidores so aplicativo
+
+  - Serão necessários backups
+
+  _Use o [Amazon EBS](https://aws.amazon.com/pt/ebs/) para armazenamento local e o [Amazon S3](https://aws.amazon.com/pt/s3/) para backups.
