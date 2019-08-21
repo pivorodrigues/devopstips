@@ -1570,4 +1570,8 @@ Quais variedades de armazenamento você precisará?
 
 - A escala total é difícil de prever, mas, pode ser grande
 
+- Deseja aumentar e reduzir a escala para atender às necessidades em constante mudança
+
   _O Amazon EC2 pode ser escalado automaticamente. Os contêineres ([Amazon ECS](https://aws.amazon.com/pt/ecs/), [Amazon EKS](https://aws.amazon.com/pt/eks/)) podem ser escalados automaticamente de uma maneira melhor, mas podem adicionar muita complexidade_.
+
+  
