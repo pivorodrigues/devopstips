@@ -1586,4 +1586,4 @@ Quais variedades de armazenamento você precisará?
 
   - Serão necessários backups
 
-  _Use o [Amazon EBS](https://aws.amazon.com/pt/ebs/) para armazenamento local e o [Amazon S3](https://aws.amazon.com/pt/s3/) para backups.
+  _Use o [Amazon EBS](https://aws.amazon.com/pt/ebs/) para armazenamento local e o [Amazon S3](https://aws.amazon.com/pt/s3/) para backups_.
