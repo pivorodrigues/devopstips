@@ -1602,8 +1602,30 @@ Quais variedades de armazenamento você precisará?
 
 - Todos os dados devem ser criptografados, estar em movimento e estar em repouso.
 
-  - _O uso de [Amazon VPCs](https://aws.amazon.com/pt/vpc/) garante que todos os dados em movimento sejam criptografados. Você deve optar por habilitar a criptografia para o banco de dados e o [Amazon S3](https://aws.amazon.com/pt/s3/)_.
+  - _O uso de [Amazon VPCs](https://aws.amazon.com/pt/vpc/) garante que todos os dados em movimento sejam criptografados. Você deve optar por habilitar a criptografia para o banco de dados e para o [Amazon S3](https://aws.amazon.com/pt/s3/)_.
 
 - Deve ser capaz de passar pela auditoria de segurança corporativa.
 
   - _Considere o uso do [Amazon Inspector](https://aws.amazon.com/pt/inspector/), do [Amazon GuardDuty](https://aws.amazon.com/pt/guardduty/), do [AWS WAF](https://aws.amazon.com/pt/waf/) e do [AWS Shield](https://aws.amazon.com/pt/shield/)_.
+
+#
+
+**Estudo de caso: monitoramento e gerenciamento**
+
+- Deve ser capaz de alertar e mitigar quando o aplicativo falhar
+
+  - Falha técnica - Quando um serviço não opera ou atinge um limite (por exemplo, um servidor sem espaço de armazenamento).
+
+    - _Falhas técnicas causam, eventos no [Cloudwatch](https://aws.amazon.com/pt/cloudwatch/), o que pode levar a notificações e uma resposta usando o [AWS Lambda](https://aws.amazon.com/pt/lambda/)_.
+
+  - Falha de negócios - Quando a ação do usuário causa uma falha (por exemplo, não usando um endereço de e-mail válido no campo de e-mail).
+
+    - _A atenuação de falhas de negócios requer uma função de verificação de validação no código do aplicativo_.
+
+- Deve ser capaz de monitorar a atividade
+
+  - Painel para mostrar a atividade atual
+
+  - Método para compreender erros e encontrar causas raiz
+
+    - _O aplicativo deve emitir logs para um bucket do S3. Esses logs combinam com os dados do [Cloudwatch](https://aws.amazon.com/pt/cloudwatch/) e do [CloudTrail](https://aws.amazon.com/pt/cloudtrail/) no Amazon ES para criar painéis e pesquisa forense_.
