@@ -1629,3 +1629,41 @@ Quais variedades de armazenamento você precisará?
   - Método para compreender erros e encontrar causas raiz
 
     - _O aplicativo deve emitir logs para um bucket do S3. Esses logs combinam com os dados do [Cloudwatch](https://aws.amazon.com/pt/cloudwatch/) e do [CloudTrail](https://aws.amazon.com/pt/cloudtrail/) no Amazon ES para criar painéis e pesquisa forense_.
+
+#
+
+**Estimativa de economia de custos**
+
+[AWS Simple Month Calculator](https://calculator.s3.amazonaws.com/index.html)
+
+#
+
+**Do conceito à produção**
+
+- Implementação de um piloto
+
+  - A nuvem facilita a realização de experiências. Sempre que possível, crie a solução, teste-a e implante-a em um subconjunto da comunidade de usuários.
+
+- Estratégias de transição - Canary vs. Blue-Green  
+
+<p align="center"><img src="images/aws-canary-bg.png" width="550px"></p>
+
+#
+
+**Estudo de caso: migração e transição**
+
+- Dados legados devem ser movidos do Oracle para o Amazon Aurora
+
+  - Precisa de tempo de inatividade próximo de zero para migração
+
+    - _O [AWS DMS](https://aws.amazon.com/pt/dms/) torna fácil a migração dos dados. Não causa interrupção, portanto, não será necessário tempo de inatividade_.
+
+    - _Usar uma implantação Canary criará grandes dificuldades na consistência dos dados, portanto, uma implantação Blue-Green é a melhor escolha. Depois de configurar e testar a nova solução (verde) e a migração de dados, use o DNS para alternar a resolução do site dos sistemas antigos (azuis) para os serviços verdes_.
+
+- Necessidade de substituir os servidores legados Web e de aplicativos para novos sistemas
+
+  - Precisa de tempo de inatividade próximo de zero
+
+  - Deve ter capacidade de failback, caso apareçam problemas no novo sistema
+
+    - _Se o failback for necessário, alterne de verde para azul e use o DMS para replicar os dados de volta para o servidor Oracle azul_.
