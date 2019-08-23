@@ -1588,10 +1588,22 @@ Quais variedades de armazenamento você precisará?
 
     - _Use o [Amazon EBS](https://aws.amazon.com/pt/ebs/) para armazenamento local e o [Amazon S3](https://aws.amazon.com/pt/s3/) para backups_.
 
+#
+
 **Estudo de caso: rede e segurança**
 
 - Precisa de balanceamento de carga entre servidores Web, servidores de aplicativos e servidores de dados.
 
   - _Fornecido por [Amazon ELB](https://aws.amazon.com/pt/elasticloadbalancing/) para servidores Web e de aplicativos. O [Amazon Aurora](https://aws.amazon.com/pt/rds/aurora/) fornece um único endpoint com balanceamento automatizado_.
 
-  
+- Somente os servidores Web devem ser acessíveis pela Internet.
+
+  - _Precisa definir security groups e permissões do [IAM](https://aws.amazon.com/pt/iam/) corretamente. Existem sub-redes privadas e públicas?_  
+
+- Todos os dados devem ser criptografados, estar em movimento e estar em repouso.
+
+  - _O uso de [Amazon VPCs](https://aws.amazon.com/pt/vpc/) garante que todos os dados em movimento sejam criptografados. Você deve optar por habilitar a criptografia para o banco de dados e o [Amazon S3](https://aws.amazon.com/pt/s3/)_.
+
+- Deve ser capaz de passar pela auditoria de segurança corporativa.
+
+  - _Considere o uso do [Amazon Inspector](https://aws.amazon.com/pt/inspector/), do [Amazon GuardDuty](https://aws.amazon.com/pt/guardduty/), do [AWS WAF](https://aws.amazon.com/pt/waf/) e do [AWS Shield](https://aws.amazon.com/pt/shield/)_.
