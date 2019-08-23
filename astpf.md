@@ -1538,7 +1538,7 @@ Quais variedades de armazenamento você precisará?
 
   - 1 KB ou menos por usuário registrado
 
-  _Este é um problema transacional, não analítico, por isso, não usaremos o [Amazon EMR](https://aws.amazon.com/pt/emr/), o [Amazon Redshift](https://aws.amazon.com/pt/redshift/) nem o [Amazon Athena](https://aws.amazon.com/pt/athena/). Este não é um problema gráfico, por isso, não usaremos o [Amazon Neptune](https://aws.amazon.com/pt/neptune/)_.
+    - _Este é um problema transacional, não analítico, por isso, não usaremos o [Amazon EMR](https://aws.amazon.com/pt/emr/), o [Amazon Redshift](https://aws.amazon.com/pt/redshift/) nem o [Amazon Athena](https://aws.amazon.com/pt/athena/). Este não é um problema gráfico, por isso, não usaremos o [Amazon Neptune](https://aws.amazon.com/pt/neptune/)_.
 
 - A escala total é difícil de prever, mas, pode ser grande
 
@@ -1546,17 +1546,17 @@ Quais variedades de armazenamento você precisará?
 
   - Precisa de performance rápida, mas, não em milissegundos
 
-  _Não precisamos do [Elasticache](https://aws.amazon.com/pt/elasticache/) para uma latência extremamente baixa. É possível atender melhor às necessidade de escala e performance rápida e consistente com o [Amazon Aurora](https://aws.amazon.com/pt/rds/aurora/) ou o [Amazon DynamoDB](https://aws.amazon.com/pt/dynamodb/)_.
+    - _Não precisamos do [Elasticache](https://aws.amazon.com/pt/elasticache/) para uma latência extremamente baixa. É possível atender melhor às necessidade de escala e performance rápida e consistente com o [Amazon Aurora](https://aws.amazon.com/pt/rds/aurora/) ou o [Amazon DynamoDB](https://aws.amazon.com/pt/dynamodb/)_.
 
 - Quer aumentar ou diminuir a escala para atender às necessidades em constante mudança
 
-  _O [Amazon DynamoDB](https://aws.amazon.com/pt/dynamodb/) faz isso muito bem; o [Amazon Aurora](https://aws.amazon.com/pt/rds/aurora/) também pode atender ao requisito_.
+    - _O [Amazon DynamoDB](https://aws.amazon.com/pt/dynamodb/) faz isso muito bem; o [Amazon Aurora](https://aws.amazon.com/pt/rds/aurora/) também pode atender ao requisito_.
 
 - A equipe atual tem fortes habilidade em banco de dados relacional
 
-  _O [DynamoDB](https://aws.amazon.com/pt/dynamodb/) não é relacional. [Aurora](https://aws.amazon.com/pt/rds/aurora/) é a melhor escolha_.
+    - _O [DynamoDB](https://aws.amazon.com/pt/dynamodb/) não é relacional. [Aurora](https://aws.amazon.com/pt/rds/aurora/) é a melhor escolha_.
 
-  _A AWS lança novos serviços com ferquência, portanto, verifique novas abordagens e serviços a serem usados. Suas suposições de design podem mudar_.
+    - _A AWS lança novos serviços com ferquência, portanto, verifique novas abordagens e serviços a serem usados. Suas suposições de design podem mudar_.
 
 #
 
@@ -1566,19 +1566,19 @@ Quais variedades de armazenamento você precisará?
 
   - Preferência para manter aplicativos em Java
 
-  _Pode gerenciar Java usando o Apache Tomcat de código aberto_.
+    - _Pode gerenciar Java usando o Apache Tomcat de código aberto_.
 
 - A escala total é difícil de prever, mas, pode ser grande
 
 - Deseja aumentar e reduzir a escala para atender às necessidades em constante mudança
 
-  _O [Amazon EC2](https://aws.amazon.com/pt/ec2/) pode ser escalado automaticamente. Os contêineres ([Amazon ECS](https://aws.amazon.com/pt/ecs/), [Amazon EKS](https://aws.amazon.com/pt/eks/)) podem ser escalados automaticamente de uma maneira melhor, mas podem adicionar muita complexidade_.
+    - _O [Amazon EC2](https://aws.amazon.com/pt/ec2/) pode ser escalado automaticamente. Os contêineres ([Amazon ECS](https://aws.amazon.com/pt/ecs/), [Amazon EKS](https://aws.amazon.com/pt/eks/)) podem ser escalados automaticamente de uma maneira melhor, mas podem adicionar muita complexidade_.
 
 - Sem servidor poderia funcionar
 
   - Quer minimizar a mudança do sistema de registro legado
 
-  _O [AWS Fargate](https://aws.amazon.com/pt/fargate/) e o [AWS Lambda](https://aws.amazon.com/pt/lambda/) podem funcionar bem, mas, mudar para Serverless é uma grande mudança. O [Amazon EC2](https://aws.amazon.com/pt/ec2/) com grupos de Auto Scaling é a melhor escolha_.
+    - _O [AWS Fargate](https://aws.amazon.com/pt/fargate/) e o [AWS Lambda](https://aws.amazon.com/pt/lambda/) podem funcionar bem, mas, mudar para Serverless é uma grande mudança. O [Amazon EC2](https://aws.amazon.com/pt/ec2/) com grupos de Auto Scaling é a melhor escolha_.
 
 - Somente as necessidades de armazenamento são para o banco de dados
 
@@ -1586,4 +1586,12 @@ Quais variedades de armazenamento você precisará?
 
   - Serão necessários backups
 
-  _Use o [Amazon EBS](https://aws.amazon.com/pt/ebs/) para armazenamento local e o [Amazon S3](https://aws.amazon.com/pt/s3/) para backups_.
+    - _Use o [Amazon EBS](https://aws.amazon.com/pt/ebs/) para armazenamento local e o [Amazon S3](https://aws.amazon.com/pt/s3/) para backups_.
+
+**Estudo de caso: rede e segurança**
+
+- Precisa de balanceamento de carga entre servidores Web, servidores de aplicativos e servidores de dados.
+
+  - _Fornecido por [Amazon ELB](https://aws.amazon.com/pt/elasticloadbalancing/) para servidores Web e de aplicativos. O [Amazon Aurora](https://aws.amazon.com/pt/rds/aurora/) fornece um único endpoint com balanceamento automatizado_.
+
+  
