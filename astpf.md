@@ -1684,6 +1684,7 @@ Quais variedades de armazenamento você precisará?
 
 #
 
+**Eficiência de Performance**
 
-
+<p align="center"><img src="images/aws-performance-efficiency.png" width="550px"></p>
 
