@@ -1671,6 +1671,19 @@ Quais variedades de armazenamento você precisará?
 
 ## Módulo 12 - Estudo de caso: Arquitetura de solução proposta
 
+
+**Migração para a Nuvem**
+
 <p align="center"><img src="images/aws-cloud-migration.png" width="550px"></p>
+
+#
+
+**Pilar da Confiabilidade**
+
+<p align="center"><img src="images/aws-trust-pilar.png" width="550px"></p>
+
+#
+
+
 
 
