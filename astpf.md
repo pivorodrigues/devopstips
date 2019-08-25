@@ -1708,3 +1708,9 @@ Quais variedades de armazenamento você precisará?
 
 #
 
+**Proposta de arquitetura de soluções do CSI**
+
+<p align="center"><img src="images/aws-csi-architecture.png" width="550px"></p>
+
+#
+
