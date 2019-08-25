@@ -1714,3 +1714,20 @@ Quais variedades de armazenamento você precisará?
 
 #
 
+**Iterar, Inventar, Simplificar e Inovar**
+
+- **Microsserviços** - Contêineres, AWS Lambda;
+
+- **Big Data** - Amazon S3, Amazom EMR, Amazon ML;
+
+- **DevOps e CI/CD** - AWS Codestar;
+
+- **Banco de Dados** - Amazon DynamoDB e Amazon ElastiCache;
+
+- **Gerenciabilidade e escala** - AWS CloudFormation;
+
+- **Segurança** - Amazon GuardDuty, AWS WAF, Microssegmentãção etc;
+
+- **Performance e alcance global** - Amazon CloudFront, descarregamento TLS, localização etc;
+
+- **Definição de preço do Amazon EC2** - Reserve instâncias, spot, sob demanda.
