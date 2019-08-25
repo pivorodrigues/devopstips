@@ -1671,4 +1671,6 @@ Quais variedades de armazenamento você precisará?
 
 ## Módulo 12 - Estudo de caso: Arquitetura de solução proposta
 
-    
+<p align="center"><img src="images/aws-cloud-migration.png" width="550px"></p>
+
+
