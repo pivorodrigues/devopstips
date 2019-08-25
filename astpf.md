@@ -1699,3 +1699,12 @@ Quais variedades de armazenamento você precisará?
 **Pilar da segurança**
 
 <p align="center"><img src="images/aws-security-pilar.png" width="550px"></p>
+
+#
+
+**Pilar de excelência operacional**
+
+<p align="center"><img src="images/aws-operational-excellency.png" width="550px"></p>
+
+#
+
