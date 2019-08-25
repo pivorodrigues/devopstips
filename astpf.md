@@ -1688,3 +1688,11 @@ Quais variedades de armazenamento você precisará?
 
 <p align="center"><img src="images/aws-performance-efficiency.png" width="550px"></p>
 
+#
+
+**Pilar da otimização dos custos**
+
+<p align="center"><img src="images/aws-optimization-cost-pilar.png" width="550px"></p>
+
+#
+
