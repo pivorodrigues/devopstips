@@ -1667,3 +1667,8 @@ Quais variedades de armazenamento você precisará?
   - Deve ter capacidade de failback, caso apareçam problemas no novo sistema
 
     - _Se o failback for necessário, alterne de verde para azul e use o DMS para replicar os dados de volta para o servidor Oracle azul_.
+#
+
+## Módulo 12 - Estudo de caso: Arquitetura de solução proposta
+
+    
