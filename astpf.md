@@ -1821,4 +1821,6 @@ Quais variedades de armazenamento você precisará?
 - Um SA atua no melhor interesse em longo prazo do cliente
 
 **<p align="center">Receita com serviços profissionais no longo prazo = sucesso</p>**
-<p align="center"> **Arquitetos de soluções têm uma estratégia de longo prazo** </p>
+**<p align="center">Arquitetos de soluções têm uma estratégia de longo prazo</p>**
+
+#
