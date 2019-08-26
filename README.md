@@ -39,9 +39,9 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 
 #
 
-## 3. Learn about Managing Servers
+## 2. Understand different OS Concepts
 
-- **Process Monitoring**
+- **Process Management**
   - [lsof <img src="images/Check-png.png" width="20px">](https://medium.com/@copyconstruct/lsof-f2b224eee7b5)
   - [A Guide to the Linux “Top” Command](https://www.booleanworld.com/guide-linux-top-command/)
 
