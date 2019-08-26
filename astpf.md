@@ -1759,3 +1759,7 @@ Quais variedades de armazenamento você precisará?
 <p align="center"><img src="images/aws-serverless-microservices.png" width="550px"></p>
 
 #
+
+**Você se lembra disso?**
+
+<p align="center"><img src="images/aws-bigdata-remember.png" width="550px"></p>
