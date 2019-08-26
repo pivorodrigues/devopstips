@@ -1769,3 +1769,53 @@ Quais variedades de armazenamento você precisará?
 **Arquitetura de Big Data: Solução**
 
 <p align="center"><img src="images/aws-bigdata-remember.png" width="650px"></p>
+
+#
+
+## Módulo 14: Conclusões
+
+**Gerencie o escopo**
+
+- Identifique aplicativos que são bons candidatos para migração
+
+- Concentre a conversa em requisitos e objetivos específicos
+
+- Compreenda valores e feeds
+
+- Compreenda o contexto comercial e operacional
+
+- Projete uma solução que aborde os dois conjuntos de requisitos
+
+- Defina critérios de sucesso mensuráveis e com prazo definido
+
+- Entregue, meça e valide
+
+- Repita!
+
+#
+
+**Você é a chave**
+
+- Envolva-se profundamente
+
+- Aprenda e use o Well-Architected Framework
+
+- Conquiste a confiança
+
+- Eduque
+
+- Itere, invente, simplifique e inove
+
+#
+
+**Princípios orientadores**
+
+- Migrar para a nuvem é um processo complexo
+
+- Os clientes precisam da experiência e da ajuda do SA
+
+- Os SAs conhecem seus clientes
+
+- Os SAs conhecem a plataforma e os serviços da AWS
+
+- Um SA atua no melhor interesse em longo prazo do cliente
