@@ -1824,3 +1824,17 @@ Quais variedades de armazenamento você precisará?
 **<p align="center">Arquitetos de soluções têm uma estratégia de longo prazo</p>**
 
 #
+
+**Principais conclusões**
+
+- A nuvem começa com ferramentas e construções bem conhecidas
+
+- A nuvem adiciona funcionalidade e serviços complexos e poderosos
+
+- O todo é maior que a soma das partes
+
+- Você vai desenvolver coisas incríveis
+
+- Há muito para saber!
+
+- A toca do coelho é grande e profunda!
