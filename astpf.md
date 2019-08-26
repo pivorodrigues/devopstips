@@ -1760,6 +1760,12 @@ Quais variedades de armazenamento você precisará?
 
 #
 
-**Você se lembra disso?**
+**Arquitetura de Big Data: Conceito**
+
+<p align="center"><img src="images/aws-bigdata-concept.png" width="550px"></p>
+
+#
+
+**Arquitetura de Big Data: Solução**
 
 <p align="center"><img src="images/aws-bigdata-remember.png" width="550px"></p>
