@@ -1680,37 +1680,37 @@ Quais variedades de armazenamento você precisará?
 
 **Pilar da Confiabilidade**
 
-<p align="center"><img src="images/aws-trust-pilar.png" width="550px"></p>
+<p align="center"><img src="images/aws-trust-pilar.png" width="650px"></p>
 
 #
 
 **Eficiência de Performance**
 
-<p align="center"><img src="images/aws-performance-efficiency.png" width="550px"></p>
+<p align="center"><img src="images/aws-performance-efficiency.png" width="650px"></p>
 
 #
 
 **Pilar da otimização dos custos**
 
-<p align="center"><img src="images/aws-optimization-cost-pilar.png" width="550px"></p>
+<p align="center"><img src="images/aws-optimization-cost-pilar.png" width="650px"></p>
 
 #
 
 **Pilar da segurança**
 
-<p align="center"><img src="images/aws-security-pilar.png" width="550px"></p>
+<p align="center"><img src="images/aws-security-pilar.png" width="650px"></p>
 
 #
 
 **Pilar de excelência operacional**
 
-<p align="center"><img src="images/aws-operational-excellency.png" width="550px"></p>
+<p align="center"><img src="images/aws-operational-excellency.png" width="650px"></p>
 
 #
 
 **Proposta de arquitetura de soluções do CSI**
 
-<p align="center"><img src="images/aws-csi-architecture.png" width="550px"></p>
+<p align="center"><img src="images/aws-csi-architecture.png" width="650px"></p>
 
 #
 
@@ -1738,25 +1738,25 @@ Quais variedades de armazenamento você precisará?
 
 **Arquitetura híbrida de aplicativos Web**
 
-<p align="center"><img src="images/aws-hybrid-web.png" width="550px"></p>
+<p align="center"><img src="images/aws-hybrid-web.png" width="650px"></p>
 
 #
 
 **Arquitetura híbrida modificada**
 
-<p align="center"><img src="images/aws-modified-hybrid.png" width="550px"></p>
+<p align="center"><img src="images/aws-modified-hybrid.png" width="650px"></p>
 
 #
 
 **Arquitetura de microsserviços de contêiner**
 
-<p align="center"><img src="images/aws-container-microservices.png" width="550px"></p>
+<p align="center"><img src="images/aws-container-microservices.png" width="650px"></p>
 
 #
 
 **Arquitetura de microsserviços sem servidor**
 
-<p align="center"><img src="images/aws-serverless-microservices.png" width="550px"></p>
+<p align="center"><img src="images/aws-serverless-microservices.png" width="650px"></p>
 
 #
 
@@ -1768,4 +1768,4 @@ Quais variedades de armazenamento você precisará?
 
 **Arquitetura de Big Data: Solução**
 
-<p align="center"><img src="images/aws-bigdata-remember.png" width="550px"></p>
+<p align="center"><img src="images/aws-bigdata-remember.png" width="650px"></p>
