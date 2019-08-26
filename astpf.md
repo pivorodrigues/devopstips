@@ -1747,3 +1747,9 @@ Quais variedades de armazenamento você precisará?
 <p align="center"><img src="images/aws-modified-hybrid.png" width="550px"></p>
 
 #
+
+**Arquitetura de microsserviços de contêiner**
+
+<p align="center"><img src="images/aws-container-microservices.png" width="550px"></p>
+
+#
