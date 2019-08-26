@@ -1753,3 +1753,9 @@ Quais variedades de armazenamento você precisará?
 <p align="center"><img src="images/aws-container-microservices.png" width="550px"></p>
 
 #
+
+**Arquitetura de microsserviços sem servidor**
+
+<p align="center"><img src="images/aws-serverless-microservices.png" width="550px"></p>
+
+#
