@@ -1819,3 +1819,6 @@ Quais variedades de armazenamento você precisará?
 - Os SAs conhecem a plataforma e os serviços da AWS
 
 - Um SA atua no melhor interesse em longo prazo do cliente
+
+<p align="center">**Receita com serviços profissionais no longo prazo = sucesso**</p>
+<p align="center">**Arquitetos de soluções têm uma estratégia de longo prazo**</p>
