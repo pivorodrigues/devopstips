@@ -1739,3 +1739,11 @@ Quais variedades de armazenamento você precisará?
 **Arquitetura híbrida de aplicativos Web**
 
 <p align="center"><img src="images/aws-hybrid-web.png" width="550px"></p>
+
+#
+
+**Arquitetura híbrida modificada**
+
+<p align="center"><img src="images/aws-modified-hybrid.png" width="550px"></p>
+
+#
