@@ -40,4 +40,8 @@ _Based on Linux Academy's Course DevOps Essentials_
 
 - Agile seeks to develop software in small, frequent cycles in order to deliver functionality to customers quickly and quickly respond to changing business goals
 
-- DevOps and Agile often go hand-in-hand  
+- DevOps and Agile often go hand-in-hand
+
+#
+
+## DevOps Culture
