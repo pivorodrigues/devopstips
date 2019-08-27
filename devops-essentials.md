@@ -32,4 +32,12 @@ _Based on Linux Academy's Course DevOps Essentials_
 
 - DevOps is NOT a product
 
-- DevOps is not a job title  
+- DevOps is not a job title
+
+**Agile Software Development**
+
+- DevOps grew out of Agile software development movement
+
+- Agile seeks to develop software in small, frequent cycles in order to deliver functionality to customers quickly and quickly respond to changing business goals
+
+- DevOps and Agile often go hand-in-hand  
