@@ -45,3 +45,37 @@ _Based on Linux Academy's Course DevOps Essentials_
 #
 
 ## DevOps Culture
+
+**The Goals of DevOps**
+
+- DevOps Culture
+
+  - DevOps Culture is about **collaboration** between Dev and Ops.
+
+  - Under the traditional separation between Dev and Ops, Dev and Ops have **different** and **opposing** goals.
+
+  - With DevOps, Dev and Ops work together and share the same goals.
+
+- With DevOps:
+
+  - Dev and Ops are playing on the same team
+
+  - Dev and Ops share the same goals
+
+  - The goals include things like:
+
+    - Fast time-to-market (TTM)
+
+    - Few production failures
+
+    - Immediate recovery from failures
+
+- DevOps is about Dev and Ops work together.
+
+- In a DevOps culture, devs care about stability as well as speed, and ops care about speed as well as stability.
+
+- The traditional roles of developers and operational engineers can even become blurred under DevOps.
+
+- Instead of "throwing code over the wall", dev and ops work together to create and use tools and processes that support both speed and stability.
+
+- DevOps recognizes that dev and ops are more powerfull when they are together.
