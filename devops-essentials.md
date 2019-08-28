@@ -88,7 +88,7 @@ _Based on Linux Academy's Course DevOps Essentials_
 
 **A Story of DevOps vs Traditional Silos**
 
-- The Story of Some Code: Traditional Silos
+- The Story of Some Code: **Traditional Silos**
 
   - Devs write code
 
@@ -102,11 +102,11 @@ _Based on Linux Academy's Course DevOps Essentials_
 
   - Oh No! There´s a problem. Ops throws it back over the wall to Dev
 
-  - Each group´s domain is a "black box" to the other groups
+    - Each group´s domain is a "black box" to the other groups
 
-  - _"Our systems are fine; It´s your code!"_
+    - _"Our systems are fine; It´s your code!"_
 
-  - _"But the code works on my machine!"_
+    - _"But the code works on my machine!"_
 
 - Traditional Silos - What Went Wrong?
 
@@ -139,3 +139,63 @@ _Based on Linux Academy's Course DevOps Essentials_
   - It takes a long time to identify and fix problems
 
   <p align="center"><img src="images/devops-traditional-silos.png" width="550px"></p>
+
+- The Story of Some Code: **DevOps**
+
+  - Devs write code
+
+  - Code commit triggers automated build, integration, and tests
+
+  - QA can get their hands on it almost immediately
+
+  - Once it is ready, kick off an automated deployment to production
+
+  - Since everything is automated, it is much easier to deploy while keeping things stable
+
+  - Deployments can occur much more frequently, getting features into the hands of customers faster
+
+  - Oh no! The latest development broke something in production!
+
+    - Fortunately, automated monitoring notified the team immediately
+
+    - The team does a rollback by deploying the previous working version, fixing the problem quickly
+
+    - An hour later, the dev team was able to deploy a fixed version of the new code
+
+  - DevOps - What Went Right?
+
+    - Dev and Ops worked together to build a robust way of changing code quickly and reliably:
+
+      - Both Dev and Ops worked together to prioritize both speed of delivery and stability
+
+    - Automation led to consistency:
+
+      - Building, testing, and deploying happened the same way every time
+
+      - Building, testing, and deploying happened much more quickly and more often
+
+    - Good monitoring, plus the swift deployment process, ensured problems could be fixed even before users noticed them:
+
+      - Dev and Ops worked together up front to build good processes
+
+      - Even though a code change caused a problem, users experienced little or no downtime
+
+  - Why do DevOps?
+
+    - Happier teams:
+
+      - Tech employees tend to be happier doing DevOps than under traditional silos
+
+      - More time innovating and less time putting out fires
+
+      - Devs don´t feel like they have to fight to get their work out there
+
+      - Operations people don´t have to fight Dev to keep the system stable
+
+    - Happier customers:
+
+      - DevOps lets you give customers the features they want quickly
+
+      - And you don´t have to sacrifice stability to do it
+
+      <p align="center"><img src="images/devops-dev-ops.png" width="550px"></p>
