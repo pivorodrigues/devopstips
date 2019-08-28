@@ -24,6 +24,8 @@ _Based on Linux Academy's Course DevOps Essentials_
 
   - DevOps is a grassroots movement, by practitioners, for practitioners
 
+#
+
 **DevOps Is NOT...**
 
 - DevOps is NOT tools, but **Tools** are essential to success in DevOps
@@ -33,6 +35,8 @@ _Based on Linux Academy's Course DevOps Essentials_
 - DevOps is NOT a product
 
 - DevOps is not a job title
+
+#
 
 **Agile Software Development**
 
@@ -80,6 +84,8 @@ _Based on Linux Academy's Course DevOps Essentials_
 
 - DevOps recognizes that dev and ops are more powerfull when they are together.
 
+#
+
 **A Story of DevOps vs Traditional Silos**
 
 - The Story of Some Code: Traditional Silos
@@ -121,3 +127,15 @@ _Based on Linux Academy's Course DevOps Essentials_
     - Dev is measured by delivering features, which means deploying changes
 
     - Ops is measured by uptime, but changes are bad for stability
+
+- Downsides of Traditional Silos
+
+  - "Black boxes" lead to finger pointing
+
+  - Lengthy process means slow time-to-market
+
+  - Lack of automation means things like builds and deployments are inconsistent
+
+  - It takes a long time to identify and fix problems
+
+  <p align="center"><img src="images/devops-traditional-silos.png" width="550px"></p>
