@@ -79,3 +79,45 @@ _Based on Linux Academy's Course DevOps Essentials_
 - Instead of "throwing code over the wall", dev and ops work together to create and use tools and processes that support both speed and stability.
 
 - DevOps recognizes that dev and ops are more powerfull when they are together.
+
+**A Story of DevOps vs Traditional Silos**
+
+- The Story of Some Code: Traditional Silos
+
+  - Devs write code
+
+  - _"throw it over the wall"_ to QA
+
+  - Code bounces back and forth between Dev and QA as QA discovers problems and Devs fix them
+
+  - Finally, it is ready for production
+
+  - QA/Dev _"throws the code over the wall"_ to Operations
+
+  - Oh No! There´s a problem. Ops throws it back over the wall to Dev
+
+  - Each group´s domain is a "black box" to the other groups
+
+  - _"Our systems are fine; It´s your code!"_
+
+  - _"But the code works on my machine!"_
+
+- Traditional Silos - What Went Wrong?
+
+  - Dev and Ops are black boxes to each other, which leads to finger pointing:
+
+    - Because Ops is a black box, Devs don´t really trust them
+
+    - And Ops doesn´t really trust Dev
+
+  - Dev and Ops have different priorities, which pits them against each other:
+
+    - Ops views Devs as breaking stability
+
+    - Devs see ops as an obstacle to delivering their code
+
+  - Even if they WANT to work together:
+
+    - Dev is measured by delivering features, which means deploying changes
+
+    - Ops is measured by uptime, but changes are bad for stability
