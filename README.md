@@ -125,8 +125,6 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
     - [How To Query Prometheus on Ubuntu 14.04 Part 2](https://www.digitalocean.com/community/tutorials/how-to-query-prometheus-on-ubuntu-14-04-part-2)
     - [Querying Prometheus (Basics)](https://prometheus.io/docs/prometheus/latest/querying/basics/)
 
-#
-
 ## 9. Cloud Providers
 
 ### **AWS**
@@ -154,8 +152,6 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
   - [Amazon Web Services - A practical guide](https://github.com/open-guides/og-aws)
   - [AWS Transit Gateway Routing in Multiple Accounts](https://medium.com/driven-by-code/aws-transit-gateway-routing-in-multiple-accounts-713b10ca7b34)  
 
-#
-
 ## 10. Big Data, Data Science and Machine Learning
 
 ### Data Science
@@ -174,7 +170,6 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 - **[Coursera] Hadoop Platform and Application Framework**
   - [My Notes](hpaf.md) <img src="images/Check-png.png" width="20px">
   - [Big Data in Little Spaces: Hadoop and Spark At The Edge](https://www.nextplatform.com/2019/04/09/big-data-in-little-spaces-hadoop-and-spark-at-the-edge/)
-#
 
 ## 11. DevOps and SRE Culture and Concepts
 
