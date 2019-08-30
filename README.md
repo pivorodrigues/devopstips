@@ -144,11 +144,26 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 
 ### **AWS**
 
-- **AWS Certified Solutions Architect**
+- **AWS Certified Solutions Architect - Preparation**
   - [A Cloud Guru - Exam Tips](acsa.md) <img src="images/acg.png" width="30px">
   - [AWS Solutions Training for Partners: Foundations (Notes)](astpf.md) <img src="images/amazon-web-services-logo.png" width="30px">
+  - [Why and How I got 5/5 AWS Certifications in six months](https://medium.com/@anurag.dimri/why-and-how-i-got-5-5-aws-certifications-d72ea751dae2)
+  - _AWS Official FAQ's_
+    - [Amazon Elastic Compute Cloud - EC2](https://aws.amazon.com/pt/ec2/)
+    - [Amazon Elastic Load Balancing - ELB](https://aws.amazon.com/pt/elasticloadbalancing/)
+    - [Amazon Relational Database Service - RDS](https://aws.amazon.com/pt/rds/)
+    - [Amazon Simple Storage Service - S3](https://aws.amazon.com/pt/s3/)
+    - [Amazon Simple Queue Service - SQS](https://aws.amazon.com/pt/sqs/)
+    - [Amazon Virtual Private Cloud - VPC](https://aws.amazon.com/pt/vpc/)
+
+- **AWS Certified Developer Associate - Preparation**
+
+  - [How To Pass The AWS Certified Developer Associate Exam](https://medium.com/faun/passing-the-aws-certified-developer-associate-exam-c83c894cb780)
+
+- **Amazon AWS Concepts and Resources**
+
   - [Amazon Web Services - A practical guide](https://github.com/open-guides/og-aws)
-  - [AWS Transit Gateway Routing in Multiple Accounts](https://medium.com/driven-by-code/aws-transit-gateway-routing-in-multiple-accounts-713b10ca7b34)
+  - [AWS Transit Gateway Routing in Multiple Accounts](https://medium.com/driven-by-code/aws-transit-gateway-routing-in-multiple-accounts-713b10ca7b34)  
 
 #
 
