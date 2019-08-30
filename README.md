@@ -151,12 +151,12 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 
 #
   - **AWS Official FAQ's (To Certified Solutions Architect Exam)**
-    - _[Amazon Elastic Compute Cloud - EC2](https://aws.amazon.com/pt/ec2/)
+    - _[Amazon Elastic Compute Cloud - EC2](https://aws.amazon.com/pt/ec2/)_
     - [Amazon Elastic Load Balancing - ELB](https://aws.amazon.com/pt/elasticloadbalancing/)
     - [Amazon Relational Database Service - RDS](https://aws.amazon.com/pt/rds/)
     - [Amazon Simple Storage Service - S3](https://aws.amazon.com/pt/s3/)
     - [Amazon Simple Queue Service - SQS](https://aws.amazon.com/pt/sqs/)
-    - [Amazon Virtual Private Cloud - VPC](https://aws.amazon.com/pt/vpc/)_
+    - [Amazon Virtual Private Cloud - VPC](https://aws.amazon.com/pt/vpc/)
 
 #
 
