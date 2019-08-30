@@ -161,11 +161,9 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 #
 
 - **AWS Certified Developer Associate - Preparation**
-
   - [How To Pass The AWS Certified Developer Associate Exam](https://medium.com/faun/passing-the-aws-certified-developer-associate-exam-c83c894cb780)
 
 - **Amazon AWS Concepts and Resources**
-
   - [Amazon Web Services - A practical guide](https://github.com/open-guides/og-aws)
   - [AWS Transit Gateway Routing in Multiple Accounts](https://medium.com/driven-by-code/aws-transit-gateway-routing-in-multiple-accounts-713b10ca7b34)  
 
