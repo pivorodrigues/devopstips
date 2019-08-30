@@ -10,8 +10,6 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 - **GIT** <img src="images/Check-png.png" width="20px">
   - [My Notes](git.md)
 
-#
-
 ## 1. Learn a Programming Language
 
 - **Developer Skills**
@@ -37,15 +35,11 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
   - [Modern Django — Part 1: Project Refactor and Meeting the Django Settings API](https://medium.com/@djstein/modern-django-part-1-project-refactor-and-meeting-the-django-settings-api-d2784efb606f)
   - [Modern Django — Part 2: REST APIs, Apps, and Django REST Framework](https://medium.com/@djstein/modern-django-part-2-rest-apis-apps-and-django-rest-framework-ea0cac5ab104)
 
-#
-
 ## 2. Understand different OS Concepts
 
 - **Process Management**
   - [lsof <img src="images/Check-png.png" width="20px">](https://medium.com/@copyconstruct/lsof-f2b224eee7b5)
   - [A Guide to the Linux “Top” Command](https://www.booleanworld.com/guide-linux-top-command/)
-
-#
 
 ## 4. Networking and Security
 
@@ -61,9 +55,6 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 - **Cisco CCNA Datacenter Concepts**
   - [My Notes](ccnadc.md)
 
-
-#
-
 ## 5. What is and how to setup a ______
 
 ### 5.1. Web Server
@@ -73,8 +64,6 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
   - [Nginx Admin's Handbook](https://github.com/trimstray/nginx-admins-handbook)
   - [Dynamic DNS Resolution in Nginx](https://medium.com/driven-by-code/dynamic-dns-resolution-in-nginx-22133c22e3ab)
   - [Logging HTTP Request Metadata With Nginx, Lua, Logstash, and Elasticsearch](https://dzone.com/articles/logging-http-request-metadata-with-nginx-lua-logst)
-
-#
 
 ## 6. Learn Infrastructure as Code
 
@@ -101,8 +90,6 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
   - **Terraform**
     - [My Notes](terraform.md)
     - [Terraform CLI Cheat Sheet](https://dzone.com/articles/terraform-cli-cheat-sheet)
-
-#
 
 ## 7. Learn some CI/CD Tool
 
