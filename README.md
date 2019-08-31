@@ -133,6 +133,7 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
   - [A Cloud Guru - Exam Tips](acsa.md) <img src="images/acg.png" width="30px">
   - [AWS Solutions Training for Partners: Foundations (Notes)](astpf.md) <img src="images/amazon-web-services-logo.png" width="30px">
   - [Why and How I got 5/5 AWS Certifications in six months](https://medium.com/@anurag.dimri/why-and-how-i-got-5-5-aws-certifications-d72ea751dae2)
+  - [AWS Certified Solutions Architect - Exam Guide](https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS_Certified_Solutions_Architect_Associate_Feb_2018_%20Exam_Guide_v1.5.2.pdf)
 
 #
   - **AWS Official FAQ's (To Certified Solutions Architect Exam)**
