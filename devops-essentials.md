@@ -239,3 +239,41 @@ _Based on Linux Academy's Course DevOps Essentials_
   - Build automation is **portable** - The build can be done the same way on any machine. Anyone on the team can build on their machine, as well as on shared build server. Building code doesn't depend on specific people or machines.
 
   - Build automation is more **reliable** - There will be fewer problems caused by bad builds.
+
+#
+
+**Continuous Integration**
+
+- What is Continuous Integration?
+
+  - **Continuous Integration (CI):** the practie of frequently merging code changes done by developers.
+
+  - Traditionally, developers would work separately, perhaps for weeks at a time, and the merge all of their work together at the end in one large effort.
+
+  - Continuous integration means merging constantly throughout the day, usually with the execution of automated tests to detect any problems caused by merge.
+
+  - Merging all the time could be a lot of work, so to avoid that it should be **automated**!
+
+- What does Continuous Integration look like?
+
+  - Continuous integration is usually done with the help of a **CI server**.
+
+  - When a developer commits a code change, the CI server sees the change and automatically performs a build, also executing automated tests.
+
+  - This occurs multiple times a day.
+
+  - If there is any problem with the build, the CI server immediately and automatically notifies the developers.
+
+  - If anyone commits code that "breaks the build" they are responsible for fixing the problem or rolling back their changes immediately so that other developers can continue working.
+
+- Why do Continuous Integration?
+
+  - **Early detection** of certain types of bugs - If code doesn't compile or an automated test fails, the developers are notified and can fix it immediately. The sooner the bugs are detected, the easier they are to fix.
+
+  - **Eliminate the scramble** to integrate just before a big release - The code is constantly merged, so there is no need to do a big merge at the end.
+
+  - Makes **frequent releases** possible - Code is always in a state that can be deployed to production.
+
+  - Makes **continuous testing** possible - Since the code can always be run, QA testers can get their hands on it all throughout the development process, not just at the end.
+
+  - Encourages **good coding practices** - Frequent commits encourages simple, modular code.
