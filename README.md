@@ -135,14 +135,13 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
   - [Why and How I got 5/5 AWS Certifications in six months](https://medium.com/@anurag.dimri/why-and-how-i-got-5-5-aws-certifications-d72ea751dae2)
   - [AWS Certified Solutions Architect - Exam Guide](https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS_Certified_Solutions_Architect_Associate_Feb_2018_%20Exam_Guide_v1.5.2.pdf)
 
-#
-  - **AWS Official FAQ's (To Certified Solutions Architect Exam)**
-    - _[Amazon Elastic Compute Cloud - EC2](https://aws.amazon.com/pt/ec2/)_
-    - _[Amazon Elastic Load Balancing - ELB](https://aws.amazon.com/pt/elasticloadbalancing/)_
-    - _[Amazon Relational Database Service - RDS](https://aws.amazon.com/pt/rds/)_
-    - _[Amazon Simple Storage Service - S3](https://aws.amazon.com/pt/s3/)_
-    - _[Amazon Simple Queue Service - SQS](https://aws.amazon.com/pt/sqs/)_
-    - _[Amazon Virtual Private Cloud - VPC](https://aws.amazon.com/pt/vpc/)_
+- **AWS Official FAQ's (To Certified Solutions Architect Exam)**
+  - _[Amazon Elastic Compute Cloud - EC2](https://aws.amazon.com/pt/ec2/)_
+  - _[Amazon Elastic Load Balancing - ELB](https://aws.amazon.com/pt/elasticloadbalancing/)_
+  - _[Amazon Relational Database Service - RDS](https://aws.amazon.com/pt/rds/)_
+  - _[Amazon Simple Storage Service - S3](https://aws.amazon.com/pt/s3/)_
+  - _[Amazon Simple Queue Service - SQS](https://aws.amazon.com/pt/sqs/)_
+  - _[Amazon Virtual Private Cloud - VPC](https://aws.amazon.com/pt/vpc/)_
 
 #
 
