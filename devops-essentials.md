@@ -1,8 +1,8 @@
-# DevOps Essentials
+# <img src="images/la.png" width="30px"> DevOps Essentials <img src="images/la.png" width="30px">
 
 _Based on Linux Academy's Course DevOps Essentials_
 
-## Introduction
+## Introduction <img src="images/la.png" width="30px">
 
 **What is DevOps?**
 
@@ -44,7 +44,7 @@ _Based on Linux Academy's Course DevOps Essentials_
 
 - DevOps and Agile often go hand-in-hand
 
-## DevOps Culture
+## DevOps Culture <img src="images/la.png" width="30px">
 
 **The Goals of DevOps**
 
@@ -196,7 +196,7 @@ _Based on Linux Academy's Course DevOps Essentials_
 
       <p align="center"><img src="images/devops-dev-ops.png" width="550px"></p>
 
-## DevOps Concepts an Practices
+## DevOps Concepts an Practices <img src="images/la.png" width="30px">
 
 **Build Automation**
 
