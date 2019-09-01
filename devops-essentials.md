@@ -108,7 +108,7 @@ _Based on Linux Academy's Course DevOps Essentials_
 
     - _"But the code works on my machine!"_
 
-- Traditional Silos - What Went Wrong?
+- _Traditional Silos - What Went Wrong?_
 
   - Dev and Ops are black boxes to each other, which leads to finger pointing:
 
@@ -128,7 +128,7 @@ _Based on Linux Academy's Course DevOps Essentials_
 
     - Ops is measured by uptime, but changes are bad for stability
 
-- Downsides of Traditional Silos
+- _Downsides of Traditional Silos_
 
   - "Black boxes" lead to finger pointing
 
@@ -162,7 +162,7 @@ _Based on Linux Academy's Course DevOps Essentials_
 
     - An hour later, the dev team was able to deploy a fixed version of the new code
 
-  - DevOps - What Went Right?
+  - _DevOps - What Went Right?_
 
     - Dev and Ops worked together to build a robust way of changing code quickly and reliably:
 
@@ -180,7 +180,7 @@ _Based on Linux Academy's Course DevOps Essentials_
 
       - Even though a code change caused a problem, users experienced little or no downtime
 
-  - Why do DevOps?
+  - _Why do DevOps?_
 
     - Happier teams:
 
@@ -206,7 +206,7 @@ _Based on Linux Academy's Course DevOps Essentials_
 
 **Build Automation**
 
-- What is build automation?
+- _What is build automation?_
 
   - **Build automation:** automation of the process of preparing code for deployment to a live environment.
 
@@ -216,7 +216,7 @@ _Based on Linux Academy's Course DevOps Essentials_
 
   - The tools of build automation often differ depending on what programming languages and frameworks are used, but, they have one thing in common: **automation**!
 
-- What does build automation look like?  
+- _What does build automation look like?_
 
   - Usually, build automation looks like running a command-line tool that builds code using configuration files and/or scripts that are treated as part of the source code.
 
@@ -228,7 +228,7 @@ _Based on Linux Academy's Course DevOps Essentials_
 
   - Your code should be able to build on someone else's machine the same way it builds on yours.
 
-- Why do build automation?
+- _Why do build automation?_
 
   - Build automation is **fast** - Automation handles tasks that would otherwise need to be done manually.
 
@@ -244,7 +244,7 @@ _Based on Linux Academy's Course DevOps Essentials_
 
 **Continuous Integration**
 
-- What is Continuous Integration?
+- _What is Continuous Integration?_
 
   - **Continuous Integration (CI):** the practie of frequently merging code changes done by developers.
 
@@ -254,7 +254,7 @@ _Based on Linux Academy's Course DevOps Essentials_
 
   - Merging all the time could be a lot of work, so to avoid that it should be **automated**!
 
-- What does Continuous Integration look like?
+- _What does Continuous Integration look like?_
 
   - Continuous integration is usually done with the help of a **CI server**.
 
@@ -266,7 +266,7 @@ _Based on Linux Academy's Course DevOps Essentials_
 
   - If anyone commits code that "breaks the build" they are responsible for fixing the problem or rolling back their changes immediately so that other developers can continue working.
 
-- Why do Continuous Integration?
+- _Why do Continuous Integration?_
 
   - **Early detection** of certain types of bugs - If code doesn't compile or an automated test fails, the developers are notified and can fix it immediately. The sooner the bugs are detected, the easier they are to fix.
 
@@ -277,3 +277,51 @@ _Based on Linux Academy's Course DevOps Essentials_
   - Makes **continuous testing** possible - Since the code can always be run, QA testers can get their hands on it all throughout the development process, not just at the end.
 
   - Encourages **good coding practices** - Frequent commits encourages simple, modular code.
+
+#
+
+**Continuous Delivery and Continuous Deployment**
+
+- _What is Continuous Delivery?_
+
+  - **Continuous Delivery (CD):** the practice of continuously maintaining code in a deployable state.
+
+  - Regardless of whether or not the decision is made to deploy, the code is always in a state that is able to be deployed.
+
+  - Some use the terms continuous delivery and continuous deployment interchageably, or simply use the abbreviation CD.
+
+- _What is Continuous Deployment?_
+
+  - **Continuous Deployment:** the practice of frequently deploying small code changes to production.
+
+  - Continuous delivery is keeping the code in a deployable state. Continuous deployment is actually doing the deployment frequently.
+
+  - Some companies that do continuous deployment deploy to production multiple times a day.
+
+  - There is no standard for how often you should deploy, but in general, the more often you deploy the better!
+
+  - With continuous deployment, deployments to production are routine and commonplace. They are not a big, scary event.
+
+- _What does Continuous Delivery and Continuous Deployment look like?_
+
+  - Each version of the code goes through a series of stages such as automated build, automated testing, and manual acceptance testing. The result of this process is an artifact or package that is able to be deployed.
+
+  - When the decision is made to deploy, the deployment is **automated**. What the automated deployment looks like depends on the architecture, but no matter what the architecture is, the deployment is automated.
+
+  - If a deployment causes a problem, it is quickly and reliably **rolled back** using an automated process (hopefully before a customer even noices the problem!).
+
+  - Rollbacks aren't a big deal because the developers can redeploy a fixed version as soon as they have one available.
+
+  - No one grips their desk in fear during a deployment, even if the deployment does cause a problem.
+
+- _Why do Continuous Delivery and Continuous Deployment?_
+
+  - **Faster time-to-marke** - Get features into the hands of customers more quickly rather than waiting for a lengthy deployment process that doesn't happen often.
+
+  - **Fewer problems caused by the deployment process** - Since the deployment process is frequently used, any problems with the process are more easily discovered.
+
+  - **Lower risk** - The more changes are deployed at once, the higher the risk. Frequent deployments of only a few changes are less risky.
+
+  - **Reliable rollbacks** - Robust automation means rollbacks are a reliable way to ensure stability for customers, and rollbacks don't hurt developers because they can roll forward with a fix as soon as they have one.
+
+  - **Fearless deployments** - Robust automation plus the ability to rollback quickly means deployments are commonplace, everyday events rather than big, scary events.    
