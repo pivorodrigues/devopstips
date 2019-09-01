@@ -2,8 +2,6 @@
 
 _Based on Linux Academy's Course DevOps Essentials_
 
-#
-
 ## Introduction
 
 **What is DevOps?**
@@ -45,8 +43,6 @@ _Based on Linux Academy's Course DevOps Essentials_
 - Agile seeks to develop software in small, frequent cycles in order to deliver functionality to customers quickly and quickly respond to changing business goals
 
 - DevOps and Agile often go hand-in-hand
-
-#
 
 ## DevOps Culture
 
@@ -199,8 +195,6 @@ _Based on Linux Academy's Course DevOps Essentials_
       - And you don´t have to sacrifice stability to do it
 
       <p align="center"><img src="images/devops-dev-ops.png" width="550px"></p>
-
-#
 
 ## DevOps Concepts an Practices
 
