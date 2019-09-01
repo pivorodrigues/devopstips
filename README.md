@@ -174,7 +174,7 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 ## 11. DevOps and SRE Culture and Concepts
 
 - **DevOps**
-  - [DevOps Essentials](devops-essentials.md) <img src="images/la.png" width="30px">
+  - [DevOps Essentials](devops-essentials.md) <img src="images/la.png" width="20px">
   - [DevOps Launch Checklist](https://sysadmincasts.com/episodes/70-devops-launch-checklist)
 
 - **SRE**
