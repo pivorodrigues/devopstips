@@ -1,6 +1,6 @@
 # <img src="images/acg.png" width="30px"> AWS Certified Solutions Architecht - A Cloud Guru Exam Tips <img src="images/acg.png" width="30px">
 
-## Exam Blue Print
+## Chapter 1: Introduction - Exam Blue Print
 
 - 130 minutes in lenght
 
@@ -18,17 +18,19 @@
 
 #
 
-## The 10.000 foot overview 2019 (Exam Tips)
+## Chapter 2: AWS - 10.000 Foot Overview (Exam Tips)
 
-- **Region** - A Region is a geographical area. Is a physical location in the world which consists of two or more Availability Zones (AZ´s).
+**Understand the difference between a Region, an Availability Zone (AZ) and an Edge Location**
 
-- **Availability Zone** - Is one or more discrete data centers, each with redundant power, networking and connectivity, housed in separate facilities.
+- A **Region** is a physical location in the world which consists of two or more Availability Zones (AZ's).
 
-- **Edge Location** - Are endpoints for AWS which are used for caching content. Typically this consists of CloudFront, Amazon's Content Delivery Network (CDN). *PS: There are many more edge locations than regions*
+- An **Availability Zone** is one or more discrete data centers, each with redundant power, networking and connectivity, housed in separate facilities.
+
+- **Edge Locations** are endpoints for AWS which are used for caching content. Typically this consists of CloudFront, Amazon's Content Delivery Network (CDN). *PS: There are many more edge locations than regions*
 
 #
 
-## What Do I Need To Know To Pass My Solutions Architect Exam?
+**What Do I Need To Know To Pass My Solutions Architect Exam?**
 
   - **Security, Identity & Compliance**
 
