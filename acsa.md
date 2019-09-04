@@ -16,7 +16,6 @@
 
 - Scenario based questions
 
-#
 
 ## Chapter 2: AWS - 10.000 Foot Overview (Exam Tips)
 
@@ -58,7 +57,6 @@
 
     - Route 53
 
-#
 
 ## Chapter 3: Identity Access Management & S3
 
