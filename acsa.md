@@ -59,3 +59,21 @@
     - Route 53
 
 #
+
+## Chapter 3: Identity Access Management & S3
+
+**Identity Access Management 101 - Exam Tips**
+
+- **IAM is universal.** It does not apply to regions at this time.
+
+- The **"root account"** is simply the account created when first setup your AWS account. It has complete Admin access.
+
+- New users have **NO permissions** when first created.
+
+- New Users are assigned **Access Key ID** & **Secret Access Keys** when first created.
+
+- **These are not the same as password**. You cannot use tha Access Key ID & Secret Access via to login into the console. You can use this to access AWS via the APIs and Command Line, however.
+
+- Always setup **Multifactor Authentication** on your root account.
+
+- You can create and customise your own password rotation policies.
