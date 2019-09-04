@@ -318,4 +318,54 @@ _Based on Linux Academy's Course DevOps Essentials_
 
   - **Reliable rollbacks** - Robust automation means rollbacks are a reliable way to ensure stability for customers, and rollbacks don't hurt developers because they can roll forward with a fix as soon as they have one.
 
-  - **Fearless deployments** - Robust automation plus the ability to rollback quickly means deployments are commonplace, everyday events rather than big, scary events.    
+  - **Fearless deployments** - Robust automation plus the ability to rollback quickly means deployments are commonplace, everyday events rather than big, scary events.
+
+#
+
+**Infrastructure as Code**
+
+- _What is Infrastructure as Code?_
+
+  - **Infrastructure as Code** (IAC): manage and provision infrastructure through code and automation.
+
+  - With Infrastructure as Code, instead of doing things manually, you use automation and code to create and change:
+
+    - Servers
+
+    - Instances
+
+    - Environments
+
+    - Containers
+
+    - Other infrastructure
+
+- _What does Infrastructure as Code look like?_
+
+  - Without Infrastructure as Code you might:
+
+    - ssh into a host
+
+    - Issue a series of commands to perform the change
+
+  - With Infrastructure as Code:
+
+    - Change some code or configuration files that can be used with an automation tool to perform changes
+
+    - Commit them to source control
+
+    - Use an automation tool to enact the changes defined in the code and/or configuration files
+
+  - With IaC, provisioning new resources and changing existing resources are both done through automation
+
+- _Why do Infrastructure as Code?_
+
+  - **Consistency** in creation and management of resources - The same automation will run the same way every time.
+
+  - **Reusability** - Code can be used to make same change consistently across multiple hosts and can be used again in the future.
+
+  - **Scalability** - Need a new instance? You can have one configured exactly the same way as the existing instances in minutes (or seconds).
+
+  - **Self-documenting** - With IaC, changes to infrastructure document themselves to a degree. The way a server is configured can be viewed in source control, rather than being a matter of who logged in to the server and did something.
+
+  - **Simplify the complexity** - Complex infrastructure can be stood up quickly once they are defined as code. A group of several interdependent servers can be provisioned on demand.
