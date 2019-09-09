@@ -75,3 +75,13 @@
 - Always setup **Multifactor Authentication** on your root account.
 
 - You can create and customise your own password rotation policies.
+
+_Resources:_
+
+  - [AWS DOC: Create a Billing Alarm](https://docs.aws.amazon.com/pt_br/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html)
+
+  - [AWS DOC: Create a Free Tier Billing Alert](https://aws.amazon.com/pt/about-aws/whats-new/2017/12/aws-free-tier-usage-alerts-automatically-notify-you-when-you-are-forecasted-to-exceed-your-aws-service-usage-limits/)
+
+#
+
+  
