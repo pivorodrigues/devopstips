@@ -84,6 +84,60 @@ _Resources:_
 
 #
 
+**S3 101 - Exam Tips**
+
+- Remember that S3 is **Object-based**: i.e. allows you to upload files.
+
+- Files can be from 0 Bytes to 5 TB.
+
+- There is unlimited storage.
+
+- Files are stored in Buckets (It´s basically a folder in the cloud).
+
+- **S3 is a universal namespace**. That is, names must be unique globally.
+
+- https://s3-eu-west-1.amazonaws.com/acloudguru
+
+- **Not suitable to install an operating system on**.
+
+- Successful upload will generate a HTTP 200 status code.
+
+- You can turn on **MFA Delete**.
+
+- **The Key Fundamentals of S3 Are:**
+
+  - Key (This is simply the name of the object).
+
+  - Value (This is simply the data and is made up of a sequence of bytes).
+
+  - Version ID (Important for versioning).
+
+  - Metadata (Data about data you are storing).
+
+  - Subresources:
+
+    - Access Control Lists
+
+    - Torrent
+
+- Read after Write consistency for PUTS of new Objects.
+
+- Eventual Consistency for overwrite PUTS and DELETES (can take some time to propagate).
+
+- **1. S3 Standard**: 99.99% availability, 99.999999999% durability, stored redundantly across multiple devices in multiple facilities, and is designed to sustain the loss of 2 facilities concurrently.
+
+- **2. S3 - IA** _(Infrequently Accessed)_: For data that is accessed less frequently, but requires rapid access when needed. Lower fee than S3, but you are charged a retrieval fee.
+
+- **3. S3 One Zone - IA**: For where you want a lower-cost option for Infrequently accessed data, but do not require the multiple Availability Zone data resilience.
+
+- **4. S3 - Intelligent Tiering**: Designed to optimize costs by automatically moving data to the most cost-effective access tier, without performance impact or operational overhead.
+
+- **S3 Glacier**: S3 Glacier is a secure, durable, and low-cost storage class for data archiving. Retrieval time configurable from minutes to hours.
+
+- **S3 Glacier Deep Archive**: S3 Glacier Deep Archive is Amazon S3's lowest-cost storage class where a retrieval time of 12 hours is acceptable.
+
+#
+
 **S3 Bucket Lab - Exam Tips**
 
 - **Buckets are a universal name space**
