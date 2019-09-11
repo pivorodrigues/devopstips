@@ -386,15 +386,15 @@ _Based on Linux Academy's Course DevOps Essentials_
 
 - _What does Configuration Management look like?_
 
-**Here is an example:**
+  - **Here is an example:**
 
-- You need to upgrade a software package on a bunch of servers:
+    - **You need to upgrade a software package on a bunch of servers:**
 
-  - Without good configuration management, you log into each server and perform the upgrade. However, this can lead to a lot of problems. Perhaps one server was missed due to poor documentation, or perhaps something doesn´t work while the versions are temporarily mismatched between servers, causing a lot of downtime while you do the upgrade.
+      - Without good configuration management, you log into each server and perform the upgrade. However, this can lead to a lot of problems. Perhaps one server was missed due to poor documentation, or perhaps something doesn´t work while the versions are temporarily mismatched between servers, causing a lot of downtime while you do the upgrade.
 
-  - With good configuration management, you define the new version of the software package in a configuration file or tool and automatically roll out the change to all of the servers.
+      - With good configuration management, you define the new version of the software package in a configuration file or tool and automatically roll out the change to all of the servers.
 
-- Configuration management is about managing your configuration somewhere outside of the servers themselves
+    - Configuration management is about managing your configuration somewhere outside of the servers themselves
 
 - _Why do configuration management?_
 
