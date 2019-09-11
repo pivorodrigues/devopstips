@@ -146,4 +146,18 @@ _Resources:_
 
 - S3, S3 - IA, S3 IA (One Zone), Glacier
 
-- Control access to buckets using either **bucket ACL** or using **Bucket Policies**  
+- Control access to buckets using either **bucket ACL** or using **Bucket Policies**
+
+#
+
+**S3 Versioning - Exam Tips**
+
+- Store all versions of an object (including all writes and even if you delete an object).
+
+- Great backup tool.
+
+- Once enabled, Versioning cannot be disabled, only suspended.
+
+- Integrates with Lifecycles rules.
+
+- Versioning's MFA Delete capability, which uses multi-factor authentication, can be used to provide an additional layer of security.
