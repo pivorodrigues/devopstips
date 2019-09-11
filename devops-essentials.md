@@ -405,3 +405,51 @@ _Based on Linux Academy's Course DevOps Essentials_
   - **Maintainability** - A more maintainable infrastructure is easier to change in a stable way.
 
   - **Less configuration drift** - It is easier to keep a standard configuration across a multitude of hosts.
+
+#
+
+**Orchestration**
+
+- _What is Orchestration?_
+
+  - **Orchestration:** automation that supports processes and workflows, such as provisioning resources.
+
+  - With Orchestration, managing a complex infrastructure is less **like being a builder** and more like **conducting an orchestra**.
+
+  - Instead of going out and creating a piece of infrastructure, the conductor simply signals what needs to be done and the orchestra performs it:
+
+    - The conductor does not need to control every detail;
+
+    - The musicians (automation) are able to perform their piece with only a little bit of guidance.
+
+- _What does Orchestration look like?_
+
+  - **Here is an example:**
+
+    - A customer requests more resources for a web service that is about to see a heavy increase in usage due to a planned marketing effort.
+
+    - Instead of manually standing up new nodes, operations engineers use an orchestration tool to request five more nodes to support the service.
+
+    - A few minutes later, the tool has five new nodes up and running.
+
+  - **A much cooler example:**
+
+    - A monitoring tool detects an increased load on the service.
+
+    - An orchestration tool responds to this by spinning up additional resources to handle the load.
+
+    - When the load decreases again, the tool spins the additional resources back down, freeing them up to be used by something else.
+
+    - All of this happens while the engineer is getting coffee.
+
+- _Why do orchestration?_
+
+  - **Scalability** - Resources can be quickly increased or decreased to meet changing needs.
+
+  - **Stability** - Automation tools can automatically respond to fix problems before users see them.
+
+  - **Save time** - Certain tasks and workflows can be automated, freeing up engineers´ time.
+
+  - **Self-Service** - Orchestration can be used to offer resources to customers in a self-service fashion.
+
+  - **Granular insight into resource usage** - Orchestration tools give greater insight into how many resources are being used by what software, services or customers.
