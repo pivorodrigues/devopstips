@@ -369,3 +369,39 @@ _Based on Linux Academy's Course DevOps Essentials_
   - **Self-documenting** - With IaC, changes to infrastructure document themselves to a degree. The way a server is configured can be viewed in source control, rather than being a matter of who logged in to the server and did something.
 
   - **Simplify the complexity** - Complex infrastructure can be stood up quickly once they are defined as code. A group of several interdependent servers can be provisioned on demand.
+
+#
+
+**Configuration Management**
+
+- _What is Configuration Management?_
+
+  - **Configuration Management:** maintaining and changing the state of pieces of infrastructure in a consistent, maintainable, and stable way.
+
+  - Changes always need to happen -  configuration management is about doing them in a maintainable way.
+
+  - Configuration management allows you to minimize **configuration drift** - the small changes that accumulate over time and make systems different from one another and harder to manage.
+
+  - Infrastructure as Code is very beneficial for configuration management.
+
+- _What does Configuration Management look like?_
+
+**Here is an example**
+
+- You need to upgrade a software package on a bunch of servers:
+
+  - Without good configuration management, you log into each server and perform the upgrade. However, this can lead to a lot of problems. Perhaps one server was missed due to poor documentation, or perhaps something doesn´t work while the versions are temporarily mismatched between servers, causing a lot of downtime while you do the upgrade.
+
+  - With good configuration management, you define the new version of the software package in a configuration file or tool and automatically roll out the change to all of the servers.
+
+- Configuration management is about managing your configuration somewhere outside of the servers themselves
+
+- _Why do configuration management?_
+
+  - **Save time** - It takes less time to change the configuration.
+
+  - **Insight** - With good configuration management, you can know about the state of all pieces of a large and complex infrastructure.
+
+  - **Maintainability** - A more maintainable infrastructure is easier to change in a stable way.
+
+  - **Less configuration drift** - It is easier to keep a standard configuration across a multitude of hosts.
