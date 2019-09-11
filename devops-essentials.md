@@ -386,7 +386,7 @@ _Based on Linux Academy's Course DevOps Essentials_
 
 - _What does Configuration Management look like?_
 
-**Here is an example**
+**Here is an example:**
 
 - You need to upgrade a software package on a bunch of servers:
 
