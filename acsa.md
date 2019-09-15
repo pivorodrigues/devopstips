@@ -161,3 +161,15 @@ _Resources:_
 - Integrates with Lifecycles rules.
 
 - Versioning's MFA Delete capability, which uses multi-factor authentication, can be used to provide an additional layer of security.
+
+#
+
+**S3 Lifecycle Management, S3 IA and Glacier - Exam Tips**
+
+- Automates moving your objects between the different storage tiers.
+
+- Can be used in conjunction with versioning.
+
+- Can be applied to current versions and previous versions.
+
+#
