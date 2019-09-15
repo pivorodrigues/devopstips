@@ -173,3 +173,45 @@ _Resources:_
 - Can be applied to current versions and previous versions.
 
 #
+
+**Cross Region Replication - Exam Tips**
+
+- Versioning must be enabled on both the source and destination buckets.
+
+- Regions must be unique.
+
+- Files in an existing bucket are not replicated automatically.
+
+- All subsequent updated files will be replicated automatically.
+
+- Delete markers are not replicated.
+
+- Deleting individual versions or delete markers will not be replicated.
+
+#
+
+**S3 Transfer Acceleration**
+
+<p align="center"><img src="images/s3ta.png" width="500px"></p>
+
+- [Amazon S3 Transfer Acceleration Speed Comparison](https://s3-accelerate-speedtest.s3-accelerate.amazonaws.com/en/accelerate-speed-comparsion.html)
+
+#
+
+**CloudFront - Exam Tips**
+
+- **Edge Location** - This is the location where content will be cached. This is separate to an AWS Region/AZ.
+
+- **Origin** - This is the origin of all the files that the CDN will distribute. This can be either an S3 bucket, an EC2 instance, an Elastic Load Balancer, or Route 53.
+
+- **Distribution** - This is the name given the CDN which consists of a collection of Edge Locations.
+
+- **Web Distribution** - Typically used for Websites.
+
+- **RTMP** - Used for Media Streaming.
+
+- Edge Locations are not just READ only - you can write to them too. (ie put an object on to them.)
+
+- Objects are cached for the life of the **TTL (Time To Live)**.
+
+- You cab clear cached objects, but you will be charged.
