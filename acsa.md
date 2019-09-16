@@ -231,3 +231,11 @@ _Resources:_
 - Import to S3.
 
 - Export from S3
+
+#
+
+**Storage Gateway - Exam Tips**
+
+- **File Gateway**
+
+	- File Gateway - For flat files, stored directly on S3. 
