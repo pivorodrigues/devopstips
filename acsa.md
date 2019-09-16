@@ -238,4 +238,12 @@ _Resources:_
 
 - **File Gateway**
 
-	- File Gateway - For flat files, stored directly on S3. 
+	- File Gateway - For flat files, stored directly on S3.
+
+- **Volume Gateway**
+
+	- **Stored Volumes** - Entire Dataset is store on site and is asynchronously backed to S3.
+
+	- **Cached Volumes** - Entire Dataset is stored on S3 and the most frequently accessed data is cached on site.
+
+- **Gateway Virtual Tape Library**		 
