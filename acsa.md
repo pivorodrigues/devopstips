@@ -156,6 +156,8 @@ _Resources:_
 
 - **S3 Glacier Deep Archive**: S3 Glacier Deep Archive is Amazon S3's lowest-cost storage class where a retrieval time of 12 hours is acceptable.
 
+<p align="center"><img src="images/aws-s3-comparison.png" width="500px"></p>
+
 #
 
 **S3 Bucket Lab - Exam Tips**
@@ -286,4 +288,9 @@ _Resources:_
 
 	- **Cached Volumes** - Entire Dataset is stored on S3 and the most frequently accessed data is cached on site.
 
-- **Gateway Virtual Tape Library**		 
+- **Gateway Virtual Tape Library**
+
+
+## Chapter 4: EC2
+
+**EC2 101 - Exam Tips**
