@@ -294,3 +294,47 @@ _Resources:_
 ## Chapter 4: EC2
 
 **EC2 101 - Exam Tips**
+
+- **EC2 Pricing Policies:**
+
+  - **1. On Demand**: Allows you to pay a fixed rate by the hour (or by the second) with no commitment.
+
+  - **2. Reserved**: Provides you with a capacity reservation, and offer a significant discount on the hourly charge for an instance.
+
+  - **3. Spot**: Enables you to bid whatever price you want for instance capacity, providing for even greater savings if your applications have flexible start and end times.
+
+  - **4. Dedicated Hosts**: Physical EC2 server dedicated for your use. Dedicated Hosts can help you reduce costs by allowing you to use your existing server-bound software licences.
+
+  If the Spot instance is terminated by Amazon EC2, you will not be charged for a partial hour of usage. However, if you terminate the instance yourself, you will be charged for any hour in which the instance ran.
+
+- **EC2 Family Instance Types - Mnemonic**
+
+  - **F** - For FPGA
+
+  - **I** - For IOPS
+
+  - **G** - Graphics
+
+  - **H** - High Disk Throughput
+
+  - **T** - Cheap general purpose (think T2 Micro)
+
+  - **D** - For Density
+
+  - **R** - For RAM
+
+  - **M** - Main choice for general purpose apps
+
+  - **C** - For Compute
+
+  - **P** - Graphics (think Pics)
+
+  - **X** - Extreme Memory
+
+  - **Z** - Extreme Memory AND CPU
+
+  - **A** - Arm-based workloads
+
+  - **U** - Bare Metal
+
+#
