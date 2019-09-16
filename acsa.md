@@ -214,4 +214,20 @@ _Resources:_
 
 - Objects are cached for the life of the **TTL (Time To Live)**.
 
-- You cab clear cached objects, but you will be charged.
+- You can clear cached objects, but you will be charged.
+
+- CloudFront is a global service.
+
+- You can invalidate cached objects, but, you will be charged.
+
+#
+
+**Snowball - Exam Tips**
+
+- Understand what Snowball is.
+
+- Understand what Snowball Can.
+
+- Import to S3.
+
+- Export from S3
