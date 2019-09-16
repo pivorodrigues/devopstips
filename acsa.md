@@ -62,6 +62,16 @@
 
 **Identity Access Management 101 - Exam Tips**
 
+- Identity Access Management consists of the following:
+
+	- Users
+
+	- Groups
+
+	- Roles
+
+	- Policies
+
 - **IAM is universal.** It does not apply to regions at this time.
 
 - The **"root account"** is simply the account created when first setup your AWS account. It has complete Admin access.
@@ -70,7 +80,9 @@
 
 - New Users are assigned **Access Key ID** & **Secret Access Keys** when first created.
 
-- **These are not the same as password**. You cannot use tha Access Key ID & Secret Access via to login into the console. You can use this to access AWS via the APIs and Command Line, however.
+- **These are not the same as password**. You cannot use the Access Key ID & Secret Access via to login into the console. You can use this to access AWS via the APIs and Command Line, however.
+
+- You only get to view the Access Key ID and Secret Access Key once. If you lose them, you have to **regenerate** them. So, save them in a secure location.
 
 - Always setup **Multifactor Authentication** on your root account.
 
@@ -96,11 +108,19 @@ _Resources:_
 
 - **S3 is a universal namespace**. That is, names must be unique globally.
 
-- https://s3-eu-west-1.amazonaws.com/acloudguru
+- URL Example: https://s3-eu-west-1.amazonaws.com/acloudguru
 
 - **Not suitable to install an operating system on**.
 
-- Successful upload will generate a HTTP 200 status code.
+- Successful uploads will generate a HTTP 200 status code.
+
+- By default, all newly created buckets are **PRIVATE**. You can setup access control to your buckets using:
+
+	- Bucket Policies
+
+	- Access Control Lists
+
+- S3 buckets can be configured to create access logs which log all requests made to the S3 bucket. This can be sent to another bucket and even another bucket in another account.
 
 - You can turn on **MFA Delete**.
 
@@ -150,6 +170,24 @@ _Resources:_
 
 #
 
+**S3 Security and Encryption - Exam Tips**
+
+- Encryption In Transit is achieved by:
+
+	- SSL/TLS
+
+- Encryption at Rest (Server Side) is achieved by:
+
+	- S3 Managed Keys - SSE-S3
+
+	- AWS Key Management Service, Managed Keys (SSE-KMS)
+
+	- Server Side Encryption with Customer Provided Keys (SSE-C)
+
+- Client Side Encryption	 
+
+#
+
 **S3 Versioning - Exam Tips**
 
 - Store all versions of an object (including all writes and even if you delete an object).
@@ -187,6 +225,8 @@ _Resources:_
 - Delete markers are not replicated.
 
 - Deleting individual versions or delete markers will not be replicated.
+
+- Understand what Cross Replication is at a high level.
 
 #
 
