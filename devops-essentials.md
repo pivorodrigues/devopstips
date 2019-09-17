@@ -453,3 +453,59 @@ _Based on Linux Academy's Course DevOps Essentials_
   - **Self-Service** - Orchestration can be used to offer resources to customers in a self-service fashion.
 
   - **Granular insight into resource usage** - Orchestration tools give greater insight into how many resources are being used by what software, services or customers.
+
+#
+
+**Monitoring**
+
+- _What is Monitoring?_
+
+  - **Monitoring:** The collection and presentation of data about the performance and stability of services and infrastructure.
+
+  - Monitoring tools collect data over things such as:
+
+    - Usage of memory
+
+    - cpu
+
+    - disk i/o
+
+    - Other resources over time
+
+    - Application logs
+
+    - Network traffic
+
+    - etc.
+
+  - The collected data is presented in various forms, such as charts and graphs, or in the form of real-time notifications about problems.
+
+- _What does Monitoring look like?_
+
+  - **Real-time notifications:**
+
+    - Performance on the website is beginning to slow down
+
+    - A monitoring tool detects that response times are growing
+
+    - An administrator is immediately notified and is able to intervene before downtime occurs
+
+  - **Postmortem analysis:**
+
+    - Something went wrong in production last night
+
+    - It´s working now, but we don´t know what caused it
+
+    - Luckily, monitoring tools collected a lot of data during the outage
+
+    - With that data, developers and operations engineers are able to determine the root cause (a poorly performing SQL query) and fix it      
+
+- _Why do Monitoring?_
+
+  - **Fast Recovery** - The sooner a problem is detected, the sooner it can be fixed. You want to know about a problem before your customer does!
+
+  - **Better root cause analysis** - The more data you have, the easier is it to determine the root cause of a problem.
+
+  - **Visibility across teams** - Good monitoring tools give useful data to both developers and operations people about the performance of code in production.
+
+  - **Automated response** - Monitoring data can be used alongside orchestration to provide automated responses to events, such as automated recovery from failures.
