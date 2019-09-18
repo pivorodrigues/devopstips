@@ -509,3 +509,7 @@ _Based on Linux Academy's Course DevOps Essentials_
   - **Visibility across teams** - Good monitoring tools give useful data to both developers and operations people about the performance of code in production.
 
   - **Automated response** - Monitoring data can be used alongside orchestration to provide automated responses to events, such as automated recovery from failures.
+
+#
+
+**Microservices**
