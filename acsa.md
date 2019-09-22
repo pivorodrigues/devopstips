@@ -338,3 +338,13 @@ _Resources:_
   - **U** - Bare Metal
 
 #
+
+**EC2 Labs - Exam and Use Tips**
+
+- **How to login (SSH) in the EC2 instance?**
+
+  - Create a new key in the moment of instance creation
+
+  - Get the instance's public IP address
+
+  - Execute the command: `$ ssh ec2-user@<public-IP-address> -i <keyname>.pem` 
