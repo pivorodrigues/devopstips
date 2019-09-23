@@ -343,7 +343,7 @@ _Resources:_
 
 - **How to login (SSH) in the EC2 instance?**
 
-  - Create a new key in the moment of instance creation
+  - Create a new key in the moment of instance creation, or use an existing key
 
   - Get the instance's public IP address
 
