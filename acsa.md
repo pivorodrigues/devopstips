@@ -96,7 +96,7 @@ _Resources:_
 
 #
 
-**S3 101 - Exam Tips**
+**S3 (Simple Storage Service) 101 - Exam Tips**
 
 - Remember that S3 is **Object-based**: i.e. allows you to upload files.
 
@@ -293,7 +293,7 @@ _Resources:_
 
 ## Chapter 4: EC2
 
-**EC2 101 - Exam Tips**
+**EC2 (Elastic Compute Cloud) 101 - Exam Tips**
 
 - **EC2 Pricing Policies:**
 
@@ -356,3 +356,59 @@ _Resources:_
 - EBS **Root** Volumes of your DEFAULT AMI´s cannot be encrypted. You can also use a third party tool (such as bit locker, etc) to encrypt the root volume, or this can be done when creating AMI´s (lab to follow) in the AWS console or using the API.
 
 - Additional volumes can be encrypted.
+
+#
+
+**Security Groups Lab - Exam Tips**
+
+- All Inbound traffic is blocked by default.
+
+- All Outbound traffic is allowed.
+
+- Changes to Security Groups take effect immediately.
+
+- You can have any number of EC2 instances within a security group.
+
+- You can have multiple security groups attached to EC2 instances.
+
+- Security Groups are **STATEFUL**.
+
+- If you create an inbound rule allowing traffic in, that traffic is automatically allowed back out again.
+
+- You cannot block specific IP addresses using Security Groups, instead use Network Access Control Lists.
+
+- You can specify allow rules, but not deny rules.
+
+#
+
+**EBS (Elastic Block Storage) 101**
+
+<p align="center"><img src="images/aws-ebs-types.png" width="500px"></p>
+
+#
+
+**Volumes & Snapshots - Exam Tips**
+
+- Volumes exist on EBS. Think of EBS as a virtual hard disk.
+
+- Snapshots exist on S3. Think of snapshots as a photograph of the disk.
+
+- Snapshots are point in time copies of Volumes.
+
+- Snapshots are incremental - this means that only the blocks that have changed since your last snapshot are moved to S3.
+
+- If this is your first snapshot, it may take some time to create.
+
+- To create a snapshot for Amazon EBS volumes that serve as root devices, you should stop the instance before taking the snapshot.
+
+- However you can take a snap while the instance is running.
+
+- You can create AMI´s from both Volumes and Snapshots.
+
+- You can change EBS volume sizes on the fly, including changing the size and storage type.
+
+- Volumes will ALWAYS be in the same availability zone as the EC2 instance.
+
+- To move an EC2 volume from one AZ to another, take a snapshot of it, create an AMI from the snapshot and then use the AMI to launch the EC2 instance in a new AZ.
+
+- To move an EC2 volume from one region to another, take a snapshot of it, create an AMI from the snapshot and then copy the AMI from one region to the other. Then use the copied AMI to launch the new EC2 instance in the new region.
