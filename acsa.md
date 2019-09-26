@@ -60,7 +60,7 @@
 
 ## Chapter 3: Identity Access Management & S3
 
-**Identity Access Management 101 - Exam Tips**
+**Identity Access Management 101 - Exam Tips** [[S3](https://aws.amazon.com/pt/iam/faqs/)]
 
 - Identity Access Management consists of the following:
 
