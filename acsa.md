@@ -41,7 +41,7 @@
 
   - **Compute**
 
-    - EC2
+    - [EC2](https://github.com/pivorodrigues/devopstips/blob/master/acsa.md#chapter-4-ec2)
 
     - Lambda
 
@@ -96,7 +96,7 @@ _Resources:_
 
 #
 
-**S3 (Simple Storage Service) 101 - Exam Tips**
+**S3 (Simple Storage Service) 101 - Exam Tips** [[FAQ](https://aws.amazon.com/pt/s3/faqs/)]
 
 - Remember that S3 is **Object-based**: i.e. allows you to upload files.
 
@@ -293,7 +293,7 @@ _Resources:_
 
 ## Chapter 4: EC2
 
-**EC2 (Elastic Compute Cloud) 101 - Exam Tips**
+**EC2 (Elastic Compute Cloud) 101 - Exam Tips** [[FAQ](https://aws.amazon.com/pt/ec2/faqs/)]
 
 - **EC2 Pricing Policies:**
 
