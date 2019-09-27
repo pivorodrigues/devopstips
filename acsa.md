@@ -58,7 +58,7 @@
     - Route 53
 
 
-## Chapter 3: Identity Access Management & S3
+## Chapter 3: Identity Access Management & S3 <img src="images/s3logo.png" width="30px">
 
 **Identity Access Management 101 - Exam Tips** [[FAQ](https://aws.amazon.com/pt/iam/faqs/)]
 
@@ -291,7 +291,7 @@ _Resources:_
 - **Gateway Virtual Tape Library**
 
 
-## Chapter 4: EC2
+## Chapter 4: EC2 <img src="images/ec2.png" width="30px">
 
 **EC2 (Elastic Compute Cloud) 101 - Exam Tips** [[FAQ](https://aws.amazon.com/pt/ec2/faqs/)]
 
