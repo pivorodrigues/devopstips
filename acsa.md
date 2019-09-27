@@ -426,3 +426,27 @@ _Resources:_
 - You can reboot both, you will not lose your data.
 
 - By default, both ROOT volumes will be deleted on termination. However, with EBS volumes, you can tell AWS to keep the root device volume.
+
+#
+
+**Encrypted Root Device Volumes & Snapshots - Exam Tips**
+
+- Snapshots of encrypted volumes are encrypted automatically.
+
+- Volumes restored from encrypted snapshots are encrypted automatically.
+
+- You can share snapshots, but only if they are **unencrypted**.
+
+- These snapshots can be shared with other AWS accounts or made public.
+
+- You can now encrypt root device volumes upon creation of the EC2 instance.
+
+- _You need to know how to:_
+
+  - Create a Snapshot of the unencrypted root device volume.
+
+  - Create a copy of the Snapshot and select the encrypt option.
+
+  - Create an AMI from the encrypted Snapshot.
+
+  - Use that AMI to launch new encrypted instances.
