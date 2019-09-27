@@ -403,7 +403,7 @@ _Resources:_
 
 - However you can take a snap while the instance is running.
 
-- You can create AMI´s from both Volumes and Snapshots.
+- You can create AMI´s _(Amazon Machine Images)_ from both Volumes and Snapshots.
 
 - You can change EBS volume sizes on the fly, including changing the size and storage type.
 
@@ -412,3 +412,17 @@ _Resources:_
 - To move an EC2 volume from one AZ to another, take a snapshot of it, create an AMI from the snapshot and then use the AMI to launch the EC2 instance in a new AZ.
 
 - To move an EC2 volume from one region to another, take a snapshot of it, create an AMI from the snapshot and then copy the AMI from one region to the other. Then use the copied AMI to launch the new EC2 instance in the new region.
+
+#
+
+**AMI Types (EBS vs Instance Store) - Exam Tips**
+
+- Instance Store Volumes are sometimes called Ephemeral Storage.
+
+- Instance store volumes cannot be stopped. if the underlying host fails, you will lose your data.
+
+- EBS Backed instances can be stopped. You will not lose the data on this instance if it is stopped.
+
+- You can reboot both, you will not lose your data.
+
+- By default, both ROOT volumes will be deleted on termination. However, with EBS volumes, you can tell AWS to keep the root device volume.
