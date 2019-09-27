@@ -17,7 +17,7 @@
 - Scenario based questions
 
 
-## Chapter 2: AWS - 10.000 Foot Overview (Exam Tips)
+## Chapter 2: AWS - 10.000 Foot Overview (Exam Tips) <img src="images/amazon-web-services-logo.png" width="30px">
 
 **Understand the difference between a Region, an Availability Zone (AZ) and an Edge Location**
 
