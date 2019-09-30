@@ -450,3 +450,7 @@ _Resources:_
   - Create an AMI from the encrypted Snapshot.
 
   - Use that AMI to launch new encrypted instances.
+
+#
+
+**Cloudwatch 101 - Exam Tips**  
