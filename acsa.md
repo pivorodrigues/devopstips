@@ -33,15 +33,15 @@
 
   - **Security, Identity & Compliance**
 
-    - [IAM](https://github.com/pivorodrigues/devopstips/blob/master/acsa.md#identity-access-management---101-)
+    - [IAM](https://github.com/pivorodrigues/devopstips/blob/master/acsa.md#chapter-3-identity-access-management--s3-)
 
   - **Storage**
 
-    - [S3](https://github.com/pivorodrigues/devopstips/blob/master/acsa.md#chapter-3-identity-access-management--s3)
+    - [S3](https://github.com/pivorodrigues/devopstips/blob/master/acsa.md#chapter-3-identity-access-management--s3-)
 
   - **Compute**
 
-    - [EC2](https://github.com/pivorodrigues/devopstips/blob/master/acsa.md#chapter-4-ec2)
+    - [EC2](https://github.com/pivorodrigues/devopstips/blob/master/acsa.md#chapter-4-ec2-)
 
     - Lambda
 
