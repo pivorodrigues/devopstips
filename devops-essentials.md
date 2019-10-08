@@ -514,4 +514,40 @@ _Based on Linux Academy's Course DevOps Essentials_
 
 **Microservices**
 
-- **Microservices:** 
+- _What are Microservices?_
+
+  - **Microservices:** A Microservice architecture breaks an application up into a collection of small, loosely-coupled services.
+
+  - Traditionally, apps used a monolithic architecture. In a monolithic architecture, all features and services are part of one large application.
+
+  - Microservices are small: each microservice implements only a small piece of an application´s overall functionality.
+
+  - Microservices are **loosely coupled**: Different microservices interact with each other using stable and well-defined APIs. This means that they are independent of one another.
+
+- _What do microservices look like?_
+
+  - There are many different ways to structure and organize a microservice architecture.
+
+  - For example, a pet shop application might have:
+
+    - A pet inventory service
+
+    - A customer details service
+
+    - An authentication service
+
+    - A pet adoption request service
+
+    - A payment processing service
+
+  - Each of these is its own codebase and a separate running process (or processes). They can all be built, deployed and scaled separately.
+
+- _Why use Microservices?_
+
+  - **Modularity** - Microservices encourage modularity. In monolithic apps, individual pieces become tightly coupled, and complexity grows. Eventually, it´s very hard to change anything without breaking something.
+
+  - **Technological flexibility** - You don´t need to use the same languages and technologies for every part of the app. You can use the best tool for each job.
+
+  - **Optimized scalability** - You can scale individual parts of the app based upon resource usage and load. With a monolith, you have to scale up the entire application, even if only one aspect of the service actually needs to be scaled.
+
+  - Microservices aren´t always the best choice. For smaller, simpler apps a monolith might be easier to manage.
