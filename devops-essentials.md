@@ -566,4 +566,4 @@ _Based on Linux Academy's Course DevOps Essentials_
 
   - Part of doing DevOps is identifying the tools you need and learning how to use them.
 
-<img src="images/devops-periodic.png" align="center" width="600px">  
+<img src="images/devops-periodic.png" alignment="center" width="600px">  
