@@ -551,3 +551,19 @@ _Based on Linux Academy's Course DevOps Essentials_
   - **Optimized scalability** - You can scale individual parts of the app based upon resource usage and load. With a monolith, you have to scale up the entire application, even if only one aspect of the service actually needs to be scaled.
 
   - Microservices aren´t always the best choice. For smaller, simpler apps a monolith might be easier to manage.
+
+## DevOps Tools <img src="images/la.png" width="30px">
+
+**Introduction to DevOps Tools**
+
+- _The Role of Tools in DevOps_
+
+  - DevOps is NOT a set of tools.
+
+  - But how can we achieve high speed of delivery while maintaining stability? **TOOLS**!
+
+  - The DevOps community has created a wide range of powerful tools.
+
+  - Part of doing DevOps is identifying the tools you need and learning how to use them.
+
+<img src="images/devops-periodic.png" width="500px">  
