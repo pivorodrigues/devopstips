@@ -566,4 +566,54 @@ _Based on Linux Academy's Course DevOps Essentials_
 
   - Part of doing DevOps is identifying the tools you need and learning how to use them.
 
-<p align="center"><img src="images/devops-periodic.png" width="700px">  
+<p align="center"><img src="images/devops-periodic.png" width="700px">
+
+#
+
+**Tools for Build Automation and Continuous Integration**
+
+- **Build Automation Tools**
+
+  - **Build Automation** - Automated processing of code in preparation for deployment.
+
+  - What tools you use for Build Automation usually depend on programming languages and frameworks.
+
+  - A few examples:
+
+    - Java - ant, maven, gradle
+
+    - Javascript - npm, grunt, gulp
+
+    - Make - widely used in Unix-based systems
+
+    - Packer - build machine images and containers
+
+- **Continuous Integration Tools**
+
+  - **Continuous Integration** - Continuously merging code into a single branch or mainline.
+
+  - Continuous Integration tools usually consist of a server that integrates with source control.
+
+  - When source code is changed, the server responds by executing an automated build.
+
+  - **Jenkins:**
+
+    - Open source - fork of Hudson
+
+    - Widely used
+
+    - Java servlet-based
+
+  - **TravisCI:**
+
+    - Open source
+
+    - Built around Github integration
+
+    - Executes builds in clean VMs
+
+  - **Bamboo:**
+
+    - Enterprise product by Atlassian
+
+    - Out-of-the-box integration with other Atlassian products like JIRA and Confluence    
