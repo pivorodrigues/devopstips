@@ -616,4 +616,16 @@ _Based on Linux Academy's Course DevOps Essentials_
 
     - Enterprise product by Atlassian
 
-    - Out-of-the-box integration with other Atlassian products like JIRA and Confluence    
+    - Out-of-the-box integration with other Atlassian products like JIRA and Confluence
+
+#
+
+**Tools for Configuration Management**
+
+- _Configuration Management Tools_
+
+  - **Configuration Management** - Managing and changing the state of pieces of infrastructure in a consistent and maintainable way.
+
+  - Configuration Management tools are a great way to implemement **infrastructure as code**.
+
+  - **Ansible:**   
