@@ -453,4 +453,16 @@ _Resources:_
 
 #
 
-**Cloudwatch 101 - Exam Tips**  
+**Cloudwatch 101 - Exam Tips**
+
+- Cloudwatch is used for monitoring performance.
+
+- CloudWatch can monitor most of AWS as well as your applications that run on AWS.
+
+- CloudWatch with EC2 will monitor events every 5 minutes by default.
+
+- You can have 1 minute intervals by turning on detailed monitoring.
+
+- You can create CloudWatch alarms which trigger notifications.
+
+- Cloudwatch is all about performance. CloudTrail is all about auditing.
