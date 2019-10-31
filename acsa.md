@@ -466,3 +466,25 @@ _Resources:_
 - You can create CloudWatch alarms which trigger notifications.
 
 - Cloudwatch is all about performance. CloudTrail is all about auditing.
+
+#
+
+**Cloudwatch Lab - Exam Tips**
+
+- Standard monitoring = 5 minutes.
+
+- Detailed monitoring te = 1 minute.
+
+  - _What can I do withCloudwatch?_
+
+    - Dashboards: Creates awesome dashboards to see what is happeningwith your AWS environment.
+
+    - Alarms - Allows you to set Alarmes that notify you when particular thresholds are hit.
+
+    - Events - Cloudwatch, Events helps you to respond to state changes ir your AWS recourses.
+
+    - Logs - Cloudwatch Logs helps you to aggregate, monitor, and storelogs.
+
+- Cloudwatch monitors performance.
+
+- CloudTrail monitors performance.       
