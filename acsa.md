@@ -473,18 +473,28 @@ _Resources:_
 
 - Standard monitoring = 5 minutes.
 
-- Detailed monitoring te = 1 minute.
+- Detailed monitoring = 1 minute.
 
-  - _What can I do withCloudwatch?_
+  - _What can I do with Cloudwatch?_
 
-    - Dashboards: Creates awesome dashboards to see what is happeningwith your AWS environment.
+    - Dashboards: Creates awesome dashboards to see what is happening with your AWS environment.
 
     - Alarms - Allows you to set Alarmes that notify you when particular thresholds are hit.
 
-    - Events - Cloudwatch, Events helps you to respond to state changes ir your AWS recourses.
+    - Events - Cloudwatch, Events helps you to respond to state changes in your AWS recourses.
 
-    - Logs - Cloudwatch Logs helps you to aggregate, monitor, and storelogs.
+    - Logs - Cloudwatch Logs helps you to aggregate, monitor, and store logs.
 
-- Cloudwatch monitors performance.
+- CloudWatch monitors performance.
 
-- CloudTrail monitors performance.       
+- CloudTrail monitors API calls in the AWS platform.
+
+#
+
+**AWS Command Line (CLI) Lab - Exam Tips**
+
+- You can interact with AWS from anywhere in the world just by using the command line (CLI).
+
+- You will need to set up access in IAM.
+
+- Commands themselves are not in the exam, but some basic commands will be useful to know for real life.       
