@@ -1,4 +1,4 @@
-## <img src="images/acg.png" width="30px"> AWS Certified Solutions Architecht - A Cloud Guru Exam Tips <img src="images/acg.png" width="30px">
+## <img src="images/acg.png" width="30px"> AWS Certified Solutions Architect - A Cloud Guru Exam Tips <img src="images/acg.png" width="30px">
 
 ## Chapter 1: Introduction - Exam Blue Print
 
@@ -514,5 +514,3 @@ _Resources:_
 #
 
 **Using Boot Strap Scripts LAB - Exam Tips**
-
-      
