@@ -459,11 +459,11 @@ _Resources:_
 
 - CloudWatch can monitor most of AWS as well as your applications that run on AWS.
 
-- CloudWatch with EC2 will monitor events every 5 minutes by default.
+- CloudWatch with EC2 will monitor events **every 5 minutes by default**.
 
 - You can have 1 minute intervals by turning on detailed monitoring.
 
-- You can create CloudWatch alarms which trigger notifications.
+- You can create CloudWatch alarms with trigger notifications.
 
 - Cloudwatch is all about performance. CloudTrail is all about auditing.
 
@@ -479,11 +479,11 @@ _Resources:_
 
     - Dashboards: Creates awesome dashboards to see what is happening with your AWS environment.
 
-    - Alarms - Allows you to set Alarmes that notify you when particular thresholds are hit.
+    - Alarms - Allows you to set Alarms that notify you when particular thresholds are hit.
 
-    - Events - Cloudwatch, Events helps you to respond to state changes in your AWS recourses.
+    - Events - Cloudwatch events helps you to respond to state changes in your AWS recourses.
 
-    - Logs - Cloudwatch Logs helps you to aggregate, monitor, and store logs.
+    - Logs - Cloudwatch logs helps you to aggregate, monitor and store logs.
 
 - CloudWatch monitors performance.
 
@@ -497,4 +497,22 @@ _Resources:_
 
 - You will need to set up access in IAM.
 
-- Commands themselves are not in the exam, but some basic commands will be useful to know for real life.       
+- Commands themselves are not in the exam, but some basic commands will be useful to know for real life.
+
+#
+
+**Identity Access Management Roles LAB - Exam Tips**
+
+- Roles are more secure than storing your access key and secret access key on individual EC2 instances.
+
+- Roles are easier to manage.
+
+- Roles can be assigned to an EC2 instance after it is created using both the console and command line.
+
+- Roles are universal - you can use them in any region.
+
+#
+
+**Using Boot Strap Scripts LAB - Exam Tips**
+
+      
