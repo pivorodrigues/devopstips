@@ -668,4 +668,32 @@ _Based on Linux Academy's Course DevOps Essentials_
 
   - Support for event-driven automation
 
-        
+#
+
+**Tools for Virtualization and Containerization**
+
+- _Virtualization Tools_
+
+  - **Virtualization** - Managing resources by creating virtual rather than physical machines
+
+  - Hypervisor - Runs on bare metal and manages virtual machines (VMs)
+
+  - Examples:
+
+    - VMWare ESX and ESXi
+
+    - Microsoft Hyper-V
+
+    - Citrix Xen Server
+
+- _Containerization_
+
+  - **Containers:** Lightweight, isolated packages containing everything needed to run a piece of software
+
+  - Require fewer resources than VMs - VMs contain an entire OS plus virtual versions of all the hardware
+
+  - Containers have the bare minimum needed to run the Software
+
+  - Docker - Docker is currently the leading container technology
+
+  - Containers are still relatively new but very useful for DevOps!
