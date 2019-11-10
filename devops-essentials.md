@@ -628,4 +628,44 @@ _Based on Linux Academy's Course DevOps Essentials_
 
   - Configuration Management tools are a great way to implemement **infrastructure as code**.
 
-  - **Ansible:**   
+- **Ansible:**
+
+  - Open Source
+
+  - Declarative configuration
+
+  - YAML configuration files
+
+  - No control server needed - but Ansible Tower is available
+
+  - No agents neede, just Python and SSH
+
+- **Puppet:**
+
+  - Declarative configuration
+
+  - Manage state through a UI
+
+  - Custom modules use Puppet DSL (Domain-Specific Language)
+
+  - Pushes changes to clients using a control server and agents installed on clients
+
+- **Chef:**
+
+  - Procedural configuration
+
+  - Agent/Server
+
+  - Uses Chef DSL
+
+- **Salt:**
+
+  - Declarative configuration
+
+  - Agent(minions)/Server(master) - but can support agentless
+
+  - Uses YAML
+
+  - Support for event-driven automation
+
+        
