@@ -697,3 +697,55 @@ _Based on Linux Academy's Course DevOps Essentials_
   - Docker - Docker is currently the leading container technology
 
   - Containers are still relatively new but very useful for DevOps!
+
+#
+
+**Tools for Monitoring**
+
+- _Monitoring Tools_
+
+  - **Monitoring:** Collecting and presenting data about the state and performance of applications
+
+  - There are different types of monitoring:
+
+    - Infrastructure monitoring - focuses on things related to infrastructure
+
+      - _Examples: CPU, RAM, Memory and Networking_
+
+    - Application Performance Monitoring (APM) - focuses on performance and stability of individual parts of an application
+
+      - _Examples: Response times, Logs_
+
+- _Infrastructure Monitoring Tools_
+
+  - **SenSU**
+
+    - Designed as a modern replacement for Nagios
+
+    - Server/agent
+
+    - Agent push data to an AMQP broker
+
+  - **New Relic**
+
+    - SaaS + Agent
+
+    - Wide variety of metrics (also does APM)
+
+- _Application Performance Monitoring Tools_
+
+  - **AppDynamics** - collects data points about applications and presents it in a centralized dashboard.
+
+    - Code-level diagnostics - able to identify performance issues at the code level
+
+    - Server/agent
+
+  - **New Relic** also does APM
+
+- _Aggregation and Analytics Tools_
+
+  - **Aggregation** and **Analytics** are about collecting monitoring data and doing something about it
+
+  - Most monitoring tools have some aggregation and analytics features
+
+  - Elastic Stack - pump data in an quickly create views to aggregate data and easily detect and diagnose problems          
