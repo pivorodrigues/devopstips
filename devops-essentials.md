@@ -748,4 +748,52 @@ _Based on Linux Academy's Course DevOps Essentials_
 
   - Most monitoring tools have some aggregation and analytics features
 
-  - Elastic Stack - pump data in an quickly create views to aggregate data and easily detect and diagnose problems          
+  - Elastic Stack - pump data in an quickly create views to aggregate data and easily detect and diagnose problems
+
+#
+
+**Tools for Orchestration**
+
+- _Orchestration Tools_
+
+  - **Orchestration** - automation that supports processes and workflows, such as provisioning resources
+
+  - Lets you do things like:
+
+    - Scale up and scale down applications on request
+
+    - Auto scale applications based on usage
+
+    - Create self-healing systems by spinning down unhealthy nodes and replacing them with new ones
+
+  - **Docker Swarm:**
+
+    - Docker-native
+
+    - Orchestration for Docker Containers
+
+  - **Kubernetes:**
+
+    - Open Source
+
+    - Orchestration server
+
+    - Manage containerized apps accross multiple hosts
+
+  - **Zookeeper:**
+
+    - Open Source - Apache Foundation
+
+    - Can work alongside Kubernetes
+
+    - Offers a centralized service registry that integrates with orchestration features
+
+  - **Terraform:**
+
+    - Combines orchestration and infrastructure-as-code
+
+    - Works well with other tools, like Ansible
+
+    - Works well with AWS
+
+    - Integrates with Kubernetes
