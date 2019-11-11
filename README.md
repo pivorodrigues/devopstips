@@ -132,7 +132,7 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 
 - **AWS Certified Solutions Architect - Preparation**
   - [A Cloud Guru - Exam Tips](acsa.md) <img src="images/acg.png" width="30px">
-  - [AWS Solutions Training for Partners: Foundations (Notes)](astpf.md) <img src="images/amazon-web-services-logo.png" width="30px">
+  - [AWS Solutions Training for Partners: Foundations (Notes)](astpf.md) <img src="images/amazon-web-services-logo.png" width="30px"><img src="images/Check-png.png" width="20px">
   - [Why and How I got 5/5 AWS Certifications in six months](https://medium.com/@anurag.dimri/why-and-how-i-got-5-5-aws-certifications-d72ea751dae2)
   - [AWS Certified Solutions Architect - Exam Guide](https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS_Certified_Solutions_Architect_Associate_Feb_2018_%20Exam_Guide_v1.5.2.pdf)
 
@@ -176,7 +176,7 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 
 - **DevOps**
   - [LPI DevOps Tools Engineer - Exam 701 Preparation](lpi701.md) <img src="images/lpi.png" width="30px">
-  - [DevOps Essentials](devops-essentials.md) <img src="images/la.png" width="30px">
+  - [DevOps Essentials](devops-essentials.md) <img src="images/la.png" width="30px"><img src="images/Check-png.png" width="20px">
   - [DevOps Launch Checklist](https://sysadmincasts.com/episodes/70-devops-launch-checklist)
 
 - **SRE**
