@@ -580,3 +580,7 @@ _Resources:_
   - _$ curl "http://169.254.169.254/latest/meta-data/local-ipv4"_
 
     `172.31.93.65`
+
+#
+
+**EFS - Elastic File System**
