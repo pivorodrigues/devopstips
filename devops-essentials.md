@@ -799,3 +799,37 @@ _Based on Linux Academy's Course DevOps Essentials_
     - Integrates with Kubernetes
 
 #
+
+**DevOps and the Cloud**
+
+- _DevOps and the Cloud_
+
+  - **DevOps** and the **Cloud** are note the same thing
+
+    - DevOps - a culture of collaboration between Dev and Ops
+
+    - The Cloud - remote servers on the internet that offer services in place of locally-hosted solutions. _"The Cloud is someone else´s computer"_
+
+  - DevOps culture and practices are very useful in the world of the cloud
+
+  - DevOps and the Cloud developed alongside one another, and many cloud services are built on DevOps practices
+
+  - They can also be a tool for DevOps. Many cloud services offer features that support DevOps practices
+
+- _Traditional Non-Cloud Stack_
+
+  - A **traditional stack** is a regular, self-hosted datacenter
+
+  - In a traditional stack, you are responsible for every layer of the architecture
+
+  - You provide all of the infrastructure necessary to run your apps
+
+- _Types of Cloud Services_ 
+  
+  - Infrastructure as a Service (Iaas)
+
+  - Platform as a Service (PaaS)
+
+  - Software as a Service (SaaS)
+
+  - Serverless (Function as a Service - FaaS)       
