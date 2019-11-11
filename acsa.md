@@ -513,4 +513,70 @@ _Resources:_
 
 #
 
-**Using Boot Strap Scripts LAB - Exam Tips**
+**Instance Metadata - Exam Tips**
+
+- Command to see the content of bootstrap script inside our EC2 instance:
+
+  - _$ curl "http://169.254.169.254/latest/user-data"_
+
+  - Results:
+
+    ```
+      #!/bin/bash
+
+      sudo su -
+
+      yum update -y
+
+      yum install httpd -y
+
+      systemctl start httpd
+
+      chkconfig httpd on
+
+      cd /var/www/html
+
+      echo '<html><h1>Hello Cloud Gurus</h1></html>' > index.html
+
+      aws s3 mb s3://pivorodrigueskjuuenfiuiehjeiuifjheie87765
+
+      aws s3 cp index.html s3://pivorodrigueskjuuenfiuiehjeiuifjheie87765
+
+    ```
+
+- Command to get information about an EC2 instance:
+
+  - _$ curl "http://169.254.169.254/latest/meta-data"_
+
+  - Results:
+
+    ```
+      ami-id
+      ami-launch-index
+      ami-manifest-path
+      block-device-mapping/
+      events/
+      hostname
+      iam/
+      identity-credentials/
+      instance-action
+      instance-id
+      instance-type
+      local-hostname
+      local-ipv4
+      mac
+      metrics/
+      network/
+      placement/
+      profile
+      public-hostname
+      public-ipv4
+      public-keys/
+      reservation-id
+      security-groups
+      services/
+    ```
+
+  - _$ curl "http://169.254.169.254/latest/meta-data/local-ipv4"_
+
+    `172.31.93.65`
