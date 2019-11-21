@@ -16,6 +16,7 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
   - [15 Tips on How to Improve as a Junior Developer](https://www.codementor.io/learn-programming/15-ways-to-improve-as-a-junior-developer)
 
 - **Python**
+  - [PyTricks](pytricks.md)
   - [Python’s Requests Library (Guide)](https://realpython.com/python-requests/)
   - [Live de Python](https://github.com/dunossauro/live-de-python/tree/master/codigo)
   - [What exactly can you do with Python? Here are Python’s 3 main applications <img src="images/Check-png.png" width="20px">](https://medium.freecodecamp.org/what-can-you-do-with-python-the-3-main-applications-518db9a68a78)
