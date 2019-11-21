@@ -17,18 +17,7 @@ _Based on Real Python's mailist_
 
     >>> z
     {'c': 4, 'a': 1, 'b': 3}
-
-    # In Python 2.x you could
-    # use this:
-    >>> z = dict(x, **y)
-    >>> z
-    {'a': 1, 'c': 4, 'b': 3}
-
-    # In these examples, Python merges dictionary keys
-    # in the order listed in the expression, overwriting
-    # duplicates from left to right.
-  ```
-
+  ```  
   See at: https://www.youtube.com/watch?v=Duexw08KaC8
 
 #
@@ -53,4 +42,50 @@ _Based on Real Python's mailist_
     if any((x, y, z)):
       print('passed')
   ```
-#    
+#
+
+- **How to sort a Python dict by value**
+
+  ```
+    # How to sort a Python dict by value
+    # (== get a representation sorted by value)
+
+    >>> xs = {'a': 4, 'b': 3, 'c': 2, 'd': 1}
+
+    >>> sorted(xs.items(), key=lambda x: x[1])
+    [('d', 1), ('c', 2), ('b', 3), ('a', 4)]
+
+    # Or:
+
+    >>> import operator
+    >>> sorted(xs.items(), key=operator.itemgetter(1))
+    [('d', 1), ('c', 2), ('b', 3), ('a', 4)]
+  ```    
+
+#
+
+- **The get() method on Python dicts and its "default" arg**
+
+  ```
+    # The get() method on dicts
+    # and its "default" argument
+
+    name_for_userid = {
+        382: "Alice",
+        590: "Bob",
+        951: "Dilbert",
+    }
+
+    def greeting(userid):
+        return "Hi %s!" % name_for_userid.get(userid, "there")
+  ```
+
+  ```
+    >>> greeting(382)
+    "Hi Alice!"
+
+    >>> greeting(333333)
+    "Hi there!"
+  ```
+
+#
