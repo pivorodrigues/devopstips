@@ -6,6 +6,23 @@
 
   - _iostat_
 
-    - IO Statistics
+    - It shows disk IO statistics
 
     - _apt install sysstat_
+
+    - Use: `$ iostat`
+
+      - Example:
+
+      ```
+        # iostat
+        Linux 4.15.0-1051-aws (ip-172-31-92-39) 	11/25/19 	_x86_64_	(1 CPU)
+
+        avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+                   2.47    0.01    0.91    0.64    0.70   95.28
+
+        Device             tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
+        loop0             7.83         8.48         0.00      12638          0
+        loop1             2.29         2.49         0.00       3716          0
+        xvda             10.24       219.48       170.96     326979     254688
+      ```
