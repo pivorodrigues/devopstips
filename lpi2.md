@@ -1,4 +1,4 @@
-# Linux Network Administration
+# <img src="images/gnu-linux.png" width="30px"> Linux Network Administration <img src="images/gnu-linux.png" width="30px">
 
 ## Capacity Planning
 
