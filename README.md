@@ -46,7 +46,10 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 ## 3. Learn about Managing Servers
 
 - **Text Manipulation Tools**
-  - [The SED command](https://linuxacademy.com/blog/tutorials/the-sed-command-bash-basics/)  
+  - [The SED command](https://linuxacademy.com/blog/tutorials/the-sed-command-bash-basics/)
+
+- **Network**
+  - [Linux Network Administration](lpi2.md)    
 
 ## 4. Networking and Security
 
