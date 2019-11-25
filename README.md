@@ -49,7 +49,7 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 
   - **Linux**
 
-    - [Linux Engineer](lpi201.md)
+    - [Linux Engineer (LPI 201)](lpi201.md)
 
 ### Learn to live in Terminal
 - **Text Manipulation Tools**
