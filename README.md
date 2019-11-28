@@ -93,6 +93,7 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
 
 - **Configuration Management**
   - **Ansible**
+      - [Ansible Basics](ansible-basics.md)
       - [Getting Started With Ansible](https://dzone.com/articles/getting-started-with-ansible)
       - [How to use Ansible to document procedures](https://opensource.com/article/19/4/ansible-procedures)
       - [Adventures with Ansible: Lessons learned from real-world deployments](https://www.redhat.com/en/blog/adventures-ansible-lessons-learned-real-world-deployments)
