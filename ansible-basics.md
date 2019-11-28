@@ -13,3 +13,7 @@
 - **Tasks** run **sequentially**
 
 - **Handlers** are triggered by **tasks**, and are run once, at the end of plays
+
+#
+
+### Ansible Installation and Configuration (Part 1)
