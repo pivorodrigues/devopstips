@@ -583,7 +583,7 @@ _Resources:_
 
 #
 
-**EFS - Elastic File System**
+**EFS - Elastic File System - Exam Tips**
 
 - Supports the Network File System version 4 (NFSv4) protocol.
 
@@ -596,3 +596,37 @@ _Resources:_
 - Data is stored across multiple AZ's within a region.
 
 - Read After Write consistency.
+
+#
+
+**Placement Groups - Exam Tips**
+
+- **Three Types of Placement Groups**
+
+  - _Clustered Placement Group_
+
+    - Low Network Latency / High Network Throughput
+
+  - _Spread Placement Group_
+
+    - Individual Critical EC2 instances
+
+  - _Partitioned_
+
+    - Multiple EC2 instances HDFS, HBase and Cassandra
+
+- A clustered placement group can´t span multiple Availability Zones.
+
+- A spread placement and partitioned group can.
+
+- The name you specify for a placement group must be unique within your AWS account.
+
+- Only certain types of instances can be launched in a placement group (Compute Optimized, GPU, Memory Optimized, Storage Optimized).
+
+- AWS recommend homogenous instances within clustered placement groups.
+
+- You can´t merge placement groups.
+
+- You can´t move an existing instance into a placement group. You can create an AMI from your existing instance, and then launch a new instance from the AMI into a placement group.
+
+#
