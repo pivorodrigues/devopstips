@@ -583,7 +583,7 @@ _Resources:_
 
 #
 
-**EFS - Elastic File System**]
+**EFS - Elastic File System**
 
 - Supports the Network File System version 4 (NFSv4) protocol.
 
