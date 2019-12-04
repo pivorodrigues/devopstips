@@ -583,4 +583,16 @@ _Resources:_
 
 #
 
-**EFS - Elastic File System**
+**EFS - Elastic File System**]
+
+- Supports the Network File System version 4 (NFSv4) protocol.
+
+- You only pay for the storage you use (no pre-provisioning required).
+
+- Can scale up to the petabytes.
+
+- Can support thousands of concurrent NFS connections.
+
+- Data is stored across multiple AZ's within a region.
+
+- Read After Write consistency.
