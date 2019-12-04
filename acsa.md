@@ -611,7 +611,7 @@ _Resources:_
 
     - Individual Critical EC2 instances
 
-  - _Partitioned_
+  - _Partitioned Placement Group_
 
     - Multiple EC2 instances HDFS, HBase and Cassandra
 
