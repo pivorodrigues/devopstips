@@ -18,4 +18,4 @@
 
 ### Ansible Installation and Configuration (Part 1)
 
-- Teste
+- Ansible's config file: `/etc/ansible/ansible.cfg`
