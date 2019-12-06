@@ -629,4 +629,41 @@ _Resources:_
 
 - You can´t move an existing instance into a placement group. You can create an AMI from your existing instance, and then launch a new instance from the AMI into a placement group.
 
-#
+
+## Chapter 5: Databases on AWS <img src="images/aws-database.png" width="30px">
+
+**Databases 101 - Exam Tips**
+
+- **RDS (OLTP - Online Transaction Processing)(Relational Solution)**
+
+  - SQL Server
+
+  - MySQL
+
+  - PostgreSQL
+
+  - Oracle
+
+  - Aurora
+
+  - MariaDB
+
+- **DynamoDB**
+
+  - NoSQL Solution
+
+- **Redshift (OLAP - Online Analytics Processing)**
+
+  - Datawarehouse Solution
+
+  - Used for Business Intelligence or Data Warehousing
+
+- **Elasticache**
+
+  - Memcache
+
+  - Redis
+
+  - Caching Solution
+
+  - Used to speed up performance of existing databases (frequent identical queries)
