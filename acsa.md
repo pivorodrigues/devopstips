@@ -731,3 +731,21 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
   - Eventual Consistent Reads (Default)
 
   - Strongly Consistent Reads
+
+#
+
+**Redshift - Exam Tips**
+
+- Redshift is a Data Warehouse used for business intelligence
+
+- Available in only 1 AZ
+
+- **Backups:**
+
+  - Enabled by default with a 1 day retention period
+
+  - Maximum retention period is 35 days
+
+  - Redshift always attempts to maintain at least three copies of your data (the original and replica on the compute nodes and a backup in Amazon S3)
+
+  - Redshift can also asynchronously replicate your snapshots to S3 in another region for disaster recovery
