@@ -650,7 +650,7 @@ _Resources:_
 
 - **DynamoDB**
 
-  - NoSQL Solution
+  - NoSQL Database Solution
 
 - **Redshift (OLAP - Online Analytics Processing)**
 
@@ -708,6 +708,8 @@ _Resources:_
 
 - Can be MySQL, PostgreSQL, MariaDB, Oracle, Aurora
 
+_ SQL Server doesn´t support Read Replicas
+
 - Can be promoted to master, this will break the Read Replica
 
 **Multi-AZ**
@@ -716,7 +718,7 @@ _Resources:_
 
 - You can force a failover from one AZ to another by rebooting the RDS instance
 
-Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, MariaDB and Aurora. Encryption is done using the AWS Key Management Service (KMS). Once your RDS instance is encrypted, as are its automated backups, read replicas and snapshots.
+Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, MariaDB and Aurora. Encryption is done using the AWS Key Management Service (KMS). Once your RDS instance is encrypted, the data stored at rest in the underlying storage is encrypted, as are its automated backups, read replicas and snapshots.
 
 #
 
@@ -726,7 +728,7 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
   - Stored on SSD Storage
 
-  - Spread across 3 geographically distinct data centres
+  - Spread across 3 geographically distinct data centers
 
   - Eventual Consistent Reads (Default)
 
@@ -769,6 +771,8 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 **Elasticache - Exam Tips**
 
 - Use Elasticache to increase database and web application performance
+
+- Two flavors: Memcached and Redis
 
 - Redis is Multi-AZ
 
