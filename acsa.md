@@ -717,3 +717,17 @@ _Resources:_
 - You can force a failover from one AZ to another by rebooting the RDS instance
 
 Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, MariaDB and Aurora. Encryption is done using the AWS Key Management Service (KMS). Once your RDS instance is encrypted, as are its automated backups, read replicas and snapshots.
+
+#
+
+**DynamoDB - Exam Tips**
+
+- **The basics of DynamoDB** are as follows:
+
+  - Stored on SSD Storage
+
+  - Spread across 3 geographically distinct data centres
+
+  - Eventual Consistent Reads (Default)
+
+  - Strongly Consistent Reads
