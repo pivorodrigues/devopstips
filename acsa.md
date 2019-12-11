@@ -749,3 +749,17 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
   - Redshift always attempts to maintain at least three copies of your data (the original and replica on the compute nodes and a backup in Amazon S3)
 
   - Redshift can also asynchronously replicate your snapshots to S3 in another region for disaster recovery
+
+#
+
+**Amazon Aurora - Exam Tips**
+
+- 2 copies of your data is contained in each availability zone, with minimum of 3 availability zones. 6 copies of your data
+
+- You can share Aurora Snapshots with other AWS accounts
+
+- 2 types of replicas available. Aurora Replicas and MySQL replicas. Automated failover is only available with Aurora Replicas
+
+- Aurora has automated backups turned on by default. You can also take snapshots with Aurora. You can share these snapshots with other AWS accounts
+
+<p align="center"><img src="images/aws-replicas-comparison.jpeg" width="300px"></p>
