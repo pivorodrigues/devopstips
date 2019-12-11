@@ -763,3 +763,13 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 - Aurora has automated backups turned on by default. You can also take snapshots with Aurora. You can share these snapshots with other AWS accounts
 
 <p align="center"><img src="images/aws-replicas-comparison.png" width="750px"></p>
+
+#
+
+**Elasticache - Exam Tips**
+
+- Use Elasticache to increase database and web application performance
+
+- Redis is Multi-AZ
+
+- You can do backups and restore of Redis
