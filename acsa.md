@@ -708,7 +708,7 @@ _Resources:_
 
 - Can be MySQL, PostgreSQL, MariaDB, Oracle, Aurora
 
-_ SQL Server doesn´t support Read Replicas
+- SQL Server doesn´t support Read Replicas
 
 - Can be promoted to master, this will break the Read Replica
 
@@ -777,3 +777,8 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 - Redis is Multi-AZ
 
 - You can do backups and restore of Redis
+
+
+## Chapter 6: Route 53 <img src="images/aws-route53-logo.png" width="30px">
+
+**DNS 101 - Exam Tips**
