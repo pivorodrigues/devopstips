@@ -781,6 +781,28 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 ## Chapter 6: Route 53 <img src="images/aws-route53-logo.png" width="30px">
 
-**DNS 101 - Exam Tips**
-
 - _How to discover a DNS name server record:_ `$ nslookup -type=ns globo.com`
+
+- _How to discover the TTL of a server:_ `$ dig +nocmd +noall +answer +ttlid a google.com`
+
+**Route53 - Exam Tips**
+
+- ELBs do not have pre-defined IPv4 addresses; you resolve to them using a DNS name
+
+- Understand the difference between an **Alias Record** and a **CNAME** [Medium](https://medium.com/@Constellix/whats-the-difference-between-aname-aaaa-a-and-cname-records-656c1ca2cb73)
+
+- Given the choice, always choose an **Alias Record** over a **CNAME**
+
+- **Common DNS Types:**
+
+  - SOA Records
+
+  - NS Records
+
+  - A Records
+
+  - CNAMES
+
+  - MX Records
+
+  - PTR Records
