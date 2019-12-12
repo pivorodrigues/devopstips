@@ -789,7 +789,7 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 - ELBs do not have pre-defined IPv4 addresses; you resolve to them using a DNS name
 
-- Understand the difference between an **Alias Record** and a **CNAME** [Medium](https://medium.com/@Constellix/whats-the-difference-between-aname-aaaa-a-and-cname-records-656c1ca2cb73)
+- Understand the difference between an **Alias Record** and a **CNAME** [[Medium](https://medium.com/@Constellix/whats-the-difference-between-aname-aaaa-a-and-cname-records-656c1ca2cb73)]
 
 - Given the choice, always choose an **Alias Record** over a **CNAME**
 
