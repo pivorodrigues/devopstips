@@ -779,7 +779,8 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 - You can do backups and restore of Redis
 
 
-
 ## Chapter 6: Route 53 <img src="images/aws-route53-logo.png" width="30px">
 
 **DNS 101 - Exam Tips**
+
+- _How to discover a DNS server:_ `$ nslookup -type=ns globo.com`
