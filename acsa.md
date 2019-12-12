@@ -783,4 +783,4 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 **DNS 101 - Exam Tips**
 
-- _How to discover a DNS server:_ `$ nslookup -type=ns globo.com`
+- _How to discover a DNS name server record:_ `$ nslookup -type=ns globo.com`
