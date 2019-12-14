@@ -818,3 +818,37 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 #
 
 **Route53 Routing Policies Available on AWS**
+
+- Simple Routing
+
+- Weighted Routing
+
+- Latency-based Routing
+
+- Failover Routing
+
+- Geolocation Routing
+
+- Geoproximity Routing (Traffic Flow Only)
+
+- Multivalue Answer Routing
+
+#
+
+**Simple Routing Policy - Lab**
+
+- If you choose the simple routing policy, you can only have one record with multiple IP addresses. If you specify multiple values in a record, Route53 returns all values to the user in a random order.
+
+#
+
+**Weighted Routing Policy - Lab**
+
+<p align="center"><img src="images/aws-weighted-routing.png" width="750px"></p>
+
+**Health Checks**
+
+- You can set health checks on individual record sets
+
+- If a record set fails, a health check it will be removed from Route53 until it passes the health check
+
+- You can set SNS notifications to alert you if a health check is failed
