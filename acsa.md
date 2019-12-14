@@ -858,3 +858,9 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 **Latency-Based Routing**
 
 <p align="center"><img src="images/aws-latency-routing.png" width="750px"></p>
+
+#
+
+**Failover Routing Policy**
+
+<p align="center"><img src="images/aws-failover-routing.png" width="750px"></p>
