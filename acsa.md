@@ -843,7 +843,7 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 **Weighted Routing Policy - Lab**
 
-<p align="center"><img src="images/aws-weighted-routing.png" width="750px"></p>
+<p align="center"><img src="images/aws-wighted-routing.png" width="750px"></p>
 
 **Health Checks**
 
