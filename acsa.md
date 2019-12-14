@@ -60,7 +60,7 @@
 
 ## Chapter 3: Identity Access Management & S3 <img src="images/s3logo.png" width="30px">
 
-**Identity Access Management 101 - Exam Tips** [[FAQ](https://aws.amazon.com/pt/iam/faqs/)]
+**Identity Access Management 101** [[FAQ](https://aws.amazon.com/pt/iam/faqs/)]
 
 - Identity Access Management consists of the following:
 
@@ -96,7 +96,7 @@ _Resources:_
 
 #
 
-**S3 (Simple Storage Service) 101 - Exam Tips** [[FAQ](https://aws.amazon.com/pt/s3/faqs/)]
+**S3 (Simple Storage Service) 101** [[FAQ](https://aws.amazon.com/pt/s3/faqs/)]
 
 - Remember that S3 is **Object-based**: i.e. allows you to upload files.
 
@@ -160,7 +160,7 @@ _Resources:_
 
 #
 
-**S3 Bucket Lab - Exam Tips**
+**S3 Bucket Lab**
 
 - **Buckets are a universal name space**
 
@@ -172,7 +172,7 @@ _Resources:_
 
 #
 
-**S3 Security and Encryption - Exam Tips**
+**S3 Security and Encryption**
 
 - Encryption In Transit is achieved by:
 
@@ -190,7 +190,7 @@ _Resources:_
 
 #
 
-**S3 Versioning - Exam Tips**
+**S3 Versioning**
 
 - Store all versions of an object (including all writes and even if you delete an object).
 
@@ -204,7 +204,7 @@ _Resources:_
 
 #
 
-**S3 Lifecycle Management, S3 IA and Glacier - Exam Tips**
+**S3 Lifecycle Management, S3 IA and Glacier**
 
 - Automates moving your objects between the different storage tiers.
 
@@ -214,7 +214,7 @@ _Resources:_
 
 #
 
-**Cross Region Replication - Exam Tips**
+**Cross Region Replication**
 
 - Versioning must be enabled on both the source and destination buckets.
 
@@ -240,7 +240,7 @@ _Resources:_
 
 #
 
-**CloudFront - Exam Tips**
+**CloudFront**
 
 - **Edge Location** - This is the location where content will be cached. This is separate to an AWS Region/AZ.
 
@@ -264,7 +264,7 @@ _Resources:_
 
 #
 
-**Snowball - Exam Tips**
+**Snowball**
 
 - Understand what Snowball is.
 
@@ -276,7 +276,7 @@ _Resources:_
 
 #
 
-**Storage Gateway - Exam Tips**
+**Storage Gateway**
 
 - **File Gateway**
 
@@ -293,7 +293,7 @@ _Resources:_
 
 ## Chapter 4: EC2 <img src="images/ec2.png" width="30px">
 
-**EC2 (Elastic Compute Cloud) 101 - Exam Tips** [[FAQ](https://aws.amazon.com/pt/ec2/faqs/)]
+**EC2 (Elastic Compute Cloud) 101** [[FAQ](https://aws.amazon.com/pt/ec2/faqs/)]
 
 - **EC2 Pricing Policies:**
 
@@ -359,7 +359,7 @@ _Resources:_
 
 #
 
-**Security Groups Lab - Exam Tips**
+**Security Groups Lab**
 
 - All Inbound traffic is blocked by default.
 
@@ -387,7 +387,7 @@ _Resources:_
 
 #
 
-**Volumes & Snapshots - Exam Tips**
+**Volumes & Snapshots**
 
 - Volumes exist on EBS. Think of EBS as a virtual hard disk.
 
@@ -415,7 +415,7 @@ _Resources:_
 
 #
 
-**AMI Types (EBS vs Instance Store) - Exam Tips**
+**AMI Types (EBS vs Instance Store)**
 
 - Instance Store Volumes are sometimes called Ephemeral Storage.
 
@@ -429,7 +429,7 @@ _Resources:_
 
 #
 
-**Encrypted Root Device Volumes & Snapshots - Exam Tips**
+**Encrypted Root Device Volumes & Snapshots**
 
 - Snapshots of encrypted volumes are encrypted automatically.
 
@@ -453,7 +453,7 @@ _Resources:_
 
 #
 
-**Cloudwatch 101 - Exam Tips**
+**Cloudwatch 101**
 
 - Cloudwatch is used for monitoring performance.
 
@@ -469,7 +469,7 @@ _Resources:_
 
 #
 
-**Cloudwatch Lab - Exam Tips**
+**Cloudwatch Lab**
 
 - Standard monitoring = 5 minutes.
 
@@ -491,7 +491,7 @@ _Resources:_
 
 #
 
-**AWS Command Line (CLI) Lab - Exam Tips**
+**AWS Command Line (CLI) Lab**
 
 - You can interact with AWS from anywhere in the world just by using the command line (CLI).
 
@@ -501,7 +501,7 @@ _Resources:_
 
 #
 
-**Identity Access Management Roles LAB - Exam Tips**
+**Identity Access Management Roles LAB**
 
 - Roles are more secure than storing your access key and secret access key on individual EC2 instances.
 
@@ -513,7 +513,7 @@ _Resources:_
 
 #
 
-**Instance Metadata - Exam Tips**
+**Instance Metadata**
 
 - Command to see the content of bootstrap script inside our EC2 instance:
 
@@ -583,7 +583,7 @@ _Resources:_
 
 #
 
-**EFS - Elastic File System - Exam Tips**
+**EFS - Elastic File System**
 
 - Supports the Network File System version 4 (NFSv4) protocol.
 
@@ -599,7 +599,7 @@ _Resources:_
 
 #
 
-**Placement Groups - Exam Tips**
+**Placement Groups**
 
 - **Three Types of Placement Groups**
 
@@ -632,7 +632,7 @@ _Resources:_
 
 ## Chapter 5: Databases on AWS <img src="images/aws-database.png" width="30px">
 
-**Databases 101 - Exam Tips**
+**Databases 101**
 
 - **RDS (OLTP - Online Transaction Processing)(Relational Solution)**
 
@@ -686,7 +686,7 @@ _Resources:_
 
 #
 
-**RDS -  Backups, Multi-AZ and Read Replicas - Exam Tips**
+**RDS -  Backups, Multi-AZ and Read Replicas**
 
 **Backups**
 
@@ -722,7 +722,7 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 #
 
-**DynamoDB - Exam Tips**
+**DynamoDB**
 
 - **The basics of DynamoDB** are as follows:
 
@@ -736,7 +736,7 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 #
 
-**Redshift - Exam Tips**
+**Redshift**
 
 - Redshift is a Data Warehouse used for business intelligence
 
@@ -754,7 +754,7 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 #
 
-**Amazon Aurora - Exam Tips**
+**Amazon Aurora**
 
 - 2 copies of your data is contained in each availability zone, with minimum of 3 availability zones. 6 copies of your data
 
@@ -768,7 +768,7 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 #
 
-**Elasticache - Exam Tips**
+**Elasticache**
 
 - Use Elasticache to increase database and web application performance
 
@@ -785,7 +785,7 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 - _How to discover the TTL of a server:_ `$ dig +nocmd +noall +answer +ttlid a google.com`
 
-**Route53 - Exam Tips**
+**Route53**
 
 - ELBs do not have pre-defined IPv4 addresses; you resolve to them using a DNS name
 
@@ -806,3 +806,15 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
   - MX Records
 
   - PTR Records
+
+#
+
+**Register a Domain Name - Lab**
+
+- You can buy domain names directly with AWS
+
+- It can take up to 3 days to register depending on the circumstances
+
+#
+
+**Route53 Routing Policies Available on AWS**
