@@ -785,7 +785,7 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 - _How to discover the TTL of a server:_ `$ dig +nocmd +noall +answer +ttlid a google.com`
 
-**Route53**
+**Route 53**
 
 - ELBs do not have pre-defined IPv4 addresses; you resolve to them using a DNS name
 
@@ -817,7 +817,7 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 #
 
-**Route53 Routing Policies Available on AWS**
+**Route 53 Routing Policies Available on AWS**
 
 - Simple Routing
 
@@ -870,3 +870,17 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 **Geolocation Routing Policy**
 
 <p align="center"><img src="images/aws-geolocation-routing.png" width="750px"></p>
+
+#
+
+**Geoproximity Routing (Traffic Flow Only)**
+
+- Geoproximity routing lets Amazon Route 53 route traffic to your resources based on the geographic location of your users and your resources. You can also optionally choose to route more traffic or less to a given resource by specifying a value, known as Bias. A Bias expands or shrinks the size of the geographic region from which traffic is routed to a resource.
+
+**To use geoproximity routing, you must use Route 53 traffic flow.**
+
+#
+
+**Multivalue Answer Policy**
+
+<p align="center"><img src="images/aws-multivalue-routing.png" width="750px"></p>
