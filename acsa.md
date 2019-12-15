@@ -864,3 +864,9 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 **Failover Routing Policy**
 
 <p align="center"><img src="images/aws-failover-routing.png" width="750px"></p>
+
+#
+
+**Geolocation Routing Policy**
+
+<p align="center"><img src="images/aws-geolocation-routing.png" width="750px"></p>
