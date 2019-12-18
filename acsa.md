@@ -889,7 +889,7 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 **Introduction to VPCs**
 
-Remember the following:
+_Remember the following:_
 
   - Think of VPC as a logical datacenter in AWS
 
@@ -904,3 +904,19 @@ Remember the following:
 <p align="center"><img src="images/aws-no-tp.png" width="400px"></p>
 
 #
+
+**VPC Overview**
+
+_Remember the following:_
+
+  - When you create a VPC a default Route Table, Network Acces Control List (NACL) and a default Security Group are created
+
+  - It won´t create any subnets, nor will it create a default internet gateway
+
+  - US-East-1A in your AWS account can be completely different availability zone to US-East-1A in another AWS account. The AZ's are randomized
+
+  - Amazon always reserve 5 IP addresses within your subnets
+
+  - You can only have 1 Internet Gateway per VPC
+
+  - Security Groups can't span VPC's
