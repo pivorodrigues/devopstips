@@ -884,3 +884,5 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 **Multivalue Answer Policy**
 
 <p align="center"><img src="images/aws-multivalue-routing.png" width="750px"></p>
+
+## Chapter 7: VPCs <img src="images/aws-vpc.png" width="30px">
