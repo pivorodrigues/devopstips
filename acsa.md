@@ -886,3 +886,21 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 <p align="center"><img src="images/aws-multivalue-routing.png" width="750px"></p>
 
 ## Chapter 7: VPCs <img src="images/aws-vpc.png" width="30px">
+
+**Introduction to VPCs**
+
+Remember the following:
+
+  - Think of VPC as a logical datacenter in AWS
+
+  - Consists of IGWs (Internet Gateways)(Or Virtual Private Gateways), Route Tables, Network Access Control Lists, Subnets and Security Groups
+
+  - 1 Subnet = 1 Availability Zone
+
+  - Security Groups are Stateful; Network Access Control Lists are Stateless
+
+  - NO TRANSITIVE PEERING
+
+<p align="center"><img src="images/aws-no-tp.png" width="550px"></p>
+
+#
