@@ -901,6 +901,6 @@ Remember the following:
 
   - NO TRANSITIVE PEERING
 
-<p align="center"><img src="images/aws-no-tp.png" width="550px"></p>
+<p align="center"><img src="images/aws-no-tp.png" width="400px"></p>
 
 #
