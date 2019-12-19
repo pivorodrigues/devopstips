@@ -907,6 +907,10 @@ _Remember the following:_
 
 **VPC Overview**
 
+[VPCs and Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html)
+[Troubleshooting Connecting to Your Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html)
+[SSH Agent Forwarding](https://aws.amazon.com/pt/blogs/security/securely-connect-to-linux-instances-running-in-a-private-amazon-vpc/)
+
 <p align="center"><img src="images/aws-vpc-arc.png" width="700px"></p>
 
 _Remember the following:_
@@ -927,4 +931,40 @@ _Remember the following:_
 
 **NAT Instances & NAT Gateways**
 
+[Nat Instances](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_NAT_Instance.html)
+
 <p align="center"><img src="images/aws-nat-gateways.png" width="700px"></p>
+
+- **Nat Instances Exam Tips:**
+
+  - When creating a NAT instance, disable Source/Destination Check on the instance
+
+  - NAT instances must be in a public subnet
+
+  - There must be a route out of the private subnet to the NAT instance, in order for this to work
+
+  - The amount of traffic that NAT instances can support depends on the instance size. If you are bottlenecking, increase the instance size
+
+  - You can create high availability using Autoscaling Groups, multiple subnets in different AZs, and a script to automate failover
+
+  - Behind a Security Group
+
+- **Nat Gateways Exam Tips:**
+
+  - Redundant inside the Availability Zone
+
+  - Preferred by the enterprise
+
+  - Starts at 5Gbps and scales currently to 45Gbps
+
+  - No need to patch
+
+  - Not associated with security groups
+
+  - Automatically assigned a public ip address
+
+  - Remember to update your route tables
+
+  - No need to disable Source/Destination Checks
+
+  - _If you have resources in multiple Availability Zones and they share one NAT Gateway, in the event that the NAT gateway's Availability Zone is down, resources in the other Availability Zones lose internet access. To create an Availability Zone-independent architecture, create a NAT gateway in each Availability Zone and configure your routing to ensure that resources use the NAT gateway in the same Availability Zone._  
