@@ -907,6 +907,8 @@ _Remember the following:_
 
 **VPC Overview**
 
+<p align="center"><img src="images/aws-vpc-arc.png" width="400px"></p>
+
 _Remember the following:_
 
   - When you create a VPC a default Route Table, Network Acces Control List (NACL) and a default Security Group are created
