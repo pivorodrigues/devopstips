@@ -908,7 +908,9 @@ _Remember the following:_
 **VPC Overview**
 
 [VPCs and Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html)
+
 [Troubleshooting Connecting to Your Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html)
+
 [SSH Agent Forwarding](https://aws.amazon.com/pt/blogs/security/securely-connect-to-linux-instances-running-in-a-private-amazon-vpc/)
 
 <p align="center"><img src="images/aws-vpc-arc.png" width="700px"></p>
