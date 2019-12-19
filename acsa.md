@@ -922,3 +922,9 @@ _Remember the following:_
   - You can only have 1 Internet Gateway per VPC
 
   - Security Groups can't span VPC's
+
+#
+
+**NAT Instances & NAT Gateways**
+
+<p align="center"><img src="images/aws-nat-gateways.png" width="700px"></p>
