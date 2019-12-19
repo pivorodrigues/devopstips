@@ -907,7 +907,7 @@ _Remember the following:_
 
 **VPC Overview**
 
-<p align="center"><img src="images/aws-vpc-arc.png" width="400px"></p>
+<p align="center"><img src="images/aws-vpc-arc.png" width="700px"></p>
 
 _Remember the following:_
 
