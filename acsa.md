@@ -923,16 +923,37 @@ _Remember the following:_
 
 - Steps:
 
-  1. Set the basic VPC information: Name and IPv4 CIDR Block: `10.0.0.0/16`
+  1. Set the basic VPC information - Name and IPv4 CIDR Block: `10.0.0.0/16`
 
   _The range of IPv4 addresses for our VPC in CIDR block format. As mentioned in the earlier topic, block sizes must be between a /16 and /28 netmask._
 
   2. Choose _Amazon provided IPv6 CIDR block_.
 
-  _After the new VPC creation, AWS created Security Group, Network ACL and Route Table, we need to create subnets:_
+  _After the new VPC creation, AWS created Security Group, Network ACL and Route Table. After this, we need to create subnets:_
 
   <p align="center"><img src="images/aws-vpc-lab1.png" width="700px"></p>
 
+  3. Create subnet with basic information - Name, VPC, AZ and IPv4 CIDR block (required): `10.0.1.0/24`
+
+  4. Create another subnet with basic information - Name, VPC, AZ and IPv4 CIDR block (required): `10.0.2.0/24`
+
+  5. In order to automatically request a public IPv4 or IPv6 address for an instance launched in a subnets, enable auto-assign IP settings for first subnet.
+
+  <p align="center"><img src="images/aws-vpc-lab2.png" width="700px"></p>
+
+  6. Create an internet gateway and attach it to the VPC created.
+
+  _OBS:You can have only one attached internet gateway to a VPC._
+
+  7. Create a new route table and associate it to the public subnet: 0.0.0.0/0 to created internet gateway.
+
+  8. Associate the public route table to the `10.0.1.0/24` subnet.
+
+  9. Create 2 EC2 instances and select public subnet settings for one of them.
+
+  _OBS: Create an New WebDMZ security group for the Web instance with SSH and HTTP protocols._  
+
+  <p align="center"><img src="images/aws-vpc-lab3.png" width="700px"></p>
 
 
 #
