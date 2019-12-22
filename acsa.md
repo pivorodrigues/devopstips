@@ -931,7 +931,7 @@ _Remember the following:_
 
   _After the new VPC creation, AWS created Security Group, Network ACL and Route Table, we need to create subnets:_
 
-  <p align="center"><img src="images/aws-vpc-lab1.png" width="400px"></p>
+  <p align="center"><img src="images/aws-vpc-lab1.png" width="700px"></p>
 
 
 
