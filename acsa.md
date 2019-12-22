@@ -921,6 +921,12 @@ _Remember the following:_
 
 **Build a Custom VPC - Lab Notes**
 
+[VPCs and Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html)
+
+[Troubleshooting Connecting to Your Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html)
+
+[SSH Agent Forwarding](https://aws.amazon.com/pt/blogs/security/securely-connect-to-linux-instances-running-in-a-private-amazon-vpc/)
+
 - Steps:
 
   **1.** Set the basic VPC information - Name and IPv4 CIDR Block: `10.0.0.0/16`
@@ -951,36 +957,37 @@ _Remember the following:_
 
   **9.** Create 2 EC2 instances and select public subnet settings for one of them.
 
+  **10.** Create a security group to the private instance allowing.
+
+  **11.** Change the private instance network to the new security group.
+
   _OBS: Create an New WebDMZ security group for the Web instance with SSH and HTTP protocols._  
 
   <p align="center"><img src="images/aws-vpc-lab3.png" width="700px"></p>
 
+  <p align="center"><img src="images/aws-vpc-arc.png" width="700px"></p>
+
+  _Remember the following:_
+
+    - When you create a VPC a default Route Table, Network Access Control List (NACL) and a default Security Group are created
+
+    - It won't create any subnets, nor will it create a default internet gateway
+
+    - US-East-1A in your AWS account can be completely different availability zone to US-East-1A in another AWS account. The AZ's are randomized
+
+    - Amazon always reserve 5 IP addresses within your subnets
+
+    - You can only have 1 Internet Gateway per VPC
+
+    - Security Groups can't span VPC's
 
 #
 
 **VPC Overview**
 
-[VPCs and Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html)
 
-[Troubleshooting Connecting to Your Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html)
 
-[SSH Agent Forwarding](https://aws.amazon.com/pt/blogs/security/securely-connect-to-linux-instances-running-in-a-private-amazon-vpc/)
 
-<p align="center"><img src="images/aws-vpc-arc.png" width="700px"></p>
-
-_Remember the following:_
-
-  - When you create a VPC a default Route Table, Network Access Control List (NACL) and a default Security Group are created
-
-  - It won't create any subnets, nor will it create a default internet gateway
-
-  - US-East-1A in your AWS account can be completely different availability zone to US-East-1A in another AWS account. The AZ's are randomized
-
-  - Amazon always reserve 5 IP addresses within your subnets
-
-  - You can only have 1 Internet Gateway per VPC
-
-  - Security Groups can't span VPC's
 
 #
 
