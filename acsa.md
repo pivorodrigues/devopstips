@@ -901,7 +901,7 @@ _Private IP Address Ranges:_
     192.168.0.0 - 192.168.255.255 (192.168/16 prefix)
   ```
 
-_OBS:_ Amazon don't allow /8 prefix. The **larger subnet** that you can have inside a VPC is a **/16**. The **smallest subnet** that you can have inside a VPC is **/28**.
+**OBS:** Amazon don't allow /8 prefix. The **larger subnet** that you can have inside a VPC is a **/16**. The **smallest subnet** that you can have inside a VPC is **/28**.
 
 _Remember the following:_
 
@@ -916,6 +916,24 @@ _Remember the following:_
   - NO TRANSITIVE PEERING
 
 <p align="center"><img src="images/aws-no-tp.png" width="400px"></p>
+
+#
+
+**Build a Custom VPC - Lab Notes**
+
+- Steps:
+
+  1. Set the basic VPC information: Name and IPv4 CIDR Block: `10.0.0.0/16`
+
+  _The range of IPv4 addresses for our VPC in CIDR block format. As mentioned in the earlier topic, block sizes must be between a /16 and /28 netmask._
+
+  2. Choose _Amazon provided IPv6 CIDR block_.
+
+  _After the new VPC creation, AWS created Security Group, Network ACL and Route Table, we need to create subnets:_
+
+  <p align="center"><img src="images/aws-vpc-lab1.png" width="400px"></p>
+
+
 
 #
 
