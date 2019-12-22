@@ -961,6 +961,10 @@ _Remember the following:_
 
   **11.** Change the private instance network to the new security group.
 
+  **12.** Create a NAT EC2 instance and disable Source/Destination check.
+
+  **13.** Add a route in the VPC's route table to communicate the NAT instance and the private instance.
+
   _OBS: Create an New WebDMZ security group for the Web instance with SSH and HTTP protocols._  
 
   <p align="center"><img src="images/aws-vpc-lab3.png" width="700px"></p>
@@ -980,14 +984,6 @@ _Remember the following:_
     - You can only have 1 Internet Gateway per VPC
 
     - Security Groups can't span VPC's
-
-#
-
-**VPC Overview**
-
-
-
-
 
 #
 
