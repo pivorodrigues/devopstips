@@ -889,6 +889,20 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 **Introduction to VPCs**
 
+[Interactive IP Address and CIDR Range Visualizer](https://cidr.xyz/)
+
+_Note:_ Before you go and do your exam, you should be able to build out your own VPC from memory. If you can do that, then you'll be able to pass the Certified Solutions Architect Associate Exam.
+
+_Private IP Address Ranges:_
+
+  ```
+    10.0.0.0 - 10.255.255.255 (10/8 prefix)
+    172.16.0.0 - 172.31.255.255 (172.16/12 prefix)
+    192.168.0.0 - 192.168.255.255 (192.168/16 prefix)
+  ```
+
+_OBS:_ Amazon don't allow /8 prefix. The **larger subnet** that you can have inside a VPC is a **/16**. The **smallest subnet** that you can have inside a VPC is **/28**.
+
 _Remember the following:_
 
   - Think of VPC as a logical datacenter in AWS
@@ -917,9 +931,9 @@ _Remember the following:_
 
 _Remember the following:_
 
-  - When you create a VPC a default Route Table, Network Acces Control List (NACL) and a default Security Group are created
+  - When you create a VPC a default Route Table, Network Access Control List (NACL) and a default Security Group are created
 
-  - It won´t create any subnets, nor will it create a default internet gateway
+  - It won't create any subnets, nor will it create a default internet gateway
 
   - US-East-1A in your AWS account can be completely different availability zone to US-East-1A in another AWS account. The AZ's are randomized
 
@@ -969,4 +983,8 @@ _Remember the following:_
 
   - No need to disable Source/Destination Checks
 
-  - _If you have resources in multiple Availability Zones and they share one NAT Gateway, in the event that the NAT gateway's Availability Zone is down, resources in the other Availability Zones lose internet access. To create an Availability Zone-independent architecture, create a NAT gateway in each Availability Zone and configure your routing to ensure that resources use the NAT gateway in the same Availability Zone._  
+  - _If you have resources in multiple Availability Zones and they share one NAT Gateway, in the event that the NAT gateway's Availability Zone is down, resources in the other Availability Zones lose internet access. To create an Availability Zone-independent architecture, create a NAT gateway in each Availability Zone and configure your routing to ensure that resources use the NAT gateway in the same Availability Zone._
+
+#
+
+**Access Control Lists (ACL)**
