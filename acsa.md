@@ -1048,3 +1048,23 @@ _Remember the following:_
 - Network ACLs have separate inbound and outbound rules, and each rule can either allow or deny traffic.
 
 - Network ACLs are stateless; responses to allowed inbound traffic are subject to the rules for outbound traffic (and vice versa).
+
+#
+
+**Custom VPCs and ELBs**
+
+- **[Important to Exam]** When you're provisioning a load balancer, you're gonna need at least two public subnets.
+
+#
+
+**VPC Flow Logs**
+
+_What Are VPC Flow Logs?_
+
+VPC Flow Logs is a feature that enables you to capture information about the IP traffic going to an from network interfaces in your VPC. Flow log data is stored using Amazon CloudWatch Logs. After you've created a flow log, you can view and retrieve its data in Amazon CloudWatch Logs.
+
+- You cannot enable flow logs for VPCs that are peered with your VPC unless the peer VPC is in your account.
+
+- You cannot tag a flow log.
+
+- After you've created a flow log, you cannot change its configuration; for example, you can't associate a different IAM role with the flow log.
