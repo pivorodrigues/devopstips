@@ -1080,3 +1080,23 @@ VPC Flow Logs is a feature that enables you to capture information about the IP 
 - DHCP traffic.
 
 - Traffic to the reserved IP address for the default VPC router.
+
+#
+
+**Bastion Hosts**
+
+- A NAT Gateway or NAT Instance is used to provide internet traffic to EC2 instances in a private subnets.
+
+- A Bastion is used to securely administer EC2 instances (Using SSH or RDP). Bastions are called Jump Boxes in Australia.]
+
+- You cannot use a NAT Gateway as a Bastion Host.
+
+#
+
+**Direct Connect**
+
+- Direct Connect directly connects your data center to AWS
+
+- Useful for high throughput workloads (i.e lots of network traffic)
+
+- Or if you need a stable and reliable secure connection
