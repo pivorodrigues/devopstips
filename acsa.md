@@ -1085,6 +1085,12 @@ VPC Flow Logs is a feature that enables you to capture information about the IP 
 
 **Bastion Hosts**
 
+**A Bastion Host:** A Bastion Host is a special purpose computer on a network specifically designed and configured to withstand attacks. The computer generally hosts a single application, for example a proxy server, and all other services are removed or limited to reduce the threat to the computer. It is hardened in this manner primarily due to its location and purpose, which is either on the outside of a firewall or in a demilitarized zone (DMZ) and usually involves access from untrusted networks or computers.
+
+[SSH Agent Forwarding](https://aws.amazon.com/pt/blogs/security/securely-connect-to-linux-instances-running-in-a-private-amazon-vpc/)
+
+<p align="center"><img src="images/aws-bastion-host.png" width="700px"></p>
+
 - A NAT Gateway or NAT Instance is used to provide internet traffic to EC2 instances in a private subnets.
 
 - A Bastion is used to securely administer EC2 instances (Using SSH or RDP). Bastions are called Jump Boxes in Australia.]
@@ -1100,3 +1106,7 @@ VPC Flow Logs is a feature that enables you to capture information about the IP 
 - Useful for high throughput workloads (i.e lots of network traffic)
 
 - Or if you need a stable and reliable secure connection
+
+#
+
+**VPC Endpoints**
