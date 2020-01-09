@@ -1085,9 +1085,9 @@ VPC Flow Logs is a feature that enables you to capture information about the IP 
 
 **Bastion Hosts**
 
-**A Bastion Host:** A Bastion Host is a special purpose computer on a network specifically designed and configured to withstand attacks. The computer generally hosts a single application, for example a proxy server, and all other services are removed or limited to reduce the threat to the computer. It is hardened in this manner primarily due to its location and purpose, which is either on the outside of a firewall or in a demilitarized zone (DMZ) and usually involves access from untrusted networks or computers.
-
 [SSH Agent Forwarding](https://aws.amazon.com/pt/blogs/security/securely-connect-to-linux-instances-running-in-a-private-amazon-vpc/)
+
+**A Bastion Host:** A Bastion Host is a special purpose computer on a network specifically designed and configured to withstand attacks. The computer generally hosts a single application, for example a proxy server, and all other services are removed or limited to reduce the threat to the computer. It is hardened in this manner primarily due to its location and purpose, which is either on the outside of a firewall or in a demilitarized zone (DMZ) and usually involves access from untrusted networks or computers.
 
 <p align="center"><img src="images/aws-bastion-host.png" width="700px"></p>
 
@@ -1100,6 +1100,10 @@ VPC Flow Logs is a feature that enables you to capture information about the IP 
 #
 
 **Direct Connect**
+
+**Direct Connect:** AWS Direct Connect is a cloud service solution that makes it easy to stablish a dedicated network connection from your premises to AWS. Using AWS Direct Connect, you can stablish private connectivity between AWS and your datacenter, office, or colocation environment, which in many cases can reduce your network costs, increase bandwidth throughput, and provide a more consistent network experience than Internet-based connections.
+
+<p align="center"><img src="images/aws-direct-connect.png" width="700px"></p>
 
 - Direct Connect directly connects your data center to AWS
 
