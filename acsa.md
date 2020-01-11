@@ -1132,3 +1132,7 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
   - Amazon S3
 
   - DynamoDB
+
+## Chapter 8: HA Architecture <img src="images/aws-elb-logo.png" width="30px">
+
+**Elastic Load Balancer**
