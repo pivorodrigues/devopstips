@@ -993,7 +993,7 @@ _Remember the following:_
 
 <p align="center"><img src="images/aws-nat-gateways.png" width="700px"></p>
 
-- **Nat Instances Exam Tips:**
+- **Nat Instances:**
 
   - When creating a NAT instance, disable Source/Destination Check on the instance
 
@@ -1007,7 +1007,7 @@ _Remember the following:_
 
   - Behind a Security Group
 
-- **Nat Gateways Exam Tips:**
+- **Nat Gateways:**
 
   - Redundant inside the Availability Zone
 
