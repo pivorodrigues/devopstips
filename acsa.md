@@ -1135,4 +1135,16 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
 
 ## Chapter 8: HA Architecture <img src="images/aws-elb-logo.png" width="30px">
 
-**Elastic Load Balancer**
+**Elastic Load Balancers**
+
+- ***Application Load Balancers:*** are best suited for load balancing of HTTP and HTTPS traffic. They operate at Layer 7 and are application-aware. They are intelligent, and you can create advanced request routing, sending specified requests to specific web servers.
+
+- ***Network Load Balancers:*** are best suited for load balancing of TCP traffic where extreme performance is required. Operating at the connection level (Layer 4), Network Load Balancer are capable of handling millions of requests per second, while maintaining ultra-low latencies. Use for extreme performance.
+
+- ***Classic Load Balancers:*** are the legacy Elastic Load Balancers. You can load balance HTTP/HTTPS applications and use Layer 7-specific features, such as X-Forwarded and sticky sessions. You can also use strict Layer 4 load balancing for applications that rely purely on the TCP protocol.
+
+- 504 Error means the gateway has timed out. This means that the application not responding within the idle timeout period.
+
+- Troubleshoot the application. Is it the Web Server or Database Server?
+
+- If you need the IPv4 address of your end user, look for the **X-Forwarded-For** header.
