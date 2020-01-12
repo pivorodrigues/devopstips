@@ -1148,3 +1148,13 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
 - Troubleshoot the application. Is it the Web Server or Database Server?
 
 - If you need the IPv4 address of your end user, look for the **X-Forwarded-For** header.
+
+- Instances monitored by ELB are reported as: InService or OutofService.
+
+- Healthchecks check the instance health by talking to it.
+
+- Load Balancers have their own DNS name. You are never given an IP address.
+
+- Read the ELB FAQ for all the AWS Load Balancers, because, the exam has about 10 questions of Load Balancing.
+
+#
