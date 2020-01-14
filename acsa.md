@@ -1158,3 +1158,17 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
 - Read the ELB FAQ for all the AWS Load Balancers, because, the exam has about 10 questions of Load Balancing.
 
 #
+
+**Advanced Load Balancer Theory**
+
+- **Sticky Sessions** enable your users to stick to the same EC2 instance. Can be useful if you are storing information locally to that instance.
+
+<p align="center"><img src="images/aws-sticky-sessions.png" width="700px"></p>
+
+- **Cross Zone Load Balancing** enables you to load balance across multiple availability zones.
+
+<p align="center"><img src="images/aws-cross-zone.png" width="700px"></p>
+
+- **Path Patterns** allow you to direct traffic to different EC2 instances based on the URL contained in the request.
+
+<p align="center"><img src="images/aws-path-patterns.png" width="700px"></p>
