@@ -1172,3 +1172,23 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
 - **Path Patterns** allow you to direct traffic to different EC2 instances based on the URL contained in the request.
 
 <p align="center"><img src="images/aws-path-patterns.png" width="700px"></p>
+
+#
+
+**HA Architecture**
+
+<p align="center"><img src="images/aws-ha-architecure.png" width="700px"></p>
+
+**Remember the following**
+
+  - Always Design for failure.
+
+  - Use Multiple AZ's and Multiple Regions wherever you can.
+
+  - Know the difference between Multi-AZ _(is for disaster recovery)_ and Read Replicas _(is for performance improvement)_ for RDS.
+
+  - Know the difference between scaling out _(horizontal - use of Auto-Scaling groups to add additional EC2 instances)_ and scaling up _(vertical - is where we increase the resources inside our EC2 instances)_.
+
+  - Read the question carefully and always consider the cost element.
+
+  - Know the different S3 storage classes.
