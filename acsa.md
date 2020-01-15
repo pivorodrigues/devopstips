@@ -1177,7 +1177,7 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
 
 **HA Architecture**
 
-<p align="center"><img src="images/aws-ha-architecure.png" width="700px"></p>
+<p align="center"><img src="images/aws-ha-architecture.png" width="700px"></p>
 
 **Remember the following**
 
