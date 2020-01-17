@@ -1206,3 +1206,25 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
 **Elastic Beanstalk**
 
 - With Elastic Beanstalk, you can quickly deploy and manage applications on the AWS Cloud without worring about the infrastructure that runs those applications. You simply upload your application, and Elastic Beanstalk automatically handles the details of capacity provisioning, load balancing, scaling and application health monitoring.
+
+## Chapter 9: Applications <img src="images/aws-sqs-logo.png" width="30px">
+
+**SQS - Simple Queue Service**
+
+[How Amazon SQS Works](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-how-it-works.html)
+
+- SQS is pull based, not pushed based.
+
+- Messages are 256 KB in size.
+
+- Messages can be kept in the queue from 1 minute to 14 days; the default retention period is 4 days.
+
+- Visibility Time Out is the amount of time that the message is invisible in the SQS queue after a reader picks up that message. Provided the job is processed before the visibility time out expires, the message will then be deleted from the queue. If the job is not processed within that time, the message will become visible again and another reader will process it. This could result in the same message being delivered twice.
+
+- Visibility timeout maximum is 12 hours.
+
+- SQS guarantees that your messages will be processed at least once.
+
+- Amazon SQS long polling is a way to retrieve messages from your Amazon SQS queues. While the regular short polling returns immediately (even if the message queue being polled is empty), long polling doesn't return a response until a message arrives in the message queue, or the long poll times out.
+
+- Types of Queue: Standard Queues (default) and FIFO Queues.
