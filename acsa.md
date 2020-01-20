@@ -1279,4 +1279,22 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
 
 **Elastic Transcoder**
 
-- Just remember that Elastic Transcoder is a media transcoder in the cloud. It converts media files from their original source format into different formats that will play on smartphones, tablets, PCs, etc.  
+- Just remember that Elastic Transcoder is a media transcoder in the cloud. It converts media files from their original source format into different formats that will play on smartphones, tablets, PCs, etc.
+
+#
+
+**API Gateway**
+
+- Remember what API Gateway is at a high level (It's essentially a door to your AWS environment).
+
+- API Gateway has caching capabilities to increase performance.
+
+- API Gateway is low cost and scales automatically.
+
+- You can throttle API Gateway to prevent attacks.
+
+- You can log results to CloudWatch.
+
+- If you are using Javascript/AJAX that uses multiple domains with API Gateway, ensure that you have enabled CORS on API Gateway.
+
+- CORS is enforced by the client.
