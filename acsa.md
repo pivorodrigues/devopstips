@@ -1231,7 +1231,7 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
 
 #
 
-**Simple Workflow Service**
+**SWF - Simple Workflow Service**
 
 - **SWF vs SQS**
 
@@ -1250,3 +1250,27 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
   - _Deciders_ - Control the flow of activity tasks in a workflow execution. If something has finished (or failed) in a workflow, a Decider decides what to do next.
 
   - _Activity Workers_ - Carry out the activity tasks.
+
+#
+
+**SNS - Simple Notification Service**
+
+- **SNS Benefits:**
+
+  - Instantaneous, push-based delivery (No polling)
+
+  - Simple APIs and easy integration with applications
+
+  - Flexible message delivery over multiple transport protocols
+
+  - Inexpensive, pay-as-you-go model with no up-front costs
+
+  - Web-based AWS Management Console offers the simplicity of a point-and-click interface
+
+- **SNS vs SQS**
+
+  - Both Messaging Services in AWS
+
+  - SNS - Push
+
+  - SQS - Poll (Pull)
