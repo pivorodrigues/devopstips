@@ -1228,3 +1228,25 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
 - Amazon SQS long polling is a way to retrieve messages from your Amazon SQS queues. While the regular short polling returns immediately (even if the message queue being polled is empty), long polling doesn't return a response until a message arrives in the message queue, or the long poll times out.
 
 - Types of Queue: Standard Queues (default) and FIFO Queues.
+
+#
+
+**Simple Workflow Service**
+
+- **SWF vs SQS**
+
+  - SQS has a retention period of up to 14 days; with SWF, workflow executions can last up to 1 year.
+
+  - Amazon SWF presents a task-oriented API, whereas Amazon SQS offers a message-oriented API.
+
+  - Amazon SWF ensures that a task is assigned only once and is never duplicated. With Amazon SQS, you need to handle duplicated messages and may also need to ensure that a message is processed only once.
+
+  - Amazon SWF keeps track of all the tasks and events in an application. With Amazon SQS, you need to implement your own application-level tracking, specially if your application uses multiple queues.
+
+**SWF Actors**
+
+  - _Workflow Starters_ - An application that can initiate (start) a workflow. Could be your e-commerce website following the placement of an order, or a mobile app searching for bus times.
+
+  - _Deciders_ - Control the flow of activity tasks in a workflow execution. If something has finished (or failed) in a workflow, a Decider decides what to do next.
+
+  - _Activity Workers_ - Carry out the activity tasks.
