@@ -1298,3 +1298,21 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
 - If you are using Javascript/AJAX that uses multiple domains with API Gateway, ensure that you have enabled CORS on API Gateway.
 
 - CORS is enforced by the client.
+
+#
+
+**Kinesis 101**
+
+- Know the difference between Kinesis Streams and Kinesis Firehose. You will be given scenario questions and you must choose the most relevant service.
+
+  - Kinesis Streams (Obs: Kinesis Streams has **Shards**)
+
+  <p align="center"><img src="images/aws-kinesis-st.png" width="700px"></p>
+
+  - Kinesis Firehose
+
+  <p align="center"><img src="images/aws-kinesis-fh.png" width="700px"></p>
+
+  - Understand what Kinesis Analytics is.
+
+  <p align="center"><img src="images/aws-kinesis-anl.png" width="700px"></p>
