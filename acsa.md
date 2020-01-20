@@ -1243,7 +1243,7 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
 
   - Amazon SWF keeps track of all the tasks and events in an application. With Amazon SQS, you need to implement your own application-level tracking, specially if your application uses multiple queues.
 
-**SWF Actors**
+- **SWF Actors**
 
   - _Workflow Starters_ - An application that can initiate (start) a workflow. Could be your e-commerce website following the placement of an order, or a mobile app searching for bus times.
 
