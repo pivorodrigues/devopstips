@@ -1274,3 +1274,9 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
   - SNS - Push
 
   - SQS - Poll (Pull)
+
+#
+
+**Elastic Transcoder**
+
+- Just remember that Elastic Transcoder is a media transcoder in the cloud. It converts media files from their original source format into different formats that will play on smartphones, tablets, PCs, etc.  
