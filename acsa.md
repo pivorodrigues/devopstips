@@ -1316,3 +1316,17 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
   - **Understand what Kinesis Analytics is.**
 
   <p align="center"><img src="images/aws-kinesis-anl.png" width="700px"></p>
+
+#
+
+**Web Identity Federation & Cognito**
+
+- Federation allows users to authenticate with a Web Identity Provider (like Google, Facebook and Amazon).
+
+- The user authenticates first with the Web ID Provider and receives an authentication token, which is exchanged for temporary AWS credentials allowing them to assume an IAM role.
+
+- Cognito is an Identity Broker which handles interaction between your applications and the Web ID Provider (You don't need to write your own code to do this).
+
+- **User pool** is user based. It handles things like user registration, authentication and account recovery.
+
+- **Identity pool** authorize access to your AWS resources.
