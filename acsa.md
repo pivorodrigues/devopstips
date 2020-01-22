@@ -1332,4 +1332,4 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
 - **Identity pool** authorize access to your AWS resources.
 
 
-## Chapter 10: Serverless <img src="images/aws-lambda-logo.jpg" width="30px">
+## Chapter 10: Serverless <img src="images/aws-lambda-logo.png" width="30px">
