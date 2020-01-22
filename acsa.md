@@ -1330,3 +1330,6 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
 - **User pool** is user based. It handles things like user registration, authentication and account recovery.
 
 - **Identity pool** authorize access to your AWS resources.
+
+
+## Chapter 10: Serverless <img src="images/aws-lambda-logo.png" width="30px">
