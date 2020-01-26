@@ -1,8 +1,8 @@
 ## AWS Certified Solutions Architect - Study and Quiz Notes
 
-### AWS S3
+### Amazon S3
 
-**S3 Bucket Properties**
+**Amazon S3 Bucket Properties**
 
   - **Versioning -** Versioning enables you to keep multiple versions of an object in one bucket. By default, versioning is disabled for a new bucket.
 
@@ -19,3 +19,11 @@
   - **Events –** You can enable certain Amazon S3 bucket events to send a notification message to a destination whenever the events occur. To enable events, choose **Events** and then specify the settings you want to use.
 
   - **Requester Pays** – You can enable Requester Pays so that the requester (instead of the bucket owner) pays for requests and data transfers.
+
+#
+
+**Amazon S3 Data Consistency Model**
+
+  - Amazon S3 provides *read-after-write* consistency for PUTS of **new** objects in buckets.
+
+  - Amazon S3 offers *eventual* consistency for **overwrite** PUTS and DELETES in all regions.
