@@ -22,6 +22,18 @@
 
 #
 
+**Amazon S3 Object Properties**
+
+  - **Storage class –** Each object in Amazon S3 has a storage class associated with it. The storage class that you choose to use depends on how frequently you access the object. The default storage class for S3 objects is STANDARD. You choose which storage class to use when you upload an object.
+
+  - **Encryption –** You can encrypt your S3 objects.
+
+  - **Metadata –** Each object in Amazon S3 has a set of name-value pairs that represents its metadata.
+
+  - **Tags –** You can add tags to an S3 object.
+
+#
+
 **Amazon S3 Data Consistency Model**
 
   - Amazon S3 provides *read-after-write* consistency for PUTS of **NEW** objects in buckets.
@@ -57,3 +69,11 @@
     - If you're uploading large objects over a **stable high-bandwidth network**, use multipart uploading to **maximize** the use of your available bandwidth by uploading object parts in parallel for mult-threaded performance.
 
     - If you're uploading over a **spotty network**, use multipart uploading to increase **resiliency** to network errors by avoiding upload restarts. When using multipart uploading, you need to retry uploading only parts that are interrupted during the upload. You don't need to restart uploading your object from the beginning.
+
+#
+
+**Amazon S3 Object-Level Actions Tracked by CloudTrail Logging**
+
+  - Using the information collected by CloudTrail, you can determine what request was made to Amazon S3, the source IP address from which the request was made, who made the request, when its made, and so on. This information helps you to track changes made to your AWS resources and to troubleshoot operational issues.
+
+  - You can also get CloudTrail logs for object-level Amazon S3 actions. To do this, specify the Amazon S3 object for your trail. When an object-level action occurs in your account, CloudTrail evaluates your trail settings. If the event matches the object that you specified in a trail, the event is logged.
