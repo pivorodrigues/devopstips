@@ -77,3 +77,11 @@
   - Using the information collected by CloudTrail, you can determine what request was made to Amazon S3, the source IP address from which the request was made, who made the request, when its made, and so on. This information helps you to track changes made to your AWS resources and to troubleshoot operational issues.
 
   - You can also get CloudTrail logs for object-level Amazon S3 actions. To do this, specify the Amazon S3 object for your trail. When an object-level action occurs in your account, CloudTrail evaluates your trail settings. If the event matches the object that you specified in a trail, the event is logged.
+
+#
+
+**Object Metadata**
+
+  - There are two kinds of metadata: ***system metadata*** and ***user-defined metadata***.
+
+    - **System-Defined Object Metadata**
