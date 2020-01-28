@@ -84,4 +84,40 @@
 
   - There are two kinds of metadata: ***system metadata*** and ***user-defined metadata***.
 
-    - **System-Defined Object Metadata**
+    - **System-Defined Object Metadata:**
+
+      1. Metadata such as object creation date is system controlled where only Amazon S3 can modify the value.
+
+      2. Other system metadata, such as the storage class configured for the object and whether the object has server-side encryption enabled, are examples of system metadata whose values you control. If your bucket is configured as a website, sometimes you might want to redirect a page request to another page or an external URL. In this case, a webpage is an object in your bucket. Amazon S3 stores the page redirect value as system metadata whose value you control. When you create objects, you can configure values of these system metadata items or update the values when you need to.
+
+    - **System-Defined Metadata list:**
+
+      - Date
+
+      - Content-Length
+
+      - Last-Modified
+
+      - Content-MD5
+
+      - x-amz-server-side-encryption _(the user can modify this metadata value)_
+
+      - x-amz-version-id
+
+      - x-amz-delete-marker
+
+      - x-amz-storage-class	_(the user can modify this metadata value)_
+
+      - x-amz-website-redirect-location	_(the user can modify this metadata value)_
+
+      - x-amz-server-side-encryption-aws-kms-key-id	_(the user can modify this metadata value)_
+
+      - x-amz-server-side-encryption-customer-algorithm	_(the user can modify this metadata value)_
+
+    - **User-Defined Object Metadata:**
+
+      - When uploading an object, you can also assign metadata to the object. You provide this optional information as a name-value (key-value) pair when you send a PUT or POST request to create the object. When you upload objects using the REST API, the optional user-defined metadata names must begin with "x-amz-meta-" to distinguish them from other HTTP headers. When you retrieve the object using the REST API, this prefix is returned. When you upload objects using the SOAP API, the prefix is not required. When you retrieve the object using the SOAP API, the prefix is removed, regardless of which API you used to upload the object.
+
+      When metadata is retrieved through the REST API, Amazon S3 combines headers that have the same name (ignoring case) into a comma-delimited list. If some metadata contains unprintable characters, it is not returned. Instead, the x-amz-missing-meta header is returned with a value of the number of unprintable metadata entries.
+
+      User-defined metadata is a set of key-value pairs. Amazon S3 stores user-defined metadata keys in lowercase. Each key-value pair must conform to US-ASCII when you are using REST and to UTF-8 when you are using SOAP or browser-based uploads via POST.
