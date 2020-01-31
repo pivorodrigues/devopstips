@@ -173,3 +173,9 @@
     - `https://s3.us-west-2.amazonaws.com/mybucket/puppy.jpg`
 
 #
+
+**About the Amazon S3 Storage classes**
+
+- AWS says: _"S3 One Zone-Infrequent Access (S3 One Zone-IA; Z-IA) is a new storage class designed for customers who want a lower-cost option for infrequently accessed data, but do not require the multiple Availability Zone data resilience model of the S3 Standard and S3 Standard-Infrequent Access (S3 Standard-IA; S-IA) storage classes"_.
+
+#
