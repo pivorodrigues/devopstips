@@ -168,7 +168,6 @@
 
   - For example, if you create a bucket named mybucket in the US West (Oregon) Region, and you want to access the puppy.jpg object in that bucket, you can use the following path-style URL:
 
-    - https://s3.us-west-2.amazonaws.com/mybucket/puppy.jpg
+    - `https://s3.us-west-2.amazonaws.com/mybucket/puppy.jpg`
 
 #
-      
