@@ -1,6 +1,6 @@
 ## AWS Certified Solutions Architect - Study and Quiz Notes
 
-### Amazon S3
+### Amazon S3 <img src="images/s3logo.png" width="30px">
 
 **Amazon S3 Bucket Properties**
 
