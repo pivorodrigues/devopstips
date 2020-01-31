@@ -40,6 +40,8 @@
 
   - Amazon S3 offers *eventual* consistency for **OVERWRITE** PUTS and DELETES in all regions.
 
+  - A process replaces existing object and immediately attempts to read it. Until the change is fully propagated, Amazon S3 might return the prior data. This is because _Updates to an object_ are atomic i.e. when you do PUT for an object after that you GET (read) that updated object or the old one (before the update), you will never get partial or corrupt or no data.
+
   - Read-after-write consistency allows you to retrieve objects immediatly after creation in Amazon S3.
 
 #
@@ -123,3 +125,50 @@
       - User-defined metadata is a set of key-value pairs. Amazon S3 stores user-defined metadata keys in lowercase. Each key-value pair must conform to US-ASCII when you are using REST and to UTF-8 when you are using SOAP or browser-based uploads via POST.
 
 #      
+
+**About to Enable Server Access Logging**
+
+- To track requests for access to your bucket, you can enable server access logging. Each access log record provides details about a single access request, such as the requester, bucket name, request time, request action, response status, and an error code, if relevant.
+
+- By default, logging is disabled. When logging is enabled, logs are saved to a bucket in the same AWS Region as the source bucket. You can have logs delivered to any bucket that you own that is in the same Region as the source bucket, including the source bucket itself.
+
+- Both the source and target buckets must be owned by the same AWS account, and the buckets must both be in the same Region.
+
+- Amazon S3 only supports granting permission to deliver access logs via bucket ACL, not via bucket policy.
+
+- Adding deny conditions to a bucket policy may prevent Amazon S3 from delivering access logs.
+
+- Default bucket encryption on the destination bucket may only be used if AES256 (SSE-S3) is selected. SSE-KMS encryption is not supported.
+
+#
+
+**About S3 and Cross-origin resource sharing (CORS)**
+
+- Cross-origin resource sharing (CORS) defines a way for client web applications that are loaded in one domais to interact with resources in a different domain. With CORS support, you can build rich client-side web applications with Amazon S3 and selectively allow cross-origin access to your Amazon S3 resources.
+
+#
+
+**Accessing a Bucket (Bucket URL types)**
+
+- **Virtual Hosted Style Access**
+
+  - In a **virtual-hosted–style** request, the bucket name is part of the domain name in the URL. Amazon S3 virtual hosted style URLs follow the format shown below.
+
+    - `https://bucket-name.s3.Region.amazonaws.com/key name`
+
+  - In this example, my-bucket is the bucket name, US West (Oregon) is the Region, and puppy.png is the key name:
+
+    - `https://my-bucket.s3.us-west-2.amazonaws.com/puppy.png`  
+
+- **Path-Style Access**
+
+  - In Amazon S3, path-style URLs follow the format shown below.
+
+    - `https://s3.Region.amazonaws.com/bucket-name/key name`
+
+  - For example, if you create a bucket named mybucket in the US West (Oregon) Region, and you want to access the puppy.jpg object in that bucket, you can use the following path-style URL:
+
+    - https://s3.us-west-2.amazonaws.com/mybucket/puppy.jpg
+
+#
+      
