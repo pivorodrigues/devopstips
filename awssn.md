@@ -234,7 +234,7 @@ To enable object replication, you add a replication configuration to your source
 
   - An AWS Identity and Access Management (IAM) role that Amazon S3 can assume to replicate objects on your behalf
 
-- **Types of Object Replication**
+**Types of Object Replication**
 
   You can replicate objects between different AWS Regions or within the same AWS Region.
 
@@ -242,7 +242,7 @@ To enable object replication, you add a replication configuration to your source
 
   - **Same-Region replication (SRR)** is used to copy objects across Amazon S3 buckets in the same AWS Region.
 
-- **Why Use Replication**
+**Why Use Replication**
 
   Replication can help you do the following:
 
