@@ -166,7 +166,7 @@
 
   - In Amazon S3, path-style URLs follow the format shown below.
 
-    - `https://s3.Region.amazonaws.com/bucket-name/key name`
+    - `https://s3.Region.amazonaws.com/bucket-name/keyname`
 
   - For example, if you create a bucket named mybucket in the US West (Oregon) Region, and you want to access the puppy.jpg object in that bucket, you can use the following path-style URL:
 
@@ -187,3 +187,19 @@
 - When versioning is enabled, a simple DELETE cannot permanently delete an object. Instead, Amazon S3 inserts a delete marker in the bucket, and that marker becomes the current version of the object with a new ID. When you try to GET an object whose current version is a delete marker, Amazon S3 behaves as though the object has been deleted (even though it has not been erased) and returns a 404 error.
 
 - To permanently delete versioned objects, you must DELETE Object versionId.
+
+#
+
+**Amazon S3 Notifications**
+
+The Amazon S3 notification feature enables you to receive notifications when certain events happen in your bucket. To enable notifications, you must first add a notification configuration that identifies the events you want Amazon S3 to publish and the destinations where you want Amazon S3 to send the notifications. You store this configuration in the notification subresource that is associated with a bucket.
+
+If two writes are made to a single non-versioned object at the same time, it is possible that only a single event notification will be sent. If you want to ensure that an event notification is sent for every successful write, you can enable versioning on your bucket. With versioning, every successful write will create a new version of your object and will also send an event notification.
+
+**Overview of Notifications**
+
+Currently, Amazon S3 can publish notifications for the following events:
+
+- **New object created events** — Amazon S3 supports multiple APIs to create objects. You can request notification when only a specific API is used (for example, `s3:ObjectCreated:Put`), or you can use a wildcard (for example, `s3:ObjectCreated:\*`) to request notification when an object is created regardless of the API used.
+
+- **Object removal events** — Amazon S3 supports deletes of versioned and unversioned objects.
