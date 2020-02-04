@@ -200,6 +200,6 @@ If two writes are made to a single non-versioned object at the same time, it is 
 
 Currently, Amazon S3 can publish notifications for the following events:
 
-- **New object created events** — Amazon S3 supports multiple APIs to create objects. You can request notification when only a specific API is used (for example, `s3:ObjectCreated:Put`), or you can use a wildcard (for example, `s3:ObjectCreated:\*`) to request notification when an object is created regardless of the API used.
+- **New object created events** — Amazon S3 supports multiple APIs to create objects. You can request notification when only a specific API is used (for example, `s3:ObjectCreated:Put`), or you can use a wildcard (for example, `s3:ObjectCreated:*`) to request notification when an object is created regardless of the API used.
 
 - **Object removal events** — Amazon S3 supports deletes of versioned and unversioned objects.
