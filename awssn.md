@@ -221,3 +221,31 @@ Amazon S3 supports the following destinations where it can publish events:
   You can use AWS Lambda to extend other AWS services with custom logic, or create your own backend that operates at AWS scale, performance, and security. With AWS Lambda, you can easily create discrete, event-driven applications that execute only when needed and scale automatically from a few requests per day to thousands per second.
 
   AWS Lambda can run custom code in response to Amazon S3 bucket events. You upload your custom code to AWS Lambda and create what is called a Lambda function. When Amazon S3 detects an event of a specific type (for example, an object created event), it can publish the event to AWS Lambda and invoke your function in Lambda. In response, AWS Lambda executes your function.
+
+#
+
+**Amazon S3 Replication**
+
+Replication enables automatic, asynchronous copying of objects across Amazon S3 buckets. Buckets that are configured for object replication can be owned by the same AWS account or by different accounts. You can copy objects between different AWS Regions or within the same Region.
+
+To enable object replication, you add a replication configuration to your source bucket. The minimum configuration must provide the following:
+
+  - The destination bucket where you want Amazon S3 to replicate objects
+
+  - An AWS Identity and Access Management (IAM) role that Amazon S3 can assume to replicate objects on your behalf
+
+- **Types of Object Replication**
+
+  You can replicate objects between different AWS Regions or within the same AWS Region.
+
+  - **Cross-Region replication (CRR)** is used to copy objects across Amazon S3 buckets in different AWS Regions.
+
+  - **Same-Region replication (SRR)** is used to copy objects across Amazon S3 buckets in the same AWS Region.
+
+- **Why Use Replication**
+
+  Replication can help you do the following:
+
+  - https://docs.aws.amazon.com/AmazonS3/latest/dev/replication.html
+
+  ...It continues    
