@@ -246,6 +246,12 @@ To enable object replication, you add a replication configuration to your source
 
   Replication can help you do the following:
 
-  - https://docs.aws.amazon.com/AmazonS3/latest/dev/replication.html
+  - **Replicate objects while retaining metadata** — You can use replication to make copies of your objects that retain all metadata, such as the original object creation time and version IDs. This capability is important if you need to ensure that your replica is identical to the source object.
 
-  ...It continues    
+  - **Replicate objects into different storage classes** — You can use replication to directly put objects into Glacier, DEEP ARCHIVE, or another storage class in the destination bucket. You can also replicate your data to the same storage class and use lifecycle policies on the destination bucket to move your objects to a colder storage class as it ages.
+
+  - **Maintain object copies under different ownership** — Regardless of who owns the source object, you can tell Amazon S3 to change replica ownership to the AWS account that owns the destination bucket. This is referred to as the owner override option. You can use this option to restrict access to object replicas.
+
+  - **Replicate objects within 15 minutes** — You can use S3 Replication Time Control (S3 RTC) to replicate your data in the same AWS Region or across different Regions in a predictable time frame. S3 RTC replicates 99.99 percent of new objects stored in Amazon S3 within 15 minutes (backed by a service level agreement).
+
+  
