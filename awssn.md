@@ -254,4 +254,40 @@ To enable object replication, you add a replication configuration to your source
 
   - **Replicate objects within 15 minutes** — You can use S3 Replication Time Control (S3 RTC) to replicate your data in the same AWS Region or across different Regions in a predictable time frame. S3 RTC replicates 99.99 percent of new objects stored in Amazon S3 within 15 minutes (backed by a service level agreement).
 
-  
+**When to Use Cross-Region Replication**
+
+  Cross-Region replication can help you do the following:
+
+  - **Meet compliance requirements** — Although Amazon S3 stores your data across multiple geographically distant Availability Zones by default, compliance requirements might dictate that you store data at even greater distances. Cross-Region replication allows you to replicate data between distant AWS Regions to satisfy these requirements.
+
+  - **Minimize latency** — If your customers are in two geographic locations, you can minimize latency in accessing objects by maintaining object copies in AWS Regions that are geographically closer to your users.
+
+  - **Increase operational efficiency** — If you have compute clusters in two different AWS Regions that analyze the same set of objects, you might choose to maintain object copies in those Regions.
+
+**When to Use Same-Region Replication**
+
+  Same-Region replication can help you do the following:
+
+  - **Aggregate logs into a single bucket** — If you  store logs in multiple buckets or across multiple accounts, you can easily replicate logs  into a single, in-Region bucket. This allows for simpler processing of logs in a single  location.
+
+  - **Configure live replication between production and test  accounts** — If you or your customers have production and test accounts that use the same data, you can replicate objects between those multiple accounts, while maintaining  object metadata, by implementing SRR rules.
+
+  - **Abide by data sovereignty laws** — You might be required to store multiple copies of your data in separate AWS accounts within a certain Region. Same-Region replication can help you automatically replicate critical data when compliance regulations don't allow the data to leave your  country.
+
+**Requirements for Replication**
+
+  Replication requires the following:
+
+  - The source bucket owner must have the source and destination AWS Regions enabled for their account. The destination bucket owner must have the destination Region-enabled for their account.
+
+  - Both source and destination buckets must have versioning enabled.
+
+  - Amazon S3 must have permissions to replicate objects from the source bucket to the destination bucket on your behalf.
+
+  - If the owner of the source bucket doesn't own the object in the bucket, the object owner must grant the bucket owner `READ` and `READ_ACP` permissions with the object access control list (ACL).
+
+  - If the source bucket has Amazon S3 object lock enabled, the destination bucket must also have object lock enabled.
+
+  If you are setting the replication configuration in a cross-account scenario, where source and destination buckets are owned by different AWS accounts, the following additional requirement applies:
+
+  - The owner of the destination bucket must grant the owner of the source bucket permissions to replicate objects with a bucket policy.
