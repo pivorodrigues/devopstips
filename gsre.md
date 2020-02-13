@@ -1,1 +1,1 @@
-## :elephant: Site Reliability Engineering: Measuring and Managing Reliability - Google Cloud (Coursera) :elephant:
+## :elephant: Site Reliability Engineering: Measuring and Managing Reliability :elephant:
