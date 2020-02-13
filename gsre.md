@@ -62,4 +62,8 @@
 
   - _business_ = 99.999%
 
+**Reliability in the cloud**
+
+- 28-day error budget **99.**<span style="color: red;">**9**</span>% = 40 min
+
 #  
