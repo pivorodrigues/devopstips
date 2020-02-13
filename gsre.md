@@ -70,10 +70,14 @@
 
 #
 
-### Why are SLOs important for your organization
+### Why are SLOs important for your organization?
 
-**How SLOs help your business make decisions**
+**How SLOs help you balance operational and project work**
 
-- _SLO: Service Level Objective_
+***Question:*** _What is the right level of reliability for the system you support?_
+
+- SLOs with executive support turn arguments into data-driven decisions.
+
+- SLOs can drive Ops response and long-term priorization.
 
 #  
