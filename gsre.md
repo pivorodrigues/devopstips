@@ -2,17 +2,17 @@
 
 ### Course Structure
 
-- **Targeting Reliability**
+- Targeting Reliability
 
-- **Operating for Reliability**
+- Operating for Reliability
 
-- **Choosing a Good SLI**
+- Choosing a Good SLI
 
-- **Developing SLOs and SLIs**
+- Developing SLOs and SLIs
 
-- **Quantifying Risks to SLOs**
+- Quantifying Risks to SLOs
 
-- **Consequences of SLO Misses**
+- Consequences of SLO Misses
 
 #
 
@@ -65,5 +65,7 @@
 **Reliability in the cloud**
 
 - 28-day error budget **99.**<span style="color:red;">**9**</span>% = 40 min
+
+<span style="color:red;">**9**</span>
 
 #  
