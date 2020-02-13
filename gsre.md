@@ -14,7 +14,7 @@
 
 - **Consequences of SLO Misses**
 
-#
+### What is SRE? How does It differ from DevOps?
 
 **Whats the difference between DevOps and SRE? (class SRE implements DevOps)**
 
@@ -43,6 +43,8 @@
   - Measure toil and reliability
 
 #
+
+### Who are CREs (Customer Reliability Engineering)? How can they help you be more reliable?
 
 **CRE's Three Reliability Principles**
 
