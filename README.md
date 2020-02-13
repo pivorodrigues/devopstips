@@ -195,7 +195,7 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
   - [DevOps Launch Checklist](https://sysadmincasts.com/episodes/70-devops-launch-checklist)
 
 - **SRE**
-  - [Site Reliability Engineering: Measuring and Managing Reliability - Google Cloud (Coursera)](gsre.md)
+  - [Site Reliability Engineering: Measuring and Managing Reliability - Google Cloud (Coursera)](gsre.md)<img src="images/gcloud.jpg" width="20px">
   - [SRE fundamentals: SLIs, SLAs and SLOs](https://cloud.google.com/blog/products/gcp/sre-fundamentals-slis-slas-and-slos)
   - [How to Avoid the 5 SRE Implementation Traps that Catch Even the Best Teams](https://thenewstack.io/how-to-avoid-the-5-sre-implementation-traps-that-catch-even-the-best-teams/)
   - [When SREs and Kubernetes Are Worth It — And When They Aren’t](https://thenewstack.io/a-google-engineer-on-when-an-sre-and-kubernetes-are-and-not-worth-it/)
