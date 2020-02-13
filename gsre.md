@@ -64,8 +64,12 @@
 
 **Reliability in the cloud**
 
-- 28-day error budget **99.**<span style="color:red;">**9**</span>% = 40 min
+- 28-day error budget **99.9%** = 40 min
 
-<span style="color:red;">**9**</span>
+- 28-day error budget **99.99%** = 4 min
+
+**How SLOs help your business make decisions**
+
+- _SLO: Service Level Objective_
 
 #  
