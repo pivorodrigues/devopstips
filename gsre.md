@@ -91,3 +91,15 @@
   2. What metrics to measure
 
   3. How much reliability is good enough
+
+#  
+
+**SLOs vs SLAs**
+
+- **SLA:** Service Level Agreement
+
+  - Agreements with customers about the reliability of your service
+
+- **SLO:** Service Level Objectives
+
+  - Thresholds that catch an issue before it breaches your SLA
