@@ -16,7 +16,7 @@
 
 #
 
-### What is SRE? How does It differ from DevOps?
+### Course introduction: What is SRE? How does It differ from DevOps?
 
 **Whats the difference between DevOps and SRE? (class SRE implements DevOps)**
 
@@ -81,3 +81,13 @@
 - SLOs can drive Ops response and long-term priorization.
 
 #  
+
+### Targeting Reliability
+
+**Three Principles**
+
+  1. What to promise to whom
+
+  2. What metrics to measure
+
+  3. How much reliability is good enough
