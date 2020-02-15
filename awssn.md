@@ -307,3 +307,27 @@ To enable object replication, you add a replication configuration to your source
 - You cannot have two EC2 instances sharing and EBS volume. However, you can have them sharing an EFS volume.
 
 - With EFS, storage capacity is elastic, growing and shrinking automatically as you add and remove files.
+
+#
+
+**Creating or Deleting Mount Targets in a VPC**
+
+To access an Amazon EFS file system in a VPC, you need mount targets. For an Amazon EFS file system, the following is true:
+
+  - You can create one mount target in each Availability Zone.
+
+  - If the VPC has multiple subnets in an Availability Zone, you can create a mount target in only one of those subnets. All EC2 instances in the Availability Zone can share the single mount target.
+
+    - **Note:** We recommend that you create a mount target in each of the Availability Zones. There are cost considerations for mounting a file system on an EC2 instance in an Availability Zone through a mount target created in another Availability Zone. In addition, by always using a mount target local to the instance's Availability Zone, you eliminate a partial failure scenario. if the mount target's zone goes down, you can't access you file system through that mount target.
+
+_About VPC Peering:_
+
+  - A _VPC peering connection_ is a networking connection between two VPCs that enables you to route traffic between them using private Internet Protocol version 4 (IPv4) or Internet Protocolo version 6 (IPv6) addresses.
+
+  - You can mount Amazon EFS file systems over VPC connections by using VPC peering within a single AWS Region when using the Amazon EC2 instance types T3, C5, C5d, I3.metal, M5, M5d, R5, R5d, and, z1d. However, other VPC private connectivity mechanisms such as inter-region VPC peering and VPC peering within an AWS Region using other instance types are not supported.
+
+  Note the following restrictions:
+
+    - You can mount an Amazon EFS file system on instances in only one VPC at a time.
+
+    - Both the file system and VPC must be in the same AWS Region.
