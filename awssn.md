@@ -291,3 +291,11 @@ To enable object replication, you add a replication configuration to your source
   If you are setting the replication configuration in a cross-account scenario, where source and destination buckets are owned by different AWS accounts, the following additional requirement applies:
 
   - The owner of the destination bucket must grant the owner of the source bucket permissions to replicate objects with a bucket policy.
+
+#
+
+### Amazon EFS (Elastic File System) <img src="images/aws-efs.png" width="20px">
+
+- You cannot have two EC2 instances sharing and EBS volume. However, you can have them sharing an EFS volume.
+
+- With EFS, storage capacity is elastic, growing and shrinking automatically as you add and remove files.
