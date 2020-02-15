@@ -328,6 +328,6 @@ _About VPC Peering:_
 
   Note the following restrictions:
 
-    - You can mount an Amazon EFS file system on instances in only one VPC at a time.
+  - You can mount an Amazon EFS file system on instances in only one VPC at a time.
 
-    - Both the file system and VPC must be in the same AWS Region.
+  - Both the file system and VPC must be in the same AWS Region.
