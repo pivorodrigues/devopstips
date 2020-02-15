@@ -103,3 +103,13 @@
 - **SLO:** Service Level Objectives
 
   - Thresholds that catch an issue before it breaches your SLA
+
+#
+
+**The Happiness Test**
+
+_There are many characteristics of reliable services. But the common theme is that users perceive a service to be unreliable
+when it fails to meet their expectations, whatever those may be. Users whose expectations have not been met tend to get grumpy. So we think a good rule of thumb to help you set SLO targets is what we call the happiness test.
+The test states that services need target SLOs that capture the performance and availability levels that if barely met would keep a typical customer happy. Simply put, if your service is performing exactly at its target SLOs, your average user would be happy with that performance. If it were any less reliable, you'd no longer be meeting their expectations and they would become unhappy. If your service meets target SLO, that means you have happy customers. If it misses the target SLO, that means you have sad customers._
+
+<p align="center"><img src="images/sre-ht.png" width="400px"></p> 
