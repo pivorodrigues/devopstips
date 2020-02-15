@@ -112,4 +112,30 @@ _There are many characteristics of reliable services. But the common theme is th
 when it fails to meet their expectations, whatever those may be. Users whose expectations have not been met tend to get grumpy. So we think a good rule of thumb to help you set SLO targets is what we call the happiness test.
 The test states that services need target SLOs that capture the performance and availability levels that if barely met would keep a typical customer happy. Simply put, if your service is performing exactly at its target SLOs, your average user would be happy with that performance. If it were any less reliable, you'd no longer be meeting their expectations and they would become unhappy. If your service meets target SLO, that means you have happy customers. If it misses the target SLO, that means you have sad customers._
 
-<p align="center"><img src="images/sre-ht.png" width="400px"></p> 
+<p align="center"><img src="images/sre-ht.png" width="400px"></p>
+
+#
+
+**How do we measure reliability?**
+
+- Measuring Reliability - Example: Netflix Service
+
+  - Time to start playing
+
+  - No interruptions or issues with playback
+
+- Time to start playing = Latency
+
+  - SLIs, like request latency, are a quantitative measurement or metric of a user experience.
+
+- Error rate = ratio errors or successes/total requests
+
+or
+
+- Error rate = errors or successes/throughput
+
+- SLI: **good** events / valid events
+
+- _How do you set SLOs for your SLIs?_
+
+  - An SLO is just a target that you get to pick, so once you've decided on that target, you measure the performance of the SLIs against it over a period of time. Such as 28 days, last quarter, etc. Depending on what our target SLO is, our SLI will instantly tell us whether or not a certain point in time was good or bad.     
