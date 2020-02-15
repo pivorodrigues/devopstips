@@ -1,5 +1,11 @@
 ## AWS Certified Solutions Architect - Study and Quiz Notes
 
+### Index
+
+- **[Amazon S3](https://github.com/pivorodrigues/devopstips/blob/master/awssn.md#amazon-s3)**
+
+#
+
 ### Amazon S3 <img src="images/s3logo.png" width="20px">
 
 **Amazon S3 Bucket Properties**
