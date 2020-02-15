@@ -2,7 +2,9 @@
 
 ### Index
 
-- **[Amazon S3](https://github.com/pivorodrigues/devopstips/blob/master/awssn.md#amazon-s3)**
+- **[Amazon S3](https://github.com/pivorodrigues/devopstips/blob/master/awssn.md#amazon-s3-)**
+
+- **[Amazon EFS (Elastic File System)](https://github.com/pivorodrigues/devopstips/blob/master/awssn.md#amazon-efs-elastic-file-system-)**
 
 #
 
