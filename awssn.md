@@ -331,3 +331,9 @@ _About VPC Peering:_
   - You can mount an Amazon EFS file system on instances in only one VPC at a time.
 
   - Both the file system and VPC must be in the same AWS Region.
+
+#
+
+**Question:** Which of the following statements is correct in terms of the newly created security group that allows Secure Shell (SSH) to connect the instances and communication between EC2 instances and EFS?
+
+  - **Answer:** _Open port 22 (SSH) on EC2 security group and port 2049 (NFS) on EFS security group._
