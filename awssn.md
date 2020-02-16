@@ -344,11 +344,11 @@ _About VPC Peering:_
 
 You can use the AWS Management Console to create security groups in your VPC. To connect your Amazon EFS file system to your Amazon EC2 instance, you'll need to create two security groups: one for your Amazon EC2 instance and another for your Amazon EFS mount target.
 
-1. Create two security groups in your VPC.
+**1.** Create two security groups in your VPC.
 
-2. In the VPC console, verify the default rules for these security groups. Both security groups should have only an outbound rule that allows traffic to leave.
+**2.** In the VPC console, verify the default rules for these security groups. Both security groups should have only an outbound rule that allows traffic to leave.
 
-3. You need to authorize additional access to the security groups as follows:
+**3.** You need to authorize additional access to the security groups as follows:
 
   - Add a rule to the EC2 security group to allow inbound access, as shown following. Optionally, you can restrict the **Source** address.
 
