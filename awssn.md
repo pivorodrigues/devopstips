@@ -337,3 +337,23 @@ _About VPC Peering:_
 **Question:** Which of the following statements is correct in terms of the newly created security group that allows Secure Shell (SSH) to connect the instances and communication between EC2 instances and EFS?
 
   - **Answer:** _Open port 22 (SSH) on EC2 security group and port 2049 (NFS) on EFS security group._
+
+**Creating Security Groups Using the AWS Management Console**
+
+You can use the AWS Management Console to create security groups in your VPC. To connect your Amazon EFS file system to your Amazon EC2 instance, you'll need to create two security groups: one for your Amazon EC2 instance and another for your Amazon EFS mount target.
+
+  1. Create two security groups in your VPC.
+
+  2. In the VPC console, verify the default rules for these security groups. Both security groups should have only an outbound rule that allows traffic to leave.
+
+  3. You need to authorize additional access to the security groups as follows:
+
+    a. Add a rule to the EC2 security group to allow inbound access, as shown following. Optionally, you can restrict the **Source** address.
+
+    <p align="center"><img src="images/ec2-inbound-sg-ssh-rule.png" width="400px"></p>
+
+    b. Add a rule to the mount target security group to allow inbound access from the EC2 security group, as shown following (where the EC2 security group is identified as the source):
+
+    <p align="center"><img src="images/mnt-tgt-sg-inbound-rules.png" width="400px"></p>
+
+  - **Note:** You don't need to add an outbound rule because the default outbound rule allows all traffic to leave (otherwise, you will need to add an outbound rule to open TCP connection on the NFS port, identifying the mount target security group as the destination).
