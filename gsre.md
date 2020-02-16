@@ -149,3 +149,7 @@ or
   - If you're trying to run your service much more reliably than it needs to be, you're slowing down development velocity for features that will make your customers happier, for a minor increase in reliability.
 
   <p align="center"><img src="images/sre-measure-slo.png" width="400px"></p>
+
+- **Iteration of SLOs is important**
+
+  <p align="center"><img src="images/sre-iteration-slo.png" width="400px"></p>
