@@ -153,3 +153,33 @@ or
 - **Iteration of SLOs is important**
 
   <p align="center"><img src="images/sre-iteration-slo.png" width="400px"></p>
+
+#
+
+### Operating for Reliability
+
+**When Do We Need to Make a Service More Reliable? Error Budgets**
+
+  - An Error Budget is basically the inverse of availability, and it tell us how unreliable your service is **allowed** to be.
+
+  - 99.9% success = 0.1% failure
+
+  - Tolerable errors accommodate:
+
+    - Rolling out new software versions
+
+    - Releasing new features
+
+    - Planned Downtime
+
+    - Inevitable hardware failures
+
+  - 0.1% unavailability x 28 days = 40.32 mins (downtime per month)
+
+  - Benefits:
+
+    - Common incentives for Devs and SREs :white_check_mark:
+
+    - Dev team can self-manage risk :white_check_mark:
+
+    - Unrealistic goals become unattractive :white_check_mark:
