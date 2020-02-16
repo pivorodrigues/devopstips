@@ -176,7 +176,7 @@ or
 
   - 0.1% unavailability x 28 days = 40.32 mins (downtime per month)
 
-  - Benefits:
+  - ***Benefits:***
 
     - Common incentives for Devs and SREs :white_check_mark:
 
