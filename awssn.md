@@ -352,10 +352,10 @@ You can use the AWS Management Console to create security groups in your VPC. To
 
   - Add a rule to the EC2 security group to allow inbound access, as shown following. Optionally, you can restrict the **Source** address.
 
-  <p align="center"><img src="images/ec2-inbound-sg-ssh-rule.png" width="400px"></p>
+  <p align="center"><img src="images/ec2-inbound-sg-ssh-rule.png" width="600px"></p>
 
   - Add a rule to the mount target security group to allow inbound access from the EC2 security group, as shown following (where the EC2 security group is identified as the source):
 
-    <p align="center"><img src="images/mnt-tgt-sg-inbound-rules.png" width="400px"></p>
+  <p align="center"><img src="images/mnt-tgt-sg-inbound-rules.png" width="600px"></p>
 
 - **Note:** You don't need to add an outbound rule because the default outbound rule allows all traffic to leave (otherwise, you will need to add an outbound rule to open TCP connection on the NFS port, identifying the mount target security group as the destination).
