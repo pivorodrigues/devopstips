@@ -138,4 +138,14 @@ or
 
 - _How do you set SLOs for your SLIs?_
 
-  - An SLO is just a target that you get to pick, so once you've decided on that target, you measure the performance of the SLIs against it over a period of time. Such as 28 days, last quarter, etc. Depending on what our target SLO is, our SLI will instantly tell us whether or not a certain point in time was good or bad.     
+  - An SLO is just a target that you get to pick, so once you've decided on that target, you measure the performance of the SLIs against it over a period of time. Such as 28 days, last quarter, etc. Depending on what our target SLO is, our SLI will instantly tell us whether or not a certain point in time was good or bad.
+
+#
+
+**How Reliable Should a Service Be? Setting Targets for Reliability**
+
+- **100% is Wrong**
+
+  - If you're trying to run your service much more reliably than it needs to be, you're slowing down development velocity for features that will make your customers happier, for a minor increase in reliability.
+
+  <p align="center"><img src="images/sre-measure-slo.png" width="400px"></p>
