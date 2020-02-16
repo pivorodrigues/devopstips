@@ -359,3 +359,17 @@ You can use the AWS Management Console to create security groups in your VPC. To
   <p align="center"><img src="images/mnt-tgt-sg-inbound-rules.png" width="600px"></p>
 
 - **Note:** You don't need to add an outbound rule because the default outbound rule allows all traffic to leave (otherwise, you will need to add an outbound rule to open TCP connection on the NFS port, identifying the mount target security group as the destination).
+
+#
+
+**About Encryption**
+
+- **Enable encryption**
+
+  - If you enable encryption for your file system, all data on your file system will be encrypted at rest. You can select a KMS key from your account to protect your file system, or you can provide the ARN of a key from a different account. _Encryption of data at rest can only be enabled during the file system creation_. Encryption of data in transit is configured when mounting your file system.
+
+- **Enforcing Encryption of Data at Rest**
+
+  -  Your organization might require the encryption of all data that meets a specific classification or is associated with a particular application, workload, or environment. You can enforce data encryption policies for Amazon EFS file systems by using detective controls that detect the creation of a file system and verify that encryption is enabled. If an unencrypted file system is detected, you can respond in a number of ways, ranging from deleting the file system and mount targets to notifying an administrator.
+
+  - Be aware that if you want to delete the unencrypted file system but want to retain the data, you should first create a new encrypted file system. Next, you should copy the data over to the new encrypted file system. After the data is copied over, you can delete the unencrypted file system. 
