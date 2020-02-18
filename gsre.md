@@ -242,4 +242,16 @@ or
 
   **1.** Reducing detection time
 
-    - :arrow_down: time to detect / TTD 
+    - :arrow_down: time-to-detect / TTD
+
+  **2.** Reducing repair time
+
+    - :arrow_down: time-to-resolution / TTR
+
+  **3.** Reducing impact %
+
+    - :arrow_down: users/functionality
+
+  **4.** Reducing frequency
+
+    - :arrow_down: time-to-failure/TTF  
