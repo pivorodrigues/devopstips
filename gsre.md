@@ -254,4 +254,36 @@ or
 
   **4.** Reducing frequency
 
-    - :arrow_down: time-to-failure/TTF  
+    - :arrow_down: time-to-failure/TTF
+
+#
+
+**Operational approach to increase reliability**
+
+- Report on uneven error budget spend
+
+- Provide input on achieving targets
+
+- Standardize Infrastructure
+
+- Consult on system design
+
+- Build safe release and rollback
+
+- Author postmortens
+
+- Use phased rollouts
+
+#
+
+**Module Summary**
+
+1. Define your problem space: SLO and SLIs.
+
+2. Make your system as reliable as it must be, but no more.
+
+3. Error budgets are your primary basis of communication.
+
+4. SLOs are not set in stone forever.
+
+5. The team relationship has to be strong to make this work.
