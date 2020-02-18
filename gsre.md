@@ -190,4 +190,38 @@ or
 
 **Everything is a trade-off**
 
-99% reliability :arrow_right: (10x effort) 99.**9**% :arrow_right: (10x effort) :arrow_right: 99.9**9**%
+- 99% reliability :arrow_right: (10x effort) 99.**9**% :arrow_right: (10x effort) :arrow_right: 99.9**9**%
+
+- Align Incentives
+
+  - :white_check_mark: Devs can take risks and push more quickly
+
+  - :white_check_mark: SRE team can work more proactively
+
+- Effective SLOs
+
+  - :white_check_mark: Have executive buy-in
+
+  - :white_check_mark: Have consequences
+
+  - :white_check_mark: Are accurately measured?
+
+**Error budgets: advanced concepts**
+
+**Advanced Techniques**
+
+- :white_check_mark: Dynamic release cadence
+
+  - _Based on remaining error budget_
+
+- :white_check_mark: "Rainy Day" fund
+
+  - _Covers unexpected events_
+
+- :white_check_mark: Error budget-based alerts
+
+  - _Exhaustion rate drives alerting_
+
+- :white_check_mark: "Silver Bullets"
+
+  - _For critical new features_
