@@ -206,7 +206,7 @@ or
 
   - :white_check_mark: Are accurately measured?
 
-:leftwards_arrow_with_hook:
+#
 
 **Error budgets: advanced concepts**
 
