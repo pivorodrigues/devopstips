@@ -190,4 +190,4 @@ or
 
 **Everything is a trade-off**
 
-99% reliability :arrow_right: (10x effort) 99.**9**% :arrow_right: (10x effort) :arrow_right: 99.9 **9**%
+99% reliability :arrow_right: (10x effort) 99.**9**% :arrow_right: (10x effort) :arrow_right: 99.9**9**%
