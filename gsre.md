@@ -227,3 +227,13 @@ or
 - :white_check_mark: "Silver Bullets"
 
   - _For critical new features_
+
+#
+
+**How Do We Make a Service More Reliable**
+
+**Axes of improvement**
+
+<p align="center"><img src="images/sre-ttd-ttr.png" width="400px"></p>
+
+<p align="center"><img src="images/sre-formula.png" width="400px"></p>
