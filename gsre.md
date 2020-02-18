@@ -234,6 +234,12 @@ or
 
 **Axes of improvement**
 
-<p align="center"><img src="images/sre-ttd-ttr.png" width="400px"></p>
+<p align="center"><img src="images/sre-ttd-ttr.png" width="600px"></p>
 
 <p align="center"><img src="images/sre-formula.png" width="400px"></p>
+
+- Improve reliability by:
+
+  **1.** Reducing detection time
+
+    - :arrow_down: time to detect / TTD 
