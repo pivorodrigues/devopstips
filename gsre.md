@@ -183,3 +183,11 @@ or
     - Dev team can self-manage risk :white_check_mark:
 
     - Unrealistic goals become unattractive :white_check_mark:
+
+#
+
+**Trading off Reliability Against Features**
+
+**Everything is a trade-off**
+
+99% reliability :arrow_right: (10x effort) 99.**9**% :arrow_right: (10x effort) :arrow_right: 99.9 **9**%
