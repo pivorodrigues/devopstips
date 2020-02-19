@@ -287,3 +287,7 @@ or
 4. SLOs are not set in stone forever.
 
 5. The team relationship has to be strong to make this work.
+
+#
+
+### Choosing a Good SLI
