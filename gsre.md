@@ -366,3 +366,37 @@ So a key engineering decision underlying any SLI is the choice of where and how 
 - :inbox_tray: Storage
 
   - Durability
+
+#
+
+**The SLI Equation**
+
+- **SLI:** **good** events / **valid** events
+
+- :white_check_mark: SLIs fall between 0 and 100%
+
+- :white_check_mark: Consistency makes building common tooling easier
+
+#
+
+**Request/Response SLIs**
+
+- **Availability**
+
+  - The proportion of valid requests served successfully
+
+  - The proportion of minutes a virtual machine was booted and accessible
+
+- **Latency**
+
+  - The proportion of valid requests served faster than a threshold
+
+<p align="center"><img src="images/sre-latency.png" width="400px"></p>
+
+  - The proportion of work-queue tasks are completed faster than a threshold
+
+- **Quality**
+
+  - The proportion of valid requests served without degrading quality
+
+  <p align="center"><img src="images/sre-quality.png" width="400px"></p>
