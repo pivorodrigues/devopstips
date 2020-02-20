@@ -326,4 +326,4 @@ or
 
 - Why is the lower metric better for use as an SLI than the upper one?  
 
-<p align="center"><img src="images/sre-metrics-graph.png" width="600px"></p>
+<p align="center"><img src="images/sre-metrics-graph.png" width="500px"></p>
