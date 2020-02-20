@@ -389,14 +389,14 @@ So a key engineering decision underlying any SLI is the choice of where and how 
 
 - **Latency**
 
+  - The proportion of work-queue tasks are completed faster than a threshold
+
   - The proportion of valid requests served faster than a threshold
 
-<p align="center"><img src="images/sre-latency.png" width="400px"></p>
-
-  - The proportion of work-queue tasks are completed faster than a threshold
+<p align="center"><img src="images/sre-latency.png" width="350px"></p>
 
 - **Quality**
 
   - The proportion of valid requests served without degrading quality
 
-  <p align="center"><img src="images/sre-quality.png" width="400px"></p>
+  <p align="center"><img src="images/sre-quality.png" width="350px"></p>
