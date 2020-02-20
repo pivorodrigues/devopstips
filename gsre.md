@@ -327,3 +327,16 @@ or
 - Why is the lower metric better for use as an SLI than the upper one?  
 
 <p align="center"><img src="images/sre-metrics-graph.png" width="500px"></p>
+
+#
+
+**Ways of measuring SLIs**
+
+- The accuracy of your measurement of that experience increases the closer you get to a user's interactions with your system.
+So a key engineering decision underlying any SLI is the choice of where and how to measure it. Broadly speaking, there are five ways to measure an SLI and each has their own set of advantages and disadvantages. We'll talk about them in the order of increasing proximity to the user.
+
+<p align="center"><img src="images/sre-metrics-graph.png" width="500px"></p>
+
+- The client-side instrumentation provides far and away the most accurate measure of your user experience and can even help you gauge the reliability of the third parties like CDNs or payment providers in your user journeys. So why isn't this is the default approach? Adjusting the telemetry from your clients can incur significant measurement latency, especially for mobile clients where waking the radio every few seconds to report home, is detrimental to both battery life and user trust. Just like logs processing, this latency makes SLIs based on client instrumentation unsuitable for triggering a short-term operational response. Measuring from the client's perspective also captures a lot of factors that are outside of your direct control, which can lower the signal to noise ratio of prospective SLIs. To give an example, you might be interested to know that mobile clients suffer poor latency and higher error rates, but because you can't do a whole lot about it, you have to relax your SLO targets to accommodate it instead.
+
+<p align="center"><img src="images/sre-measuring-ways.png" width="500px"></p>
