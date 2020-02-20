@@ -303,3 +303,27 @@ or
 - These quantifiable metrics become our SLIs. Ideally, you wanted to define SLIs that have a predictable, mostly linear relationship with happiness of your users. The predictability of the relationship is crucial because you'll be making important engineering decisions based on this data.
 
 <p align="center"><img src="images/sre-sli-graph.png" width="400px"></p>
+
+#
+
+**The properties of a good SLI metrics**
+
+- Bad metrics:
+
+  - :x: System metrics
+
+  - :x: Internal state
+
+- Good metrics
+
+  - :white_check_mark: Has predictable relationship with user happiness.
+
+  - :white_check_mark: Shows service is working as users expect it to.
+
+  - :white_check_mark: Expressed as: _good events/valid events_.
+
+  - :white_check_mark: Aggregated over a long time horizon.
+
+- Why is the lower metric better for use as an SLI than the upper one?  
+
+<p align="center"><img src="images/sre-metrics-graph.png" width="400px"></p>
