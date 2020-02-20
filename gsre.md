@@ -400,3 +400,19 @@ So a key engineering decision underlying any SLI is the choice of where and how 
   - The proportion of valid requests served without degrading quality
 
   <p align="center"><img src="images/sre-quality.png" width="350px"></p>
+
+#
+
+**Data processing SLIs**
+
+- **Freshness**
+
+  - The proportion of valid data updated more recently than a threshold
+
+  <p align="center"><img src="images/sre-freshness-batch.png" width="350px"></p>
+
+  <p align="center"><img src="images/sre-freshness-continuous.png" width="350px"></p>
+
+  <p align="center"><img src="images/sre-freshness-shards.png" width="350px"></p>
+
+-     
