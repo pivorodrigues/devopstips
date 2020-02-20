@@ -415,4 +415,21 @@ So a key engineering decision underlying any SLI is the choice of where and how 
 
   <p align="center"><img src="images/sre-freshness-shards.png" width="350px"></p>
 
--     
+- **Correctness**
+
+  - The proportion of valid data producing correct output
+
+  <p align="center"><img src="images/sre-correctness.png" width="350px"></p>
+
+
+- **Coverage**
+
+  - The proportion of valid data processed successfully  
+
+  <p align="center"><img src="images/sre-coverage.png" width="350px"></p>
+
+- **Throughput**
+
+  - The proportion of time where the data processing rate is faster than a threshold
+
+  <p align="center"><img src="images/sre-throughput.png" width="350px"></p>
