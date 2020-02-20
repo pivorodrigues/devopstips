@@ -300,4 +300,6 @@ or
 
 <p align="center"><img src="images/sre-happy-unhappy.png" width="400px"></p>
 
-- 
+- These quantifiable metrics become our SLIs. Ideally, you wanted to define SLIs that have a predictable, mostly linear relationship with happiness of your users. The predictability of the relationship is crucial because you'll be making important engineering decisions based on this data.
+
+<p align="center"><img src="images/sre-sli-graph.png" width="400px"></p>
