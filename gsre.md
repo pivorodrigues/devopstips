@@ -291,3 +291,13 @@ or
 #
 
 ### Choosing a Good SLI
+
+**Metrics and Measurement**
+
+**User happiness in metric form**
+
+- If we can find a way of quantifying the website does not load or this website is too slow from our monitoring data, we can use this data to approximate how happy or unhappy our users are in aggregate.
+
+<p align="center"><img src="images/sre-happy-unhappy.png" width="400px"></p>
+
+- 
