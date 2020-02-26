@@ -440,7 +440,7 @@ So a key engineering decision underlying any SLI is the choice of where and how 
 
 **"But my system is really complex!"**
 
-You should aim to only have **one to three SLIs** covering each user journey, even if your system and user journeys are relatively complex. 
+You should aim to only have **one to three SLIs** covering each user journey, even if your system and user journeys are relatively complex.
 
 :x: Not all metrics make good SLIs.
 
@@ -452,6 +452,18 @@ You should aim to only have **one to three SLIs** covering each user journey, ev
 
 - Your metrics still have value!
 
-  - **SLIs:** Something os broken!
+  - **SLIs:** Something is broken!
 
   - **Metrics:** _This thing_ is broken!
+
+#
+
+**Managing complexity with aggregation**
+
+<p align="center"><img src="images/sre-ag-table.png" width="350px"></p>
+
+:white_check_mark: Simple aggregation works much of the time
+
+:x: Except when request rates differ significantly
+
+#
