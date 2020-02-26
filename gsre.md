@@ -440,4 +440,18 @@ So a key engineering decision underlying any SLI is the choice of where and how 
 
 **"But my system is really complex!"**
 
- 
+You should aim to only have **one to three SLIs** covering each user journey, even if your system and user journeys are relatively complex. 
+
+:x: Not all metrics make good SLIs.
+
+:x: More SLIs result in higher cognitive load.
+
+:x: More SLIs lower signal-to-noise ratio...
+
+... and can drive up time to resolution.
+
+- Your metrics still have value!
+
+  - **SLIs:** Something os broken!
+
+  - **Metrics:** _This thing_ is broken!
