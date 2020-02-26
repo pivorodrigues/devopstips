@@ -493,3 +493,15 @@ You should aim to only have **one to three SLIs** covering each user journey, ev
 #
 
 **Aspirational SLOs**
+
+<p align="center"><img src="images/sre-performance.png" width="350px"></p>
+
+- We call SLOs based on business requirements aspirational SLOs because it's entirely reasonable for you not to be able to meet them at first.
+
+-  If you have good indications that your users are unhappy with your past performance, that's a sign you need to set your aspirational targets higher than the achievable ones derived from your monitoring data.
+
+- If you've got no historical data at all because you don't have any users yet, starting from your product teams' best guesses about what will keep your potential users happy is your best option.
+
+- Once you launch, you can gather data and set an achievable target. Setting a reasonable target and beginning to measure as soon as possible is more important than getting the target exactly right the first time because you should revisit your SLO targets regularly.
+
+#
