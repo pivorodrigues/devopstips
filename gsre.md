@@ -505,3 +505,23 @@ You should aim to only have **one to three SLIs** covering each user journey, ev
 - Once you launch, you can gather data and set an achievable target. Setting a reasonable target and beginning to measure as soon as possible is more important than getting the target exactly right the first time because you should revisit your SLO targets regularly.
 
 #
+
+**Continuous Improvement**
+
+:white_check_mark: **Aspirational** targets represent business needs.
+
+:white_check_mark: **Achievable** targets represent past performance.
+
+:white_check_mark: Can diverge, but are _ideally_ the same number...
+
+:white_check_mark: ...so we need a process to drive convergence.
+
+<p align="center"><img src="images/sre-continous-improv.png" width="350px"></p>
+
+When the time comes to revisit your SLO's, you can compare the times your users were less happy to your performance against your targets. Tracking down and understanding the reasons behind any discrepancies between the two, where your users were sad but you are still in SLO or vice versa, will help you refine your SLO targets, so you can be sure you're drawing the line in the right place.
+
+<p align="center"><img src="images/sre-continuous-improve.png" width="350px"></p>
+
+You don't want to wait a whole year to find out the first shot at setting reliability targets was way off. As you gain more confidence that your targets are in the right place, you can revisit them less frequently. We recommend doing so at least once a year. A lot can happen in one year. Your user-based may grow dramatically, or your business might pivot to a new market with different requirements. Remember, what we said in module one, your SLO's are not set in stone.
+
+#
