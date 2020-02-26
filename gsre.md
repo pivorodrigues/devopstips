@@ -467,3 +467,29 @@ You should aim to only have **one to three SLIs** covering each user journey, ev
 :x: Except when request rates differ significantly
 
 #
+
+**Managing Complexity with bucketing**
+
+<p align="center"><img src="images/sre-buckets.png" width="350px"></p>
+
+#
+
+**Setting Reliable Targets**
+
+**Achievable SLOs**
+
+<p align="center"><img src="images/sre-slo-sli.png" width="350px"></p>
+
+<p align="center"><img src="images/sre-ue.png" width="350px"></p>
+
+:white_check_mark: It's OK to wait and gather data before setting targets!
+
+:white_check_mark: **Achievable** SLOs are ones based on historical data...
+
+:x: ...but assume that users are happy with the status quo...
+
+:astonished: ...without any **evidence** to back up this claim!
+
+#
+
+**Aspirational SLOs**
