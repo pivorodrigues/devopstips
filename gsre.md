@@ -525,3 +525,29 @@ When the time comes to revisit your SLO's, you can compare the times your users 
 You don't want to wait a whole year to find out the first shot at setting reliability targets was way off. As you gain more confidence that your targets are in the right place, you can revisit them less frequently. We recommend doing so at least once a year. A lot can happen in one year. Your user-based may grow dramatically, or your business might pivot to a new market with different requirements. Remember, what we said in module one, your SLO's are not set in stone.
 
 #
+
+### Developing SLOs and SLIs
+
+**The 4 step process**
+
+**1.** Choose an **SLI specification** from the SLI menu.
+
+_What are the differences between SLI specifications and implementations?_
+
+- SLI specifications are **high-level descriptions** of a dimension of reliability that we would like to measure about our service, ideally taking the form "the proportion of valid events that were good".
+
+- SLI implementations have **concrete definitions** of what the events are, what makes them valid for inclusion into the SLI, what makes them good, and how/where they are measured.
+
+**2.** Refine the specification into a detailed **SLI implementation**.
+
+- The refined SLI implementations need to be detailed enough that someone could build or configure monitoring infrastructure to gather the data without needing to ask any further questions. With your SLI implementations in hand, you'll need to critically examine how your infrastructure serves the interactions that make up the user journey.
+
+**3.** Walk through the user journey and look for **coverage gaps**.
+
+- Pay careful attention to how that infrastructure could fail and the implications for your chosen implementations. Any failure modes that your SLIs won't capture, hopefully there won't be many, and they'll be low probability, should be documented carefully. If you find something that's too high risk, it's a signal you need to go back and rework your implementation, likely by changing your measurement strategy or augmenting it with a second one.
+
+**4.** Set aspirational **SLO targets** based on business needs.
+
+- Once you're happy with the SLI implementations, you can choose your measurement window and set some SLO targets. If you've got time, you can wait for a couple of measurement windows to gather performance data before setting your initial targets or you can estimate targets based on your business needs and already existing signals of user happiness. Sounds easy, right? Well, it can be if your user journeys are simple and your infrastructure is architected to make SLI measurement fast and cheap, but the devil is always in the details.
+
+#
