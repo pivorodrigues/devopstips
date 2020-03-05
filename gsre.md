@@ -570,6 +570,4 @@ _What are the differences between SLI specifications and implementations?_
 
   - The proportion of **HTTP GET** requests for **/profile/{user}** that send **their entire response within Xms** measured at the **load balancer**.
 
-- **Quality**
-
 #
