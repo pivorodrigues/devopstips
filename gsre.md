@@ -551,3 +551,25 @@ _What are the differences between SLI specifications and implementations?_
 - Once you're happy with the SLI implementations, you can choose your measurement window and set some SLO targets. If you've got time, you can wait for a couple of measurement windows to gather performance data before setting your initial targets or you can estimate targets based on your business needs and already existing signals of user happiness. Sounds easy, right? Well, it can be if your user journeys are simple and your infrastructure is architected to make SLI measurement fast and cheap, but the devil is always in the details.
 
 #
+
+**Refining SLI specifications**
+
+:white_check_mark: **Where** is SLI measured?
+
+:white_check_mark: **What** does SLI measure?
+
+:white_check_mark: What metrics should be **included** or **excluded**?
+
+:white_check_mark: Is there **enough detail** to **implement** this SLI?
+
+- **Availability**
+
+  - The proportion of **HTTP GET** requests for **/profile/{user}** or **/profile/{user}/avatar** that have **2xx, 3xx,** or **4xx (excl.429) response codes** measured at the **load balancer**.
+
+- **Latency**
+
+  - The proportion of **HTTP GET** requests for **/profile/{user}** that send **their entire response within Xms** measured at the **load balancer**.
+
+- **Quality**
+
+#
