@@ -591,3 +591,7 @@ _What are the differences between SLI specifications and implementations?_
 :white_check_mark: Exclude factors outside your control from your SLIs.
 
 :white_check_mark: Does the cost-benefit analysis add up?
+
+#
+
+**Failure modes**
