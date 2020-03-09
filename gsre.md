@@ -571,3 +571,23 @@ _What are the differences between SLI specifications and implementations?_
   - The proportion of **HTTP GET** requests for **/profile/{user}** that send **their entire response within Xms** measured at the **load balancer**.
 
 #
+
+**Do the SLIs cover the failure modes of the service?**
+
+**Looking for observability gaps**
+
+<p align="center"><img src="images/sre-psli-management.png" width="350px"></p>
+
+**1.** Do the SLIs adequately capture the user journey and its failure modes?
+
+**2.** Are there any exceptions or edge cases to consider?
+
+**3.** Do the SLIs capture multiple journeys with differing needs?
+
+:white_check_mark: 100% coverage of complex system is unrealistic.
+
+:white_check_mark: Pay for rare failure modes from your error budget.
+
+:white_check_mark: Exclude factors outside your control from your SLIs.
+
+:white_check_mark: Does the cost-benefit analysis add up?
