@@ -576,7 +576,7 @@ _What are the differences between SLI specifications and implementations?_
 
 **Looking for observability gaps**
 
-<p align="center"><img src="images/sre-psli-management.png" width="350px"></p>
+<p align="center"><img src="images/sre-psli-management.png" width="600px"></p>
 
 **1.** Do the SLIs adequately capture the user journey and its failure modes?
 
