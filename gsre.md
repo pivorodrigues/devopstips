@@ -607,3 +607,18 @@ _What are the differences between SLI specifications and implementations?_
 <p align="center">(Outage Scenario)</p>
 
 <p align="center"><img src="images/sre-past-indicator.png" width="500px"></p>
+
+**1.** Is our error budget **realistic**?
+
+- _Can we expect to burn less than the budget if we consider longer time horizons over years instead of weeks or months when we taken into account large long-tail events?_
+
+**2.** Which risks burn **most budget**?
+
+- _Is there any low-hanging fruit that if fixed could allow our service to attain higher levels of availability for less engineering effort?_
+
+- The practice of safety engineering begins with identifying a hazard, a condition that could lead to an accident. The risk of that accident happening can be modeled as the impact of the accident multiplied by the probability of the hazard causing the accident.
+
+- The accident we're trying to prevent is missing our SLO targets. The hazards we deal with are the root causes of outages or unavailability, like the failure of one of our cloud providers availability zones. If we can quantify the probability of one of
+these hazards occurring and the likely impact on our service, we can understand the risk to our SLO posed by that hazard.
+
+<p align="center"><img src="images/sre-slo-accident.png" width="500px"></p>
