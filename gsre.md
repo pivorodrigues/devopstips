@@ -605,3 +605,5 @@ _What are the differences between SLI specifications and implementations?_
 
 <p align="center"><img src="images/sre-outage-lb.png" width="500px"></p>
 <p align="center">(Outage Scenario)</p>
+
+<p align="center"><img src="images/sre-past-indicator.png" width="500px"></p>
