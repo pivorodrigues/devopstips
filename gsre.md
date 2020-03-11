@@ -601,5 +601,4 @@ _What are the differences between SLI specifications and implementations?_
 - Availability **99.95%** _over the past 28 days_.
 
 <p align="center"><img src="images/sre-slo-lb.png" width="500px"></p>
-
-_(6 weeks steady metrics)_
+<p align="center">_(6 weeks steady metrics)_</p>
