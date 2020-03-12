@@ -622,3 +622,11 @@ _What are the differences between SLI specifications and implementations?_
 these hazards occurring and the likely impact on our service, we can understand the risk to our SLO posed by that hazard.
 
 <p align="center"><img src="images/sre-slo-accident.png" width="500px"></p>
+
+:white_check_mark: Brainstorm availability risks.
+
+:white_check_mark: How can each piece of infrastructure fail?
+
+:white_check_mark: Be pessimistic... ...but constructive.
+
+:white_check_mark: Think about _classes_ of risk.
