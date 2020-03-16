@@ -630,3 +630,59 @@ these hazards occurring and the likely impact on our service, we can understand 
 :white_check_mark: Be pessimistic... ...but constructive.
 
 :white_check_mark: Think about _classes_ of risk.
+
+#
+
+**Modeling Risks in our spreadsheet**
+
+- **Risk**
+
+  - _Risk A = Risk B?_
+
+  - _Probability (Time to failure) x Impact (Service Downtime)_
+
+  - _Risk = Bad Minutes/Year_
+
+- **Downtime**
+
+  - _1. Time to detection (ETTD)_
+
+  - _2. Time to resolution (ETTR)_
+
+  - _3. Percentage of users impacted_
+
+#
+
+**Analyzing Risk**
+
+- **Risk**:  A new content release is super popular, causes overload of web servers or user profile database.
+
+  - **Mitigations**
+
+    - Add temporary capacity
+
+    - Database replicas and cache
+
+    - ***Write rates still a problem!*** :heavy_exclamation_mark:
+
+- **Risk:** User profile database is deleted or corrupted, restore from backup is required.
+
+  - **Mitigations**
+
+    - LVM snapshot backups
+
+    - Automated restore process
+
+    - ***No validation/QA of restores*** :heavy_exclamation_mark:
+
+- **Risk:** Database write performance is degraded (by a bad schema push, slow disk volumes, etc)
+
+  - **Mitigations:**
+
+    - SLO for write latency
+
+    - ***Frequency still a problem*** :heavy_exclamation_mark:
+
+- **Risk to fix:** Our regular release cycle (Mon-Thu) causes an increased level of errors as tasks restart.
+
+- **Risk to fix** One of our three availability zones becomes unavailable. 
