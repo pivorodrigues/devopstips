@@ -685,4 +685,32 @@ these hazards occurring and the likely impact on our service, we can understand 
 
 - **Risk to fix:** Our regular release cycle (Mon-Thu) causes an increased level of errors as tasks restart.
 
-- **Risk to fix** One of our three availability zones becomes unavailable. 
+- **Risk to fix** One of our three availability zones becomes unavailable.
+
+#
+
+### Consequences of SLO Misses
+
+**No surprises**
+
+<p align="center"><img src="images/sre-no-surprises.png" width="500px"></p>
+
+- **Documenting your SLO**
+
+  - Why the threshold is where it is.
+
+  - Why the SLIs are appropriate for measuring the SLO.
+
+  - Identify monitoring data deliberately ***excluded*** from the SLIs.
+
+- **SLO cycles of refinement**
+
+  - Development
+
+  - Testing
+
+  - Paging
+
+  <p align="center"><img src="images/sre-track-slo-versions.png" width="500px"></p>
+
+- Store metadata alongside monitoring configs  
