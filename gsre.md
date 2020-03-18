@@ -759,4 +759,26 @@ these hazards occurring and the likely impact on our service, we can understand 
 
 - Provide supporting material: rationale, worked examples, precedent.
 
-- Expect ~~bike shedding~~ lots of negotiation  
+- Expect ~~bike shedding~~ lots of negotiation.
+
+#
+
+**Example Policy Thresholds**
+
+- Threshold 1: **Automated alerts** notify SRE of an at-risk SLO.
+
+- Threshold 2: SREs conclude they need help to defend SLO and **escalate to devs**.
+
+- Threshold 3: The 30-day error budget is exhausted and the root cause has not been found; **feature releases blocked**, dev team dedicates more resources.
+
+- Threshold 4: The 90-day error budget is exhausted and the root cause has not been found; SRE **escalates to executive leadership** to obtain more engineering time for reliability work.
+
+#
+
+**A hypothetical policy scenario**
+
+- Threshold 4: The 90-day error budget is exhausted and the root cause has not been found; SRE **escalates to executive leadership** to obtain more engineering time for reliability work.
+
+<p align="center"><img src="images/sre-hypothetical.png" width="500px"></p>
+
+<p align="center"><img src="images/sre-hypothetical-done.png" width="500px"></p>
