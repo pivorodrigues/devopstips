@@ -779,6 +779,6 @@ these hazards occurring and the likely impact on our service, we can understand 
 
 - Threshold 4: The 90-day error budget is exhausted and the root cause has not been found; SRE **escalates to executive leadership** to obtain more engineering time for reliability work.
 
-<p align="center"><img src="images/sre-hypothetical.png" width="500px"></p>
+<p align="center"><img src="images/sre-hypotethical.png" width="500px"></p>
 
-<p align="center"><img src="images/sre-hypothetical-done.png" width="500px"></p>
+<p align="center"><img src="images/sre-hypotethical-done.png" width="500px"></p>
