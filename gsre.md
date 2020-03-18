@@ -727,4 +727,36 @@ these hazards occurring and the likely impact on our service, we can understand 
 
   - Not within one app or one service
 
-  
+#
+
+**Fundamentals of an error budget policy**
+
+- **Error Budget Policy**
+
+  - :white_check_mark: Result in engineering to improve reliability
+
+  - :white_check_mark: Describe ***when*** this happens
+
+  - :white_check_mark: Describe ***how*** this happens
+
+  - :white_check_mark: Include consequences for this ***not*** happening
+
+  - :white_check_mark: Be consistently applied
+
+  - :white_check_mark: Document whom to escalate disagreements to
+
+  - :white_check_mark: Be agreed upon and signed of by all parties
+
+#
+
+**How to draft an error budget policy**
+
+- Tie greater unreliability to escalating consequences.
+
+- Choose thresholds and consequences that align with business priorities.
+
+- Start small: when to page on-call is still a threshold.
+
+- Provide supporting material: rationale, worked examples, precedent.
+
+- Expect ~~bike shedding~~ lots of negotiation  
