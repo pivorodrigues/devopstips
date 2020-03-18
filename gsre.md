@@ -713,4 +713,18 @@ these hazards occurring and the likely impact on our service, we can understand 
 
   <p align="center"><img src="images/sre-track-slo-versions.png" width="500px"></p>
 
-- Store metadata alongside monitoring configs  
+- Store metadata alongside monitoring configs
+
+#
+
+**Why an error budget policy?**
+
+- _Fixing chronic reliability issues_ **+** _Improving organizational alignment_ **+** _Reducing finger pointing_ **=** **Happy Users**
+
+- Where to store your error budget policy?
+
+  - Somewhere high-level
+
+  - Not within one app or one service
+
+  
