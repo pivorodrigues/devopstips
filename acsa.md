@@ -228,6 +228,18 @@ _Resources:_
 
 #
 
+**Sharing S3 Buckets Across Accounts**
+
+- **3 different ways to share S3 buckets across accounts:**
+
+  - Using bucket policies and IAM (applies across the entire bucket). Programmatic Access Only.
+
+  - Using bucket ACLs and IAM (individual objects). Programmatic Access Only.
+
+  - Cross-Account IAM Roles. Programmatic and Console access.
+
+#
+
 **Cross Region Replication**
 
 - Versioning must be enabled on both the source and destination buckets.
