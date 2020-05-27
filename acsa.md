@@ -214,6 +214,20 @@ _Resources:_
 
 #
 
+**AWS Organizations & Consolidate Billing**
+
+- **Some best practices with AWS Organizations:**
+
+  - Always enable multi-factor authentication.
+
+  - Always use a strong and complex password on root account.
+
+  - Paying account should be used for billing purposes only. Do not deploy resources into the paying account.
+
+  - Enable/disable AWS services using _Service Control Policies (SCP)_ either on OU (Organizational Unit) or on individual accounts.
+
+#
+
 **Cross Region Replication**
 
 - Versioning must be enabled on both the source and destination buckets.
