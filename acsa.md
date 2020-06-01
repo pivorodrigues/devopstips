@@ -338,6 +338,8 @@ _Resources:_
 
   - Great for PCI-DSS compliance and preventing ID theft.
 
+#
+
 ## Chapter 4: EC2 <img src="images/ec2.png" width="30px">
 
 **EC2 (Elastic Compute Cloud) 101** [[FAQ](https://aws.amazon.com/pt/ec2/faqs/)]
