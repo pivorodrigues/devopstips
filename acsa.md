@@ -244,8 +244,6 @@ _Resources:_
 
 - Versioning must be enabled on both the source and destination buckets.
 
-- Regions must be unique.
-
 - Files in an existing bucket are not replicated automatically.
 
 - All subsequent updated files will be replicated automatically.
