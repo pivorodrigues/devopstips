@@ -316,6 +316,29 @@ _Resources:_
 
 - **Gateway Virtual Tape Library**
 
+#
+
+**Athena vs Macie**
+
+- **Athena Exam Tips:** Remember what Athena is and what it allows you to do.
+
+  - Athena is an interactive query service.
+
+  - It allows you to query data located in S3 using standard SQL.
+
+  - Serverless
+
+  - Commonly used to analyze log data stored in S3.
+
+- **Macie Exam Tips:** Remember what Macie is and what it allows you to do.
+
+  - Macie uses AI to analyze data in S3 and helps identify PII (Personal Identity Information).
+
+  - Can also be used to analyze Cloud Trail logs for suspicious API activity.
+
+  - Includes Dashboards, Reports and Alerting.
+
+  - Great for PCI-DSS compliance and preventing ID theft.
 
 ## Chapter 4: EC2 <img src="images/ec2.png" width="30px">
 
