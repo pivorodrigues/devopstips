@@ -478,6 +478,24 @@ _Resources:_
 
 #
 
+**ENI vs ENA vs EFA**
+
+In the exam you will be given different scenarios and you will be asked to choose whether you should use an ANI, EN or EFA.
+
+- **ENI (Elastic Network Interfaces)**
+
+  - For basic networking. Perhaps you need a separate management network to your production network or a separate logging network and you need to do this at low cost. In this scenario use multiple ENIs for each network. 
+
+- **EN (Enhanced Network)**
+
+  - For when you need speeds between 10Gbps and 100Gbps. Anywhere you need reliable, high throughput.
+
+- **EFA (Elastic Fabric Adaptor)**
+
+  - For when you need to accelerate High Performance Computing (HPC) and machine learning applications _or_ if you need to do an OS-Bypass. If you see a scenario question mentioning HPC or ML and asking what network adaptor you want, choose EFA.
+
+#
+
 **Encrypted Root Device Volumes & Snapshots**
 
 - Snapshots of encrypted volumes are encrypted automatically.
