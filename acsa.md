@@ -484,7 +484,7 @@ In the exam you will be given different scenarios and you will be asked to choos
 
 - **ENI (Elastic Network Interfaces)**
 
-  - For basic networking. Perhaps you need a separate management network to your production network or a separate logging network and you need to do this at low cost. In this scenario use multiple ENIs for each network. 
+  - For basic networking. Perhaps you need a separate management network to your production network or a separate logging network and you need to do this at low cost. In this scenario use multiple ENIs for each network.
 
 - **EN (Enhanced Network)**
 
@@ -663,6 +663,24 @@ In the exam you will be given different scenarios and you will be asked to choos
 - Data is stored across multiple AZ's within a region.
 
 - Read After Write consistency.
+
+#
+
+**Amazon FSx for Windows & Amazon FSx for Lustre**
+
+In the exam you'll be given different scenarios and asked to choose whether you should use an EFS, FSx for Windows or FSx for Lustre.
+
+- **EFS**
+
+  - When you need distributed, highly resilient storage for Linux instances and Linux-based applications.
+
+- **Amazon FSx for Windows**
+
+  - When you need centralized storage for Windows-based applications such as Sharepoint, Microsoft SQL Server, Workspaces, IIS Web Server or any other native Microsoft Application.
+
+- **Amazon FSx for Lustre**
+
+  - When you need high-speed, high-capacity distributed storage. This will be for applications that do High Performance Compute (HPC), financial modelling etc. Remember that FSx for Lustre can store data directly on S3.    
 
 #
 
