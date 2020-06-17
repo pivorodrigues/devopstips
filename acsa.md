@@ -714,6 +714,36 @@ In the exam you'll be given different scenarios and asked to choose whether you 
 
 - You can´t move an existing instance into a placement group. You can create an AMI from your existing instance, and then launch a new instance from the AMI into a placement group.
 
+#
+
+**Amazon WAF (Web Application Firewall)**
+
+A its most basic level, AWS WAF allows 3 different behaviours:
+
+  1. Allow all requests except the ones you specify
+
+  2. Block all requests except the ones you specify
+
+  3. Count the requests that match the properties you specify
+
+Extra protection against web attacks using conditions you specify. You can define conditions by using characteristics of web requests such as:
+
+  - IP addresses that requests originate from.
+
+  - Country that requests originate from.
+
+  - Values in request headers.
+
+  - Strings that appear in requests, either specific strings or string that match regular expression (regex) patterns.
+
+  - Lenght of requests.
+
+  - Presence of SQL code that is likely to be malicious (known as SQL injection).
+
+  - Presence of a script that is likely to be malicious (know as cross-sites-scripting)
+
+Obs: In the exam you will be given different scenarios and you will be asked how to block malicious IP addresses.
+  
 
 ## Chapter 5: Databases on AWS <img src="images/aws-database.png" width="30px">
 
