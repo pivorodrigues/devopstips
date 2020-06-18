@@ -1248,6 +1248,18 @@ Remember the steps to creating a Direct Connect Connection.
 
 #
 
+**Global Accelerator**
+
+Know what a Global Accelerator is and where you would use it.
+
+- AWS Global Accelerator is a service in which you create accelerators to improve availability and performance of your applications for local and global users.
+
+- You are assigned two static IP addresses (or alternatively you can bring your own).
+
+- You can control traffic using traffic dials. This is done within endpoint group. 
+
+#
+
 **VPC Endpoints**
 
 **A VPC Endpoint:** A VPC endpoint enables you to privately connect your VPC to supported AWS services and VPC endpoint services powered by PrivateLink without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection. Instances in your VPC do not require public IP addresses to communicate with resources in the service. Traffic between your VPC and the other service does not leave the Amazon Network.
