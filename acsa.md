@@ -1228,7 +1228,7 @@ VPC Flow Logs is a feature that enables you to capture information about the IP 
 
 #
 
-**Setting Up Direct Connect**
+**Setting Up a VPN over a Direct Connect**
 
 Remember the steps to creating a Direct Connect Connection.
 
