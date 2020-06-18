@@ -743,7 +743,7 @@ Extra protection against web attacks using conditions you specify. You can defin
   - Presence of a script that is likely to be malicious (know as cross-sites-scripting)
 
 Obs: In the exam you will be given different scenarios and you will be asked how to block malicious IP addresses.
-  
+
 
 ## Chapter 5: Databases on AWS <img src="images/aws-database.png" width="30px">
 
@@ -1225,6 +1225,26 @@ VPC Flow Logs is a feature that enables you to capture information about the IP 
 - Useful for high throughput workloads (i.e lots of network traffic)
 
 - Or if you need a stable and reliable secure connection
+
+#
+
+**Setting Up Direct Connect**
+
+Remember the steps to creating a Direct Connect Connection.
+
+  - Create a virtual interface in the Direct Connect console. This is a PUBLIC Virtual Interface.
+
+  - Go to the VPC console and then to VPN connections. Create a Customer Gateway.
+
+  - Create a Virtual Private Gateway.
+
+  - Attach the Virtual Private Gateway to the desired VPC.
+
+  - Select VPN Connections and create new VPN Connection.
+
+  - Select the Virtual Private Gateway and the Customer Gateway.
+
+  - Once the VPN is available, setup the VPN on the customer gateway or firewall.  
 
 #
 
