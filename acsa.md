@@ -1256,7 +1256,7 @@ Know what a Global Accelerator is and where you would use it.
 
 - You are assigned two static IP addresses (or alternatively you can bring your own).
 
-- You can control traffic using traffic dials. This is done within endpoint group. 
+- You can control traffic using traffic dials. This is done within endpoint group.
 
 #
 
@@ -1319,6 +1319,22 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
 - **Path Patterns** allow you to direct traffic to different EC2 instances based on the URL contained in the request.
 
 <p align="center"><img src="images/aws-path-patterns.png" width="700px"></p>
+
+#
+
+**Autoscaling Theory**
+
+What are my scaling options?
+
+- Maintain current instance level at all times
+
+- Scale manually
+
+- Scale based on a schedule
+
+- Scale based on demand
+
+- Use predictive scaling
 
 #
 
