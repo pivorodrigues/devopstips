@@ -340,6 +340,28 @@ _Resources:_
 
 #
 
+**S3 Lock Policies and Glacier Vault Lock**
+
+- **S3 Lock Policies**
+
+  - Use **S3 Object Lock** to store objects using a write once, read many (WORM) model.
+
+  - Object locks can be individual objects or **applied across the bucket** as a whole.
+
+  - Object locks come in two modes: **governance mode** and **compliance mode**
+
+    - With **governance mode**, users can't overwrite or delete an object version or alter its lock settings unless they have special permissions.
+
+    - With **compliance mode**, a protected object version can't be overwritten or deleted by any user, including the root user in your AWS account.
+
+- **Glacier Vault Lock**
+
+  - **S3 Glacier Vault Lock** allows you to easily deploy and enforce compliance controls for individual S3 Glacier vaults with a Vault Lock policy. You can **specify controls such as WORM in a Vault Lock policy and lock the policy from future edits**. Once locked, the policy can no longer be changed.    
+
+
+
+#
+
 ## Chapter 4: EC2 <img src="images/ec2.png" width="30px">
 
 **EC2 (Elastic Compute Cloud) 101** [[FAQ](https://aws.amazon.com/pt/ec2/faqs/)]
