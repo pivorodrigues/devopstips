@@ -358,7 +358,35 @@ _Resources:_
 
   - **S3 Glacier Vault Lock** allows you to easily deploy and enforce compliance controls for individual S3 Glacier vaults with a Vault Lock policy. You can **specify controls such as WORM in a Vault Lock policy and lock the policy from future edits**. Once locked, the policy can no longer be changed.    
 
+#
 
+**S3 Performance**
+
+- **Prefixes**
+
+  - _mybucketname/folder1/subfolder1/myfile.jpg_ > /folder1/subfolder1
+
+  - You can also achieve a high number of requests: **3500 PUT/COPY/POST/DELETE** and **5.500 GET/HEAD** requests per second por fix
+
+  - You can get better performance by spreading your reads across **different prefixes**. For example, if you are using **two prefixes**, you can achieve **11.000 requests per second**.
+
+- **SSE-KMS**
+
+  - If you are using SS3-KMS to encrypte your objects in S3, you must keep in mind the KMS limits.
+
+    - Region-Specific, however, it's either **5.500**, **10.000**, or 30.000 requests per second.
+
+    - Currently, you **cannot** request a quota increase for KMS.
+
+    - Uploading/download will count towrd the KMS quota.  
+
+- **Multipart Uploads**
+
+  - Use **multipart uploads** to increse performance when **uploading files** to S3.
+
+  - Should be used for any files **over 100 MB** and must be used for any file over 5G.
+
+  - Use **s3 byte-range fetches** to increase performance when **downloading files** to S3.   
 
 #
 
