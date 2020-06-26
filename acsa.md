@@ -390,6 +390,18 @@ _Resources:_
 
 #
 
+**S3 Select and Glacier Select**
+
+<p align="center"><img src="images/aws-s3-select.png" width="500px"></p>
+
+- Remember that S3 Select is used to **retrieve only a subset of data** from an object by using simple SQL expressions.
+
+- Get data by **rows or colums** using simple SQL expressions.
+
+- Save money on **data transfer** and increase speed. 
+
+#
+
 ## Chapter 4: EC2 <img src="images/ec2.png" width="30px">
 
 **EC2 (Elastic Compute Cloud) 101** [[FAQ](https://aws.amazon.com/pt/ec2/faqs/)]
