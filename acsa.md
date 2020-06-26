@@ -304,6 +304,20 @@ _Resources:_
 
 #
 
+**CloudFront Signed URLs and Cookies**
+
+<p align="center"><img src="images/aws-cf-signedurl.png" width="500px"></p>
+
+- Use signed **URL/Cookies** when you want to secure content so that only the people you authorize are able to access it.
+
+- A signed URL is for individual files. **1 file = 1 URL**.
+
+- A signed cookie is for multiple files. **1 cookie = multiple files**.
+
+- If your origin is EC2, then use CloudFront. If you origin is S3, use S3 signed URLs.
+
+#
+
 **Snowball**
 
 - Understand what Snowball is.
