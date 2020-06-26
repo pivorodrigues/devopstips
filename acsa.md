@@ -264,6 +264,22 @@ _Resources:_
 
 #
 
+**AWS DataSync [SAA-C02]**
+
+<p align="center"><img src="images/aws-datasync.png" width="500px"></p>
+
+- Used to move **large amount** of data from on-premises to AWS.
+
+- Used with **NFS**-compatible and **SMB**-compatible file systems.
+
+- **Replication** can be done hourly, daily, or weekly.
+
+- Install the **DataSync agent** to start the replication.
+
+- Can be used to replicate **EFS** to **EFS**.
+
+#
+
 **CloudFront**
 
 - **Edge Location** - This is the location where content will be cached. This is separate to an AWS Region/AZ.
@@ -398,7 +414,7 @@ _Resources:_
 
 - Get data by **rows or colums** using simple SQL expressions.
 
-- Save money on **data transfer** and increase speed. 
+- Save money on **data transfer** and increase speed.
 
 #
 
