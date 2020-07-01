@@ -612,6 +612,8 @@ In the exam you will be given different scenarios and you will be asked to choos
 
 #
 
+**Spot instances and Spot Fleet**
+
 **Cloudwatch 101**
 
 - Cloudwatch is used for monitoring performance.
