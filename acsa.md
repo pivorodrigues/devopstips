@@ -108,13 +108,15 @@ _Resources:_
 
 - **S3 is a universal namespace**. That is, names must be unique globally.
 
-- URL Example: https://s3-eu-west-1.amazonaws.com/acloudguru
+- Bucket URL Examples: https://acloudguru.s3.amazonaws.com/
 
-- **Not suitable to install an operating system on**.
+  - https://acloudguru.eu-west-1.amazonaws.com/
+
+- **Not suitable to install an operating system on or databases**.
 
 - Successful uploads will generate a HTTP 200 status code.
 
-- By default, all newly created buckets are **PRIVATE**. You can setup access control to your buckets using:
+- By default, all newly created buckets are **PRIVATE**. _(Review this information)_ You can setup access control to your buckets using:
 
 	- Bucket Policies
 
