@@ -302,10 +302,6 @@ _Resources:_
 
 - You can clear cached objects, **but you will be charged**.
 
-- CloudFront is a global service.
-
-- You can invalidate cached objects, but, you will be charged.
-
 #
 
 **CloudFront Signed URLs and Cookies**
