@@ -300,7 +300,7 @@ _Resources:_
 
 - Objects are cached for the life of the **TTL (Time To Live)**.
 
-- You can clear cached objects, but you will be charged.
+- You can clear cached objects, **but you will be charged**.
 
 - CloudFront is a global service.
 
