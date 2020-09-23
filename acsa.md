@@ -838,6 +838,56 @@ In the exam you'll be given different scenarios and asked to choose whether you 
 
 #
 
+**HPC (High Performance Compute) on AWS**
+
+- We can achieve HPC on AWS through:
+
+  - **Data Transfer**
+
+    - Snowball, Snowmobile (**terabytes/petabytes worth of data**)
+
+    - AWS DataSync to store on S3, EFS, FSx for Windows, etc.
+
+    - Direct Connect
+
+  - **Compute and Networking**
+
+    - EC2 instances that are **GPU** or **CPU** optimized.
+
+    - **EC2 Fleets** (Spot instances and Spot Fleets).
+
+    - Placement Groups (cluster placement groups).
+
+    - Enhanced networking single root I/O virtualization (**SR-IOV**).
+
+    - Elastic Network Adapters or **Intel 82599 Virtual Function** (VF) interface.
+
+    - Elastic Fabric Adapters.
+
+  - **Storage**
+
+    - **Instance-attached storage:**
+
+      - **EBS:** Scale up to 64.000 IOPS with Provisioned IOPS (PIOPS).
+
+      - **Instance Store:** Scale to millions of IOPS; low latency
+
+    - **Network storage:**
+
+      - **Amazon S3:** Distributed object-based storage; not a file system.
+
+      - **Amazon EFS:** Scale IOPS based on total size, or use Provisioned IOPS.
+
+      - **Amazon FSx for Lustre:** HPC-Optimized distributed file system; millions of IOPS, which is also backed by S3.
+
+  - **Orchestration and Automation**
+
+    - AWS Batch
+
+    - AWS ParallelCluster   
+
+#
+
 **Amazon WAF (Web Application Firewall)**
 
 A its most basic level, AWS WAF allows 3 different behaviours:
