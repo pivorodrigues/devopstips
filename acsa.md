@@ -630,6 +630,8 @@ In the exam you will be given different scenarios and you will be asked to choos
 
 - Available for **On-demand instances** and **Reserved Instances**
 
+#
+
 **Cloudwatch 101**
 
 - Cloudwatch is used for monitoring performance.
