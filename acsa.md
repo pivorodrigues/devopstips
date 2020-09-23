@@ -614,6 +614,16 @@ In the exam you will be given different scenarios and you will be asked to choos
 
 **Spot instances and Spot Fleets**
 
+- Spot instances save up to **90%** of the cost of On-Demand Instances.
+
+- Useful for any type of computing where you don't need **persistent storage**.
+
+- You can block Spot Instances from terminating by using **Spot Block**.
+
+- A Spot Fleet is a collection of Spot Instances and, optionally, On-Demand Instances.
+
+#
+
 **EC2 Hibernate**
 
 - **EC2 Hibernate** preserves the in-memory RAM on persistent storage (EBS).
