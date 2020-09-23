@@ -612,7 +612,23 @@ In the exam you will be given different scenarios and you will be asked to choos
 
 #
 
-**Spot instances and Spot Fleet**
+**Spot instances and Spot Fleets**
+
+**EC2 Hibernate**
+
+- **EC2 Hibernate** preserves the in-memory RAM on persistent storage (EBS).
+
+- Much faster to boot up because you **don't need to reload the operating system**.
+
+- Instance RAM must be less than **150 GB**.
+
+- Instance families include C3, C4, C5, M3, M4, M5, R3, R4 and R5.
+
+- Available for Windows, Amazon Linux 2 AMI, and Ubuntu.
+
+- Instances can't be hibernate for more than **60 days**.
+
+- Available for **On-demand instances** and **Reserved Instances**
 
 **Cloudwatch 101**
 
