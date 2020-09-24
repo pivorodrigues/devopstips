@@ -440,7 +440,7 @@ _Resources:_
 
   - **1. On Demand**: Allows you to pay a fixed rate by the hour (or by the second) with no commitment.
 
-  - **2. Reserved**: Provides you with a capacity reservation, and offer a significant discount on the hourly charge for an instance.
+  - **2. Reserved**: Provides you with a capacity reservation, and offer a significant discount on the hourly charge for an instance. Contract terms are 1 Year or 3 Year terms.
 
   - **3. Spot**: Enables you to bid whatever price you want for instance capacity, providing for even greater savings if your applications have flexible start and end times.
 
@@ -526,9 +526,17 @@ _Resources:_
 
 <p align="center"><img src="images/aws-ebs-types.png" width="500px"></p>
 
+- Termination Protection is **turned off** by default, you must turn it on.
+
+- On an EBS-backed instance, the **default action is for the root EBS volume to be deleted** when the instance is terminated.
+
+- EBS Root Volume of your DEFAULT AMI's **CAN** be encrypted. You can also use a third party tool (such as a bit locker, etc) to encrypt the root volume, or this can be done when creating AMI's (remember the lab) in the AWS console or using the API.
+
+- Aditional volumes can be encrypted.
+
 #
 
-**Volumes & Snapshots**
+**EBS Snapshots**
 
 - Volumes exist on EBS. Think of EBS as a virtual hard disk.
 
@@ -550,13 +558,43 @@ _Resources:_
 
 - Volumes will ALWAYS be in the same availability zone as the EC2 instance.
 
+#
+
+**Migrating EBS**
+
 - To move an EC2 volume from one AZ to another, take a snapshot of it, create an AMI from the snapshot and then use the AMI to launch the EC2 instance in a new AZ.
 
 - To move an EC2 volume from one region to another, take a snapshot of it, create an AMI from the snapshot and then copy the AMI from one region to the other. Then use the copied AMI to launch the new EC2 instance in the new region.
 
 #
 
-**AMI Types (EBS vs Instance Store)**
+**EBS Encryption**
+
+- Snapshots of encrypted volumes are encrypted automatically.
+
+- Volumes restored from encrypted snapshots are encrypted automatically.
+
+- You can share snapshots, but only if they are **unencrypted**.
+
+- These snapshots can be shared with other AWS accounts or made public.
+
+#
+
+**Volumes and snapshots**
+
+- Root Devices can now be encrypted. If you have an unencrypted root device volume that needs to be encrypted do the following;
+
+  - Create a Snapshot of the unencrypted root device volume.
+
+  - Create a copy of the Snapshot and select the encrypt option.
+
+  - Create an AMI from the encrypted Snapshot.
+
+  - Use that AMI to launch new encrypted instances.
+
+#
+
+**EBS vs Instance Store**
 
 - Instance Store Volumes are sometimes called Ephemeral Storage.
 
@@ -570,9 +608,21 @@ _Resources:_
 
 #
 
-**ENI vs ENA vs EFA**
+**Encrypting Root Device Volumes**
 
-In the exam you will be given different scenarios and you will be asked to choose whether you should use an ANI, EN or EFA.
+- Create a Snapshot of the unencrypted root device volume.
+
+- Create a copy of the Snapshot and select the encrypt option.
+
+- Create an AMI from the encrypted Snapshot.
+
+- Use that AMI to launch new encrypted instances.
+
+#
+
+**Enhanced Networking**
+
+In the exam you will be given different scenarios and you will be asked to choose whether you should use an ENI, EN or EFA.
 
 - **ENI (Elastic Network Interfaces)**
 
@@ -585,30 +635,6 @@ In the exam you will be given different scenarios and you will be asked to choos
 - **EFA (Elastic Fabric Adaptor)**
 
   - For when you need to accelerate High Performance Computing (HPC) and machine learning applications _or_ if you need to do an OS-Bypass. If you see a scenario question mentioning HPC or ML and asking what network adaptor you want, choose EFA.
-
-#
-
-**Encrypted Root Device Volumes & Snapshots**
-
-- Snapshots of encrypted volumes are encrypted automatically.
-
-- Volumes restored from encrypted snapshots are encrypted automatically.
-
-- You can share snapshots, but only if they are **unencrypted**.
-
-- These snapshots can be shared with other AWS accounts or made public.
-
-- You can now encrypt root device volumes upon creation of the EC2 instance.
-
-- _You need to know how to:_
-
-  - Create a Snapshot of the unencrypted root device volume.
-
-  - Create a copy of the Snapshot and select the encrypt option.
-
-  - Create an AMI from the encrypted Snapshot.
-
-  - Use that AMI to launch new encrypted instances.
 
 #
 
