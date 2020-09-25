@@ -1049,6 +1049,118 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 #
 
+**Advanced DynamoDB**
+
+- **DynamoDB Accelerator (DAX)**
+
+  - Fully managed, highly available, in-memory cache.
+
+  - 10x performance improvement.
+
+  - Reduces request time from milliseconds to **microseconds** - even under load.
+
+  - No need for developers to manage caching logic.
+
+  - Compatible with DynamoDB API calls.
+
+<p align="center"><img src="images/aws-dax.png" width="600px"></p>
+
+- **Transactions**
+
+  - Multiple "all-or-nothing" operations.
+
+  - Financial transactions.
+
+  - Fulfilling orders.
+
+  - Two underlying reads or writes - prepare/commit.
+
+  - Up to 25 items or 4 MB of data.
+
+- **On-Demand Capacity**
+
+  - **Pay-per-use** pricing.
+
+  - Balance cost and performance.
+
+  - No minimum capacity.
+
+  - No charge for read/write - only storage and backups.
+
+  - **Pay more per request** than with provisioned capacity.
+
+  - Use for new products launches.
+
+- **On-Demand Backup and Restore**
+
+  - Full backups.
+
+  - Zero impact on table performance or availability.
+
+  - Consistent within seconds and **retained until deleted**.
+
+  - Operates within same region as the source table.
+
+- **Point-in-Time Recovery**
+
+  - Protects against accidental writes or deletes.
+
+  - Restore to any point in the last **35 days**.
+
+  - Incremental backups.
+
+  - Not enabled by default.
+
+  - Latest restorable: **five minutes** in the past.
+
+- **Streams**
+
+  - Time-ordered sequence of item-level changes in a table.
+
+  - Stored for **24 hours**.
+
+  - Inserts, updates, and deletes.
+
+  - Combine with Lambda functions for functionality like stored procedures. 
+
+  <p align="center"><img src="images/aws-streams.png" width="600px"></p>
+
+- **Global Tables**
+
+  - **Managed Multi-Master, Multi-Region Replication**
+
+    - Globally.
+
+    - Based on DynamoDB streams.
+
+    - Multi-Region redundancy for DR or HA.
+
+    - No application rewrites.
+
+    - Replication latency under **on second**.
+
+- **Database Migration Service (DMS)**
+
+<p align="center"><img src="images/aws-dms.png" width="600px"></p>
+
+- **Security**
+
+  - Encryption at rest using **KMS**.
+
+  - Site-to-site **VPN**.
+
+  - Direct Connect (DX).
+
+  - IAM policies and roles.
+
+  - Fine-grained access.
+
+  - CloudWatch and CloudTrail.
+
+  - VPC Endpoints.
+
+#
+
 **Redshift**
 
 - Redshift is a Data Warehouse used for business intelligence
