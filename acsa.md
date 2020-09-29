@@ -1139,6 +1139,8 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
     - Replication latency under **on second**.
 
+#
+
 - **Database Migration Service (DMS)**
 
   - DMS allows you to **migrate databases** from one source to AWS.
@@ -1153,9 +1155,7 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 <p align="center"><img src="images/aws-sct.png" width="600px"></p>
 
-
-
-
+#
 
 - **Security**
 
