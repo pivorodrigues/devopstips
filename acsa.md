@@ -1141,7 +1141,7 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 #
 
-- **Database Migration Service (DMS)**
+**Database Migration Service (DMS)**
 
   - DMS allows you to **migrate databases** from one source to AWS.
 
@@ -1157,19 +1157,31 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 #
 
-- **Caching strategies on AWS**
+**Caching strategies on AWS**
 
 <p align="center"><img src="images/aws-cache-architecture.png" width="600px"></p>
 
-  - Caching is a balancing between **up-to-date**, **accurate information** and **latency**. We can use the following services to **cache on AWS**:
+- Caching is a balancing between **up-to-date**, **accurate information** and **latency**. We can use the following services to **cache on AWS**:
 
-    - CloudFront;
+  - CloudFront;
 
-    - API Gateway;
+  - API Gateway;
 
-    - Elasticache - **Memcached** and **Redis**;
+  - Elasticache - **Memcached** and **Redis**;
 
-    - DynamoDB Accelerator; 
+  - DynamoDB Accelerator; 
+
+#
+
+**EMR Overview**
+
+- EMR is used for **big data processing**.
+
+- Consists of a **master node**, a **core node**, and (optionally) a **task node**.
+
+- By default, log data is **stored on the master node**.
+
+- You can configure replication to S3 on **five-minutes intervals for all log data from the master node**; however, this can only be configured when creating the cluster for the first time.
 
 #
 
