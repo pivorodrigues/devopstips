@@ -1157,6 +1157,22 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 #
 
+- **Caching strategies on AWS**
+
+<p align="center"><img src="images/aws-cache-architecture.png" width="600px"></p>
+
+  - Caching is a balancing between **up-to-date**, **accurate information** and **latency**. We can use the following services to **cache on AWS**:
+
+    - CloudFront;
+
+    - API Gateway;
+
+    - Elasticache - **Memcached** and **Redis**;
+
+    - DynamoDB Accelerator; 
+
+#
+
 - **Security**
 
   - Encryption at rest using **KMS**.
