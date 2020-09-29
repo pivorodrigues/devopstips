@@ -1141,7 +1141,21 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 - **Database Migration Service (DMS)**
 
+  - DMS allows you to **migrate databases** from one source to AWS.
+
+  - You can do **homogeneous** migrations (same DB engines) or **heterogeneous** migrations.
+
+  - The source can either be on-premises, or inside AWS itself or another cloud provider such as Azure.
+
+  - If you do a heterogeneous migration, you will need the **AWS Schema Conversion Tool** (SCT). 
+
 <p align="center"><img src="images/aws-dms.png" width="600px"></p>
+
+<p align="center"><img src="images/aws-sct.png" width="600px"></p>
+
+
+
+
 
 - **Security**
 
