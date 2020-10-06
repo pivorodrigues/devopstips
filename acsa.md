@@ -1239,16 +1239,19 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 **Elasticache**
 
-- Use Elasticache to increase database and web application performance
+- Use Elasticache to increase database and web application performance.
 
-- Two flavors: Memcached and Redis
+- Two flavors: Memcached and Redis.
 
-- Redis is Multi-AZ
+- Redis is Multi-AZ.
 
 - You can do backups and restore of Redis
 
 
-## Chapter 6: Route 53 <img src="images/aws-route53-logo.png" width="30px">
+## Chapter 6: Advanced IAM <img src="images/aws-iam.png" width="30px">
+
+
+## Chapter 7: Route 53 <img src="images/aws-route53-logo.png" width="30px">
 
 - _How to discover a DNS name server record:_ `$ nslookup -type=ns globo.com`
 
