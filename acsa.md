@@ -1021,7 +1021,7 @@ Obs: In the exam you will be given different scenarios and you will be asked how
 
 - Can be MySQL, PostgreSQL, MariaDB, Oracle, Aurora
 
-- SQL Server doesn´t support Read Replicas
+- MSSQL is now available to be used with Read Replicas
 
 - Can be promoted to master, this will break the Read Replica
 
@@ -1209,7 +1209,7 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 - Available in only 1 AZ
 
-- **Backups:**
+- **Redshift Backups:**
 
   - Enabled by default with a 1 day retention period
 
@@ -1223,13 +1223,15 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 **Amazon Aurora**
 
-- 2 copies of your data is contained in each availability zone, with minimum of 3 availability zones. 6 copies of your data
+- 2 copies of your data is contained in each availability zone, with minimum of 3 availability zones. 6 copies of your data.
 
-- You can share Aurora Snapshots with other AWS accounts
+- You can share Aurora Snapshots with other AWS accounts.
 
-- 2 types of replicas available. Aurora Replicas and MySQL replicas. Automated failover is only available with Aurora Replicas
+- 3 types of replicas available. Aurora replicas, MySQL replicas and PostgresSQL replicas. Automated failover is only available with Aurora Replicas.
 
-- Aurora has automated backups turned on by default. You can also take snapshots with Aurora. You can share these snapshots with other AWS accounts
+- Aurora has automated backups turned on by default. You can also take snapshots with Aurora. You can share these snapshots with other AWS accounts.
+
+- Use Aurora Serverless if you want a simple, cost-effective option for infrequent, intermittent, or unpredictable workloads.
 
 <p align="center"><img src="images/aws-replicas-comparison.png" width="750px"></p>
 
