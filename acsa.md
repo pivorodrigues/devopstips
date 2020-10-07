@@ -1250,6 +1250,9 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 ## Chapter 6: Advanced IAM <img src="images/aws-iam.png" width="30px">
 
+**AWS Directory Service**
+
+
 
 ## Chapter 7: Route 53 <img src="images/aws-route53-logo.png" width="30px">
 
