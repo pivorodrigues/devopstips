@@ -1375,6 +1375,35 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
     - Cloud Directory
 
     - Cognito user pools
+#
+
+**Evaluating IAM Policies**
+
+- Not explicit allowed == **implicit denied**.
+
+- Explicit deny > Everything else.
+
+- Only attached policies have effect.
+
+- AWS **joins** all applicable policies.
+
+- AWS-managed vs. customer-managed.
+
+- **Permission boundaries:**
+
+  - Used to **delegate** administration to other users.
+
+  - Prevent **privilege scalation** or **unnecessarily broad permissions**.
+
+  - Control **maximum** permissions an IAM policy can grant.
+
+  - Use cases:
+
+    - Developers creating roles for Lambda functions;
+
+    - Application owners creating roles for EC2 instances;
+
+    - Admins creating ad hoc users.
 
 
 ## Chapter 7: Route 53 <img src="images/aws-route53-logo.png" width="30px">
