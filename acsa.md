@@ -1252,7 +1252,130 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 **AWS Directory Service**
 
+- **What is AWS Directory Service?**
 
+  - Family of managed services.
+
+  - Connect AWS resources with on-premises AD.
+
+  - Standalone directory in the cloud.
+
+  - Use existing corporate credentials.
+
+  - SSO to any domain-joined EC2 instance.
+
+- **What is Active Directory?**
+
+  - On-premises directory service.
+
+  - Hierarchical database of users, groups, computers - **trees** and **forests**.
+
+  - Group policies.
+
+  - LDAP and DNS.
+
+  - Kerberos, LDAP, and NTLM authentication.
+
+  - Highly available.
+
+- **AWS Managed Microsoft AD**
+
+  - AD domain controllers (DCs) running Windows Server.
+
+  - Reachable by applications in your VPC.
+
+  - Add DCs for HA and performance.
+
+  - Exclusive access to DCs.
+
+  - Extend existing AD to on-premises using **AD Trust**.
+
+  - **AWS**
+
+    - Multi-AZ deployment.
+
+    - Patch, monitor, recover.
+
+    - Instance rotation.
+
+    - Snapshot and restore.
+
+  - **Customer**
+
+    - Users, groups, GPOs.
+
+    - Standard AD tools.
+
+    - Scale out DCs.
+
+    - Trusts (resource forest).
+
+    - Certificate authorities (LDAPS).
+
+    - Federation.
+
+  <p align="center"><img src="images/aws-managed-ad.png" width="750px"></p>
+
+- **Simple AD**
+
+  - Standalone managed directory.
+
+  - Basic AD features.
+
+  - Small: <= 500; Large <= users.
+
+  - Easier to manage EC2.
+
+  - Linux workloads that need LDAP.
+
+  - Does not supporte **trusts** (can't join on-premises AD).
+
+- **AD Connector**
+
+  - Directory gateway (proxy) for on-premises AD.
+
+  - Avoid caching information in the cloud.
+
+  - Allow on-premises users to log in to AWS using AD.
+
+  - Join EC2 instances tou your existing AD domain.
+
+  - Scale across multiple AD connectors.
+
+- **Cloud Directory**
+
+  - Directory-based store for developers.
+
+  - Multiple hierarchies with hundreds of millions of objects.
+
+  - Use cases: org charts, course catalogs, device registries.
+
+  - Fully managed service.
+
+- **Amazon Cognito User Pools**
+
+  - Managed user directory for SaaS applications.
+
+  - Sign-up and sign-in for web mobile.
+
+  - Works with **social media** identities.
+
+- **AD vs Non-AD Compatible Services**
+
+  - **AD Compatible**
+
+    - Managed Microsoft AD (a.k.a., Directory Service for Microsoft Active Directory).
+
+    - AD Connector.
+
+    - Simple AD.
+
+  - **Not AD Compatible**
+
+    - Cloud Directory
+
+    - Cognito user pools
+      
 
 ## Chapter 7: Route 53 <img src="images/aws-route53-logo.png" width="30px">
 
