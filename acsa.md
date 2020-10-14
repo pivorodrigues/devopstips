@@ -1314,7 +1314,7 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
     - Federation.
 
-  <p align="center"><img src="images/aws-managed-ad.png" width="750px"></p>
+  <p align="center"><img src="images/aws-managed-ad.png" width="500px"></p>
 
 - **Simple AD**
 
@@ -1375,7 +1375,7 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
     - Cloud Directory
 
     - Cognito user pools
-      
+
 
 ## Chapter 7: Route 53 <img src="images/aws-route53-logo.png" width="30px">
 
