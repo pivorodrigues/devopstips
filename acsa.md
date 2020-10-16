@@ -1427,7 +1427,7 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
   - Route 53
 
-<p align="center"><img src="images/aws-ram.png" width="500px"></p>
+<p align="center"><img src="images/aws-ram.png" width="600px"></p>
 
 
 ## Chapter 7: Route 53 <img src="images/aws-route53-logo.png" width="30px">
