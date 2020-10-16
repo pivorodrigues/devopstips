@@ -1405,6 +1405,30 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
     - Admins creating ad hoc users.
 
+#
+
+**AWS Resource Access Manager (RAM)**
+
+- **Which AWS resources can I share using RAM? (until today)**
+
+  - App Mesh
+
+  - Aurora
+
+  - CodeBuild
+
+  - EC2
+
+  - EC2 Image Builder
+
+  - License Manager
+
+  - Resource Groups
+
+  - Route 53
+
+<p align="center"><img src="images/aws-ram.png" width="500px"></p>
+
 
 ## Chapter 7: Route 53 <img src="images/aws-route53-logo.png" width="30px">
 
