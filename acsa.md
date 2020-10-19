@@ -1822,6 +1822,16 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
 
   - DynamoDB
 
+#
+
+**AWS PrivateLink**
+
+- If you see a question asking about peering VPCs to tens, hundreds or thousands of customer VPCs, think of AWS PrivateLink.
+
+- Doesn't require VPC peering; no route tables, NAT, Internet Gateways, etc.
+
+- Requires a Network Load Balancer on the service VPC and an ENI on the customer VPC.
+
 ## Chapter 8: HA Architecture <img src="images/aws-elb-logo.png" width="30px">
 
 **Elastic Load Balancers**
