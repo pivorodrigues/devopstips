@@ -1864,6 +1864,13 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
 
 #
 
+**AWS Network Costs**
+
+- Use private IP addresses over public IP addresses to save on costs. This the utilizes the AWS backbone network.
+
+- If you want to cut all network costs, group your EC2 instances in the same Availability Zone and use private IP addresses. This will be cost-free, but make sure to keep in mind single point of failure issues.
+
+
 ## Chapter 8: HA Architecture <img src="images/aws-elb-logo.png" width="30px">
 
 **Elastic Load Balancers**
