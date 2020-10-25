@@ -1542,7 +1542,8 @@ Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, Maria
 
 <p align="center"><img src="images/aws-multivalue-routing.png" width="750px"></p>
 
-## Chapter 7: VPCs <img src="images/aws-vpc.png" width="30px">
+
+## Chapter 8: VPCs <img src="images/aws-vpc.png" width="30px">
 
 **Introduction to VPCs**
 
@@ -1871,7 +1872,7 @@ Endpoints are virtual devices. They are horizontally scaled, redundant, and high
 - If you want to cut all network costs, group your EC2 instances in the same Availability Zone and use private IP addresses. This will be cost-free, but make sure to keep in mind single point of failure issues.
 
 
-## Chapter 8: HA Architecture <img src="images/aws-elb-logo.png" width="30px">
+## Chapter 9: HA Architecture <img src="images/aws-elb-logo.png" width="30px">
 
 **Elastic Load Balancers**
 
@@ -1961,7 +1962,12 @@ What are my scaling options?
 
 - With Elastic Beanstalk, you can quickly deploy and manage applications on the AWS Cloud without worring about the infrastructure that runs those applications. You simply upload your application, and Elastic Beanstalk automatically handles the details of capacity provisioning, load balancing, scaling and application health monitoring.
 
-## Chapter 9: Applications <img src="images/aws-sqs-logo.png" width="30px">
+#
+
+**High Availability with Bastion Hosts**
+
+
+## Chapter 10: Applications <img src="images/aws-sqs-logo.png" width="30px">
 
 **SQS - Simple Queue Service**
 
@@ -2086,7 +2092,7 @@ What are my scaling options?
 - **Identity pool** authorize access to your AWS resources.
 
 
-## Chapter 10: Serverless <img src="images/aws-lambda-logo.png" width="30px">
+## Chapter 12: Serverless <img src="images/aws-lambda-logo.png" width="30px">
 
 **Lambda**
 
