@@ -1966,6 +1966,12 @@ What are my scaling options?
 
 **High Availability with Bastion Hosts**
 
+- Two hosts in two separate Availability Zones. Use a Network Load Balance with static IP addresses and health checks to fail over from one host to the other.
+
+- Can't use an Application Load Balancer, as it is layer 7 and you need to use layer 4.
+
+- One host in one Availability Zone behind an Auto Scaling group with health checks and a fixed EIP. If the host fails, the health check will fail and the Auto Scaling group will provision a new EC2 instance in a separate Availability Zone. You can use a user data script to provision the same EIP to the new host. This is the cheapest option, but it is not 100% fault tolerant.
+
 
 ## Chapter 10: Applications <img src="images/aws-sqs-logo.png" width="30px">
 
