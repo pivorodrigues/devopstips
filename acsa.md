@@ -1989,7 +1989,6 @@ What are my scaling options?
   - Download Amazon Linux 2 as an ISO
 
 
-
 ## Chapter 10: Applications <img src="images/aws-sqs-logo.png" width="30px">
 
 **SQS - Simple Queue Service**
@@ -2113,6 +2112,18 @@ What are my scaling options?
 - **User pool** is user based. It handles things like user registration, authentication and account recovery.
 
 - **Identity pool** authorize access to your AWS resources.
+
+#
+
+**Event processing patterns**
+
+- Understand the pub/sub pattern - facilitated by SNS.
+
+- DLQ (Dead Letter Queue) - SNS, SQS, Lambda.
+
+- Fanout pattern - SNS.
+
+- S3 event notifications - which events trigger; which services consume.
 
 
 ## Chapter 12: Serverless <img src="images/aws-lambda-logo.png" width="30px">
