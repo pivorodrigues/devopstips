@@ -2132,7 +2132,7 @@ What are my scaling options?
 
 - How to prevent bad actors?
 
-  - **Network Access Control Lists:**
+  - **Network Access Control Lists (NACL):**
 
   <p align="center"><img src="images/aws-nacl.png" width="600px"></p>
 
