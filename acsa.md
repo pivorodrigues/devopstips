@@ -2126,6 +2126,11 @@ What are my scaling options?
 - S3 event notifications - which events trigger; which services consume.
 
 
+## Chapter 11: Security <img src="images/AWS-WAF.png" width="30px">
+
+
+
+
 ## Chapter 12: Serverless <img src="images/aws-lambda-logo.png" width="30px">
 
 **Lambda**
