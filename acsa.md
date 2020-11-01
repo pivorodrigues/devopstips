@@ -1989,6 +1989,7 @@ What are my scaling options?
   - Download Amazon Linux 2 as an ISO
 
 
+
 ## Chapter 10: Applications <img src="images/aws-sqs-logo.png" width="30px">
 
 **SQS - Simple Queue Service**
