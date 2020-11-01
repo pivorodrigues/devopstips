@@ -2132,23 +2132,23 @@ What are my scaling options?
 
 - How to prevent bad actors?
 
-  - Network Access Control Lists:
+  - **Network Access Control Lists:**
 
   <p align="center"><img src="images/aws-nacl.png" width="600px"></p>
 
-  - Application Load Balancer (ALB):
+  - **Application Load Balancer (ALB):**
 
   <p align="center"><img src="images/aws-alb.png" width="600px"></p>
 
-  - Network Load Balancer (NLB):
+  - **Network Load Balancer (NLB):**
 
   <p align="center"><img src="images/aws-nlb.png" width="600px"></p>
 
-  - Web Application Firewall (WAF):
+  - **Web Application Firewall (WAF):**
 
   <p align="center"><img src="images/aws-waf.png" width="600px"></p>
 
-  - WAF + CloudFront:
+  - **WAF + CloudFront:**
 
   <p align="center"><img src="images/aws-waf-cf.png" width="600px"></p>
 
