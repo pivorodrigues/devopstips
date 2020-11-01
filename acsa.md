@@ -1972,6 +1972,22 @@ What are my scaling options?
 
 - One host in one Availability Zone behind an Auto Scaling group with health checks and a fixed EIP. If the host fails, the health check will fail and the Auto Scaling group will provision a new EC2 instance in a separate Availability Zone. You can use a user data script to provision the same EIP to the new host. This is the cheapest option, but it is not 100% fault tolerant.
 
+#
+
+**On-Premises Strategies with AWS**
+
+- You need to be aware of what high-level AWS services you can use on-premises for the exam:
+
+  - Database Migration Service (DMS)
+
+  - Server Migration Service (SMS)
+
+  - AWS Application Discovery Service 
+
+  - VM Import/Export
+
+  - Download Amazon Linux 2 as an ISO
+
 
 ## Chapter 10: Applications <img src="images/aws-sqs-logo.png" width="30px">
 
