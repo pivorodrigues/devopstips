@@ -2126,9 +2126,31 @@ What are my scaling options?
 - S3 event notifications - which events trigger; which services consume.
 
 
-## Chapter 11: Security <img src="images/AWS-WAF.png" width="30px">
+## Chapter 11: Security <img src="images/aws-waf-logo.png" width="30px">
 
+**Reducing Security Threats**
 
+- How to prevent bad actors?
+
+  - Network Access Control Lists:
+
+  <p align="center"><img src="images/aws-nacl.png" width="600px"></p>
+
+  - Application Load Balancer (ALB):
+
+  <p align="center"><img src="images/aws-alb.png" width="600px"></p>
+
+  - Network Load Balancer (NLB):
+
+  <p align="center"><img src="images/aws-nlb.png" width="600px"></p>
+
+  - Web Application Firewall (WAF):
+
+  <p align="center"><img src="images/aws-waf.png" width="600px"></p>
+
+  - WAF + CloudFront:
+
+  <p align="center"><img src="images/aws-waf-cf.png" width="600px"></p>
 
 
 ## Chapter 12: Serverless <img src="images/aws-lambda-logo.png" width="30px">
