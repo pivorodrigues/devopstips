@@ -2157,6 +2157,8 @@ What are my scaling options?
 **Key Management Service**
 
 
+
+
 ## Chapter 12: Serverless <img src="images/aws-lambda-logo.png" width="30px">
 
 **Lambda**
