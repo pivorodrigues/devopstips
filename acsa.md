@@ -2152,6 +2152,10 @@ What are my scaling options?
 
   <p align="center"><img src="images/aws-waf-cf.png" width="600px"></p>
 
+#
+
+**Key Management Service**
+
 
 ## Chapter 12: Serverless <img src="images/aws-lambda-logo.png" width="30px">
 
