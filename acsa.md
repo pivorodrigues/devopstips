@@ -2176,6 +2176,16 @@ What are my scaling options?
 
   - Level 3 is Cloud HSM.
 
+- **Types of CMKs**
+
+  - **AWS Managed CMK** - Free; used by default if you pick encryption in most AWS services. Only that service can use them directly.
+
+  - **Customer Managed CMK** - Allows key **rotation**; controlled via key policies and can be enabled/disabled.
+
+  - **AWS Owned CMK** - Used by AWS on a shared basis accross many accounts; you tipically won't see these.
+
+  <p align="center"><img src="images/aws-cmk-types.png" width="600px"></p>
+
 
 ## Chapter 12: Serverless <img src="images/aws-lambda-logo.png" width="30px">
 
