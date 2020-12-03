@@ -2156,7 +2156,25 @@ What are my scaling options?
 
 **Key Management Service**
 
+- **What is KMS?**
 
+  - **Regional** secure key management and encryption and decryption.
+
+  - Manages **customer master keys** (CMKs).
+
+  - Ideal for S3 objects, database passwords and API keys stored in Systems Manager Parameter Store.
+
+  - Encrypt and decrypt data up to **4 KB** in size.
+
+  - Integrated with most AWS services.
+
+  - Pay per API call.
+
+  - Audit capability using CloudTrail - logs delivered to S3.
+
+  - **FIPS 140-2 Level2**.
+
+  - Level 3 is Cloud HSM.
 
 
 ## Chapter 12: Serverless <img src="images/aws-lambda-logo.png" width="30px">
