@@ -3,5 +3,3 @@
 ## 1.1.2: Communication With Downstream Clusters
 
 - **Authentication Proxy**
-
-  -   
