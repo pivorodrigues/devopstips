@@ -87,6 +87,7 @@ This repository is inspired by this [Kamranahmedse](https://github.com/kamranahm
     - [Docker, containers, VMs and orchestration technology for the beginners](https://medium.com/faun/docker-containers-vms-and-orchestration-technology-for-the-beginners-68ae979bce5a)
 
   - **Kubernetes**
+    - [Rancher Certification Notes](rancher-notes.md)
     - [Learn Kubernetes in Under 3 Hours: A Detailed Guide to Orchestrating Containers](https://medium.freecodecamp.org/learn-kubernetes-in-under-3-hours-a-detailed-guide-to-orchestrating-containers-114ff420e882)
     - [Kubernetes Cheat Sheet](https://linuxacademy.com/blog/containers/kubernetes-cheat-sheet/)
     - [Kubernetes basic glossary](https://blog.lelonek.me/kubernetes-basic-glossary-9ca0416e3948)
