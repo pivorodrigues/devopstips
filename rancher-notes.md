@@ -1,5 +1,5 @@
-## <img src="images/rancher.png" width="30px"> Rancher Certification Notes <img src="images/rancher.png" width="30px">
+## <img src="images/rancher.png" width="50px"> Rancher Certification Notes <img src="images/rancher.png" width="50px">
 
-## 1.1.2: Communication With Downstream Clusters
+### 1.1.2: Communication With Downstream Clusters
 
 - **Authentication Proxy**
