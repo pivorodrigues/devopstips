@@ -144,3 +144,25 @@
 
       - Make it executable (`#chmod +x /usr/bin/rke`)
 
+- **1.2.2 - Preparing Nodes for Kubernetes**
+
+    - **Node Preparation**
+
+      1. SSH user in docker group
+
+      2. Disable swap on workers
+
+      3. Supported Versions (https://rancher.com/support-maintenance-terms)
+
+      4. Installing Docker (https://rancher.com/docs/rancher/v2.x/en/installation/resources/installing-docker/)
+
+    - **SSH Configuration (Server)**
+
+      - `AllowTcpForwarding yes`
+
+      - Your public key in `authorized_keys`
+
+    - **SSH Configuration (Client)**
+
+      - Use `--ssh-agent-auth` if your key has a passphrase         
+
