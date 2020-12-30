@@ -69,3 +69,31 @@
         - Enables direct communication
 
         - Useful if cluster is closer to user than Rancher
+
+- **1.1.3 - Architectural Best Practices**
+
+    - Run a Docker deployment of Rancher on its own node (If you are using a Docker version of Rancher)
+
+    - Run it on a separate node from all Kubernetes workloads
+
+    - Don't run it on the same node as the Kubernetes cluster is managing
+
+    - Run a Kubernetes deployment of Rancher in an RKE cluster
+
+    - Dedicate that cluster to Rancher
+
+    - If Rancher is managing production workloads, run an HA Rancher cluster
+
+    - Use a layer 4 load balancer in front of HA Rancher cluster
+
+    - Avoid doing SSL termination on the load balancer
+
+    - Run the Rancher cluster near the downstream clusters it's managing
+
+    - The Rancher management cluster can start with three nodes and add aditional workers as it grows
+
+    - Downstream clusters can combine or split etcd and controlplane roles
+
+    - Put a layer 4 load balancer in front of the controlplane nodes when using the Authorized Cluster Endpoint Feature
+
+    - Watch the Rancher management cluster. As you add more downstream clusters, it will need to grow to handle them.
