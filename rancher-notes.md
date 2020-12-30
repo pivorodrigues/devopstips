@@ -142,5 +142,5 @@
 
       - Move it into your path (`/usr/bin/rke`)
 
-      - Make it executable (`# chmod +x /usr/bin/rke`)
+      - Make it executable (`#chmod +x /usr/bin/rke`)
 
