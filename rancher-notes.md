@@ -97,3 +97,39 @@
     - Put a layer 4 load balancer in front of the controlplane nodes when using the Authorized Cluster Endpoint Feature
 
     - Watch the Rancher management cluster. As you add more downstream clusters, it will need to grow to handle them.
+
+#
+
+### 1.2. Discovering RKE
+
+- **Introduction**
+
+  - Minimal **cluster.yml** example:
+
+    ```
+        nodes:
+            - address: 1.2.3.4
+              user: ubuntu
+              role:
+                - controlplane
+                - etcd
+                - worker  
+    ```
+
+  - **RKE Configuration**
+
+    - Declarative configuration file
+
+    - Apply it with **"rke up"**
+
+    - Runs from a local workstation
+
+    - Connects over SSH
+
+    - Installs Kubernetes
+
+    - Generates a kubectl config
+
+    - Changes happen in config file
+
+    - Changes ar applied with **"rke up"**
