@@ -102,7 +102,7 @@
 
 ### 1.2. Discovering RKE
 
-- **Introduction**
+- **1.2 - Introduction**
 
   - Minimal **cluster.yml** example:
 
@@ -133,3 +133,8 @@
     - Changes happen in config file
 
     - Changes ar applied with **"rke up"**
+
+- **1.2.1 - Installing RKE**
+
+- https://github.com/rancher/rke
+
