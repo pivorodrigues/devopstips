@@ -4,68 +4,68 @@
 
 ### 1.1. Learning the Rancher Architecture
 
-1.1.2: Communication With Downstream Clusters
+- **1.1.2: Communication With Downstream Clusters**
 
-- **Authentication Proxy**
+    - **Authentication Proxy**
 
-  - Receives requests from a user
+        - Receives requests from a user
 
-  - Authenticates the user  
+        - Authenticates the user  
 
-  - Forwards request to Kubernetes on behalf of user
+        - Forwards request to Kubernetes on behalf of user
 
-- **Authentication**
+    - **Authentication**
 
-  - Who are you?
+        - Who are you?
 
-  - Handled by Rancher
+        - Handled by Rancher
 
-- **Authorization**
+    - **Authorization**
 
-  - What are you allowed to do?
+        - What are you allowed to do?
 
-  - Handled by Kubernetes
+        - Handled by Kubernetes
 
-- **Cluster Controller**
+    - **Cluster Controller**
 
-  - Runs within Rancher cluster
+        - Runs within Rancher cluster
 
-  - One per Kubernetes cluster
+        - One per Kubernetes cluster
 
-  - Watches for resource changes
+        - Watches for resource changes
 
-  - Controls downstream cluster state
+        - Controls downstream cluster state
 
-  - Configures access control policies
+        - Configures access control policies
 
-  - Provisions clusters
+        - Provisions clusters
 
-- **Cluster Agent**
+    - **Cluster Agent**
 
-  - Connects to Kubernetes API
+        - Connects to Kubernetes API
 
-  - Manages workloads within each cluster
+        - Manages workloads within each cluster
 
-  - Applying roles and bindings
+        - Applying roles and bindings
 
-  - Communicates w/ Rancher server through tunnel
+        - Communicates w/ Rancher server through tunnel
 
-- **Node Agent**
-  
-  - Runs as a DaemonSet
+    - **Node Agent**
+    
+        - Runs as a DaemonSet
 
-  - Upgrades Kubernetes
+        - Upgrades Kubernetes
 
-  - Restores etcd snapshots
+        - Restores etcd snapshots
 
-  - Can fill in for Cluster Agent
+        - Can fill in for Cluster Agent
 
-- **Authorized Cluster Endpoint**
+    - **Authorized Cluster Endpoint**
 
-  - Enables direct communication
+        - Enables direct communication
 
-  - Useful if Rancher is down
+        - Useful if Rancher is down
 
-  - Enables direct communication
+        - Enables direct communication
 
-  - Useful if cluster is closer to user than Rancher
+        - Useful if cluster is closer to user than Rancher
