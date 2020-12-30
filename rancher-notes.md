@@ -136,5 +136,11 @@
 
 - **1.2.1 - Installing RKE**
 
-- https://github.com/rancher/rke
+    - **Installing RKE**
+
+      - Download the binary (https://github.com/rancher/rke)  
+
+      - Move it into your path (`/usr/bin/rke`)
+
+      - Make it executable (`# chmod +x /usr/bin/rke`)
 
