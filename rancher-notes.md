@@ -164,5 +164,26 @@
 
     - **SSH Configuration (Client)**
 
-      - Use `--ssh-agent-auth` if your key has a passphrase         
+      - Use `--ssh-agent-auth` if your key has a passphrase
 
+    - **Creating the Cluster Configuration File**
+
+      - Minimal RKE Configuration           
+
+      ```
+        nodes:
+          - address: 192.168.100.101
+          user: ubuntu
+          role:
+            - controlplane
+            - etcd
+            - worker
+      ```    
+
+    - **Generating the Config**
+
+      - Use "rke config"
+
+      - Answer questions
+
+      - Customize the config
