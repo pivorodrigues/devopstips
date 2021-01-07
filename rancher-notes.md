@@ -166,9 +166,9 @@
 
       - Use `--ssh-agent-auth` if your key has a passphrase
 
-    - **Creating the Cluster Configuration File**
+- **1.2.3. Creating the Cluster Configuration File**
 
-      - Minimal RKE Configuration           
+    - Minimal RKE Configuration           
 
       ```
         nodes:
@@ -187,3 +187,13 @@
       - Answer questions
 
       - Customize the config
+
+- **1.2.4. Certificate Options**
+
+  - Kubernetes uses TLS certificates (also called SSL certificates) to secure communication between you and the cluster and between the cluster components.
+
+  - Kubernetes secures communication between its nodes with TLS certificates. These certificates don't have to be certificates signed by a public CA, and by default RKE auto-generates the certificates for you.
+
+  - If you would prefer to use your own certificates, you can either use a custom certificate directory that has your certs in it, or you can have RKE generate CSRs to be signed by an external CA. They'll have all of the correct Alternative DNS and IP names for the cluster.
+
+  - Once you receive signed certificates from the CA, you can use them as custom certificates.
